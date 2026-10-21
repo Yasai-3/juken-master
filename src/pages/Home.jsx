@@ -5,6 +5,7 @@ import {
   getWrongAnswers,
   getHistory,
   syncWithLocalServer,
+  syncWithCloud,
   getLastSyncInfo,
   getSettings,
 } from '../utils/storage';
@@ -94,6 +95,25 @@ const Home = () => {
   useEffect(() => {
     loadDashboardData();
   }, [loadDashboardData]);
+
+  const handleCloudSync = async () => {
+    setIsSyncing(true);
+    setSyncMessage('');
+    setSyncError('');
+    try {
+      const info = await syncWithCloud();
+      setLastSyncInfo(info);
+      loadDashboardData();
+      setSyncMessage(
+        `☁️ クラウド同期完了！（履歴: ${info.historyCount}件 / 弱点: ${info.wrongCount}問 / 全端末共通最新化）`
+      );
+      setTimeout(() => setSyncMessage(''), 5000);
+    } catch (err) {
+      setSyncError(`クラウド同期に失敗しました: ${err.message}`);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   const handleWifiSync = async (targetUrl = '') => {
     setIsSyncing(true);
@@ -505,11 +525,11 @@ const Home = () => {
 
             <button
               type="button"
-              onClick={() => handleWifiSync()}
+              onClick={handleCloudSync}
               disabled={isSyncing}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-extrabold shadow-sm transition disabled:opacity-50"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-extrabold shadow-sm transition disabled:opacity-50"
             >
-              <span>{isSyncing ? '⏳ 同期中...' : '🔄 Wi-FiでMac・タブレット同期'}</span>
+              <span>{isSyncing ? '⏳ クラウド同期中...' : '☁️ クラウド自動同期 (Mac & タブレット)'}</span>
             </button>
 
             <button

@@ -410,7 +410,110 @@ export const importData = (jsonData) => {
   }
 };
 
-// --- Wi-Fi Bidirectional Sync (Mac <-> Android Tablet) ---
+// --- Firebase Cloud Bidirectional Sync ---
+import { fetchCloudData, saveCloudData } from './firebaseSync';
+
+export const syncWithCloud = async () => {
+  const localQuestions = getCustomQuestions();
+  const localHistory = getHistory();
+  const localWrong = getWrongAnswers();
+  const localSnapshots = getHistorySnapshots();
+
+  // 1. クラウドから最新データを取得
+  let cloudData = null;
+  try {
+    cloudData = await fetchCloudData();
+  } catch (err) {
+    console.warn('Cloud fetch failed, trying to initialize cloud with local data:', err);
+  }
+
+  // 2. 双方向マージロジック
+  // カスタム問題マージ
+  const questionMap = new Map();
+  (cloudData?.customQuestions || []).forEach((q) => {
+    if (q && q.id) questionMap.set(q.id, q);
+  });
+  localQuestions.forEach((q) => {
+    if (q && q.id) questionMap.set(q.id, q);
+  });
+  const mergedQuestions = Array.from(questionMap.values());
+
+  // 学習履歴マージ
+  const historyMap = new Map();
+  const makeHistoryKey = (h) =>
+    `${h.date || h.timestamp || ''}_${h.subject || ''}_${h.score ?? ''}_${h.total ?? ''}`;
+  (cloudData?.history || []).forEach((h) => {
+    if (h) historyMap.set(makeHistoryKey(h), h);
+  });
+  localHistory.forEach((h) => {
+    if (h) historyMap.set(makeHistoryKey(h), h);
+  });
+  const mergedHistory = Array.from(historyMap.values()).sort((a, b) =>
+    String(a.date || '').localeCompare(String(b.date || ''))
+  );
+
+  // 弱点問題マージ
+  const wrongMap = new Map();
+  (cloudData?.wrongAnswers || []).forEach((w) => {
+    if (w && w.id) wrongMap.set(w.id, w);
+  });
+  localWrong.forEach((w) => {
+    if (!w || !w.id) return;
+    const existing = wrongMap.get(w.id);
+    if (!existing) {
+      wrongMap.set(w.id, w);
+    } else {
+      const isNewer = String(w.lastWrongAt || '') > String(existing.lastWrongAt || '');
+      wrongMap.set(w.id, {
+        ...existing,
+        ...w,
+        lastWrongAt: isNewer ? w.lastWrongAt : existing.lastWrongAt,
+        lastUserAnswer: isNewer ? w.lastUserAnswer || existing.lastUserAnswer : existing.lastUserAnswer,
+        wrongCount: Math.max(existing.wrongCount || 1, w.wrongCount || 1),
+      });
+    }
+  });
+  const mergedWrong = Array.from(wrongMap.values());
+
+  // スナップショットマージ
+  const snapMap = new Map();
+  (cloudData?.snapshots || []).forEach((s) => {
+    if (s && s.id) snapMap.set(s.id, s);
+  });
+  localSnapshots.forEach((s) => {
+    if (s && s.id) snapMap.set(s.id, s);
+  });
+  const mergedSnapshots = Array.from(snapMap.values())
+    .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')))
+    .slice(0, 20);
+
+  // 3. ローカルに保存
+  saveCustomQuestions(mergedQuestions);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(mergedHistory));
+  localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(mergedWrong));
+  localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(mergedSnapshots));
+
+  // 4. クラウドにマージ後データを保存
+  const cloudPayload = {
+    customQuestions: mergedQuestions,
+    history: mergedHistory,
+    wrongAnswers: mergedWrong,
+    snapshots: mergedSnapshots,
+    updatedAt: new Date().toISOString(),
+  };
+
+  await saveCloudData(cloudPayload);
+
+  const syncInfo = {
+    syncedAt: new Date().toISOString(),
+    serverUrl: 'Firebase Cloud (Tokyo)',
+    historyCount: mergedHistory.length,
+    wrongCount: mergedWrong.length,
+    customQuestionsCount: mergedQuestions.length,
+  };
+  localStorage.setItem(LAST_SYNC_KEY, JSON.stringify(syncInfo));
+  return syncInfo;
+};
 export const getLastSyncInfo = () => {
   try {
     return JSON.parse(localStorage.getItem(LAST_SYNC_KEY) || 'null');
