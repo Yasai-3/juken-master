@@ -7,7 +7,7 @@ const PASS_HASH_KEY = 'juken_app_custom_pass_hash_v2';
 
 // デフォルトパスワード（初期値：受験マスター2にちなんで 'juken2026' または 'master2026'）
 // 初期パスワード: 'master2026'
-const DEFAULT_PASS_HASH = '31b81832049e917726359f49c5eb445763fa67540a9761a15a81ca037db311d4'; // sha256('master2026_juken_master_v2_salt')
+const DEFAULT_PASS_HASH = '23878fe0f220e25af9915532c141f0d75f6a0a014220e070c3b3de92d83441fa'; // sha256('master2026_juken_master_v2_salt')
 
 async function sha256(str) {
   const buffer = new TextEncoder().encode(str);
