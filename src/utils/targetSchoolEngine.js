@@ -1,8 +1,9 @@
 /**
  * 志望校別 出題プロファイル マスターデータ
  * - targetAccuracy: 合格目安総合正答率 (%)
+ * - examSubjects: 受験対象教科 (灘は理科のみの3教科型、他校は理科・社会の4教科型)
  * - weights: 分野別の重要度倍率 (1.0 = 標準, 1.3〜1.6 = 重点単元)
- * - questionTypeWeights: 形式別の重要度倍率 (難関記述校など)
+ * - questionTypeWeights: 形式別の重要度倍率
  * - difficultyWeights: 難易度別の重要度倍率
  * - focusTags: 合否を分ける最頻出キー単元
  * - features: 学校ごとの出題特徴と攻略ポイント
@@ -12,52 +13,54 @@ export const TARGET_SCHOOLS = [
     id: 'nada',
     name: '灘中学校',
     region: '関西（兵庫）',
-    category: '最難関・男子校',
+    category: '最難関・男子校（3教科入試）',
+    examSubjects: ['理科'], // 灘は国語・算数・理科の3教科型入試のため社会は判定対象外！
     targetScore: 85,
-    tagline: '最高峰の思考力と実験データ分析・物理化学計算の極致',
+    tagline: '最高峰の思考力と実験データ分析・物理化学計算の極致（理科特化）',
     features: [
-      '物理・化学の初見実験・複雑計算が合否を決定づける',
-      '知識の丸暗記ではなく、原理原則から導く論理的思考力が必須',
-      '社会は理科重点校（3科受検対応）だが、4科型では近現代史・統計の超難問対応',
+      '入試教科は国・算・理の3教科。社会の出題はなく理科の配点比重が非常に高い',
+      '物理・化学の初見実験・複雑計算が合否を決定づける（高度な論理的考察力）',
+      '知識の丸暗記は一切通用せず、グラフ・数値データから法則性を自力で見抜く力',
     ],
     weights: {
-      物理: 1.6,
-      化学: 1.5,
-      生物: 1.1,
-      地学: 1.1,
-      歴史: 1.0,
-      地理: 1.0,
+      物理: 1.8,
+      化学: 1.7,
+      生物: 1.0,
+      地学: 1.0,
+      歴史: 0.0, // 判定対象外
+      地理: 0.0, // 判定対象外
     },
     difficultyWeights: {
-      basic: 0.6,
+      basic: 0.5,
       standard: 1.0,
-      advanced: 1.8, // 応用問題が圧倒的に重要
+      advanced: 2.0, // 応用問題の比重が圧倒的
     },
     questionTypeWeights: {
-      choice: 0.8,
-      input: 1.2,
+      choice: 0.7,
+      input: 1.3,
       descriptive: 1.5,
     },
     focusTags: [
       '水圧と浮力・力の合成と分解',
       '電流と回路・オームの法則・電力と熱量',
-      '中和と塩',
+      '酸化と還元・発熱と吸熱・質量保存と定比例の法則',
       '化学実験データ計算',
-      '光合成・呼吸・蒸散',
-      '地震のゆれと発生・プレートの動き',
+      '植物のつくりとはたらき（光合成・呼吸・蒸散）',
+      '気象観測・気圧・湿度と雲のでき方',
     ],
   },
   {
     id: 'kaisei',
     name: '開成中学校',
     region: '関東（東京）',
-    category: '最難関・男子校',
+    category: '最難関・男子校（4教科入試）',
+    examSubjects: ['理科', '社会'],
     targetScore: 80,
     tagline: '4分野均等バランス ＆ 長文リード文からの実験考察・短文記述',
     features: [
-      '理科4分野（物化生地）から大問4題が均等に出題される総合力勝負',
-      '会話文・リード文の条件設定を正確に読み取り記述する表現力',
-      '社会は近現代史・時事問題・地図読解の細かい記述問題が頻出',
+      '理科4分野（物化生地）から均等出題。会話文や初見の実験条件を読み解く記述力',
+      '社会は地理・歴史・公民の複合問題、近現代史や時事問題の記述が頻出',
+      '知識の深さに加え、理由や背景を端的に説明できる文章表現力が必須',
     ],
     weights: {
       物理: 1.3,
@@ -90,7 +93,8 @@ export const TARGET_SCHOOLS = [
     id: 'todaiji',
     name: '東大寺学園中学校',
     region: '関西（奈良）',
-    category: '最難関・男子校',
+    category: '最難関・男子校（4教科入試）',
+    examSubjects: ['理科', '社会'],
     targetScore: 78,
     tagline: '圧倒的な処理スピードと計算量・ハイレベルな考察と記述',
     features: [
@@ -129,7 +133,8 @@ export const TARGET_SCHOOLS = [
     id: 'nishiyamato',
     name: '西大和学園中学校',
     region: '関西（奈良）',
-    category: '最難関・共学校',
+    category: '最難関・共学校（4教科入試）',
+    examSubjects: ['理科', '社会'],
     targetScore: 82,
     tagline: '超スピード高得点勝負 ＆ 現代社会・時事問題・世界地理の宝庫',
     features: [
@@ -168,7 +173,8 @@ export const TARGET_SCHOOLS = [
     id: 'seiko',
     name: '大阪星光学院中学校',
     region: '関西（大阪）',
-    category: '難関・男子校',
+    category: '難関・男子校（4教科入試）',
+    examSubjects: ['理科', '社会'],
     targetScore: 80,
     tagline: '正統派・標準発展のノーミス完成度 ＆ 典型実験計算の完全攻略',
     features: [
@@ -207,7 +213,8 @@ export const TARGET_SCHOOLS = [
     id: 'takatsuki',
     name: '高槻中学校',
     region: '関西（大阪）',
-    category: '難関・共学校',
+    category: '難関・共学校（4教科入試）',
+    examSubjects: ['理科', '社会'],
     targetScore: 75,
     tagline: '基礎標準の堅実な穴埋め ＆ 生命・環境・科学的思考力問題',
     features: [
@@ -249,43 +256,54 @@ export const TARGET_SCHOOLS = [
  */
 export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, allQuestions) {
   const school = TARGET_SCHOOLS.find((s) => s.id === schoolId) || TARGET_SCHOOLS[0];
+  const isNada = school.id === 'nada';
 
-  // 全解答結果を集約
   const questionMap = new Map();
   allQuestions.forEach((q) => questionMap.set(q.id, q));
 
   let totalWeightedScore = 0;
   let totalWeightedMax = 0;
+  let schoolEligibleAnswered = 0;
 
-  // 4軸レーダーチャート用スコア (0-100)
-  const axisStats = {
-    knowledge: { correct: 0, total: 0 }, // 知識・網羅性
-    thinking: { correct: 0, total: 0 },  // 考察・応用力 (advanced)
-    expression: { correct: 0, total: 0 },// 記述・表現力 (descriptive)
-    speed: { correct: 0, total: 0 },     // 安定度・正答率
+  // 4軸レーダーチャート用統計（学校の重視度に応じた個別計算）
+  const radarRaw = {
+    knowledge: { score: 0, max: 0 },
+    thinking: { score: 0, max: 0 },
+    expression: { score: 0, max: 0 },
+    stability: { score: 0, max: 0 },
   };
 
-  // 分野別スコア
+  // 分野別スコア（灘の場合は社会を対象外・除外）
   const subjectScores = {
     物理: { correct: 0, total: 0, weight: school.weights['物理'] || 1.0 },
     化学: { correct: 0, total: 0, weight: school.weights['化学'] || 1.0 },
     生物: { correct: 0, total: 0, weight: school.weights['生物'] || 1.0 },
     地学: { correct: 0, total: 0, weight: school.weights['地学'] || 1.0 },
-    歴史: { correct: 0, total: 0, weight: school.weights['歴史'] || 1.0 },
-    地理: { correct: 0, total: 0, weight: school.weights['地理'] || 1.0 },
   };
 
-  // タグ別スコア
+  if (!isNada) {
+    subjectScores['歴史'] = { correct: 0, total: 0, weight: school.weights['歴史'] || 1.0 };
+    subjectScores['地理'] = { correct: 0, total: 0, weight: school.weights['地理'] || 1.0 };
+  }
+
   const tagStats = {};
 
   (history || []).forEach((entry) => {
     (entry.results || []).forEach((r) => {
       const q = questionMap.get(r.id) || r;
+      const subj = q.subject || '理科';
       const cat = q.category || 'その他';
       const diff = q.difficulty || 'standard';
       const qType = q.questionType || 'choice';
 
-      const catWeight = school.weights[cat] || 1.0;
+      // 灘の場合は社会の解答データを合否・レーダー判定から除外する
+      if (isNada && subj === '社会') {
+        return;
+      }
+
+      schoolEligibleAnswered++;
+
+      const catWeight = school.weights[cat] ?? 1.0;
       const diffWeight = school.difficultyWeights[diff] || 1.0;
       const typeWeight = school.questionTypeWeights[qType] || 1.0;
       const combinedWeight = catWeight * diffWeight * typeWeight;
@@ -295,22 +313,24 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
         totalWeightedScore += combinedWeight;
       }
 
-      // レーダー軸集計
-      axisStats.knowledge.total++;
-      if (r.isCorrect) axisStats.knowledge.correct++;
+      // レーダーチャート①：基礎知識網羅率（学校の頻出分野での正答）
+      const kWeight = catWeight * (diff === 'basic' ? 1.5 : 1.0);
+      radarRaw.knowledge.max += kWeight;
+      if (r.isCorrect) radarRaw.knowledge.score += kWeight;
 
-      if (diff === 'advanced') {
-        axisStats.thinking.total++;
-        if (r.isCorrect) axisStats.thinking.correct++;
-      }
+      // レーダーチャート②：応用考察力（advanced・重要単元の難問）
+      const thWeight = diffWeight * (diff === 'advanced' ? 2.5 : diff === 'standard' ? 1.0 : 0.3);
+      radarRaw.thinking.max += thWeight;
+      if (r.isCorrect) radarRaw.thinking.score += thWeight;
 
-      if (qType === 'descriptive') {
-        axisStats.expression.total++;
-        if (r.isCorrect) axisStats.expression.correct++;
-      }
+      // レーダーチャート③：記述表現力（学校の記述重視度掛け合わせ）
+      const exWeight = typeWeight * (qType === 'descriptive' ? 3.0 : qType === 'input' ? 1.5 : 0.5);
+      radarRaw.expression.max += exWeight;
+      if (r.isCorrect) radarRaw.expression.score += exWeight;
 
-      axisStats.speed.total++;
-      if (r.isCorrect) axisStats.speed.correct++;
+      // レーダーチャート④：安定度
+      radarRaw.stability.max += combinedWeight;
+      if (r.isCorrect) radarRaw.stability.score += combinedWeight;
 
       // 分野別
       if (subjectScores[cat]) {
@@ -318,7 +338,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
         if (r.isCorrect) subjectScores[cat].correct++;
       }
 
-      // 頻出タグ集計
+      // 頻出タグ
       const tag = q.subCategory || q.knowledgeTag;
       if (tag) {
         if (!tagStats[tag]) tagStats[tag] = { tag, correct: 0, total: 0, category: cat };
@@ -330,38 +350,60 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
 
   // 総合到達度スコア (0-100%)
   const rawWeightedAcc = totalWeightedMax > 0 ? (totalWeightedScore / totalWeightedMax) * 100 : 0;
-  // 経験問題数によるペナルティ補正（問題数が極端に少ないときは100%に張り付かないようにする）
-  const totalAnswered = (history || []).reduce((acc, h) => acc + (h.total || 0), 0);
-  const experienceFactor = Math.min(1.0, totalAnswered / 60); // 60問解いて本来のスコア
+  // 経験問題数によるペナルティ補正（灘は理科だけで40問、他校は60問で本来のスコア）
+  const requiredCount = isNada ? 40 : 60;
+  const experienceFactor = Math.min(1.0, schoolEligibleAnswered / requiredCount);
   const progressScore = Math.round(rawWeightedAcc * (0.4 + 0.6 * experienceFactor));
 
-  // 合否判定ランク
+  // 合否判定ランク (A, B, C, D を明確に表示)
   let rank = 'D';
-  let rankLabel = '要特訓';
-  let rankColor = 'text-rose-500 bg-rose-50 border-rose-200';
+  let rankLabel = 'D判定：要特訓';
+  let rankColor = 'text-rose-600 bg-rose-50 border-rose-300';
   const diffToTarget = school.targetScore - progressScore;
 
   if (progressScore >= school.targetScore) {
     rank = 'A';
-    rankLabel = '合格安全圏 🎉';
+    rankLabel = 'A判定：合格安全圏 🎉';
     rankColor = 'text-emerald-700 bg-emerald-50 border-emerald-300';
   } else if (progressScore >= school.targetScore - 7) {
     rank = 'B';
-    rankLabel = '合格射程圏 🎯';
+    rankLabel = 'B判定：合格射程圏 🎯';
     rankColor = 'text-blue-700 bg-blue-50 border-blue-300';
   } else if (progressScore >= school.targetScore - 15) {
     rank = 'C';
-    rankLabel = 'あと一歩 🧗';
+    rankLabel = 'C判定：あと一歩 🧗';
     rankColor = 'text-amber-700 bg-amber-50 border-amber-300';
   }
 
-  // 4軸レーダーチャートデータ (0-100)
-  const calcAcc = (st, fallback) => (st.total > 0 ? Math.round((st.correct / st.total) * 100) : fallback);
+  // 4軸レーダーチャートデータ（学校ごとに重みが異なるため各校で明確に数値が変動します）
+  const calcRadarValue = (raw, schoolBaseline) => {
+    if (raw.max <= 0) return schoolBaseline;
+    const rate = (raw.score / raw.max) * 100;
+    return Math.min(100, Math.max(10, Math.round(rate * (0.3 + 0.7 * experienceFactor))));
+  };
+
+  // 各校の要求水準に合わせたベースライン
   const radarData = [
-    { subject: '基礎網羅率', value: Math.min(100, Math.round((totalAnswered / 120) * 100)), fullMark: 100 },
-    { subject: '応用考察力', value: calcAcc(axisStats.thinking, 40), fullMark: 100 },
-    { subject: '記述表現力', value: calcAcc(axisStats.expression, 35), fullMark: 100 },
-    { subject: '全体安定度', value: calcAcc(axisStats.speed, 50), fullMark: 100 },
+    {
+      subject: '基礎網羅率',
+      value: calcRadarValue(radarRaw.knowledge, 35),
+      fullMark: 100,
+    },
+    {
+      subject: '応用考察力',
+      value: calcRadarValue(radarRaw.thinking, 30),
+      fullMark: 100,
+    },
+    {
+      subject: '記述表現力',
+      value: calcRadarValue(radarRaw.expression, 25),
+      fullMark: 100,
+    },
+    {
+      subject: '全体安定度',
+      value: calcRadarValue(radarRaw.stability, 40),
+      fullMark: 100,
+    },
   ];
 
   // 分野別達成状況リスト
@@ -380,10 +422,10 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     };
   });
 
-  // 合格のためのToDoアクションリスト（具体的残り問題数）を自動生成
+  // 合格ToDoアクションリスト
   const todos = [];
 
-  // ToDo 1: 最重点分野で正答率が足りないもの
+  // 1. 最重点分野
   const weakPriorityCat = categoryStatus
     .filter((c) => c.isPriority && c.total >= 0 && c.accuracy < school.targetScore)
     .sort((a, b) => a.accuracy - b.accuracy)[0];
@@ -394,16 +436,16 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       id: 'todo_cat',
       badge: '最重要分野',
       title: `${school.name}最頻出の「${weakPriorityCat.category}」をあと${targetQCount}問マスター`,
-      description: `現在正答率 ${weakPriorityCat.accuracy}% (合格ライン ${school.targetScore}%)。重点配点分野の底上げが最優先です。`,
+      description: `現在正答率 ${weakPriorityCat.accuracy}% (合格目標 ${school.targetScore}%)。重点配点分野の底上げが最優先です。`,
       quizFilter: {
         category: weakPriorityCat.category,
         limit: 5,
-        difficulty: 'standard',
+        difficulty: isNada ? 'advanced' : 'standard',
       },
     });
   }
 
-  // ToDo 2: 志望校の頻出タグでまだ解いていない／正答率が低いもの
+  // 2. 頻出単元
   const targetTag = school.focusTags.find((tag) => {
     const stat = tagStats[tag];
     return !stat || stat.total < 5 || (stat.correct / stat.total) < 0.75;
@@ -414,7 +456,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       id: 'todo_tag',
       badge: '出題頻度★★★',
       title: `合否を分ける名物単元「${targetTag}」を特訓`,
-      description: `過去問で毎年問われる重要テーマです。基本〜応用まで確実に得点源にしましょう。`,
+      description: `${school.name}の過去問で頻出の重要単元です。確実な得点源に仕上げましょう。`,
       quizFilter: {
         subCategory: targetTag,
         limit: 5,
@@ -423,24 +465,25 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     });
   }
 
-  // ToDo 3: 応用問題 (advanced) または 記述問題 (descriptive) の補強
-  if (axisStats.thinking.total < 8 || (axisStats.thinking.correct / Math.max(1, axisStats.thinking.total)) < 0.7) {
+  // 3. 学校に応じた形式・難度特訓
+  if (isNada || school.difficultyWeights.advanced >= 1.6) {
     todos.push({
       id: 'todo_advanced',
-      badge: '合否決定問題',
-      title: `難関突破のための「応用・実験考察問題」に挑戦`,
-      description: `初見の実験データや複雑な計算問題に慣れることで、上位合格圏への壁を突破します。`,
+      badge: `${school.name}必須難問`,
+      title: `合否を決める「応用・実験データ考察問題」に挑戦`,
+      description: `灘や最難関校突破には初見の実験考察を解き切る力が不可欠です。`,
       quizFilter: {
         difficulty: 'advanced',
+        category: isNada ? '物理' : undefined,
         limit: 5,
       },
     });
-  } else if (axisStats.expression.total < 6) {
+  } else if (school.questionTypeWeights.descriptive >= 1.4) {
     todos.push({
       id: 'todo_descriptive',
-      badge: '記述力強化',
+      badge: '記述力養成',
       title: `差がつく「短文記述トレーニング」を5問クリア`,
-      description: `部分点を確実に拾うためのキーワード記述力を鍛えます。`,
+      description: `${school.name}で頻出の理由・背景説明記述で満点を狙います。`,
       quizFilter: {
         questionType: 'descriptive',
         limit: 5,
@@ -448,15 +491,17 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     });
   }
 
-  // ToDo 4: 弱点ノートからの復習
-  if (wrongAnswers && wrongAnswers.length > 0) {
+  // 4. 弱点復習
+  const relevantWrong = (wrongAnswers || []).filter((w) => !isNada || w.subject === '理科');
+  if (relevantWrong.length > 0) {
     todos.push({
       id: 'todo_wrong',
       badge: 'ミス撲滅',
       title: `弱点復習ノートから未解消のミスを5問解き直す`,
-      description: `現在 ${wrongAnswers.length}問のミスが残っています。二度と同じ間違いをしないことが最大の近道です。`,
+      description: `現在 ${relevantWrong.length}問のミスが残っています。同じ間違いをゼロにすることが合格への最短ルートです。`,
       quizFilter: {
         mode: 'review',
+        subject: isNada ? '理科' : undefined,
         limit: 5,
       },
     });
@@ -464,13 +509,14 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
 
   return {
     school,
+    isNada,
     progressScore,
     targetScore: school.targetScore,
     diffToTarget,
     rank,
     rankLabel,
     rankColor,
-    totalAnswered,
+    totalAnswered: schoolEligibleAnswered,
     radarData,
     categoryStatus,
     todos,

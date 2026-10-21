@@ -178,8 +178,9 @@ const TargetSchoolPage = () => {
                 </span>
               </div>
 
-              <div className="mt-3 px-4 py-1.5 rounded-full border text-xs font-black bg-white/15 border-white/30 text-white">
-                判定：{report.rankLabel}
+              <div className="mt-3 px-4 py-2 rounded-2xl border text-sm font-black bg-white/20 border-white/40 text-white shadow-sm flex items-center justify-center gap-2">
+                <span className="text-xl">🏆</span>
+                <span>{report.rankLabel}</span>
               </div>
             </div>
 
@@ -191,6 +192,13 @@ const TargetSchoolPage = () => {
                 </span>
                 <h3 className="text-lg font-extrabold mt-0.5">{school.tagline}</h3>
               </div>
+
+              {report.isNada && (
+                <div className="px-3.5 py-2 rounded-xl bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold flex items-center gap-2">
+                  <span>💡</span>
+                  <span>灘校は国・算・理の3教科入試のため、社会の出題はなく理科4分野のみで判定します。</span>
+                </div>
+              )}
 
               <ul className="space-y-1.5 text-xs md:text-sm text-indigo-100/90 leading-relaxed bg-white/5 p-4 rounded-2xl border border-white/10">
                 {school.features.map((feat, i) => (
