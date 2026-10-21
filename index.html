@@ -8,25 +8,28 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="中学受験マスター2" />
-    <link rel="manifest" href="./assets/manifest-CkrdWGrC-CkrdWGrC-CkrdWGrC.json" />
-    <link rel="icon" type="image/svg+xml" href="./assets/icon-CDHXSSSR-CDHXSSSR-CDHXSSSR.svg" />
-    <link rel="apple-touch-icon" href="./assets/icon-CDHXSSSR-CDHXSSSR-CDHXSSSR.svg" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <title>中学受験マスター2 - AI作問＆弱点コーチング</title>
-    <script type="module" crossorigin src="./assets/index-BkM8S3mn.js"></script>
+    <script type="module" crossorigin src="./assets/index-Ci_zBCHY.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-B9nhrJys.css">
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
     <div id="root"></div>
     <script>
-      // HTTPS環境（GitHub Pagesなど）でのみService Workerを登録して完全オフライン化
-      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js').then((reg) => {
-            console.log('✅ PWA Service Worker 登録完了（完全オフライン対応）', reg.scope);
-          }).catch((err) => {
-            console.warn('Service Worker 登録スキップ:', err);
-          });
-        });
+      // 古いService Workerのキャッシュを自動で完全強制登録解除
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const reg of registrations) {
+            reg.unregister();
+          }
+        }).catch(() => {});
+      }
+      if ('caches' in window) {
+        caches.keys().then((names) => {
+          for (const name of names) {
+            caches.delete(name);
+          }
+        }).catch(() => {});
       }
     </script>
   </body>
