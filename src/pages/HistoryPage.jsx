@@ -89,16 +89,27 @@ const HistoryPage = () => {
       const count = entry.total || 0;
       dailyMap[date].total += count;
 
+      // ラベルは出題条件(filters)ではなく「実際に解いた問題」の分野から判定する
+      // （条件と中身がズレた過去の記録も正しく表示されるようにするため）
       let categoryLabel = 'その他';
-      if (entry.filters?.category) {
+      const results = Array.isArray(entry.results) ? entry.results : [];
+      const cats = [...new Set(results.map((r) => r.category).filter(Boolean))];
+      const subjs = [...new Set(results.map((r) => r.subject).filter(Boolean))];
+      if (entry.mode === 'review') {
+        categoryLabel = '復習';
+      } else if (cats.length === 1) {
+        categoryLabel = cats[0];
+      } else if (subjs.length === 1) {
+        categoryLabel = `${subjs[0]}総合`;
+      } else if (subjs.length > 1) {
+        categoryLabel = '理社総合';
+      } else if (entry.filters?.category) {
         categoryLabel = entry.filters.category;
       } else if (entry.filters?.subject) {
         categoryLabel =
           entry.mode === 'combined'
             ? `${entry.filters.subject}総合`
             : entry.filters.subject;
-      } else if (entry.mode === 'review') {
-        categoryLabel = '復習';
       }
 
       if (!dailyMap[date][categoryLabel]) dailyMap[date][categoryLabel] = 0;

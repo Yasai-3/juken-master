@@ -53,8 +53,10 @@ const TargetSchoolPage = () => {
         limit: todo.quizFilter.limit || 5,
         difficulty: todo.quizFilter.difficulty || 'all',
         questionType: todo.quizFilter.questionType || 'all',
+        subject: todo.quizFilter.subject,
         category: todo.quizFilter.category,
         subCategory: todo.quizFilter.subCategory,
+        source: 'target_school_todo',
       },
     });
   };

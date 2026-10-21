@@ -395,6 +395,25 @@ export const TARGET_SCHOOLS = [
 ];
 
 /**
+ * 単元名の正規化（"05. 運動と力…" のような番号プレフィックスを除去して比較できるようにする）
+ */
+export const normalizeSubCategory = (s) =>
+  String(s || '')
+    .replace(/^\s*\d+\s*[.．、]\s*/, '')
+    .trim();
+
+/** 分野 → 教科 の対応表 */
+const CATEGORY_TO_SUBJECT = {
+  物理: '理科',
+  化学: '理科',
+  生物: '理科',
+  地学: '理科',
+  歴史: '社会',
+  地理: '社会',
+  公民: '社会',
+};
+
+/**
  * 志望校に対する学習者の到達度・判定・ToDoを計算するエンジン
  */
 export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, allQuestions) {
@@ -490,8 +509,8 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
         if (r.isCorrect) subjectScores[cat].correct++;
       }
 
-      // 頻出タグ
-      const tag = q.subCategory || q.knowledgeTag;
+      // 頻出タグ（番号プレフィックスを除去した単元名で集計）
+      const tag = normalizeSubCategory(q.subCategory);
       if (tag) {
         if (!tagStats[tag]) tagStats[tag] = { tag, correct: 0, total: 0, category: cat };
         tagStats[tag].total++;
@@ -661,83 +680,136 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   });
 
   // 合格ToDoアクションリスト
+  // ※ToDoの表示内容（教科・分野・単元・難易度・形式）と、実際に出題される問題が必ず一致するよう
+  //   quizFilter には subject / category / subCategory を明示的に指定する
   const todos = [];
+  const TODO_LIMIT = 5;
+  const DIFF_LABEL = { basic: '基礎', standard: '標準', advanced: '応用・難問' };
+
+  // 灘は社会を出題対象外にするため、問題プールも理科のみに限定
+  const eligibleQuestions = (allQuestions || []).filter(
+    (q) => !isNada || (q.subject || '理科') === '理科'
+  );
+  const countQuestions = (f) =>
+    eligibleQuestions.filter(
+      (q) =>
+        (!f.subject || q.subject === f.subject) &&
+        (!f.category || q.category === f.category) &&
+        (!f.subCategory || normalizeSubCategory(q.subCategory) === f.subCategory) &&
+        (!f.difficulty || q.difficulty === f.difficulty) &&
+        (!f.questionType || q.questionType === f.questionType)
+    ).length;
 
   // 1. 最重点分野
   const weakPriorityCat = categoryStatus
-    .filter((c) => c.isPriority && c.total >= 0 && c.accuracy < school.targetScore)
+    .filter((c) => c.isPriority && c.accuracy < school.targetScore)
     .sort((a, b) => a.accuracy - b.accuracy)[0];
 
   if (weakPriorityCat) {
-    const targetQCount = Math.max(5, 12 - weakPriorityCat.total);
+    const cat = weakPriorityCat.category;
+    const subj = CATEGORY_TO_SUBJECT[cat];
+    // 灘・筑駒は応用問題で特訓。ただし該当分野の応用問題が不足する場合は全難易度から出題
+    let diff = isNada || isTsukukoma ? 'advanced' : 'standard';
+    if (countQuestions({ subject: subj, category: cat, difficulty: diff }) < TODO_LIMIT) {
+      diff = 'all';
+    }
+    const remaining = Math.max(0, 12 - weakPriorityCat.total);
     todos.push({
       id: 'todo_cat',
-      badge: '最重要分野',
-      title: `${school.name}最頻出の「${weakPriorityCat.category}」をあと${targetQCount}問マスター`,
-      description: `現在正答率 ${weakPriorityCat.accuracy}% (合格目標 ${school.targetScore}%)。重点配点分野の底上げが最優先です。`,
+      badge: `最重要分野（${subj}）`,
+      title: `${school.name}最頻出の「${subj}・${cat}」${diff !== 'all' ? `${DIFF_LABEL[diff]}問題` : ''}を${TODO_LIMIT}問特訓`,
+      description: `現在正答率 ${weakPriorityCat.accuracy}%（合格目標 ${school.targetScore}%）・解答数 ${weakPriorityCat.total}問${
+        remaining > 0 ? `（安定判定まであと${remaining}問）` : ''
+      }。重点配点分野の底上げが最優先です。`,
       quizFilter: {
-        category: weakPriorityCat.category,
-        limit: 5,
-        difficulty: isNada || isTsukukoma ? 'advanced' : 'standard',
+        subject: subj,
+        category: cat,
+        difficulty: diff,
+        limit: TODO_LIMIT,
       },
     });
   }
 
-  // 2. 頻出単元
+  // 2. 頻出単元（実際に問題データが存在する単元のみを対象にする）
+  const tagIndex = {};
+  eligibleQuestions.forEach((q) => {
+    const key = normalizeSubCategory(q.subCategory);
+    if (key && !tagIndex[key]) tagIndex[key] = { subject: q.subject, category: q.category };
+  });
+  const availableTags = school.focusTags
+    .map(normalizeSubCategory)
+    .filter((tag) => tagIndex[tag]);
   const targetTag =
-    school.focusTags.find((tag) => {
+    availableTags.find((tag) => {
       const stat = tagStats[tag];
       return !stat || stat.total < 5 || stat.correct / stat.total < 0.75;
-    }) || school.focusTags[0];
+    }) || availableTags[0];
 
   if (targetTag) {
+    const info = tagIndex[targetTag];
     todos.push({
       id: 'todo_tag',
-      badge: '出題頻度★★★',
+      badge: `出題頻度★★★（${info.subject}・${info.category}）`,
       title: `合否を分ける名物単元「${targetTag}」を特訓`,
-      description: `${school.name}の過去問で頻出の重要単元です。確実な得点源に仕上げましょう。`,
+      description: `${school.name}の過去問で頻出の重要単元です（${info.subject} ＞ ${info.category}）。確実な得点源に仕上げましょう。`,
       quizFilter: {
+        subject: info.subject,
+        category: info.category,
         subCategory: targetTag,
-        limit: 5,
         difficulty: 'all',
+        limit: TODO_LIMIT,
       },
     });
   }
 
   // 3. 難度・形式特訓
   if (isNada || isTsukukoma) {
+    // 灘：物理・化学の応用問題（ToDo①と重複しない分野を優先）／筑駒：理科・社会の応用問題
+    const nadaCat = isNada
+      ? ['物理', '化学'].find(
+          (c) =>
+            c !== weakPriorityCat?.category &&
+            countQuestions({ subject: '理科', category: c, difficulty: 'advanced' }) >= TODO_LIMIT
+        )
+      : undefined;
     todos.push({
       id: 'todo_advanced',
       badge: `${school.name}必須難問`,
-      title: `合否を決める「応用・実験データ考察問題」に挑戦`,
-      description: `灘や筑駒の合否は難問の突破力で決まります。初見の実験考察や複雑な計算を解き切る特訓です。`,
+      title: isNada
+        ? `合否を決める「理科${nadaCat ? `・${nadaCat}` : ''}」の応用・実験考察問題に挑戦`
+        : `合否を決める「理科・社会」の応用・資料考察問題に挑戦`,
+      description: isNada
+        ? `灘の合否は物理・化学の難問突破力で決まります。初見の実験考察や複雑な計算を解き切る特訓です。`
+        : `筑駒の合否は難問の突破力で決まります。理科・社会の応用問題から出題します。`,
       quizFilter: {
+        subject: isNada ? '理科' : undefined,
+        category: nadaCat,
         difficulty: 'advanced',
-        category: isNada ? '物理' : undefined,
-        limit: 5,
+        limit: TODO_LIMIT,
       },
     });
   } else if (school.questionTypeWeights.descriptive >= 1.5) {
     todos.push({
       id: 'todo_descriptive',
       badge: '記述力養成',
-      title: `差がつく「短文記述トレーニング」を5問クリア`,
+      title: `差がつく「短文記述トレーニング（理科・社会）」を${TODO_LIMIT}問クリア`,
       description: `${school.name}で頻出の理由・背景説明記述で満点を狙います。`,
       quizFilter: {
         questionType: 'descriptive',
-        limit: 5,
+        difficulty: 'all',
+        limit: TODO_LIMIT,
       },
     });
   } else {
     todos.push({
       id: 'todo_speed',
       badge: '高得点勝負',
-      title: `落とせない標準知識・語句入力を素早く解く特訓`,
+      title: `落とせない「標準レベルの語句入力（理科・社会）」を${TODO_LIMIT}問特訓`,
       description: `${school.name}は高得点争い。ケアレスミスをゼロにするスピード演習です。`,
       quizFilter: {
         difficulty: 'standard',
         questionType: 'input',
-        limit: 5,
+        limit: TODO_LIMIT,
       },
     });
   }
@@ -748,12 +820,13 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     todos.push({
       id: 'todo_wrong',
       badge: 'ミス撲滅',
-      title: `弱点復習ノートから未解消のミスを5問解き直す`,
+      title: `弱点復習ノートから未解消の${isNada ? '理科の' : ''}ミスを${TODO_LIMIT}問解き直す`,
       description: `現在 ${relevantWrong.length}問のミスが残っています。同じ間違いをゼロにすることが合格への最短ルートです。`,
       quizFilter: {
         mode: 'review',
         subject: isNada ? '理科' : undefined,
-        limit: 5,
+        difficulty: 'all',
+        limit: TODO_LIMIT,
       },
     });
   }

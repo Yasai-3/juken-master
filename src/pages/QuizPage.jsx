@@ -30,47 +30,53 @@ const QuizPage = () => {
   useEffect(() => {
     const settings = getSettings();
     const allQuestions = getAllQuestions();
-    let filtered = [];
+    let pool = [];
 
     if (mode === 'review') {
-      const allWrong = getWrongAnswers() || [];
-      filtered = filters.subject
-        ? allWrong.filter((q) => q.subject === filters.subject)
-        : allWrong;
-    } else if (mode === 'specific') {
-      const { subject, category, subCategory } = filters;
-      filtered = allQuestions.filter(
-        (q) =>
-          q.subject === subject &&
-          q.category === category &&
-          q.subCategory === subCategory
-      );
-    } else if (mode === 'combined') {
-      const { subject, category } = filters;
-      filtered = allQuestions.filter((q) => {
-        if (subject && q.subject !== subject) return false;
-        if (category && q.category !== category) return false;
-        return true;
-      });
+      pool = getWrongAnswers() || [];
     } else if (mode === 'custom_list' && Array.isArray(filters.customQuestionsList)) {
-      filtered = filters.customQuestionsList;
+      pool = filters.customQuestionsList;
     } else {
-      filtered = [...allQuestions];
+      pool = [...allQuestions];
     }
 
-    // 難易度フィルター
+    let filtered = [...pool];
+
+    // 単元名の比較用正規化（"05. 運動と力…" → "運動と力…"）
+    const normSub = (s) =>
+      String(s || '')
+        .replace(/^\s*\d+\s*[.．、]\s*/, '')
+        .trim();
+
+    // ① 教科フィルター (理科 / 社会)
+    if (filters.subject && filters.subject !== 'all') {
+      filtered = filtered.filter((q) => q.subject === filters.subject);
+    }
+
+    // ② 分野・カテゴリフィルター (物理 / 化学 / 生物 / 地学 / 歴史 / 地理)
+    if (filters.category && filters.category !== 'all') {
+      filtered = filtered.filter((q) => q.category === filters.category);
+    }
+
+    // ③ 単元・サブカテゴリフィルター（番号プレフィックスの有無を吸収して完全一致）
+    if (filters.subCategory && filters.subCategory !== 'all') {
+      const targetSub = normSub(filters.subCategory);
+      filtered = filtered.filter((q) => normSub(q.subCategory) === targetSub);
+    }
+
+    // ④ 難易度フィルター
     if (filters.difficulty && filters.difficulty !== 'all') {
       filtered = filtered.filter((q) => q.difficulty === filters.difficulty);
     }
 
-    // 問題形式フィルター
+    // ⑤ 問題形式フィルター
     if (filters.questionType && filters.questionType !== 'all') {
-      if (filters.questionType === 'non_choice') {
-        filtered = filtered.filter((q) => q.questionType !== 'choice');
-      } else {
-        filtered = filtered.filter((q) => q.questionType === filters.questionType);
-      }
+      filtered =
+        filters.questionType === 'non_choice'
+          ? filtered.filter((q) => q.questionType !== 'choice')
+          : filtered.filter((q) => q.questionType === filters.questionType);
     }
+    // ※条件に合う問題が0問の場合は、別教科・別分野の問題を混ぜず「条件に合う問題がありません」を表示する
 
     const limit = filters.limit || 10;
     const shuffled = [...filtered]
