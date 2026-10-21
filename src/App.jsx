@@ -1,18 +1,11 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import QuizPage from './pages/QuizPage';
-import HistoryPage from './pages/HistoryPage';
-import AdminPage from './pages/AdminPage';
-import { useAppLock, AppLockScreen } from './components/AppLock';
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import QuizPage from "./pages/QuizPage";
+import HistoryPage from "./pages/HistoryPage";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
-  const { isUnlocked, unlock } = useAppLock();
-
-  if (!isUnlocked) {
-    return <AppLockScreen onUnlock={unlock} />;
-  }
-
   return (
     <Router>
       <Routes>
