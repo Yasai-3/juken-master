@@ -182,6 +182,12 @@ const TargetSchoolPage = () => {
                 <span className="text-xl">🏆</span>
                 <span>{report.rankLabel}</span>
               </div>
+
+              {report.severeWarning && (
+                <div className="mt-2.5 p-2.5 rounded-xl bg-rose-500/30 border border-rose-300/40 text-rose-100 text-xs font-semibold leading-relaxed">
+                  {report.severeWarning}
+                </div>
+              )}
             </div>
 
             {/* Right: Strategy & Radar */}
@@ -209,22 +215,47 @@ const TargetSchoolPage = () => {
                 ))}
               </ul>
 
-              {/* 4-Axis Radar Chart */}
-              <div className="h-44 w-full pt-1">
-                <ResponsiveContainer width="100%" height="100%">
-                  <RadarChart data={report.radarData}>
-                    <PolarGrid stroke="#ffffff30" />
-                    <PolarAngleAxis dataKey="subject" stroke="#cbd5e1" tick={{ fontSize: 11 }} />
-                    <PolarRadiusAxis domain={[0, 100]} stroke="transparent" />
-                    <Radar
-                      name="到達力"
-                      dataKey="value"
-                      stroke="#fbbf24"
-                      fill="#fbbf24"
-                      fillOpacity={0.4}
-                    />
-                  </RadarChart>
-                </ResponsiveContainer>
+              {/* 4-Axis Radar Chart (目標水準 vs あなたの現在地) */}
+              <div className="bg-black/15 p-3 rounded-2xl border border-white/10">
+                <div className="h-48 w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <RadarChart data={report.radarData}>
+                      <PolarGrid stroke="#ffffff30" />
+                      <PolarAngleAxis dataKey="subject" stroke="#cbd5e1" tick={{ fontSize: 11, fontWeight: 'bold' }} />
+                      <PolarRadiusAxis domain={[0, 100]} stroke="transparent" />
+                      {/* 目標水準（点線） */}
+                      <Radar
+                        name="合格目安目標"
+                        dataKey="target"
+                        stroke="#94a3b8"
+                        strokeWidth={1.5}
+                        strokeDasharray="4 3"
+                        fill="#94a3b8"
+                        fillOpacity={0.15}
+                      />
+                      {/* あなたの現在地 */}
+                      <Radar
+                        name="あなたの現在地"
+                        dataKey="current"
+                        stroke="#fbbf24"
+                        strokeWidth={2}
+                        fill="#fbbf24"
+                        fillOpacity={0.45}
+                      />
+                    </RadarChart>
+                  </ResponsiveContainer>
+                </div>
+                <div className="flex justify-center items-center gap-4 text-xs mt-1 text-slate-300 font-bold">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-3 h-0.5 border-t-2 border-dashed border-slate-300"></span>
+                    <span className="w-2 h-2 rounded-full bg-slate-400 opacity-60"></span>
+                    <span className="text-slate-300">合格目安ライン</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-sm"></span>
+                    <span className="text-amber-300">あなたの現在地</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
