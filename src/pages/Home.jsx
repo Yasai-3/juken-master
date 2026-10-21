@@ -337,6 +337,26 @@ const Home = () => {
 
       {/* Review & Main Action Buttons */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* NEW: 志望校別 到達度 ＆ 合格ナビ */}
+        <button
+          type="button"
+          onClick={() => navigate('/target-schools')}
+          className="md:col-span-2 p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl shadow-lg hover:opacity-95 transition-all font-black text-lg md:text-xl flex items-center justify-between px-6 border border-amber-300"
+        >
+          <div className="flex items-center gap-3 text-left">
+            <span className="text-3xl bg-white/20 p-2 rounded-xl">🎯</span>
+            <div>
+              <div className="text-xs font-extrabold uppercase tracking-wider text-amber-100">
+                灘・開成・東大寺・西大和・星光・高槻
+              </div>
+              <div>志望校別 到達度 ＆ 合格ToDoナビ</div>
+            </div>
+          </div>
+          <span className="text-xs md:text-sm font-extrabold bg-white text-orange-600 px-4 py-2 rounded-xl shadow-sm">
+            到達度をチェック →
+          </span>
+        </button>
+
         <button
           type="button"
           onClick={() =>

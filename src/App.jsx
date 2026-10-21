@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import QuizPage from "./pages/QuizPage";
 import HistoryPage from "./pages/HistoryPage";
 import AdminPage from "./pages/AdminPage";
+import TargetSchoolPage from "./pages/TargetSchoolPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/target-schools" element={<TargetSchoolPage />} />
       </Routes>
     </Router>
   );
