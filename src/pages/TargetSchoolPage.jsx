@@ -94,9 +94,9 @@ const TargetSchoolPage = () => {
         {/* School Selector Tabs */}
         <div className="bg-white dark:bg-gray-800 p-3 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
           <div className="text-xs font-extrabold text-gray-400 mb-2 px-1">
-            🏫 志望校を選択（関西最難関 ＆ 開成）:
+            🏫 志望校を選択（最難関 8校）:
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2">
             {TARGET_SCHOOLS.map((s) => {
               const isSelected = s.id === selectedSchoolId;
               return (

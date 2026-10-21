@@ -347,7 +347,7 @@ const Home = () => {
             <span className="text-3xl bg-white/20 p-2 rounded-xl">🎯</span>
             <div>
               <div className="text-xs font-extrabold uppercase tracking-wider text-amber-100">
-                灘・開成・東大寺・西大和・星光・高槻
+                灘・筑駒・開成・聖光・東大寺・西大和・星光・高槻
               </div>
               <div>志望校別 到達度 ＆ 合格ToDoナビ</div>
             </div>
