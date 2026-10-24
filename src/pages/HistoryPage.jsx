@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   getHistory,
   clearHistory,
@@ -33,11 +33,18 @@ import {
 
 const HistoryPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [dailyData, setDailyData] = useState([]);
   const [accuracyData, setAccuracyData] = useState([]);
   const [subAccData, setSubAccData] = useState([]);
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [analysis, setAnalysis] = useState(null);
+
+  // Active Tab state ('overview' | 'units' | 'wrongs')
+  const [activeTab, setActiveTab] = useState(location.state?.tab || 'overview');
+  const [unitSubjectFilter, setUnitSubjectFilter] = useState('all');
+  const [wrongSubjectFilter, setWrongSubjectFilter] = useState('all');
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // AI Report state
   const [aiReport, setAiReport] = useState(null);
@@ -54,7 +61,17 @@ const HistoryPage = () => {
 
   useEffect(() => {
     loadData();
+
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 250);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const loadData = () => {
     const hist = getHistory() || [];
@@ -647,7 +664,63 @@ const HistoryPage = () => {
           </div>
         )}
 
-        {/* Section 1: オフライン自動学習アドバイス（今後どの問題・知識を伸ばせばよいか） */}
+        {/* Tab Navigation */}
+        <div className="sticky top-2 z-30 bg-slate-100/95 dark:bg-gray-900/95 backdrop-blur-md pt-1 pb-1">
+          <div className="flex border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-2xl p-1.5 shadow-sm">
+            <button
+              type="button"
+              onClick={() => setActiveTab('overview')}
+              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'overview'
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
+              }`}
+            >
+              <span className="text-base sm:text-lg">📊</span>
+              <span className="truncate">総合分析・アドバイス</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('units')}
+              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'units'
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
+              }`}
+            >
+              <span className="text-base sm:text-lg">📋</span>
+              <span className="truncate">単元別 詳細分析</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('wrongs')}
+              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'wrongs'
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
+              }`}
+            >
+              <span className="text-base sm:text-lg">📝</span>
+              <span className="truncate">弱点復習ノート</span>
+              <span
+                className={`ml-0.5 px-2 py-0.5 rounded-full text-[11px] font-black ${
+                  activeTab === 'wrongs'
+                    ? 'bg-white text-indigo-700'
+                    : wrongAnswers.length > 0
+                      ? 'bg-rose-500 text-white'
+                      : 'bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-300'
+                }`}
+              >
+                {wrongAnswers.length}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* ===================== TAB 1: 総合分析・アドバイス ===================== */}
+        {activeTab === 'overview' && (
+          <div className="space-y-8 animate-fade-in">
+            {/* Section 1: オフライン自動学習アドバイス（今後どの問題・知識を伸ばせばよいか） */}
         {analysis && (
           <div className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 text-white rounded-2xl p-6 md:p-8 shadow-xl">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
@@ -975,137 +1048,383 @@ const HistoryPage = () => {
             </div>
           </div>
         </div>
+      </div>
+    )}
 
-        {/* Section 5: 単元別 詳細分析（4択 vs 語句・記述の比較付き） */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md">
-          <h2 className="text-lg font-extrabold text-gray-800 dark:text-gray-100 mb-4">
-            📋 単元別 詳細分析（選択問題 vs 入力・記述問題の定着比較）
-          </h2>
-          {subAccData.length === 0 ? (
-            <p className="text-gray-500 text-sm">
-              まだ学習履歴がありません。問題を解くと単元ごとの詳細な分析が表示されます。
+    {/* ===================== TAB 2: 単元別 詳細分析 ===================== */}
+    {activeTab === 'units' && (
+      <div className="bg-white dark:bg-gray-800 p-5 md:p-6 rounded-2xl shadow-md space-y-6 animate-fade-in">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 dark:border-gray-700 pb-4">
+          <div>
+            <h2 className="text-lg md:text-xl font-extrabold text-gray-800 dark:text-gray-100 flex items-center gap-2">
+              <span>📋</span>
+              <span>単元別 詳細分析（選択問題 vs 入力・記述問題の定着比較）</span>
+            </h2>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+              「見て選べる知識（4択）」と「自分で書ける知識（語句入力・記述）」の定着差を比較し、弱点単元を重点特訓できます。
             </p>
-          ) : (
+          </div>
+
+          {/* 教科絞り込みフィルター */}
+          <div className="flex flex-wrap items-center gap-1.5 self-start md:self-auto bg-slate-100 dark:bg-gray-700/60 p-1 rounded-xl">
+            {[
+              { key: 'all', label: 'すべて' },
+              { key: '理科', label: '理科' },
+              { key: '社会', label: '社会' },
+              { key: '国語', label: '国語' },
+            ].map((f) => (
+              <button
+                key={f.key}
+                type="button"
+                onClick={() => setUnitSubjectFilter(f.key)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all ${
+                  unitSubjectFilter === f.key
+                    ? 'bg-white dark:bg-gray-800 text-indigo-700 dark:text-indigo-300 shadow-xs'
+                    : 'text-gray-500 hover:text-gray-800 dark:hover:text-gray-200'
+                }`}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {subAccData.length === 0 ? (
+          <div className="text-center py-12 text-gray-400 space-y-2">
+            <span className="text-4xl">📚</span>
+            <p className="text-sm font-bold">まだ学習履歴がありません。</p>
+            <p className="text-xs">問題を解くと単元ごとの詳細な到達度・比較データが表示されます。</p>
+          </div>
+        ) : (() => {
+          const filteredUnits = subAccData.filter((d) =>
+            unitSubjectFilter === 'all' ? true : d.subject === unitSubjectFilter
+          );
+
+          if (filteredUnits.length === 0) {
+            return (
+              <div className="text-center py-10 text-gray-400 space-y-1">
+                <p className="text-sm font-bold">{unitSubjectFilter} の学習履歴はまだありません。</p>
+                <p className="text-xs">{unitSubjectFilter} の問題を解くとここに詳細が表示されます。</p>
+              </div>
+            );
+          }
+
+          return (
             <div className="overflow-x-auto">
               <table className="min-w-full text-left text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200 dark:border-gray-700 text-gray-500">
+                  <tr className="border-b border-gray-200 dark:border-gray-700 text-gray-500 text-xs">
+                    <th className="py-2.5 pr-3">教科</th>
                     <th className="py-2.5 pr-4">分野</th>
                     <th className="py-2.5 pr-4">単元</th>
-                    <th className="py-2.5 pr-4">正解/回答数</th>
+                    <th className="py-2.5 pr-4">正解 / 回答数</th>
                     <th className="py-2.5 pr-4">4択正答率</th>
                     <th className="py-2.5 pr-4">入力・記述正答率</th>
-                    <th className="py-2.5">総合正答率</th>
+                    <th className="py-2.5 pr-4">総合正答率</th>
+                    <th className="py-2.5 text-right">アクション</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {subAccData.map((d, idx) => (
-                    <tr
-                      key={idx}
-                      className="border-b border-gray-100 dark:border-gray-800"
-                    >
-                      <td className="py-3 pr-4 font-bold text-indigo-600 dark:text-indigo-400">
-                        {d.category}
-                      </td>
-                      <td className="py-3 pr-4 font-bold text-gray-800 dark:text-gray-200">
-                        {d.name}
-                      </td>
-                      <td className="py-3 pr-4 text-gray-500">
-                        {d.correct} / {d.total}
-                      </td>
-                      <td className="py-3 pr-4 text-gray-600 dark:text-gray-300">
-                        {d.choiceAcc !== null ? `${d.choiceAcc}%` : '--'}
-                      </td>
-                      <td className="py-3 pr-4 text-gray-600 dark:text-gray-300">
-                        {d.writeAcc !== null ? `${d.writeAcc}%` : '--'}
-                      </td>
-                      <td className="py-3">
-                        <div className="flex items-center">
-                          <div className="w-24 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mr-2">
-                            <div
-                              className={`h-2.5 rounded-full ${
-                                d.accuracy >= 80
-                                  ? 'bg-emerald-500'
-                                  : d.accuracy >= 50
-                                    ? 'bg-amber-400'
-                                    : 'bg-rose-500'
-                              }`}
-                              style={{ width: `${d.accuracy}%` }}
-                            ></div>
-                          </div>
-                          <span className="font-bold text-gray-700 dark:text-gray-300">
-                            {d.accuracy}%
+                  {filteredUnits.map((d, idx) => {
+                    const gap =
+                      d.choiceAcc !== null && d.writeAcc !== null
+                        ? d.choiceAcc - d.writeAcc
+                        : null;
+                    return (
+                      <tr
+                        key={idx}
+                        className="border-b border-gray-100 dark:border-gray-800/80 hover:bg-slate-50 dark:hover:bg-gray-750 transition"
+                      >
+                        <td className="py-3 pr-3">
+                          <span
+                            className={`text-[10px] font-black px-1.5 py-0.5 rounded ${
+                              d.subject === '国語'
+                                ? 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200'
+                                : d.subject === '社会'
+                                  ? 'bg-amber-100 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200'
+                                  : 'bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200'
+                            }`}
+                          >
+                            {d.subject}
                           </span>
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
+                        </td>
+                        <td className="py-3 pr-4 font-bold text-indigo-600 dark:text-indigo-400 text-xs">
+                          {d.category}
+                        </td>
+                        <td className="py-3 pr-4 font-extrabold text-gray-800 dark:text-gray-100 text-xs sm:text-sm">
+                          {d.name}
+                        </td>
+                        <td className="py-3 pr-4 text-xs text-gray-600 dark:text-gray-300 whitespace-nowrap">
+                          <span className="font-bold">{d.correct}</span> / {d.total}問
+                        </td>
+                        <td className="py-3 pr-4 text-xs font-bold text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                          {d.choiceAcc !== null ? `${d.choiceAcc}%` : '--'}
+                          {d.choiceTotal > 0 && (
+                            <span className="text-[10px] font-normal text-gray-400 ml-1">
+                              ({d.choiceTotal}問)
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-3 pr-4 text-xs font-bold text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                          {d.writeAcc !== null ? `${d.writeAcc}%` : '--'}
+                          {d.writeTotal > 0 && (
+                            <span className="text-[10px] font-normal text-gray-400 ml-1">
+                              ({d.writeTotal}問)
+                            </span>
+                          )}
+                          {gap !== null && gap >= 20 && (
+                            <span
+                              className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-200 font-bold"
+                              title="4択に比べ入力・記述で点数が落ちています。語句入力の特訓が有効です。"
+                            >
+                              要特訓
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-3 pr-4 whitespace-nowrap">
+                          <div className="flex items-center gap-2">
+                            <div className="w-20 bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                              <div
+                                className={`h-2 rounded-full ${
+                                  d.accuracy >= 80
+                                    ? 'bg-emerald-500'
+                                    : d.accuracy >= 50
+                                      ? 'bg-amber-400'
+                                      : 'bg-rose-500'
+                                }`}
+                                style={{ width: `${d.accuracy}%` }}
+                              />
+                            </div>
+                            <span className="text-xs font-extrabold text-gray-700 dark:text-gray-200">
+                              {d.accuracy}%
+                            </span>
+                          </div>
+                        </td>
+                        <td className="py-3 text-right whitespace-nowrap">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              navigate('/quiz', {
+                                state: {
+                                  mode: 'specific',
+                                  subject: d.subject,
+                                  category: d.category,
+                                  subCategory: d.name,
+                                  limit: 5,
+                                },
+                              })
+                            }
+                            className="px-2.5 py-1 bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white dark:bg-gray-700 dark:text-indigo-300 dark:hover:bg-indigo-600 dark:hover:text-white rounded-lg text-xs font-extrabold transition shadow-2xs"
+                          >
+                            特訓 →
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
-          )}
-        </div>
+          );
+        })()}
+      </div>
+    )}
 
-        {/* Section 6: 間違えた問題リスト（復習ノート） */}
-        <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-extrabold text-gray-800 dark:text-gray-100">
-              📝 現在の弱点復習ノート ({wrongAnswers.length}問)
-            </h2>
+    {/* ===================== TAB 3: 現在の弱点復習ノート ===================== */}
+    {activeTab === 'wrongs' && (
+      <div className="bg-white dark:bg-gray-800 p-5 md:p-6 rounded-2xl shadow-md space-y-6 animate-fade-in">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 dark:border-gray-700 pb-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <h2 className="text-lg md:text-xl font-extrabold text-gray-800 dark:text-gray-100">
+                📝 現在の弱点復習ノート
+              </h2>
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-black bg-rose-500 text-white">
+                {wrongAnswers.length}問
+              </span>
+            </div>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+              間違えた問題は自動的にここに集約されます。再挑戦して正解すると自動的にリストから卒業します。
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {/* 教科フィルター */}
+            <div className="flex items-center gap-1 bg-slate-100 dark:bg-gray-700/60 p-1 rounded-xl">
+              {[
+                { key: 'all', label: 'すべて' },
+                { key: '理科', label: '理科' },
+                { key: '社会', label: '社会' },
+                { key: '国語', label: '国語' },
+              ].map((f) => {
+                const count =
+                  f.key === 'all'
+                    ? wrongAnswers.length
+                    : wrongAnswers.filter((q) => q.subject === f.key).length;
+                return (
+                  <button
+                    key={f.key}
+                    type="button"
+                    onClick={() => setWrongSubjectFilter(f.key)}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-extrabold transition-all flex items-center gap-1 ${
+                      wrongSubjectFilter === f.key
+                        ? 'bg-white dark:bg-gray-800 text-rose-600 dark:text-rose-400 shadow-xs'
+                        : 'text-gray-500 hover:text-gray-800 dark:hover:text-gray-200'
+                    }`}
+                  >
+                    <span>{f.label}</span>
+                    {count > 0 && <span className="text-[10px] opacity-80">({count})</span>}
+                  </button>
+                );
+              })}
+            </div>
+
             {wrongAnswers.length > 0 && (
               <button
                 type="button"
-                onClick={() =>
-                  navigate('/quiz', { state: { mode: 'review', limit: 30 } })
-                }
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-extrabold rounded-xl shadow"
+                onClick={() => {
+                  const filtered =
+                    wrongSubjectFilter === 'all'
+                      ? wrongAnswers
+                      : wrongAnswers.filter((q) => q.subject === wrongSubjectFilter);
+                  if (filtered.length === 0) return;
+                  navigate('/quiz', {
+                    state: {
+                      mode: 'custom_list',
+                      customQuestionsList: filtered,
+                      limit: Math.min(filtered.length, 30),
+                    },
+                  });
+                }}
+                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-extrabold rounded-xl shadow transition flex items-center gap-1.5"
               >
-                ▶ 弱点問題をまとめて復習する
+                <span>▶</span>
+                <span>
+                  {wrongSubjectFilter === 'all'
+                    ? '弱点をまとめて復習する'
+                    : `${wrongSubjectFilter}の弱点を復習`}
+                </span>
               </button>
             )}
           </div>
+        </div>
 
-          {wrongAnswers.length === 0 ? (
-            <p className="text-gray-500 text-sm">
-              現在、復習リストに残っている問題はありません。素晴らしい定着度です！
-            </p>
-          ) : (
+        {wrongAnswers.length === 0 ? (
+          <div className="text-center py-12 text-gray-400 space-y-2">
+            <span className="text-4xl">🎉</span>
+            <p className="text-sm font-bold">現在、復習リストに残っている問題はありません！</p>
+            <p className="text-xs">素晴らしい定着度です。新しい問題に挑戦してみましょう。</p>
+          </div>
+        ) : (() => {
+          const filteredWrongs = wrongAnswers.filter((q) =>
+            wrongSubjectFilter === 'all' ? true : q.subject === wrongSubjectFilter
+          );
+
+          if (filteredWrongs.length === 0) {
+            return (
+              <div className="text-center py-10 text-gray-400 space-y-1">
+                <p className="text-sm font-bold">{wrongSubjectFilter} の弱点問題はありません！</p>
+                <p className="text-xs">この調子で他教科の復習も進めましょう。</p>
+              </div>
+            );
+          }
+
+          return (
             <div className="space-y-3">
-              {wrongAnswers.map((q) => (
+              {filteredWrongs.map((q) => (
                 <div
                   key={q.id}
-                  className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/40 transition"
+                  className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/40 transition space-y-2"
                 >
-                  <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                    <span className="px-2.5 py-0.5 text-xs font-extrabold rounded bg-indigo-100 text-indigo-800">
-                      {q.subject} / {q.category} / {q.subCategory}
-                    </span>
-                    <span className="px-2 py-0.5 text-xs font-bold rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
-                      {DIFFICULTY_LABELS[q.difficulty] || '標準'} ・{' '}
-                      {QUESTION_TYPE_LABELS[q.questionType] || '4択'}
-                    </span>
-                    {q.knowledgeTag && (
-                      <span className="text-xs font-bold text-amber-700 dark:text-amber-300">
-                        🏷️ {q.knowledgeTag}
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span
+                        className={`px-2 py-0.5 text-xs font-extrabold rounded ${
+                          q.subject === '国語'
+                            ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200'
+                            : q.subject === '社会'
+                              ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200'
+                              : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200'
+                        }`}
+                      >
+                        {q.subject}
                       </span>
-                    )}
+                      <span className="px-2 py-0.5 text-xs font-bold rounded bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+                        {q.category} / {q.subCategory}
+                      </span>
+                      <span className="px-2 py-0.5 text-xs font-bold rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                        {DIFFICULTY_LABELS[q.difficulty] || '標準'} ・{' '}
+                        {QUESTION_TYPE_LABELS[q.questionType] || '4択'}
+                      </span>
+                      {q.knowledgeTag && (
+                        <span className="text-xs font-bold text-amber-700 dark:text-amber-300">
+                          🏷️ {q.knowledgeTag}
+                        </span>
+                      )}
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() =>
+                        navigate('/quiz', {
+                          state: {
+                            mode: 'custom_list',
+                            customQuestionsList: [q],
+                            limit: 1,
+                          },
+                        })
+                      }
+                      className="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-extrabold shadow-2xs transition"
+                    >
+                      この問題を再挑戦 →
+                    </button>
                   </div>
-                  <p className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base">
+
+                  <p className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base leading-relaxed">
                     Q. {q.question}
                   </p>
-                  <p className="text-xs md:text-sm text-indigo-700 dark:text-indigo-300 font-bold mt-1">
+
+                  <div className="text-xs md:text-sm text-indigo-700 dark:text-indigo-300 font-bold bg-indigo-50/70 dark:bg-indigo-950/40 p-2.5 rounded-lg border border-indigo-100 dark:border-indigo-900">
                     正解: {q.answer}
-                  </p>
+                  </div>
+
                   {q.explanation && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                      💡 {q.explanation}
+                    <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                      💡 解説: {q.explanation}
                     </p>
                   )}
                 </div>
               ))}
             </div>
-          )}
-        </div>
+          );
+        })()}
+      </div>
+    )}
+
+    {/* Page Bottom: Back to Top Helper Button */}
+    <div className="pt-4 pb-8 flex justify-center">
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className="px-5 py-2.5 rounded-full bg-white dark:bg-gray-800 border-2 border-indigo-200 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-gray-700 text-indigo-700 dark:text-indigo-300 text-xs md:text-sm font-extrabold shadow-sm transition flex items-center gap-1.5"
+      >
+        <span>↑</span>
+        <span>ページの最上部へ戻る</span>
+      </button>
+    </div>
+
+    {/* Floating Action Button: Scroll To Top */}
+    {showScrollTop && (
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 z-40 bg-indigo-600 hover:bg-indigo-700 text-white p-3.5 md:p-4 rounded-full shadow-2xl transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center border-2 border-white/40 focus:outline-hidden"
+        title="ページの最上部へ戻る"
+        aria-label="最上部へ戻る"
+      >
+        <span className="text-lg md:text-xl font-black leading-none">↑</span>
+      </button>
+    )}
       </div>
     </div>
   );
