@@ -7,6 +7,7 @@ const SETTINGS_KEY = 'quiz_app_settings_v2';
 const AI_ADVICE_CACHE_KEY = 'quiz_app_ai_advice_cache';
 const LAST_SYNC_KEY = 'quiz_app_last_wifi_sync';
 const SNAPSHOTS_KEY = 'quiz_app_history_snapshots_v1';
+const RESOLVED_WRONG_KEY = 'quiz_app_resolved_wrong_v1';
 
 /**
  * 既存（作問アプリ１）の問題データやインポートデータを新フォーマットに正規化する
@@ -175,6 +176,18 @@ export const deleteHistorySnapshot = (snapshotId) => {
   return updated;
 };
 
+export const getResolvedWrongIds = () => {
+  try {
+    return JSON.parse(localStorage.getItem(RESOLVED_WRONG_KEY) || '{}');
+  } catch {
+    return {};
+  }
+};
+
+export const saveResolvedWrongIds = (map) => {
+  localStorage.setItem(RESOLVED_WRONG_KEY, JSON.stringify(map || {}));
+};
+
 export const saveWrongAnswer = (question, userAnswer = '') => {
   const wrongAnswers = JSON.parse(localStorage.getItem(WRONG_ANSWERS_KEY) || '[]');
   const normalized = normalizeQuestion(question);
@@ -193,22 +206,107 @@ export const saveWrongAnswer = (question, userAnswer = '') => {
     wrongAnswers.push(entry);
   }
   localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(wrongAnswers));
+
+  // 再び間違えたので解決済みリストから解除
+  const resolved = getResolvedWrongIds();
+  if (resolved[normalized.id]) {
+    delete resolved[normalized.id];
+    saveResolvedWrongIds(resolved);
+  }
 };
 
 export const removeWrongAnswer = (questionId) => {
   const wrongAnswers = JSON.parse(localStorage.getItem(WRONG_ANSWERS_KEY) || '[]');
   const updated = wrongAnswers.filter((q) => q.id !== questionId);
   localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(updated));
+
+  // 解決済み（克服卒業）リストに記録
+  const resolved = getResolvedWrongIds();
+  resolved[questionId] = Date.now();
+  saveResolvedWrongIds(resolved);
 };
 
 export const getWrongAnswers = () => {
   const raw = JSON.parse(localStorage.getItem(WRONG_ANSWERS_KEY) || '[]');
-  return raw.map((q, i) => ({
-    ...normalizeQuestion(q, i),
-    lastWrongAt: q.lastWrongAt || null,
-    lastUserAnswer: q.lastUserAnswer || '',
-    wrongCount: q.wrongCount || 1,
-  }));
+
+  // 内蔵マスターおよびカスタム問題の最新マップを作成（最新の問題文で上書きするため）
+  const allMap = new Map();
+  sampleQuestions.forEach((q) => {
+    if (q && q.id) allMap.set(q.id, q);
+  });
+  getCustomQuestions().forEach((q) => {
+    if (q && q.id) allMap.set(q.id, q);
+  });
+
+  // 学習履歴の最新解答状況（直近で正解した問題は未解決リストから自動卒業）
+  const history = getHistory();
+  const latestAnswerMap = new Map();
+  history.forEach((sess) => {
+    const ts = sess.timestamp || sess.date || '';
+    if (Array.isArray(sess.results)) {
+      sess.results.forEach((r) => {
+        if (r && r.questionId) {
+          const prev = latestAnswerMap.get(r.questionId);
+          if (!prev || String(ts) > String(prev.timestamp)) {
+            latestAnswerMap.set(r.questionId, { isCorrect: Boolean(r.isCorrect), timestamp: ts });
+          }
+        }
+      });
+    }
+  });
+
+  const resolvedIds = getResolvedWrongIds();
+
+  // 1. 直近で正解している問題、または解決済みフラグがある問題を除外
+  const activeWrong = raw.filter((q) => {
+    if (!q || !q.id) return false;
+    const wrongTime = q.lastWrongAt ? new Date(q.lastWrongAt).getTime() : 0;
+
+    // 解決済みフラグのチェック
+    if (resolvedIds[q.id] && resolvedIds[q.id] >= wrongTime) {
+      return false;
+    }
+
+    // 最新解答履歴のチェック
+    const latestAns = latestAnswerMap.get(q.id);
+    if (latestAns && latestAns.isCorrect) {
+      const ansTime = latestAns.timestamp ? new Date(latestAns.timestamp).getTime() : 0;
+      if (ansTime >= wrongTime) {
+        return false;
+      }
+    }
+
+    return true;
+  });
+
+  return activeWrong.map((q, i) => {
+    const master = allMap.get(q.id) || {};
+    const norm = normalizeQuestion(
+      {
+        ...q,
+        // 最新マスターデータで問題文・選択肢・解説を必ず最新化
+        question: master.question || q.question || '',
+        options: master.options || q.options,
+        answer: master.answer || q.answer,
+        acceptableAnswers: master.acceptableAnswers || q.acceptableAnswers,
+        explanation: master.explanation || q.explanation,
+        knowledgeTag: master.knowledgeTag || q.knowledgeTag,
+      },
+      i
+    );
+
+    // 安全策: 問題文冒頭の 【...】 が残っていたら除去
+    if (norm.question && norm.question.startsWith('【')) {
+      norm.question = norm.question.replace(/^【.*?】\s*/, '').trim();
+    }
+
+    return {
+      ...norm,
+      lastWrongAt: q.lastWrongAt || null,
+      lastUserAnswer: q.lastUserAnswer || '',
+      wrongCount: q.wrongCount || 1,
+    };
+  });
 };
 
 // --- Custom Question Management ---
@@ -453,27 +551,94 @@ export const syncWithCloud = async () => {
   );
 
   // 弱点問題マージ
-  const wrongMap = new Map();
-  (cloudData?.wrongAnswers || []).forEach((w) => {
-    if (w && w.id) wrongMap.set(w.id, w);
-  });
-  localWrong.forEach((w) => {
-    if (!w || !w.id) return;
-    const existing = wrongMap.get(w.id);
-    if (!existing) {
-      wrongMap.set(w.id, w);
-    } else {
-      const isNewer = String(w.lastWrongAt || '') > String(existing.lastWrongAt || '');
-      wrongMap.set(w.id, {
-        ...existing,
-        ...w,
-        lastWrongAt: isNewer ? w.lastWrongAt : existing.lastWrongAt,
-        lastUserAnswer: isNewer ? w.lastUserAnswer || existing.lastUserAnswer : existing.lastUserAnswer,
-        wrongCount: Math.max(existing.wrongCount || 1, w.wrongCount || 1),
+  const localResolved = getResolvedWrongIds();
+  const cloudResolved = cloudData?.resolvedWrongIds || {};
+  const mergedResolved = { ...cloudResolved, ...localResolved };
+
+  // 最新の学習履歴から各問題の直近の解答結果（正解したか否か）を算出
+  const latestAnswerMap = new Map();
+  mergedHistory.forEach((sess) => {
+    const ts = sess.timestamp || sess.date || '';
+    if (Array.isArray(sess.results)) {
+      sess.results.forEach((r) => {
+        if (r && r.questionId) {
+          const prev = latestAnswerMap.get(r.questionId);
+          if (!prev || String(ts) > String(prev.timestamp)) {
+            latestAnswerMap.set(r.questionId, {
+              isCorrect: Boolean(r.isCorrect),
+              timestamp: ts,
+            });
+          }
+        }
       });
     }
   });
+
+  const wrongMap = new Map();
+  const allMasterMap = new Map();
+  sampleQuestions.forEach((q) => {
+    if (q && q.id) allMasterMap.set(q.id, q);
+  });
+  mergedQuestions.forEach((q) => {
+    if (q && q.id) allMasterMap.set(q.id, q);
+  });
+
+  const processWrongCandidate = (w) => {
+    if (!w || !w.id) return;
+    const wId = w.id;
+    const wrongTime = w.lastWrongAt ? new Date(w.lastWrongAt).getTime() : 0;
+
+    // ① 解決済みフラグ（正解して削除された）がある場合はスキップ
+    if (mergedResolved[wId] && mergedResolved[wId] >= wrongTime) {
+      return;
+    }
+
+    // ② 最新履歴で正解している場合はスキップ（克服済み・ゾンビ復活防止）
+    const latestAns = latestAnswerMap.get(wId);
+    if (latestAns && latestAns.isCorrect) {
+      const ansTime = latestAns.timestamp ? new Date(latestAns.timestamp).getTime() : 0;
+      if (ansTime >= wrongTime) {
+        // 解決済みリストにも登録
+        mergedResolved[wId] = Math.max(mergedResolved[wId] || 0, ansTime);
+        return;
+      }
+    }
+
+    // ③ 最新マスターデータで問題文・選択肢・解説を必ず最新化（ネタバレタグの完全排除）
+    const master = allMasterMap.get(wId);
+    const cleaned = {
+      ...w,
+      question: master?.question || w.question || '',
+      options: master?.options || w.options,
+      answer: master?.answer || w.answer,
+      acceptableAnswers: master?.acceptableAnswers || w.acceptableAnswers,
+      explanation: master?.explanation || w.explanation,
+      knowledgeTag: master?.knowledgeTag || w.knowledgeTag,
+    };
+    if (cleaned.question && cleaned.question.startsWith('【')) {
+      cleaned.question = cleaned.question.replace(/^【.*?】\s*/, '').trim();
+    }
+
+    const existing = wrongMap.get(wId);
+    if (!existing) {
+      wrongMap.set(wId, cleaned);
+    } else {
+      const isNewer = String(cleaned.lastWrongAt || '') > String(existing.lastWrongAt || '');
+      wrongMap.set(wId, {
+        ...existing,
+        ...cleaned,
+        lastWrongAt: isNewer ? cleaned.lastWrongAt : existing.lastWrongAt,
+        lastUserAnswer:
+          isNewer ? cleaned.lastUserAnswer || existing.lastUserAnswer : existing.lastUserAnswer,
+        wrongCount: Math.max(existing.wrongCount || 1, cleaned.wrongCount || 1),
+      });
+    }
+  };
+
+  (cloudData?.wrongAnswers || []).forEach(processWrongCandidate);
+  localWrong.forEach(processWrongCandidate);
   const mergedWrong = Array.from(wrongMap.values());
+  saveResolvedWrongIds(mergedResolved);
 
   // スナップショットマージ
   const snapMap = new Map();
@@ -498,6 +663,7 @@ export const syncWithCloud = async () => {
     customQuestions: mergedQuestions,
     history: mergedHistory,
     wrongAnswers: mergedWrong,
+    resolvedWrongIds: mergedResolved,
     snapshots: mergedSnapshots,
     updatedAt: new Date().toISOString(),
   };
