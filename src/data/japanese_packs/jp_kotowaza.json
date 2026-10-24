@@ -1,0 +1,1896 @@
+[
+  {
+    "id": "kokugo_koto_001",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【実るほど頭を垂れる稲穂かな】学問や徳が深まり人格が向上した人ほど、謙虚になるという意味のことわざはどれですか。",
+    "options": [
+      "実るほど頭を垂れる稲穂かな",
+      "井の中の蛙大海を知らず",
+      "弘法にも筆の誤り",
+      "枯れ木も山の賑わい"
+    ],
+    "answer": "実るほど頭を垂れる稲穂かな",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "稲が実をつけるほど穂先が重くなって垂れ下がる様子から、人格や地位が高くなるほど腰が低く謙虚であるべきだという教訓です。"
+  },
+  {
+    "id": "kokugo_koto_002",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【実るほど頭を垂れる稲穂かな】「人格が優れている人ほど謙虚である」たとえ「実るほど（　　）を垂れる稲穂かな」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "頭",
+    "acceptableAnswers": [
+      "頭",
+      "こうべ",
+      "あたま"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「頭（こうべ・あたま）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_003",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【実るほど頭を垂れる稲穂かな】このことわざが教える人間としての理想的な態度について、「稲穂」「謙虚」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "豊かな実を結んで垂れ下がる稲穂のように、学問や徳が高くなるほど謙虚に振る舞う態度。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "稲穂",
+      "謙虚"
+    ],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "才能や地位を鼻にかけるのではなく、成長するほど他人に敬意を払い謙虚であるべきだという教えです。"
+  },
+  {
+    "id": "kokugo_koto_004",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【初心忘るべからず】物事を始めた当初の純粋な気持ちや謙虚さを忘れてはならないという意味のことわざはどれですか。",
+    "options": [
+      "初心忘るべからず",
+      "石の上にも三年",
+      "善は急げ",
+      "急がば回れ"
+    ],
+    "answer": "初心忘るべからず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "能の大成者・世阿弥の言葉に由来し、未熟だった頃の慎みや緊張感を一生忘れてはならないという戒めです。"
+  },
+  {
+    "id": "kokugo_koto_005",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【初心忘るべからず】世阿弥の『花鏡』に由来する「物事を始めたときの謙虚な決意を忘れてはならない」ということわざ（漢字４文字＋ひらがな）を答えなさい。",
+    "options": [],
+    "answer": "初心忘るべからず",
+    "acceptableAnswers": [
+      "初心忘るべからず",
+      "初心わするべからず"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「初心忘るべからず」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_006",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【聞くは一時の恥聞かぬは末代の恥】知らないことを人に尋ねるのはその瞬間だけ恥ずかしいが、尋ねずにいれば一生恥ずかしい思いをするという意味のことわざはどれですか。",
+    "options": [
+      "聞くは一時の恥聞かぬは末代の恥",
+      "知らぬが仏",
+      "言わぬが花",
+      "嘘も方便"
+    ],
+    "answer": "聞くは一時の恥聞かぬは末代の恥",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "見栄を張って分からないことをそのままにせず、素直に質問して学ぶべきだという教えです。"
+  },
+  {
+    "id": "kokugo_koto_007",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【聞くは一時の恥聞かぬは末代の恥】このことわざが教える学びの姿勢について、「分からないこと」「質問する」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "分からないことをそのままにせず、恥ずかしがらずに質問して学ぶべきだという姿勢。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "分からないこと",
+      "質問する"
+    ],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「末代（まつだい＝一生・末永く）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_008",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【好きこそ物の上手なれ】どんなことでも、好きで熱中する人は自然と工夫して上達が早いという意味のことわざはどれですか。",
+    "options": [
+      "好きこそ物の上手なれ",
+      "継続は力なり",
+      "善は急げ",
+      "弘法筆を選ばず"
+    ],
+    "answer": "好きこそ物の上手なれ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "好きなことには進んで取り組み努力を苦にしないため、早く上達するという意味です。"
+  },
+  {
+    "id": "kokugo_koto_009",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【好きこそ物の上手なれ】「好きなことには熱心に取り組むので上達する」を表すことわざ「好きこそ物の（　　）なれ」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "上手",
+    "acceptableAnswers": [
+      "上手",
+      "じょうず"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「上手（じょうず）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_010",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【郷に入っては郷に従え】新しい土地や集団に入ったら、自分のやり方にこだわらずその土地の習慣や規則に従うべきだという意味のことわざはどれですか。",
+    "options": [
+      "郷に入っては郷に従え",
+      "類は友を呼ぶ",
+      "朱に交われば赤くなる",
+      "住めば都"
+    ],
+    "answer": "郷に入っては郷に従え",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "その場所の文化や風習を尊重して適応することが円満に暮らす知恵であると説いています。"
+  },
+  {
+    "id": "kokugo_koto_011",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【郷に入っては郷に従え】「（　　）に入っては（　　）に従え」の空欄に入る共通の漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "郷",
+    "acceptableAnswers": [
+      "郷",
+      "ごう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「郷（ごう）」が入ります。村や土地のことを指します。"
+  },
+  {
+    "id": "kokugo_koto_012",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【可愛い子には旅をさせよ】自分の子どもが本当に愛しいなら、甘やかすのではなく世間の荒波に出して苦労を経験させるべきだという意味のことわざはどれですか。",
+    "options": [
+      "可愛い子には旅をさせよ",
+      "親の心子知らず",
+      "子はかすがい",
+      "亀の甲より年の功"
+    ],
+    "answer": "可愛い子には旅をさせよ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "手元に置いて甘やかすと自立できないため、あえて厳しい環境に置いて鍛えさせるべきだという親の愛情の示し方です。"
+  },
+  {
+    "id": "kokugo_koto_013",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【可愛い子には旅をさせよ】「本当に子どもを愛するなら世に出て苦労をさせよ」ということわざ「可愛い子には（　　）をさせよ」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "旅",
+    "acceptableAnswers": [
+      "旅",
+      "たび"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「旅（たび）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_014",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【可愛い子には旅をさせよ】なぜ子どもに「旅」をさせることが真の愛情といえるのか、「苦労」「自立」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "世間の苦労や困難を経験させることで、自立した強い人間に成長できるから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "苦労",
+      "自立"
+    ],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "過保護に育てるのではなく、厳しい試練を乗り越えさせることで、たくましく生きていく力を培うためです。"
+  },
+  {
+    "id": "kokugo_koto_015",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【身から出た錆】自分の犯した悪行や怠慢のせいで、自分自身が苦しい目に遭うことを表すことわざはどれですか。",
+    "options": [
+      "身から出た錆",
+      "自業自得",
+      "藪から棒",
+      "青菜に塩"
+    ],
+    "answer": "身から出た錆",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "刀の刀身の鉄から自然と錆が生じて刀自体をボロボロにしてしまうことから、自分の悪事や過失の報いで身を滅ぼすことを意味します。"
+  },
+  {
+    "id": "kokugo_koto_016",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【身から出た錆】「刀身から出た錆が刀を痛める」ことから、自分の悪行の報いを受けることを指すことわざ「身から出た（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "錆",
+    "acceptableAnswers": [
+      "錆",
+      "さび"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「錆（さび）」が入ります。四字熟語の「自業自得」と同義です。"
+  },
+  {
+    "id": "kokugo_koto_017",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【亀の甲より年の功】年長者の長年の豊かな経験や知識は、何ものにも代えがたく尊いという意味のことわざはどれですか。",
+    "options": [
+      "亀の甲より年の功",
+      "枯れ木も山の賑わい",
+      "老いては子に従え",
+      "実るほど頭を垂れる稲穂かな"
+    ],
+    "answer": "亀の甲より年の功",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "亀の甲羅の「甲（こう）」と長年の経験の「功（こう）」をかけた語呂合わせのことわざで、長年の経験の価値を讃えています。"
+  },
+  {
+    "id": "kokugo_koto_018",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【亀の甲より年の功】長年生きている年長者を敬うべき理由について、「豊かな経験」「知識」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "長年の人生で培われた豊かな経験や知識は何ものにも代えがたく尊いから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "豊かな経験",
+      "知識"
+    ],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「年（とし）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_019",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【命長ければ恥多し】長生きをすれば、それだけ恥をかいたり辛い目に遭ったりすることも多くなるという意味のことわざはどれですか。",
+    "options": [
+      "命長ければ恥多し",
+      "亀の甲より年の功",
+      "光陰矢の如し",
+      "朝令暮改"
+    ],
+    "answer": "命長ければ恥多し",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "荘子に由来し、長生きすることはめでたいが、醜態をさらしたり悲しい別れに出会ったりすることも増えるという意味です。"
+  },
+  {
+    "id": "kokugo_koto_020",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "01. 人間・生き方・教訓のことわざ",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【命長ければ恥多し】「長く生きるとそれだけ恥をかく機会も増える」ということわざ「命長ければ（　　）多し」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "恥",
+    "acceptableAnswers": [
+      "恥",
+      "はじ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・01. 人間・生き方・教訓のことわざ",
+    "explanation": "「恥（はじ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_021",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【朱に交われば赤くなる】人は付き合う友人や環境によって、良くも悪くも影響を受けるという意味のことわざはどれですか。",
+    "options": [
+      "朱に交われば赤くなる",
+      "類は友を呼ぶ",
+      "水清ければ魚棲まず",
+      "郷に入っては郷に従え"
+    ],
+    "answer": "朱に交われば赤くなる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "赤い朱墨に触れれば自然と赤く染まることから、人は周囲の環境や交友関係に強く感化されることを意味します。"
+  },
+  {
+    "id": "kokugo_koto_022",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【朱に交われば赤くなる】「人は交わる友によって感化される」たとえ「（　　）に交われば赤くなる」の空欄に入る赤色を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "朱",
+    "acceptableAnswers": [
+      "朱",
+      "しゅ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「朱（しゅ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_023",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【朱に交われば赤くなる】このことわざが教える「交友関係の選び方」について、「環境」「影響」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "人は身近な環境や付き合う友人に大きな影響を受けるため、良き友を選ぶべきだということ。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "環境",
+      "影響"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "悪友と交われば悪に染まり、善人と交われば善に導かれるため、環境選びが大切であると説いています。"
+  },
+  {
+    "id": "kokugo_koto_024",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【類は友を呼ぶ】気の合った者や似通った性質をもつ者は、自然と互いに引き寄せ合って集まるという意味のことわざはどれですか。",
+    "options": [
+      "類は友を呼ぶ",
+      "朱に交われば赤くなる",
+      "袖振り合うも多生の縁",
+      "犬も歩けば棒に当たる"
+    ],
+    "answer": "類は友を呼ぶ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "同じ種類や似た性格の人間は自然と集まる傾向があることを意味します。"
+  },
+  {
+    "id": "kokugo_koto_025",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【類は友を呼ぶ】気の合う友人どうしが集まる理由について、「性格」「引き寄せ合う」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "似たような性格や考え方をもつ人間は、自然と互いに引き寄せ合うから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "性格",
+      "引き寄せ合う"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「類（るい）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_026",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【情けは人のためならず】人に親切にしておけば、巡り巡って自分にも良い報いが返ってくるという意味のことわざはどれですか。",
+    "options": [
+      "情けは人のためならず",
+      "恩を仇で返す",
+      "損して得取れ",
+      "親の心子知らず"
+    ],
+    "answer": "情けは人のためならず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「人のためにならないから情けをかけるな」と誤解されやすいですが、正しくは「相手のためだけでなく自分のためになる」という意味です。"
+  },
+  {
+    "id": "kokugo_koto_027",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【情けは人のためならず】「他人に親切にすれば自分にも良い報いが返る」を表すことわざ「情けは人の（　　）ならず」の空欄に入る言葉を答えなさい。",
+    "options": [],
+    "answer": "ため",
+    "acceptableAnswers": [
+      "ため",
+      "為"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「ため（為）」が入ります。文化庁の国語世論調査でも誤用頻出のことわざです。"
+  },
+  {
+    "id": "kokugo_koto_028",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【情けは人のためならず】このことわざの誤用と本来の意味の違いについて、「自立を妨げる」「自分に返る」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「甘やかすと相手の自立を妨げる」と誤解されやすいが、本来は「人に親切にすれば巡り巡って自分に返る」という意味である。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "自立を妨げる",
+      "自分に返る"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「ならず」は否定ですが、「人のため（だけ）ではない＝巡って自分に善い報いが及ぶ」という意味です。"
+  },
+  {
+    "id": "kokugo_koto_029",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【三人寄れば文殊の知恵】平凡な人間でも、三人集まって相談すれば優れた良い知恵が出るという意味のことわざはどれですか。",
+    "options": [
+      "三人寄れば文殊の知恵",
+      "船頭多くして船山に登る",
+      "十人十色",
+      "烏合の衆"
+    ],
+    "answer": "三人寄れば文殊の知恵",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「文殊」は知恵を司る文殊菩薩のことで、一人では思いつかない名案も協力すれば生まれることを意味します。"
+  },
+  {
+    "id": "kokugo_koto_030",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【三人寄れば文殊の知恵】「三人寄れば（　　）の知恵」の空欄に入る、知恵の菩薩の名（漢字２文字）を答えなさい。",
+    "options": [],
+    "answer": "文殊",
+    "acceptableAnswers": [
+      "文殊",
+      "もんじゅ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「文殊（もんじゅ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_031",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【船頭多くして船山に登る】指図する人が多すぎると、方針がまとまらずにとんでもない方向に進んでしまうという意味のことわざはどれですか。",
+    "options": [
+      "船頭多くして船山に登る",
+      "三人寄れば文殊の知恵",
+      "渡りに船",
+      "立つ鳥跡を濁さず"
+    ],
+    "answer": "船頭多くして船山に登る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "指示を出すリーダーが何人もいると意見が対立し、本来水上を進むべき船が山に向かってしまうという失敗のたとえです。"
+  },
+  {
+    "id": "kokugo_koto_032",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【船頭多くして船山に登る】リーダーが多すぎることの弊害について、「指図」「まとまらない」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "指図する人が多すぎると意見がまとまらず、とんでもない方向に進んで失敗する。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "指図",
+      "まとまらない"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「山（やま）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_033",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【対比】「三人寄れば文殊の知恵」と「船頭多くして船山に登る」の教えの違いについて、「協力」「意見がまとまらない」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "前者は知恵を出し合って協力する大切さを説き、後者は指図する人が多すぎて意見がまとまらない弊害を戒めている。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "協力",
+      "意見がまとまらない"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "人数が多いことの長所（多様な視点の結集）と短所（指揮系統の混乱）の対比です。"
+  },
+  {
+    "id": "kokugo_koto_034",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【縁の下の力持ち】他人の目につかないところで、陰ながら苦労して支える人のことを何といいますか。",
+    "options": [
+      "縁の下の力持ち",
+      "濡れ手で粟",
+      "損して得取れ",
+      "壁に耳あり障子に目あり"
+    ],
+    "answer": "縁の下の力持ち",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "家屋の縁の下という見えない場所で建物を支えている柱のように、目立たない陰の功労者を指します。"
+  },
+  {
+    "id": "kokugo_koto_035",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【縁の下の力持ち】「目立たないところで集団を支える人」を表すことわざ「（　　）の下の力持ち」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "縁",
+    "acceptableAnswers": [
+      "縁",
+      "えん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「縁（えん）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_036",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【釈迦に説法】その道の専門家や知り尽くしている人に対して、得意になって知識を説く愚かさを表すことわざはどれですか。",
+    "options": [
+      "釈迦に説法",
+      "弘法にも筆の誤り",
+      "猿も木から落ちる",
+      "河童の川流れ"
+    ],
+    "answer": "釈迦に説法",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "仏教を開いた仏陀（お釈迦様）に仏の教えを説くようなもので、無駄で恥ずかしい行為のたとえです。"
+  },
+  {
+    "id": "kokugo_koto_037",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【釈迦に説法】「専門家に偉そうに教えようとする愚かさ」を表すことわざ「釈迦に（　　）」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "説法",
+    "acceptableAnswers": [
+      "説法",
+      "せっぽう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「説法（せっぽう）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_038",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【仏の顔も三度】どんなに温厚で慈悲深い人でも、何度も無礼なことをされれば最後には怒り出すという意味のことわざはどれですか。",
+    "options": [
+      "仏の顔も三度",
+      "鬼の目にも涙",
+      "知らぬが仏",
+      "初心忘るべからず"
+    ],
+    "answer": "仏の顔も三度",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「仏の顔も三度まで撫でれば腹を立つ」の略で、寛大な人の情けに甘えて度を越してはならないという戒めです。"
+  },
+  {
+    "id": "kokugo_koto_039",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【仏の顔も三度】「慈悲深い人でも度重なる無礼には怒る」を表すことわざ「仏の顔も（　　）度」の空欄に入る数字を漢字で答えなさい。",
+    "options": [],
+    "answer": "三",
+    "acceptableAnswers": [
+      "三",
+      "さん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "「三（さん）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_040",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "02. 人間関係・協力・争いのことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【壁に耳あり障子に目あり】秘密の話をするときに注意すべき点について、「秘密」「漏れやすい」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "どこで誰が見聞きしているか分からないため、秘密は漏れやすく言動を慎むべきだということ。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "秘密",
+      "漏れやすい"
+    ],
+    "knowledgeTag": "ことわざ・02. 人間関係・協力・争いのことわざ",
+    "explanation": "どこで誰が聞いているか、見ているか分からないため、秘密の話や悪口は厳重に慎むべきだという教訓です。"
+  },
+  {
+    "id": "kokugo_koto_041",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【犬も歩けば棒に当たる】何か行動を起こせば、思いがけない幸運（または災難）に出会うという意味のことわざはどれですか。",
+    "options": [
+      "犬も歩けば棒に当たる",
+      "猫に小判",
+      "馬の耳に念仏",
+      "豚に真珠"
+    ],
+    "answer": "犬も歩けば棒に当たる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "いろはかるたの第一句。出歩けば棒で叩かれるような災難に遭うという意味が原義ですが、現代では幸運に巡り合う意味でも広く使われます。"
+  },
+  {
+    "id": "kokugo_koto_042",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【犬も歩けば棒に当たる】「出歩けば思いがけないことに遭遇する」たとえ「（　　）も歩けば棒に当たる」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "犬",
+    "acceptableAnswers": [
+      "犬",
+      "いぬ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「犬（いぬ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_043",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【馬の耳に念仏】いくら尊い教えや意見を聞かせても、本人に理解する気がなくまったく効き目がないことを表すことわざはどれですか。",
+    "options": [
+      "馬の耳に念仏",
+      "猫に小判",
+      "豚に真珠",
+      "蛙の面に水"
+    ],
+    "answer": "馬の耳に念仏",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "馬にありがたい念仏を聞かせても何の反応もないことから、どんなに良い意見も無駄であるたとえです。"
+  },
+  {
+    "id": "kokugo_koto_044",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【馬の耳に念仏】「ありがたい教えを聞かせても無駄である」たとえ「（　　）の耳に念仏」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "馬",
+    "acceptableAnswers": [
+      "馬",
+      "うま"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「馬（うま）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_045",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【猫に小判】価値のわからない者に高価なものを与えても、何の役にも立たないという意味のことわざはどれですか。",
+    "options": [
+      "猫に小判",
+      "馬の耳に念仏",
+      "犬も歩けば棒に当たる",
+      "猿も木から落ちる"
+    ],
+    "answer": "猫に小判",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "小判の価値を知らない猫にお金をあげても無意味なことから、価値を理解しない人に貴重品を与えても無駄であるたとえです。"
+  },
+  {
+    "id": "kokugo_koto_046",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【猫に小判】「価値が分からない者に貴重なものを与えても無駄」のたとえ「（　　）に小判」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "猫",
+    "acceptableAnswers": [
+      "猫",
+      "ねこ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「猫（ねこ）」が入ります。西洋の「豚に真珠」と同義です。"
+  },
+  {
+    "id": "kokugo_koto_047",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【雨降って地固まる】揉め事や雨降りのような困難があった後には、かえって基礎が固まり良い状態になるという意味のことわざはどれですか。",
+    "options": [
+      "雨降って地固まる",
+      "雨だれ石をもうがつ",
+      "水清ければ魚棲まず",
+      "焼け石に水"
+    ],
+    "answer": "雨降って地固まる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "雨が降ってぬかるんだ地面も、晴れて乾けば以前より踏み固まることから、揉め事を乗り越えて絆が深まることを表します。"
+  },
+  {
+    "id": "kokugo_koto_048",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【雨降って地固まる】「揉め事の後はかえって基盤が強固になる」たとえ「雨降って地（　　）まる」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "固",
+    "acceptableAnswers": [
+      "固",
+      "かた"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「固（かた）まる」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_049",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【雨降って地固まる】このことわざの意味について、「争い」「かえって」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "争いや困難を経験した後は、かえって絆や地盤が以前より強固になること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "争い",
+      "かえって"
+    ],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "一見悪い出来事（雨・揉め事）が、結果的により強固で良好な関係をもたらすことを示しています。"
+  },
+  {
+    "id": "kokugo_koto_050",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【蛙の子は蛙】凡人の子どもはやはり凡人であり、子どもは親の性質や能力を受け継ぐものだという意味のことわざはどれですか。",
+    "options": [
+      "蛙の子は蛙",
+      "瓜の蔓に茄子はならぬ",
+      "鳶が鷹を生む",
+      "類は友を呼ぶ"
+    ],
+    "answer": "蛙の子は蛙",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "オタマジャクシは成長すれば必ず親と同じカエルになることから、子どもは結局親に似るという意味です。"
+  },
+  {
+    "id": "kokugo_koto_051",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【鳶が鷹を生む】平凡な親から、非常に優れた優秀な子どもが生まれることを表すことわざはどれですか。",
+    "options": [
+      "鳶が鷹を生む",
+      "蛙の子は蛙",
+      "瓜の蔓に茄子はならぬ",
+      "虎穴に入らずんば虎子を得ず"
+    ],
+    "answer": "鳶が鷹を生む",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "普通の鳥であるトビ（鳶）から、勇猛で気高い猛禽類であるタカ（鷹）が生まれるというたとえで、「蛙の子は蛙」の対義語です。"
+  },
+  {
+    "id": "kokugo_koto_052",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【鳶が鷹を生む】「平凡な親から非常に優秀な子が生まれる」ことわざ「鳶（とび）が（　　）を生む」の空欄に入る鳥を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "鷹",
+    "acceptableAnswers": [
+      "鷹",
+      "たか"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「鷹（たか）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_053",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【対比】「蛙の子は蛙」と「鳶が鷹を生む」という２つのことわざの関係について、「親に似る」「優秀な子」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「蛙の子は蛙」は子が親に似ることを表すのに対し、「鳶が鷹を生む」は平凡な親から優秀な子が生まれることを表す対義関係にある。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "親に似る",
+      "優秀な子"
+    ],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "遺伝や血統の通りに子が親に似るか、親を大きく凌駕する英才が生まれるかという正反対の状況を表します。"
+  },
+  {
+    "id": "kokugo_koto_054",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【立つ鳥跡を濁さず】立ち去る者は、後が見苦しくないようにきれいに後始末をしておくべきだという意味のことわざはどれですか。",
+    "options": [
+      "立つ鳥跡を濁さず",
+      "飛ぶ鳥を落とす勢い",
+      "雉も鳴かずば撃たれまい",
+      "鵜の目鷹の目"
+    ],
+    "answer": "立つ鳥跡を濁さず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "水鳥が飛び立った後の水面が濁らず清らかであることから、退職や引っ越しなどの際に後始末を美しくする礼儀を説いています。"
+  },
+  {
+    "id": "kokugo_koto_055",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【立つ鳥跡を濁さず】「去る者はきれいに後片付けをするべきだ」ということわざ「立つ鳥跡を（　　）さず」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "濁",
+    "acceptableAnswers": [
+      "濁",
+      "にご"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「濁（にご）さず」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_056",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【雉も鳴かずば撃たれまい】余計な口出しや発言をしたために、自ら災難を招いてしまうことを表すことわざはどれですか。",
+    "options": [
+      "雉も鳴かずば撃たれまい",
+      "口は災いの元",
+      "藪をつついて蛇を出す",
+      "身から出た錆"
+    ],
+    "answer": "雉も鳴かずば撃たれまい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "キジも草むらで鳴かなければ猟師に見つかって撃たれずに済んだものを、というたとえで、無駄なおしゃべりを戒めています。"
+  },
+  {
+    "id": "kokugo_koto_057",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【雉も鳴かずば撃たれまい】このことわざが戒めていることについて、「余計な一言」「災難」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "余計な一言を口にしたために、自ら災難を招いてしまうこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "余計な一言",
+      "災難"
+    ],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「雉（きじ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_058",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【二兎を追う者は一兎をも得ず】同時に二つの利益や目標を追い求めると、欲張りすぎて結局どちらも手に入らないという意味のことわざはどれですか。",
+    "options": [
+      "二兎を追う者は一兎をも得ず",
+      "あぶはちとらず",
+      "捕らぬ狸の皮算用",
+      "犬兎の争い"
+    ],
+    "answer": "二兎を追う者は一兎をも得ず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "西洋のことわざに由来し、走る２羽のウサギを同時に捕まえようとしても失敗することから、目標を一つに絞る大切さを説きます。"
+  },
+  {
+    "id": "kokugo_koto_059",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【あぶはちとらず】「二兎を追う者は一兎をも得ず」と同じ意味をもつ、二種類の昆虫の名前を使った日本のことわざ（ひらがな７文字）を答えなさい。",
+    "options": [],
+    "answer": "あぶはちとらず",
+    "acceptableAnswers": [
+      "あぶはちとらず",
+      "虻蜂取らず"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "「あぶはちとらず（虻蜂取らず）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_060",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "03. 自然・動物・天候のことわざ",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【蓼食う虫も好き好き】人の好みはさまざまで、十人十色であることのたとえに使われることわざはどれですか。",
+    "options": [
+      "蓼食う虫も好き好き",
+      "十人十色",
+      "瓜の蔓に茄子はならぬ",
+      "月と鼈"
+    ],
+    "answer": "蓼食う虫も好き好き",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・03. 自然・動物・天候のことわざ",
+    "explanation": "タデ（蓼）という非常に苦くて辛い植物を好んで食べる虫もいることから、人の嗜好の多様性を表します。"
+  },
+  {
+    "id": "kokugo_koto_061",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【石の上にも三年】どんなにつらく厳しいことでも、辛抱強く根気よく続ければ必ず報われるという意味のことわざはどれですか。",
+    "options": [
+      "石の上にも三年",
+      "石橋をたたいて渡る",
+      "雨だれ石をもうがつ",
+      "急がば回れ"
+    ],
+    "answer": "石の上にも三年",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "冷たい石の上でも３年間座り続ければ温まることから、忍耐強く努力を重ねることの尊さを表します。"
+  },
+  {
+    "id": "kokugo_koto_062",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【石の上にも三年】「辛抱強く耐えれば必ず成果が出る」を表すことわざ「石の上にも（　　）年」の空欄に入る数字を漢字で答えなさい。",
+    "options": [],
+    "answer": "三",
+    "acceptableAnswers": [
+      "三",
+      "さん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「三（さん）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_063",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【雨だれ石をもうがつ】どんなに小さな力でも、コツコツと長く休まず続ければ大きな事を成し遂げられるという意味のことわざはどれですか。",
+    "options": [
+      "雨だれ石をもうがつ",
+      "塵も積もれば山となる",
+      "千里の道も一歩から",
+      "石の上にも三年"
+    ],
+    "answer": "雨だれ石をもうがつ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "軒下から落ちる雨粒のしずくでも、長い年月落ち続ければ硬い石に穴をあけることができるという意味です。"
+  },
+  {
+    "id": "kokugo_koto_064",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【雨だれ石をもうがつ】「微力でも継続すれば硬い石に穴をあける」ことわざ「雨だれ石を（　　）」の空欄に入る言葉を漢字１文字またはひらがなで答えなさい。",
+    "options": [],
+    "answer": "穿つ",
+    "acceptableAnswers": [
+      "穿つ",
+      "うがつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「穿つ（うがつ）」が入ります。穴をあけるという意味です。"
+  },
+  {
+    "id": "kokugo_koto_065",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【雨だれ石をもうがつ】このことわざが教える「努力のあり方」について、「小さな力」「継続」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "雨だれのように小さな力であっても、継続して積み重ねれば大きな成果を達成できること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "小さな力",
+      "継続"
+    ],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "どんなに些細な努力であっても、休まず根気よく続けることの大切さを説いています。"
+  },
+  {
+    "id": "kokugo_koto_066",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【千里の道も一歩から】どんなに遠大で大がかりな事業であっても、足元の身近な第一歩から始まるという意味のことわざはどれですか。",
+    "options": [
+      "千里の道も一歩から",
+      "塵も積もれば山となる",
+      "急がば回れ",
+      "善は急げ"
+    ],
+    "answer": "千里の道も一歩から",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "老子の言葉に由来し、高い目標を前にして圧倒されず、まず目の前の確実な一歩を踏み出すことの重要性を説いています。"
+  },
+  {
+    "id": "kokugo_koto_067",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【千里の道も一歩から】「遠い旅も最初の一歩から始まる」ことわざ「千里の道も（　　）歩から」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "一",
+    "acceptableAnswers": [
+      "一",
+      "いち"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「一（いち）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_068",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【塵も積もれば山となる】ごくわずかな小事や小さなものでも、積み重なれば莫大なものになるという意味のことわざはどれですか。",
+    "options": [
+      "塵も積もれば山となる",
+      "雨だれ石をもうがつ",
+      "雀の涙",
+      "焼け石に水"
+    ],
+    "answer": "塵も積もれば山となる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "風に舞うようなゴミやホコリでも、積もれば大きな山になることから、日々の小さな積み重ねの大切さを表します。"
+  },
+  {
+    "id": "kokugo_koto_069",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【塵も積もれば山となる】「小事の積み重ねが大事になる」ことわざ「（　　）も積もれば山となる」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "塵",
+    "acceptableAnswers": [
+      "塵",
+      "ちり"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「塵（ちり）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_070",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【弘法にも筆の誤り】その道の達人や大家であっても、時には失敗することがあるという意味のことわざはどれですか。",
+    "options": [
+      "弘法にも筆の誤り",
+      "猿も木から落ちる",
+      "河童の川流れ",
+      "釈迦に説法"
+    ],
+    "answer": "弘法にも筆の誤り",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "書道の達人であった弘法大師（空海）でさえ、大内裏の応天門の額を書いた際に「応」の字の初画の点を打ち忘れたという伝説によります。"
+  },
+  {
+    "id": "kokugo_koto_071",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【弘法にも筆の誤り】達人の失敗を例にしたこのことわざの教訓について、「達人」「失敗」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "どんなに優れた達人であっても、油断や偶然で時には失敗することがあるということ。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "達人",
+      "失敗"
+    ],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「猿（さる）」が入ります。「河童の川流れ」も同義です。"
+  },
+  {
+    "id": "kokugo_koto_072",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【勝って兜の緒を締めよ】成功や勝利をおさめた後こそ、油断せず気を引き締めるべきだという意味のことわざはどれですか。",
+    "options": [
+      "勝って兜の緒を締めよ",
+      "油断大敵",
+      "石橋をたたいて渡る",
+      "急がば回れ"
+    ],
+    "answer": "勝って兜の緒を締めよ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "戦いに勝ったからといって安心して兜を脱ぎ捨てず、緒を締め直して警戒を怠るなという武士の教訓です。"
+  },
+  {
+    "id": "kokugo_koto_073",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【勝って兜の緒を締めよ】「成功の後こそ油断するな」という教訓「勝って（　　）の緒を締めよ」の空欄に入る防具を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "兜",
+    "acceptableAnswers": [
+      "兜",
+      "かぶと"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「兜（かぶと）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_074",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【勝って兜の緒を締めよ】戦いに勝った直後に兜の緒を締めるべき理由について、「勝利」「油断」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "勝利の喜びに浸って油断すると、思わぬ反撃や隙を突かれて失敗するから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "勝利",
+      "油断"
+    ],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "成功した直後こそ最も油断が生じやすいため、気を引き締め直す必要があると戒めています。"
+  },
+  {
+    "id": "kokugo_koto_075",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【石橋をたたいて渡る】頑丈に作られた石の橋でも念のために叩いて安全を確かめるように、用心の上にも用心深く物事を行うことを表すことわざはどれですか。",
+    "options": [
+      "石橋をたたいて渡る",
+      "急がば回れ",
+      "備えあれば憂いなし",
+      "勝って兜の緒を締めよ"
+    ],
+    "answer": "石橋をたたいて渡る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "壊れる心配のない石橋でも叩いて確かめてから渡るという、極めて慎重な態度を表します。慎重すぎて好機を逃す意味でも使われます。"
+  },
+  {
+    "id": "kokugo_koto_076",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【石橋をたたいて渡る】「用心に用心を重ねる」たとえ「（　　）をたたいて渡る」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "石橋",
+    "acceptableAnswers": [
+      "石橋",
+      "いしばし"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「石橋（いしばし）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_077",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【急がば回れ】急ぐときこそ、危険な近道を行くよりも遠回りで安全確実な道を選ぶほうが早く着くという意味のことわざはどれですか。",
+    "options": [
+      "急がば回れ",
+      "善は急げ",
+      "思い立ったが吉日",
+      "時は金なり"
+    ],
+    "answer": "急がば回れ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "琵琶湖を舟で渡る近道は比叡おろしの突風で転覆の危険があるため、遠くても瀬田の唐橋を回る陸路が確実であるという宗長の短歌に由来します。"
+  },
+  {
+    "id": "kokugo_koto_078",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【急がば回れ】「急ぐときこそ安全確実な道を選べ」ということわざ「急がば（　　）れ」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "回",
+    "acceptableAnswers": [
+      "回",
+      "まわ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "「回（まわ）れ」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_079",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【対比】「急がば回れ」と「善は急げ」という２つのことわざの使い分けについて、「良いこと」「危険」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「善は急げ」は良いことなら迷わず直ちに行うべき時に使い、「急がば回れ」は急ぐあまり危険な近道を選んで失敗しそうな時に使う。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "良いこと",
+      "危険"
+    ],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "道徳的・建設的に良い行いは即座に着手すべきであり、手順や道筋においては焦ってリスクを取るべきではないという使い分けです。"
+  },
+  {
+    "id": "kokugo_koto_080",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "04. 努力・油断・失敗のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ぬか喜び】一度は喜んだものの、当てが外れて喜びが無駄になることを何といいますか。",
+    "options": [
+      "ぬか喜び",
+      "捕らぬ狸の皮算用",
+      "絵に描いた餅",
+      "青菜に塩"
+    ],
+    "answer": "ぬか喜び",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・04. 努力・油断・失敗のことわざ",
+    "explanation": "米ぬかのように実質がなく粉々にはかない喜びという意味です。"
+  },
+  {
+    "id": "kokugo_koto_081",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【笑う門には福来る】いつも和やかに笑い声が満ちている家庭には、自然と幸福がやって来るという意味のことわざはどれですか。",
+    "options": [
+      "笑う門には福来る",
+      "果報は寝て待て",
+      "棚から牡丹餅",
+      "渡りに船"
+    ],
+    "answer": "笑う門には福来る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「門（かど）」は家・家族を意味し、明るく仲良く暮らすことが幸福を引き寄せる秘訣であると説いています。"
+  },
+  {
+    "id": "kokugo_koto_082",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【笑う門には福来る】「笑顔の絶えない家に幸福が訪れる」ことわざ「笑う（　　）には福来る」の空欄に入る、家を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "門",
+    "acceptableAnswers": [
+      "門",
+      "かど"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「門（かど）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_083",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【笑う門には福来る】このことわざにおける「門」の意味と、教えについて、「家庭」「笑顔」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "門とは家や家庭のことであり、いつも笑顔が絶えない明るい家庭には自然と幸せが巡ってくるという教え。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "家庭",
+      "笑顔"
+    ],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "険悪な雰囲気ではなく、朗らかで温かい雰囲気を保つことが運気を高めるという人生の教訓です。"
+  },
+  {
+    "id": "kokugo_koto_084",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【棚から牡丹餅】思いがけない幸運が、何の苦労もなく転がり込んでくることを表すことわざはどれですか。",
+    "options": [
+      "棚から牡丹餅",
+      "果報は寝て待て",
+      "濡れ手で粟",
+      "海老で鯛を釣る"
+    ],
+    "answer": "棚から牡丹餅",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "棚の下で寝転んでいたら、上の棚から好物のぼたもちが偶然落ちてきて口に入ったというたとえです。略して「たなぼた」とも言います。"
+  },
+  {
+    "id": "kokugo_koto_085",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【棚から牡丹餅】「思いがけない幸運が舞い込む」たとえ「（　　）から牡丹餅（ぼたもち）」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "棚",
+    "acceptableAnswers": [
+      "棚",
+      "たな"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「棚（たな）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_086",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【果報は寝て待て】幸運の訪れは人の力ではどうにもできないので、焦らずに時期が来るのを静かに待つのがよいという意味のことわざはどれですか。",
+    "options": [
+      "果報は寝て待て",
+      "棚から牡丹餅",
+      "待てば海路の日和あり",
+      "笑う門には福来る"
+    ],
+    "answer": "果報は寝て待て",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「果報」とは仏教用語で前世の善行に対する幸福な報いのことで、やるべきことをやったら焦らず天命を待てという意味です。"
+  },
+  {
+    "id": "kokugo_koto_087",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【果報は寝て待て】「幸運は焦らず気長に待て」を表すことわざ「（　　）は寝て待て」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "果報",
+    "acceptableAnswers": [
+      "果報",
+      "かほう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「果報（かほう）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_088",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【捕らぬ狸の皮算用】まだ手に入っていないものを当てにして、前もって利益の計算をする愚かさを表すことわざはどれですか。",
+    "options": [
+      "捕らぬ狸の皮算用",
+      "絵に描いた餅",
+      "あぶはちとらず",
+      "ぬか喜び"
+    ],
+    "answer": "捕らぬ狸の皮算用",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "まだ山で生きて走っているタヌキを捕まえてもいないのに、毛皮が高く売れると見込んで皮の計算をするというたとえです。略して「皮算用」とも言います。"
+  },
+  {
+    "id": "kokugo_koto_089",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【捕らぬ狸の皮算用】「未定の利益を先走って計算する」ことわざ「捕らぬ（　　）の皮算用」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "狸",
+    "acceptableAnswers": [
+      "狸",
+      "たぬき"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「狸（たぬき）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_090",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【捕らぬ狸の皮算用】このことわざが戒めている計画の立て方について、「不確定」「利益」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "まだ手に入るか分からない不確定なものを前提にして、先走って利益を計算すること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "不確定",
+      "利益"
+    ],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "確実に手に入れてから計画すべきであり、見込みだけで金銭や結果を当てにすることを戒めています。"
+  },
+  {
+    "id": "kokugo_koto_091",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【海老で鯛を釣る】わずかな元手や贈り物で、思いがけず大きな獲物や利益を得ることを表すことわざはどれですか。",
+    "options": [
+      "海老で鯛を釣る",
+      "濡れ手で粟",
+      "棚から牡丹餅",
+      "損して得取れ"
+    ],
+    "answer": "海老で鯛を釣る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "安価な小さなエビを餌にして、高級で巨大なタイを釣り上げることから、小さな投資で大儲けすることを指します。「エビタイ」とも略されます。"
+  },
+  {
+    "id": "kokugo_koto_092",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【海老で鯛を釣る】「わずかな元手で大きな獲物を得る」ことわざ「（　　）で鯛を釣る」の空欄に入る海の生き物を表す漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "海老",
+    "acceptableAnswers": [
+      "海老",
+      "えび",
+      "蝦"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「海老（えび）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_093",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【渡りに船】困っているときや何かをしたいと思っているときに、都合の良い助けや好機が巡ってくることを表すことわざはどれですか。",
+    "options": [
+      "渡りに船",
+      "地獄で仏",
+      "棚から牡丹餅",
+      "風馬牛"
+    ],
+    "answer": "渡りに船",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "川を渡ろうとして困っているところに、ちょうど渡し舟がやって来るという意味から、願ってもない好都合な援助を指します。"
+  },
+  {
+    "id": "kokugo_koto_094",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【渡りに船】「川を渡りたい時に船が来る」ことから、都合の良い好機に出会うことを指すことわざ「渡りに（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "船",
+    "acceptableAnswers": [
+      "船",
+      "ふね",
+      "舟"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「船（ふね）」が入ります。"
+  },
+  {
+    "id": "kokugo_koto_095",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【泣き面に蜂】不幸や災難が重なって起こり、ますます苦しい立場に追い込まれることを表すことわざはどれですか。",
+    "options": [
+      "泣き面に蜂",
+      "弱り目に祟り目",
+      "身から出た錆",
+      "踏んだり蹴ったり"
+    ],
+    "answer": "泣き面に蜂",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "泣いてただでさえ悲痛な顔をしているところに、追い打ちをかけるようにハチが刺すことから、災難が二重三重に重なることを意味します。"
+  },
+  {
+    "id": "kokugo_koto_096",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【泣き面に蜂】「災難の上にさらに災難が重なる」ことわざ「泣き面に（　　）」の空欄に入る昆虫を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "蜂",
+    "acceptableAnswers": [
+      "蜂",
+      "はち"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「蜂（はち）」が入ります。「弱り目に祟り目」と同義です。"
+  },
+  {
+    "id": "kokugo_koto_097",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【怪我の功名】失敗や過失、何気なく起こした偶然の行動が、思いがけず好結果をもたらすことを表すことわざはどれですか。",
+    "options": [
+      "怪我の功名",
+      "棚から牡丹餅",
+      "塞翁が馬",
+      "損して得取れ"
+    ],
+    "answer": "怪我の功名",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "本来は怪我をするようなミスや災難であったはずが、偶然良い手柄（功名）につながったことを意味します。"
+  },
+  {
+    "id": "kokugo_koto_098",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【怪我の功名】失敗から思わぬ好結果が生まれた状況について、「失敗」「偶然」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "元々は過失や失敗であった行動が、偶然に良い手柄や好結果を生み出すこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "失敗",
+      "偶然"
+    ],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「功名（こうみょう）」が入ります。手柄という意味です。"
+  },
+  {
+    "id": "kokugo_koto_099",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【禍を転じて福と為す】身に降りかかった災難や失敗をうまく利用して、かえって幸福や有利な状況に変えることを表す成語はどれですか。",
+    "options": [
+      "禍を転じて福と為す",
+      "怪我の功名",
+      "塞翁が馬",
+      "雨降って地固まる"
+    ],
+    "answer": "禍を転じて福と為す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「わざわいをてんじてふくとなす（戦国策）」は、ピンチをチャンスに変えて災難を克服する主体的で積極的な努力を讃える言葉です。"
+  },
+  {
+    "id": "kokugo_koto_100",
+    "subject": "国語",
+    "category": "ことわざ",
+    "subCategory": "05. 幸福・災い・運命のことわざ",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【禍を転じて福と為す】「災難をバネにして幸福に変える」成語「（　　）を転じて福と為す」の空欄に入る、災いを表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "禍",
+    "acceptableAnswers": [
+      "禍",
+      "わざわい",
+      "災"
+    ],
+    "keywords": [],
+    "knowledgeTag": "ことわざ・05. 幸福・災い・運命のことわざ",
+    "explanation": "「禍（わざわい）」が入ります。「災い転じて福となす」とも書きます。"
+  }
+]

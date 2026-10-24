@@ -1,0 +1,1896 @@
+[
+  {
+    "id": "kokugo_koji_001",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【塞翁が馬】人生の幸不幸は予測できないという意味の故事成語はどれですか。",
+    "options": [
+      "塞翁が馬",
+      "漁夫の利",
+      "呉越同舟",
+      "推敲"
+    ],
+    "answer": "塞翁が馬",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「塞翁が馬（さいおうがうま）」は、国境の砦の老人の馬が逃げたが名馬を連れて戻り、その馬で息子が落馬して足を折ったが戦争に行かずに命拾いした故事から、幸不幸は転変無常で予測できないことを表します。"
+  },
+  {
+    "id": "kokugo_koji_002",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【塞翁が馬】「人間万事（　　）が馬」のことわざで、（　　）に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "塞翁",
+    "acceptableAnswers": [
+      "塞翁",
+      "さいおう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「人間（じんかん＝世の中）万事塞翁が馬」と使われます。「塞」はとりで、「翁」はおじいさんを意味します。"
+  },
+  {
+    "id": "kokugo_koji_003",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【塞翁が馬】この故事成語が教える「物事に対する心構え」について、「幸運」「不幸」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "良いことがあっても喜びすぎず、悪いことがあっても落ち込みすぎないこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "幸運",
+      "不幸"
+    ],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "一見幸運に見えることが不幸の原因になり、不幸に見えたことが幸運につながるため、目先の幸不幸に一喜一憂すべきではないという教えです。"
+  },
+  {
+    "id": "kokugo_koji_004",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【他山の石】他人の誤った言動でも、自分の人格を磨くための手本になるという意味の故事成語はどれですか。",
+    "options": [
+      "背水の陣",
+      "他山の石",
+      "完璧",
+      "画竜点睛"
+    ],
+    "answer": "他山の石",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「他山の石」は、よその山から出た粗悪な石でも、自分の玉を磨く砥石に使えるという意味から、他人の誤りや欠点も自分の成長の参考になることを意味します。"
+  },
+  {
+    "id": "kokugo_koji_005",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【他山の石】「他人の振り見て我が振り直せ」とほぼ同じ意味をもつ故事成語（漢字４文字）を答えなさい。",
+    "options": [],
+    "answer": "他山の石",
+    "acceptableAnswers": [
+      "他山の石",
+      "たざんのいし"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "他人の良くない言動や失敗を手本にして自分を正すことを「他山の石とする」といいます。"
+  },
+  {
+    "id": "kokugo_koji_006",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【他山の石】「他山の石」を「他人の立派な行動を手本にする」という意味で使うのが誤りである理由を、「粗悪な石」「玉」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "本来は他山の粗悪な石でも自分の玉を磨く砥石になるという意味であり、手本とする対象は他人の欠点や失敗だから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "粗悪な石",
+      "玉"
+    ],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「他山の石」の「石」は宝石ではなく砥石にするつまらない石を指すため、他人の優れた行いではなく、他人の失敗や悪い言動を手本とする際に使うのが本来の用法です。"
+  },
+  {
+    "id": "kokugo_koji_007",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【朝三暮四】目先の違いにとらわれて、実際には結果が同じであることに気づかないことを表す故事成語はどれですか。",
+    "options": [
+      "呉越同舟",
+      "五十歩百歩",
+      "朝三暮四",
+      "四面楚歌"
+    ],
+    "answer": "朝三暮四",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「朝三暮四（ちょうさんぼし）」は、サルの飼い主がトチの実を「朝に３個、夕方に４個」と言ったらサルが怒ったので、「朝に４個、夕方に３個」と言い換えたら喜んだ故事によります。"
+  },
+  {
+    "id": "kokugo_koji_008",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【朝三暮四】サルの飼い主がトチの実の与え方を変えてサルをだました故事に由来する成語「（　　）三暮四」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "朝",
+    "acceptableAnswers": [
+      "朝",
+      "ちょう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "朝三暮四（ちょうさんぼし）の「朝」が入ります。人を言葉巧みに言いくるめることのたとえにも使われます。"
+  },
+  {
+    "id": "kokugo_koji_009",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【鶏口牛後】「大きな集団のしりにつくより、小さな集団の長となるほうがよい」という意味の成語はどれですか。",
+    "options": [
+      "蛇足",
+      "推敲",
+      "蛍雪の功",
+      "鶏口となるも牛後となるなかれ"
+    ],
+    "answer": "鶏口となるも牛後となるなかれ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "中国戦国時代、蘇秦（そしん）が諸侯に同盟を説いた際、「鶏口となるも牛後となるなかれ」と述べたことに由来します。"
+  },
+  {
+    "id": "kokugo_koji_010",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【鶏口牛後】「鶏口となるも（　　）となるなかれ」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "牛後",
+    "acceptableAnswers": [
+      "牛後",
+      "ぎゅうご"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「鶏口」はニワトリのくちばし（小さな団体の長）、「牛後」は牛のしり（大組織の末端）を意味します。"
+  },
+  {
+    "id": "kokugo_koji_011",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【牛耳を執る】同盟や集団のリーダーとなって物事を思いのままに動かすことを表す慣用表現はどれですか。",
+    "options": [
+      "牛耳を執る",
+      "完璧を期す",
+      "背水の陣を敷く",
+      "杜撰を極める"
+    ],
+    "answer": "牛耳を執る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "古代中国で諸侯が同盟を結ぶ際、盟主が牛の耳を切り裂いてその血をすすった故事に由来します。"
+  },
+  {
+    "id": "kokugo_koji_012",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【牛耳を執る】「会議の場で彼が（　　）を執って議論を進めた」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "牛耳",
+    "acceptableAnswers": [
+      "牛耳",
+      "ぎゅうじ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「牛耳（ぎゅうじ）を執る」で、団体を支配し主導権を握ることを意味します。"
+  },
+  {
+    "id": "kokugo_koji_013",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【羊頭狗肉】見かけばかり立派で、中身が伴わないことや、看板と実態が異なることを表す四字熟語はどれですか。",
+    "options": [
+      "画竜点睛",
+      "羊頭狗肉",
+      "臥薪嘗胆",
+      "呉越同舟"
+    ],
+    "answer": "羊頭狗肉",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "羊の頭を看板に掲げておきながら、実際には犬の肉を売るという意味から「羊頭狗肉（ようとうくにく）」といいます。"
+  },
+  {
+    "id": "kokugo_koji_014",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【羊頭狗肉】「羊の頭を掲げて（　　）の肉を売る」の故事に由来する成語で、空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "狗",
+    "acceptableAnswers": [
+      "狗",
+      "犬",
+      "いぬ",
+      "く"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「狗（く）」は犬のことです。「羊頭狗肉」は誇大広告や見かけ倒しを批判するときに使われます。"
+  },
+  {
+    "id": "kokugo_koji_015",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【羊頭狗肉】「羊頭狗肉」の故事の成り立ちと意味について、「看板」「中身」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "羊の頭を看板にして犬の肉を売るように、外見ばかり立派で中身が伴わないこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "看板",
+      "中身"
+    ],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "店頭に立派な羊の頭を掲げて客を引きつけながら、中身は粗悪な犬の肉を売っていたという話から、見かけと実態が一致しないことを表します。"
+  },
+  {
+    "id": "kokugo_koji_016",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【石に漱ぎ流れに枕す】自分の言い間違いや失敗を無理やり正当化して言い逃れることを何といいますか。",
+    "options": [
+      "石に漱ぎ流れに枕す",
+      "病膏肓に入る",
+      "一炊の夢",
+      "完璧"
+    ],
+    "answer": "石に漱ぎ流れに枕す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "本来「石を枕にし、流れで口をすすぐ（枕石漱流）」と言うべきところを誤って「石で口をすすぎ、流れを枕にする」と言ってしまい、それを屁理屈でこじつけた故事によります。"
+  },
+  {
+    "id": "kokugo_koji_017",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【漱石枕流】夏目漱石の筆名の由来ともなった、「石に漱ぎ流れに枕す」を漢字４文字で表した熟語を答えなさい。",
+    "options": [],
+    "answer": "漱石枕流",
+    "acceptableAnswers": [
+      "漱石枕流",
+      "そうせきちんりゅう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "孫楚（そんそ）の負け惜しみのこじつけに由来し、自分の誤りをごまかして頑固に言い張ることを意味します。"
+  },
+  {
+    "id": "kokugo_koji_018",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【一炊の夢】人生の栄華や名声は短く、はかないものであることのたとえを何といいますか。",
+    "options": [
+      "出藍の誉れ",
+      "蛍雪の功",
+      "一炊の夢",
+      "推敲"
+    ],
+    "answer": "一炊の夢",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "青年盧生（ろせい）が道士の枕を借りて寝たところ、富貴を極めた一生の夢を見たが、目覚めると炊いていた粟（あわ）の飯がまだ煮えていなかったという故事（邯鄲の枕）によります。"
+  },
+  {
+    "id": "kokugo_koji_019",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【一炊の夢】「一炊の夢」と同じく人生のはかなさを表す、盧生が夢を見た土地の名をとった故事成語「（　　）の枕」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "邯鄲",
+    "acceptableAnswers": [
+      "邯鄲",
+      "かんたん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「邯鄲（かんたん）の枕」または「邯鄲の夢」とも言います。"
+  },
+  {
+    "id": "kokugo_koji_020",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【病膏肓に入る】病気が重くなって治療の手だてがなくなることや、趣味などに深く熱中して抜け出せなくなることを表す成語はどれですか。",
+    "options": [
+      "病膏肓に入る",
+      "四面楚歌",
+      "背水の陣",
+      "五十歩百歩"
+    ],
+    "answer": "病膏肓に入る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「膏」は心臓の下部、「肓」は横隔膜の上部で、薬や鍼（はり）が届かない身体の深部を指します。転じて趣味や道楽に過度にのめり込むことにも使われます。"
+  },
+  {
+    "id": "kokugo_koji_021",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【病膏肓に入る】「病膏肓に入る」の「膏肓」の読みがなを、ひらがなで答えなさい。",
+    "options": [],
+    "answer": "こうこう",
+    "acceptableAnswers": [
+      "こうこう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「やまいこうこうにいる」と読みます。"
+  },
+  {
+    "id": "kokugo_koji_022",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【漁夫の利】当事者どうしが争っているすきに、第三者が苦労せずに利益を横取りすることを何といいますか。",
+    "options": [
+      "完璧",
+      "漁夫の利",
+      "蛇足",
+      "塞翁が馬"
+    ],
+    "answer": "漁夫の利",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "シギとハマグリが挟み合って争っているところに漁師が通りかかり、両方をいとも簡単に捕まえてしまったという故事によります。"
+  },
+  {
+    "id": "kokugo_koji_023",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【漁夫の利】「シギとドブ貝が争っている間に（　　）が得をした」という故事から生まれた成語の、（　　）に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "漁夫",
+    "acceptableAnswers": [
+      "漁夫",
+      "ぎょふ",
+      "漁父"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "「漁夫（ぎょふ）の利」が入ります。「漁父の利」とも書きます。"
+  },
+  {
+    "id": "kokugo_koji_024",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【漁夫の利】「漁夫の利」の由来となった出来事について、「シギ」「貝」「第三者」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "シギと貝がお互いに争って離れずにいるところを、通りかかった漁師という第三者に捕らえられたこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "シギ",
+      "貝",
+      "第三者"
+    ],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "ハマグリ（ドブ貝）がシギのくちばしを挟み、シギも離さないでいるうちに、両方とも漁師に捕獲された話から、当事者の争いの隙に第三者が利益を得ることを指します。"
+  },
+  {
+    "id": "kokugo_koji_025",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "01. 中国の古典・歴史に由来する故事成語①（思想・処世）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【漁夫の利】「漁夫の利」と同様に、二者が争う間に別の者が利益を得ることを表す成語はどれですか。",
+    "options": [
+      "犬兎の争い",
+      "呉越同舟",
+      "臥薪嘗胆",
+      "朝三暮四"
+    ],
+    "answer": "犬兎の争い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・01. 中国の古典・歴史に由来する故事成語①",
+    "explanation": "足の速い犬と素早いウサギが追いかけっこをして共に疲れて倒れたところを、通りがかりの農夫が拾ったという「犬兎の争い（けんとのあらそい）」も同義です。"
+  },
+  {
+    "id": "kokugo_koji_026",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【四面楚歌】まわりがすべて敵や反対者ばかりで、孤立無援の状態を表す故事成語はどれですか。",
+    "options": [
+      "背水の陣",
+      "四面楚歌",
+      "呉越同舟",
+      "完璧"
+    ],
+    "answer": "四面楚歌",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "項羽（こうう）が劉邦（りゅうほう）の軍に包囲された際、夜に四方の敵陣から故郷である楚の国の歌が聞こえ、楚の民が皆降伏したと悟って絶望した故事によります。"
+  },
+  {
+    "id": "kokugo_koji_027",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【四面楚歌】「周囲を敵に囲まれ味方がいない状態」を指す故事成語「四面（　　）」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "楚歌",
+    "acceptableAnswers": [
+      "楚歌",
+      "そか"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「四面楚歌（しめんそか）」が入ります。楚の国の歌を歌わせて敵の戦意をくじく心理作戦でした。"
+  },
+  {
+    "id": "kokugo_koji_028",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【四面楚歌】漢軍が包囲した項羽軍に向けて楚の歌を歌わせた理由について、「故郷」「戦意」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "楚の兵士たちに故郷を思い出させ、戦意を喪失させて投降を促すため。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "故郷",
+      "戦意"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "漢軍に包囲された楚の兵士に故郷の歌を聴かせることで、故郷がすでに敵の手に落ちたと思い込ませ、戦う意欲を奪う作戦でした。"
+  },
+  {
+    "id": "kokugo_koji_029",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【背水の陣】失敗すれば後がないという決死の覚悟で物事に当たることを表す成語はどれですか。",
+    "options": [
+      "背水の陣",
+      "画竜点睛",
+      "推敲",
+      "蛍雪の功"
+    ],
+    "answer": "背水の陣",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "漢の名将・韓信（かんしん）が、川を背にして陣を敷き、兵士に「退却すれば水におぼれる」という逃げ場のない状況を作って必死に戦わせ、大軍を破った故事によります。"
+  },
+  {
+    "id": "kokugo_koji_030",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【背水の陣】「川を背にして陣を敷く」という意味から、退路を断って決死の覚悟で挑むことを表す成語「（　　）の陣」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "背水",
+    "acceptableAnswers": [
+      "背水",
+      "はいすい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「背水の陣（はいすいのじん）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_031",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【背水の陣】韓信が川を背にして陣を敷いた狙いについて、「逃げ場」「必死」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "兵士たちから逃げ場をなくすことで、生き残るために必死に戦わせるため。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "逃げ場",
+      "必死"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "退路を断つことで兵士たちに死に物狂いの覚悟を持たせ、圧倒的な敵軍に立ち向かわせる心理的作戦でした。"
+  },
+  {
+    "id": "kokugo_koji_032",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【呉越同舟】仲の悪い者どうしが同じ場所に居合わせたり、協力したりすることを表す故事成語はどれですか。",
+    "options": [
+      "五十歩百歩",
+      "朝三暮四",
+      "呉越同舟",
+      "切磋琢磨"
+    ],
+    "answer": "呉越同舟",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "敵対関係にあった「呉」と「越」の人々でも、同じ船に乗っていて嵐に遭えば、左右の手のように助け合うという故事（孫子）によります。"
+  },
+  {
+    "id": "kokugo_koji_033",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【呉越同舟】激しく対立する二つの国の名を取った成語「（　　）同舟」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "呉越",
+    "acceptableAnswers": [
+      "呉越",
+      "ごえつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「呉越同舟（ごえつどうしゅう）」が入ります。普段は敵対していても共通の困難には協力することのたとえです。"
+  },
+  {
+    "id": "kokugo_koji_034",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【五十歩百歩】多少の違いはあっても、本質的には同じであることを表す成語はどれですか。",
+    "options": [
+      "五十歩百歩",
+      "他山の石",
+      "完璧",
+      "蛇足"
+    ],
+    "answer": "五十歩百歩",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "戦場で50歩逃げた者が、100歩逃げた者を「臆病者だ」と笑ったが、逃げたことには変わりがないという孟子の故事によります。"
+  },
+  {
+    "id": "kokugo_koji_035",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【五十歩百歩】「似たり寄ったりで大差がない」という意味の成語「（　　）歩百歩」の空欄に入る数字を漢字で答えなさい。",
+    "options": [],
+    "answer": "五十",
+    "acceptableAnswers": [
+      "五十",
+      "ごじゅう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「五十歩百歩（ごじっぽひっぽ）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_036",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【五十歩百歩】なぜ50歩逃げた兵士が100歩逃げた兵士を笑うのがおかしいのか、「逃げた」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "距離の差はあっても、敵から逃げたという点ではまったく同じだから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "逃げた",
+      "同じ"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "50歩でも100歩でも戦場から逃走したという本質的な事実に違いはないため、相手を笑う理由にならないという孟子の教えです。"
+  },
+  {
+    "id": "kokugo_koji_037",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【臥薪嘗胆】将来の成功や復讐のために、長い間苦労に耐え忍ぶことを表す四字熟語はどれですか。",
+    "options": [
+      "画竜点睛",
+      "臥薪嘗胆",
+      "羊頭狗肉",
+      "朝三暮四"
+    ],
+    "answer": "臥薪嘗胆",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "呉王夫差が薪（たきぎ）の上に寝て父の敵討ちを誓い、越王勾践が苦い胆（きも）をなめて敗戦の屈辱を忘れまいとした故事によります。"
+  },
+  {
+    "id": "kokugo_koji_038",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【臥薪嘗胆】「薪の上に寝て、苦い（　　）をなめる」という苦行の故事から生まれた成語の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "胆",
+    "acceptableAnswers": [
+      "胆",
+      "肝",
+      "たん",
+      "きも"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「臥薪嘗胆（がしんしょうたん）」の「胆」です。目標達成のために苦難を耐え忍ぶことを意味します。"
+  },
+  {
+    "id": "kokugo_koji_039",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【臥薪嘗胆】「薪の上に寝る」「苦い胆をなめる」という行動に共通する目的について、「屈辱」「忘れない」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "受けた屈辱や悔しさを決して忘れないようにするため。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "屈辱",
+      "忘れない"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "肉体的な苦痛や苦さを味わい続けることで、受けた恥辱や復讐の誓いを風化させず、心に刻み続けることが目的でした。"
+  },
+  {
+    "id": "kokugo_koji_040",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【完璧】欠点がまったくなく、非の打ち所がない完全な状態を表す成語はどれですか。",
+    "options": [
+      "完璧",
+      "白眉",
+      "圧巻",
+      "登竜門"
+    ],
+    "answer": "完璧",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "趙の藺相如（りんしょうじょ）が、秦の昭王に奪われそうになった名玉「和氏の璧（へき）」を、命がけで無傷のまま国に持ち帰った故事（璧を完うす）によります。"
+  },
+  {
+    "id": "kokugo_koji_041",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "input",
+    "question": "【完璧】「璧を完（全）うして趙に帰る」という故事からできた熟語で、「璧」の下の部分は「玉」ですが、この熟語を漢字２文字で正しく書きなさい。",
+    "options": [],
+    "answer": "完璧",
+    "acceptableAnswers": [
+      "完璧",
+      "かんぺき"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「完璧」の「璧」の下は「玉」です。「壁（かべ＝土）」と書き間違えないように中学入試で最頻出です。"
+  },
+  {
+    "id": "kokugo_koji_042",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【完璧】故事成語「完璧」の「璧」とはどのようなものか、「宝玉」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "中央に穴の開いた平らな円形の宝玉のこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "宝玉",
+      "玉"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「璧（へき）」とは古代中国の貴重な環状の宝玉のことで、傷ひとつつけずに持ち帰ったことから完全無欠を意味するようになりました。"
+  },
+  {
+    "id": "kokugo_koji_043",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【泣いて馬謖を斬る】規律や秩序を守るために、愛する者や有能な者であっても私情を捨てて厳罰に処すことを表す成語はどれですか。",
+    "options": [
+      "泣いて馬謖を斬る",
+      "背水の陣",
+      "漁夫の利",
+      "塞翁が馬"
+    ],
+    "answer": "泣いて馬謖を斬る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "三国時代、蜀の諸葛孔明が、命令に背いて街亭の戦いで大敗を喫した愛弟子の馬謖（ばしょく）を、軍律の厳格さを示すために涙を流しながら処刑した故事によります。"
+  },
+  {
+    "id": "kokugo_koji_044",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【泣いて馬謖を斬る】諸葛孔明が軍律を守るために涙をのんで処刑した武将の名（漢字２文字）を答えなさい。",
+    "options": [],
+    "answer": "馬謖",
+    "acceptableAnswers": [
+      "馬謖",
+      "ばしょく"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "馬謖（ばしょく）が入ります。私情に流されず法を守ることの重要性を説いています。"
+  },
+  {
+    "id": "kokugo_koji_045",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【泣いて馬謖を斬る】孔明が馬謖を処刑せざるを得なかった理由について、「軍律」「私情」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "私情を優先して違反を見逃せば軍律が保てなくなるため。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "軍律",
+      "私情"
+    ],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "馬謖を可愛がっていた孔明ですが、命令違反を罰しなければ軍全体の規律が乱れてしまうため、私情を断ち切って厳罰に処しました。"
+  },
+  {
+    "id": "kokugo_koji_046",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【敗軍の将は兵を語らず】戦いに敗れた者は、そのことについて弁解したり偉そうに意見を述べたりすべきではないという意味の成語はどれですか。",
+    "options": [
+      "他山の石",
+      "敗軍の将は兵を語らず",
+      "蛇足",
+      "推敲"
+    ],
+    "answer": "敗軍の将は兵を語らず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "漢の韓信に捕らえられた趙の広武君（李左車）が、韓信から戦術を問われた際に答えた言葉に由来します。失敗した者が言い訳を慎む態度を表します。"
+  },
+  {
+    "id": "kokugo_koji_047",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【敗軍の将は兵を語らず】「戦いに負けた将軍は軍事について口出ししない」という意味の成語「敗軍の将は（　　）を語らず」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "兵",
+    "acceptableAnswers": [
+      "兵",
+      "へい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「兵（へい＝軍事・戦術）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_048",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【鼎の軽重を問う】統治者や権力者の実力を疑い、その地位を奪おうとすることを表す成語はどれですか。",
+    "options": [
+      "鼎の軽重を問う",
+      "牛耳を執る",
+      "完璧を期す",
+      "白眉"
+    ],
+    "answer": "鼎の軽重を問う",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "楚の荘王が周の都の近くまで進軍し、王の権威の象徴であった九つの鼎（かなえ）の重さを尋ねて王位を奪おうとする野心を示した故事によります。"
+  },
+  {
+    "id": "kokugo_koji_049",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【鼎の軽重を問う】王位の象徴である器の重さを尋ねた故事に由来する成語「（　　）の軽重を問う」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "鼎",
+    "acceptableAnswers": [
+      "鼎",
+      "かなえ",
+      "てい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "「鼎（かなえ）」は古代中国の三本足の青銅器で、国家の支配権を象徴していました。"
+  },
+  {
+    "id": "kokugo_koji_050",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "02. 中国の古典・歴史に由来する故事成語②（戦い・勝敗）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【鳴かず飛ばず】将来活躍する機会をじっと待ち、何年も何の活動もせずおとなしくしている様子を表す成語はどれですか。",
+    "options": [
+      "鳴かず飛ばず",
+      "臥薪嘗胆",
+      "病膏肓に入る",
+      "四面楚歌"
+    ],
+    "answer": "鳴かず飛ばず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・02. 中国の古典・歴史に由来する故事成語②",
+    "explanation": "楚の荘王が即位後3年間何もしないで見えたが、「一度飛べば天に昇り、一度鳴けば人を驚かす」と答えて後に覇者となった故事によります。"
+  },
+  {
+    "id": "kokugo_koji_051",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【蛍雪の功】苦労して学問に励み、成果をあげることを表す四字熟語はどれですか。",
+    "options": [
+      "画竜点睛",
+      "推敲",
+      "蛍雪の功",
+      "出藍の誉れ"
+    ],
+    "answer": "蛍雪の功",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "晋の車胤（しゃいん）がホタルの光を集めて本を読み、孫康（そんこう）が雪明かりで勉強した故事によります。卒業式の歌「蛍の光」の原点です。"
+  },
+  {
+    "id": "kokugo_koji_052",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【蛍雪の功】貧しくて灯火の油が買えず、ホタルの光や雪の反射光で読書した故事から生まれた熟語「（　　）の功」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "蛍雪",
+    "acceptableAnswers": [
+      "蛍雪",
+      "けいせつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「蛍雪（けいせつ）の功」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_053",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【蛍雪の功】「蛍雪」という言葉の由来について、「ホタル」「雪」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "ホタルの光や雪に反射した明かりを頼りにして夜遅くまで勉強したこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "ホタル",
+      "雪"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "貧しくて灯油を買えなかった学者が、夏は蛍を集めてその光で、冬は窓辺の雪明かりで読書に励んだという故事に基づきます。"
+  },
+  {
+    "id": "kokugo_koji_054",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【推敲】詩や文章の字句や表現を何度も練り直して良くすることを何といいますか。",
+    "options": [
+      "推敲",
+      "杜撰",
+      "完璧",
+      "画竜点睛"
+    ],
+    "answer": "推敲",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "唐の詩人・賈島（かとう）が「僧は推す月下の門」とするか「僧は敲く月下の門」とするかロバの上で迷い、韓愈（かんゆ）に相談して「敲（たたく）」が良いと決めた故事によります。"
+  },
+  {
+    "id": "kokugo_koji_055",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【推敲】「門を推す（おす）」か「門を敲く（たたく）」かで迷った故事に由来する成語（漢字２文字）を答えなさい。",
+    "options": [],
+    "answer": "推敲",
+    "acceptableAnswers": [
+      "推敲",
+      "すいこう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「推敲（すいこう）」が入ります。文章を何度も推敲して完成度を高めるという意味で使われます。"
+  },
+  {
+    "id": "kokugo_koji_056",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【推敲】賈島が詩を作るときに迷った「推」と「敲」という２つの動作の違いについて説明しなさい。",
+    "options": [],
+    "answer": "門を静かに手で「押す」か、音を立てて「たたく」かという違い。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "押す",
+      "たたく"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "夜の静けさの中で、門を押し開けるのがよいか、トントンと叩くのがよいかという情景描写の推敲でした。"
+  },
+  {
+    "id": "kokugo_koji_057",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【出藍の誉れ】弟子が師匠よりも優れた才能を発揮して有名になることを表す成語はどれですか。",
+    "options": [
+      "出藍の誉れ",
+      "登竜門",
+      "蛍雪の功",
+      "他山の石"
+    ],
+    "answer": "出藍の誉れ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「青は藍（あい）より出でて藍より青し」（荀子）から、藍草から取った染料の青色は元の藍草よりも青いという意味で、弟子が師を越えることを表します。"
+  },
+  {
+    "id": "kokugo_koji_058",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【出藍の誉れ】「青は（　　）より出でて（　　）より青し」の空欄に入る、染料となる植物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "藍",
+    "acceptableAnswers": [
+      "藍",
+      "あい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「藍（あい）」が入ります。弟子が学問に励んで師を追い抜くめでたいことを「出藍の誉れ（しゅつらんのほまれ）」といいます。"
+  },
+  {
+    "id": "kokugo_koji_059",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【出藍の誉れ】「青は藍より出でて藍より青し」という言葉がなぜ「弟子が師匠を超える」意味になるのか、「染料」「植物」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "植物の藍から抽出した青色の染料が、元の植物よりもはるかに鮮やかな青色になるから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "染料",
+      "植物"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "原料である植物（師匠）よりも、そこから生み出された青い染料（弟子）の方が深みのある優れた青になることから、教え子が師を凌駕するたとえになりました。"
+  },
+  {
+    "id": "kokugo_koji_060",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【登竜門】立身出世のための関門や、成功への第一歩となる試験を何といいますか。",
+    "options": [
+      "登竜門",
+      "圧巻",
+      "完璧",
+      "白眉"
+    ],
+    "answer": "登竜門",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "黄河の急流「竜門」を登りきったコイは竜になるという伝説から、出世への難しい関門を突破することを表します。"
+  },
+  {
+    "id": "kokugo_koji_061",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "basic",
+    "questionType": "input",
+    "question": "【登竜門】「竜門を登った魚は竜になる」という伝説からできた、成功への関門を表す漢字３文字を答えなさい。",
+    "options": [],
+    "answer": "登竜門",
+    "acceptableAnswers": [
+      "登竜門",
+      "登龍門",
+      "とうりゅうもん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「登竜門（とうりゅうもん）」が入ります。芥川賞は新人作家の登竜門などと使われます。"
+  },
+  {
+    "id": "kokugo_koji_062",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【登竜門】「登竜門」の由来となった中国の伝説について、「急流」「コイ」「竜」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "黄河の険しい急流を登りきったコイが、天に昇って竜に変身するという伝説。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "急流",
+      "コイ",
+      "竜"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "多くの魚が試みても登れなかった竜門の激流を泳ぎ登ったコイだけが竜になるという中国の後漢書の故事です。"
+  },
+  {
+    "id": "kokugo_koji_063",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【画竜点睛】物事を完成させるための、最後の大事な仕上げを何といいますか。",
+    "options": [
+      "完璧",
+      "画竜点睛",
+      "白眉",
+      "圧巻"
+    ],
+    "answer": "画竜点睛",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "梁の張僧繇（ちょうそうよう）が寺の壁に竜を描き、最後に目（ひとみ）を描き入れた瞬間に、竜が雷鳴とともに雲に乗って天に昇った故事によります。"
+  },
+  {
+    "id": "kokugo_koji_064",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【画竜点睛】「画竜点（　　）」の空欄に入る、「瞳（ひとみ）」を意味する漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "睛",
+    "acceptableAnswers": [
+      "睛",
+      "せい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「睛（せい）」は目・ひとみを表します。「晴（はれ）」と混同しないよう注意が必要です。"
+  },
+  {
+    "id": "kokugo_koji_065",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【画竜点睛】「画竜点睛を欠く」とはどのような状態を意味するか、「最後の仕上げ」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "全体としてはよくできているが、最後の仕上げが抜けているために完全とはいえない状態。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "最後の仕上げ",
+      "完全"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "竜の絵に瞳を入れないとただの絵にすぎないように、肝心要の最後の仕上げが足りないことを「画竜点睛を欠く」と言います。"
+  },
+  {
+    "id": "kokugo_koji_066",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【白眉】同類の中で最も優れている人や物を表す成語はどれですか。",
+    "options": [
+      "白眉",
+      "圧巻",
+      "完璧",
+      "登竜門"
+    ],
+    "answer": "白眉",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "三国時代、蜀の馬氏五人兄弟は皆優秀だったが、眉の中に白い毛があった長兄の馬良（ばりょう）が最も優れていたことから「馬氏の五常、白眉最も良し」と言われた故事によります。"
+  },
+  {
+    "id": "kokugo_koji_067",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【白眉】「兄弟の中で白い眉毛をもつ者が最も優れていた」故事から、集団の中で最も傑出したものを指す漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "白眉",
+    "acceptableAnswers": [
+      "白眉",
+      "はくび"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「白眉（はくび）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_068",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【圧巻】書物や演劇・作品の中で、最も優れていて感動を与える部分を何といいますか。",
+    "options": [
+      "圧巻",
+      "白眉",
+      "完璧",
+      "画竜点睛"
+    ],
+    "answer": "圧巻",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "中国の官吏登用試験（科挙）で、最も優れた答案を他のすべての答案の上に載せて提出した（巻物を上から圧した）故事によります。"
+  },
+  {
+    "id": "kokugo_koji_069",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【圧巻】「舞台のクライマックスの演技はまさに（　　）だった」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "圧巻",
+    "acceptableAnswers": [
+      "圧巻",
+      "あっかん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「圧巻（あっかん）」が入ります。全体の中で最も素晴らしい部分を指します。"
+  },
+  {
+    "id": "kokugo_koji_070",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【圧巻】「圧巻」の「巻」とは試験における何を指しているか、「答案」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "科挙の試験で受験者が提出した巻物形式の答案のこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "答案",
+      "巻物"
+    ],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "昔の中国の試験用紙は巻物（巻）であったため、最優秀の答案を他の答案の上に重ねて置いたことから生まれた語です。"
+  },
+  {
+    "id": "kokugo_koji_071",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【切磋琢磨】仲間どうしが励まし合い競い合って、学問や技芸、人格を磨き上げることを表す成語はどれですか。",
+    "options": [
+      "切磋琢磨",
+      "呉越同舟",
+      "臥薪嘗胆",
+      "朝三暮四"
+    ],
+    "answer": "切磋琢磨",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "骨を切り（切）、象牙を削り（磋）、玉を打ち（琢）、石を磨く（磨）という、宝石や工芸品を念入りに仕上げる工程（詩経）から、学問や修養に励むことを表します。"
+  },
+  {
+    "id": "kokugo_koji_072",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【切磋琢磨】「友人と互いに（　　）して入試を突破した」の空欄に入る四字熟語を答えなさい。",
+    "options": [],
+    "answer": "切磋琢磨",
+    "acceptableAnswers": [
+      "切磋琢磨",
+      "せっさたくま"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「切磋琢磨（せっさたくま）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_073",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【韋編三絶】書物を熱心に何度も繰り返し読むことを表す成語はどれですか。",
+    "options": [
+      "韋編三絶",
+      "蛍雪の功",
+      "推敲",
+      "白眉"
+    ],
+    "answer": "韋編三絶",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "孔子が『易経』を何度も繰り返し読んだため、竹簡（竹の札）をとじていた牛の革紐（韋編）が３度もすり切れたという故事（史記）によります。"
+  },
+  {
+    "id": "kokugo_koji_074",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【韋編三絶】孔子が竹簡をとじる革紐が３度切れるほど読書した故事からできた成語「（　　）三絶」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "韋編",
+    "acceptableAnswers": [
+      "韋編",
+      "いへん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "「韋編三絶（いへんさんぜつ）」が入ります。「韋」はなめし革のことです。"
+  },
+  {
+    "id": "kokugo_koji_075",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "03. 中国の古典・歴史に由来する故事成語③（学問・努力・才能）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【懸頭刺股】頭を天井の梁に吊るし、太ももを錐（きり）で刺して眠気を払いながら猛勉強した故事から生まれた成語はどれですか。",
+    "options": [
+      "懸頭刺股",
+      "蛍雪の功",
+      "韋編三絶",
+      "臥薪嘗胆"
+    ],
+    "answer": "懸頭刺股",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・03. 中国の古典・歴史に由来する故事成語③",
+    "explanation": "戦国時代の蘇秦が太ももを刺し、漢の孫敬が頭を吊るして居眠りを防ぎ勉学に励んだ故事「懸頭刺股（けんとうしこ）」です。"
+  },
+  {
+    "id": "kokugo_koji_076",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【矛盾】二つの言動の前後の辻褄が合わないことを表す故事成語はどれですか。",
+    "options": [
+      "矛盾",
+      "蛇足",
+      "杞憂",
+      "守株"
+    ],
+    "answer": "矛盾",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「どんな盾も突き通す矛（ほこ）」と「どんな矛も防ぐ盾（たて）」を売る商人が、「ではその矛でその盾を突いたらどうなるか」と問われて答えられなかった韓非子の故事によります。"
+  },
+  {
+    "id": "kokugo_koji_077",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "input",
+    "question": "【矛盾】「彼の言っていることは（　　）している」の空欄に入る、つじつまが合わないことを表す漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "矛盾",
+    "acceptableAnswers": [
+      "矛盾",
+      "むじゅん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「矛盾（むじゅん）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_078",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【矛盾】商人が客から受けた質問と、答えられなくなった理由について、「矛」「盾」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「その矛でその盾を突いたらどうなるか」と聞かれ、どちらが勝っても自分の説明が嘘になるから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "矛",
+      "盾"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "どんな盾も通す矛と、どんな矛も防ぐ盾が同時に成立することは論理的にあり得ないため、商人は返答に詰まりました。"
+  },
+  {
+    "id": "kokugo_koji_079",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【杞憂】あれこれと無駄な取り越し苦労や心配をすることを何といいますか。",
+    "options": [
+      "杞憂",
+      "杜撰",
+      "蛇足",
+      "守株"
+    ],
+    "answer": "杞憂",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "古代中国の杞（き）の国の人が、「もし天が崩れ落ちてきたらどうしよう」と心配して夜も眠れず食事も喉を通らなかった故事によります。"
+  },
+  {
+    "id": "kokugo_koji_080",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【杞憂】「そんな悪い事態になる心配は（　　）にすぎない」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "杞憂",
+    "acceptableAnswers": [
+      "杞憂",
+      "きゆう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「杞憂（きゆう）」が入ります。心配する必要のないことを心配する意味です。"
+  },
+  {
+    "id": "kokugo_koji_081",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【杞憂】杞の国の人が心配していた内容について、「天」「落ちてくる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "空や天が崩れ落ちてきて身の置き所がなくなるのではないかという心配。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "天",
+      "落ちてくる"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "絶対に起こり得ない「天が落ちて大地が崩れる」という天地崩壊を本気で心配して寝食を忘れたという話から、無用の心配を指します。"
+  },
+  {
+    "id": "kokugo_koji_082",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【蛇足】余計な付け足しをしたために、かえって物事を台無しにしてしまうことを何といいますか。",
+    "options": [
+      "蛇足",
+      "矛盾",
+      "杜撰",
+      "守株"
+    ],
+    "answer": "蛇足",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "蛇の絵を一番早く描き上げた者が酒をもらえる競争で、最初に描き終えた者が得意になって「足まで描いてやろう」と余計な足を描いている間に、次の者に酒を取られた故事によります。"
+  },
+  {
+    "id": "kokugo_koji_083",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "input",
+    "question": "【蛇足】「余計なことをして台無しにする」という意味の故事成語「（　　）足」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "蛇",
+    "acceptableAnswers": [
+      "蛇",
+      "へび",
+      "じゃ",
+      "だ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「蛇足（だそく）」が入ります。ヘビには足がないことから、無駄な付け足しを指します。"
+  },
+  {
+    "id": "kokugo_koji_084",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【蛇足】蛇の絵を最初に描いた男が酒を飲めなくなってしまった理由について、「足」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "蛇には足がないのに、余計な足を描き足している間に他の男が描き終えたから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "足",
+      "余計"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "一番に描き上げたのに、余計な足を描き加えるという無駄なことをしたために、次に描き上げた者に「蛇に足はない」と酒を奪われてしまいました。"
+  },
+  {
+    "id": "kokugo_koji_085",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【守株】古い習慣に固執して融通が利かないことや、偶然の幸運をあてにして無駄な努力をすることを表す成語はどれですか。",
+    "options": [
+      "守株",
+      "矛盾",
+      "刻舟求剣",
+      "推敲"
+    ],
+    "answer": "守株",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "宋の国の農夫が、切り株に衝突して首を折って死んだウサギを拾って以来、農作業をやめて毎日切り株を見張っていたが、二度とウサギは来ず国中の笑い者になった故事（韓非子）によります。"
+  },
+  {
+    "id": "kokugo_koji_086",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【守株】「株を守りて兎を待つ」の故事に由来する成語（漢字２文字）を答えなさい。",
+    "options": [],
+    "answer": "守株",
+    "acceptableAnswers": [
+      "守株",
+      "しゅしゅ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「守株（しゅしゅ）」が入ります。「株を守る」とも使われます。"
+  },
+  {
+    "id": "kokugo_koji_087",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【守株】農夫がウサギをもう一度捕まえようとして切り株を見張り続けた行動が愚かである理由を、「偶然」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "ウサギが切り株にぶつかって死んだのは単なる偶然にすぎないから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "偶然",
+      "幸運"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "たまたま起きた一度きりの偶然の幸運に味をしめ、定石や努力を放棄して同じことが起きるのを待つことの愚かさを戒めています。"
+  },
+  {
+    "id": "kokugo_koji_088",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【杜撰】物事のやり方がいい加減で手抜かりが多いことや、著作などに誤りが多いことを何といいますか。",
+    "options": [
+      "杜撰",
+      "矛盾",
+      "蛇足",
+      "杞憂"
+    ],
+    "answer": "杜撰",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "宋の詩人・杜黙（ともく）の詩が、詩の定まった規則や作法から大きく外れていたため、当時の人々が手落ちの多い作品を「杜黙が撰した（作った）」とあざ笑った故事によります。"
+  },
+  {
+    "id": "kokugo_koji_089",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【杜撰】「ずさんな計画」を漢字２文字で書く場合の正しい用字を答えなさい。",
+    "options": [],
+    "answer": "杜撰",
+    "acceptableAnswers": [
+      "杜撰",
+      "ずさん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「杜撰（ずさん）」と書きます。著作や計画がいい加減で誤りや欠陥だらけなことを意味します。"
+  },
+  {
+    "id": "kokugo_koji_090",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【刻舟求剣】時代の変化や状況の推移に気づかず、古いやり方に頑なにこだわる愚かさを表す四字熟語はどれですか。",
+    "options": [
+      "刻舟求剣",
+      "臥薪嘗胆",
+      "呉越同舟",
+      "朝三暮四"
+    ],
+    "answer": "刻舟求剣",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "船から剣を川に落とした男が、船べりに印をつけておき、船が岸に着いてから印の下の川底を探したが剣が見つからなかったという故事（呂氏春秋）によります。"
+  },
+  {
+    "id": "kokugo_koji_091",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【刻舟求剣】「船に刻みをつけて剣を探す」という故事から生まれた四字熟語を漢字４文字で答えなさい。",
+    "options": [],
+    "answer": "刻舟求剣",
+    "acceptableAnswers": [
+      "刻舟求剣",
+      "こくしゅうきゅうけん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「刻舟求剣（こくしゅうきゅうけん）」が入ります。船は動いているのに印をつけた場所を固定と考える融通の利かなさを表します。"
+  },
+  {
+    "id": "kokugo_koji_092",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【刻舟求剣】船べりに印をつけて剣を探した男の考えが根本的に間違っている理由について、「船」「動く」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "剣を落とした場所は川底だが、印をつけた船自体が動いて場所が変わっているから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "船",
+      "動く"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "船は水上を移動しているため、剣を落とした川底の位置と船べりの印の位置はずれてしまい、岸についてから探しても見つかるはずがありません。"
+  },
+  {
+    "id": "kokugo_koji_093",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ひそみにならう】善悪や理由も考えずに、むやみに他人の真似をして失敗することを表す成語はどれですか。",
+    "options": [
+      "ひそみにならう",
+      "他山の石",
+      "守株",
+      "蛇足"
+    ],
+    "answer": "ひそみにならう",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "古代の美女・西施（せいし）が胸を痛めて顔をしかめた（顰＝ひそみ）のが美しかったため、醜い女が真似をして顔をしかめたらかえって人々から嫌われて逃げられた故事（荘子）によります。"
+  },
+  {
+    "id": "kokugo_koji_094",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【ひそみにならう】「顰（ひそみ）に（　　）う」の空欄に入る動詞を漢字で答えなさい。",
+    "options": [],
+    "answer": "倣",
+    "acceptableAnswers": [
+      "倣",
+      "なら",
+      "効"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「顰に倣う（ひそみにならう）」と書きます。「倣う」は見習う・真似をするという意味です。"
+  },
+  {
+    "id": "kokugo_koji_095",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【井の中の蛙大海を知らず】自分の狭い見識にとらわれて、広い世界があることを知らないことを表す成語はどれですか。",
+    "options": [
+      "井の中の蛙大海を知らず",
+      "他山の石",
+      "杞憂",
+      "漁夫の利"
+    ],
+    "answer": "井の中の蛙大海を知らず",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "井戸の底に住むカエルが、大海の広大さを理解できないという荘子の故事によります。視野の狭い人間への戒めです。"
+  },
+  {
+    "id": "kokugo_koji_096",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "basic",
+    "questionType": "input",
+    "question": "【井の中の蛙大海を知らず】「世間知らずで狭い世界しか知らないこと」を表すことわざ「井の中の（　　）大海を知らず」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "蛙",
+    "acceptableAnswers": [
+      "蛙",
+      "かわず",
+      "かえる"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「蛙（かわず・かえる）」が入ります。"
+  },
+  {
+    "id": "kokugo_koji_097",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【助長】早く成長させようとして余計な手を加え、かえってダメにしてしまうことを表す成語はどれですか。",
+    "options": [
+      "助長",
+      "蛇足",
+      "守株",
+      "杜撰"
+    ],
+    "answer": "助長",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "宋の国の男が、苗の成長が遅いといって苗を一本一本引っ張り上げ、苗を全部枯らしてしまった孟子の故事によります。現代では悪化させる意味でも使われます。"
+  },
+  {
+    "id": "kokugo_koji_098",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【助長】「早く育てようとして苗を引っ張り上げた」故事から生まれた漢字２文字の言葉を答えなさい。",
+    "options": [],
+    "answer": "助長",
+    "acceptableAnswers": [
+      "助長",
+      "じょちょう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "「助長（じょちょう）」が入ります。本来は良かれと思って余計な力を貸して台無しにする意味でした。"
+  },
+  {
+    "id": "kokugo_koji_099",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【助長】農夫が苗を引っ張った結果と、この故事が教える教訓について、「無理」「枯れる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "無理に急激に成長させようと手を加えると、根が浮いて苗が枯れてしまうこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "無理",
+      "枯れる"
+    ],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "自然の成長のペースを無視して無理に急がせようとすると、かえって破滅的な結果を招くという戒めです。"
+  },
+  {
+    "id": "kokugo_koji_100",
+    "subject": "国語",
+    "category": "故事成語",
+    "subCategory": "04. 中国の古典・歴史に由来する故事成語④（矛盾・失敗・警告）",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【風馬牛】自分とはまったく関係がないことや、互いに遠く離れていて干渉し合わないことを表す成語はどれですか。",
+    "options": [
+      "風馬牛",
+      "他山の石",
+      "呉越同舟",
+      "背水の陣"
+    ],
+    "answer": "風馬牛",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "故事成語・04. 中国の古典・歴史に由来する故事成語④",
+    "explanation": "春秋時代、斉軍が楚に侵入した際、楚の使者が「斉と楚は、放し飼いの馬や牛でも届かないほど遠く離れているのに、なぜ攻めてきたのか」と問いただした故事によります。"
+  }
+]

@@ -1,0 +1,1900 @@
+[
+  {
+    "id": "kokugo_yoji_001",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【威風堂々】態度や様子に威厳があって、堂々と満ちあふれている様子を表す四字熟語はどれですか。",
+    "options": [
+      "威風堂々",
+      "意気消沈",
+      "厚顔無恥",
+      "傍若無人"
+    ],
+    "answer": "威風堂々",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "周囲を圧倒するような気品や威厳があり、立派で堂々としている様子を表します。エルガーの行進曲の題名でも有名です。"
+  },
+  {
+    "id": "kokugo_yoji_002",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【威風堂々】「威厳に満ちて堂々としている様子」を表す四字熟語「威風（　　）」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "堂々",
+    "acceptableAnswers": [
+      "堂々",
+      "堂堂",
+      "どうどう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「堂々」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_003",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【意気消沈】元気を失い、がっかりして打ちのめされている様子を表す四字熟語はどれですか。",
+    "options": [
+      "意気消沈",
+      "意気投合",
+      "自暴自棄",
+      "孤立無援"
+    ],
+    "answer": "意気消沈",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "気持ち（意気）が沈み衰えて、元気がなくなってしまうことを意味します。対義語は「意気揚々」です。"
+  },
+  {
+    "id": "kokugo_yoji_004",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【意気消沈】「試合に負けて意気（　　）する」の空欄に入る、気落ちすることを表す漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "消沈",
+    "acceptableAnswers": [
+      "消沈",
+      "しょうちん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「消沈（しょうちん）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_005",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【意気消沈】「意気消沈」した人の様子について、「気落ち」「元気」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "ひどく気落ちして、すっかり元気をなくしている様子。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "気落ち",
+      "元気"
+    ],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "失敗や挫折によって意欲を失い、しょんぼりと肩を落としている状態を表します。"
+  },
+  {
+    "id": "kokugo_yoji_006",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【傍若無人】周囲に人がいないかのように、勝手気ままに振る舞う様子を表す四字熟語はどれですか。",
+    "options": [
+      "傍若無人",
+      "厚顔無恥",
+      "言語道断",
+      "付和雷同"
+    ],
+    "answer": "傍若無人",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「傍（かたわ）らに人無きが若（ごと）し」という意味から、他人の迷惑を考えず自分勝手に行動することを批判する言葉です。"
+  },
+  {
+    "id": "kokugo_yoji_007",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【傍若無人】「傍若無人な振る舞い」とはどのような振る舞いか、「周囲の迷惑」「勝手気まま」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "周囲の迷惑をまったく考えず、自分勝手気ままに行動する振る舞い。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "周囲の迷惑",
+      "勝手気まま"
+    ],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「若（じゃく）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_008",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【厚顔無恥】厚かましくて恥を知らず、図々しい態度であることを表す四字熟語はどれですか。",
+    "options": [
+      "厚顔無恥",
+      "傍若無人",
+      "巧言令色",
+      "言語道断"
+    ],
+    "answer": "厚顔無恥",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "面の皮が厚く、恥ずかしいことをしても平気でいる図々しさを表します。"
+  },
+  {
+    "id": "kokugo_yoji_009",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【厚顔無恥】「面の皮が厚く恥知らず」を表す四字熟語「厚顔無（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "恥",
+    "acceptableAnswers": [
+      "恥",
+      "ち"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「恥（ち）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_010",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【臨機応変】その場の状況や変化に応じて、適切な処置をとることを表す四字熟語はどれですか。",
+    "options": [
+      "臨機応変",
+      "試行錯誤",
+      "適材適所",
+      "一網打尽"
+    ],
+    "answer": "臨機応変",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "固定観念にとらわれず、状況の変化に柔軟に対応して最善の行動をとることを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_011",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【臨機応変】「状況に応じて適切な行動をとる」四字熟語「臨（　　）応変」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "機",
+    "acceptableAnswers": [
+      "機",
+      "き"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「機（き＝機会・タイミング）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_012",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【臨機応変】「臨機応変な対応」とはどのような対応か、「状況」「柔軟」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "決まったやり方に縛られず、その場の状況の変化に合わせて柔軟に行う対応。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "状況",
+      "柔軟"
+    ],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "マニュアル通りではなく、変化する事態に臨機に対処する知恵を表します。"
+  },
+  {
+    "id": "kokugo_yoji_013",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【付和雷同】自分自身の意見を持たず、むやみに他人の意見に賛成・同調することを表す四字熟語はどれですか。",
+    "options": [
+      "付和雷同",
+      "傍若無人",
+      "自暴自棄",
+      "単刀直入"
+    ],
+    "answer": "付和雷同",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「雷が鳴れば万物が応じて響く」ように、他人の意見に無批判に同調する軽はずみな態度を批判する言葉です。"
+  },
+  {
+    "id": "kokugo_yoji_014",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【付和雷同】「付和雷同する人」の態度の問題点について、「自分の意見」「他人の意見」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "自分の意見や信念を持たず、むやみに他人の意見に同調してしまうこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "自分の意見",
+      "他人の意見"
+    ],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「雷（らい）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_015",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【自暴自棄】思い通りにいかないことに失望し、自暴自棄になって自分を粗末にすることを表す四字熟語はどれですか。",
+    "options": [
+      "自暴自棄",
+      "意気消沈",
+      "疑心暗鬼",
+      "孤立無援"
+    ],
+    "answer": "自暴自棄",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "孟子の言葉に由来し、自らを傷つけ見捨ててヤケになることを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_016",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【自暴自棄】「やけくそになって投げやりになる」四字熟語「自暴（　　）棄」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "自",
+    "acceptableAnswers": [
+      "自",
+      "じ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「自（じ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_017",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【巧言令色】言葉を飾り、顔つきを愛想よくして、人に媚びへつらうことを表す四字熟語はどれですか。",
+    "options": [
+      "巧言令色",
+      "厚顔無恥",
+      "羊頭狗肉",
+      "針小棒大"
+    ],
+    "answer": "巧言令色",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "論語の「巧言令色、鮮（すく）なし仁」で有名で、うわべだけのお世辞や愛想笑いで内心に誠意がないことを批判しています。"
+  },
+  {
+    "id": "kokugo_yoji_018",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【巧言令色】「言葉巧みでお世辞の笑顔をつくる」四字熟語「巧言（　　）色」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "令",
+    "acceptableAnswers": [
+      "令",
+      "れい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「令（れい＝立派に見せかける）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_019",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【単刀直入】前置きや遠回しな言い方を省き、直接本題に入って核心を突くことを表す四字熟語はどれですか。",
+    "options": [
+      "単刀直入",
+      "一刀両断",
+      "電光石火",
+      "一目瞭然"
+    ],
+    "answer": "単刀直入",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "一本の刀を携えて一人で敵陣に切り込むように、前置きなしに要点に切り込むことを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_020",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "01. 人物の性格・態度・行動を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【単刀直入】「前置きなしに本題に入る」四字熟語「（　　）刀直入」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "単",
+    "acceptableAnswers": [
+      "単",
+      "たん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・01. 人物の性格・態度・行動を表す四字熟語",
+    "explanation": "「単（たん）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_021",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【花鳥風月】自然の美しい風物や景色、またそれを鑑賞して風流を楽しむことを表す四字熟語はどれですか。",
+    "options": [
+      "花鳥風月",
+      "風光明媚",
+      "山紫水明",
+      "森羅万象"
+    ],
+    "answer": "花鳥風月",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "花・鳥・風・月という美しい自然の風物を代表する四つの言葉を並べたものです。"
+  },
+  {
+    "id": "kokugo_yoji_022",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【花鳥風月】「美しい自然の景色」を表す四字熟語「花鳥（　　）月」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "風",
+    "acceptableAnswers": [
+      "風",
+      "ふう",
+      "ふ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「風（ふう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_023",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【風光明媚】自然の山や海の景色が清らかで、極めて美しい様子を表す四字熟語はどれですか。",
+    "options": [
+      "風光明媚",
+      "花鳥風月",
+      "波瀾万丈",
+      "千変万化"
+    ],
+    "answer": "風光明媚",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「風光」は自然の景色、「明媚」は清らかで美しいことを意味します。観光地などでよく使われます。"
+  },
+  {
+    "id": "kokugo_yoji_024",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【風光明媚】「景色が美しいこと」を表す四字熟語「風光（　　）媚」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "明",
+    "acceptableAnswers": [
+      "明",
+      "めい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「明（めい）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_025",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【風光明媚】「風光明媚な土地」とはどのような土地か、「自然の景色」「美しい」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "海や山などの自然の景色が清らかで、非常に美しい土地。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "自然の景色",
+      "美しい"
+    ],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "人工的な美しさではなく、山水や風光が美しく整っている景勝地を指します。"
+  },
+  {
+    "id": "kokugo_yoji_026",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【五里霧中】深い霧の中で方角を見失うように、手掛かりがなくどうしてよいか分からない状態を表す四字熟語はどれですか。",
+    "options": [
+      "五里霧中",
+      "疑心暗鬼",
+      "孤立無援",
+      "四苦八苦"
+    ],
+    "answer": "五里霧中",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "後漢の張楷が五里四方に広がる人工の霧を発生させて姿を隠した故事に由来し、見通しが立たない混迷状態を意味します。"
+  },
+  {
+    "id": "kokugo_yoji_027",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【五里霧中】「五里霧中の状態」とはどのような状況か、「手掛かり」「見通し」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "問題解決の手掛かりがなく、先行きの方針や見通しがまったく立たない状況。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "手掛かり",
+      "見通し"
+    ],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「霧（む・きり）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_028",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【波瀾万丈】劇的な変化や事件が多く、浮き沈みや起伏が極めて激しい人生や物語を表す四字熟語はどれですか。",
+    "options": [
+      "波瀾万丈",
+      "千変万化",
+      "急転直下",
+      "紆余曲折"
+    ],
+    "answer": "波瀾万丈",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "大きな波（波瀾）が非常に高く立ち上がる（万丈）様子から、変化に富んで激動である状態を表します。"
+  },
+  {
+    "id": "kokugo_yoji_029",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【波瀾万丈】「劇的な変化に満ちた激動の人生」を表す四字熟語「波瀾（　　）丈」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "万丈",
+    "acceptableAnswers": [
+      "万丈",
+      "ばんじょう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「万丈（ばんじょう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_030",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【波瀾万丈】「波瀾万丈な人生」とはどのような人生か、「変化」「劇的」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "成功や挫折など劇的な変化や起伏に富んだ、激動の人生。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "変化",
+      "劇的"
+    ],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "平穏無事な生活とは対照的に、次々と波乱が起こるドラマチックな歩みを表します。"
+  },
+  {
+    "id": "kokugo_yoji_031",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【急転直下】事態が一気に急変して、速やかに結末や解決に向かう様子を表す四字熟語はどれですか。",
+    "options": [
+      "急転直下",
+      "電光石火",
+      "一刀両断",
+      "危機一髪"
+    ],
+    "answer": "急転直下",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "急激に回転してまっすぐ下に落ちるように、状況が突如として急展開し決着がつくことです。"
+  },
+  {
+    "id": "kokugo_yoji_032",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【急転直下】「事態が急速に展開して解決へ向かう」四字熟語「急転（　　）下」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "直",
+    "acceptableAnswers": [
+      "直",
+      "ちょく"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「直（ちょく）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_033",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【千変万化】局面や情勢などが、さまざまに数限りなく変化する様子を表す四字熟語はどれですか。",
+    "options": [
+      "千変万化",
+      "千差万別",
+      "波瀾万丈",
+      "朝令暮改"
+    ],
+    "answer": "千変万化",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「千」も「万」も数の多さを表し、次から次へと絶え間なく変化し続ける様子を指します。"
+  },
+  {
+    "id": "kokugo_yoji_034",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【千変万化】「千変（　　）化」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "万",
+    "acceptableAnswers": [
+      "万",
+      "ばん",
+      "まん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「万（ばん）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_035",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【空前絶後】過去に例がなく、将来にも二度と起こりそうもない、極めて珍しい出来事を表す四字熟語はどれですか。",
+    "options": [
+      "空前絶後",
+      "前代未聞",
+      "前代未踏",
+      "危機一髪"
+    ],
+    "answer": "空前絶後",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「前に空（むな）しく、後にも絶（た）ゆ」という意味で、過去にも未来にも並ぶものがない最高峰の珍しさを表します。"
+  },
+  {
+    "id": "kokugo_yoji_036",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【空前絶後】「過去にも未来にも例がないほど珍しい」四字熟語「空前（　　）後」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "絶",
+    "acceptableAnswers": [
+      "絶",
+      "ぜつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「絶（ぜつ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_037",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【紆余曲折】道が曲がりくねっていることから、事情が複雑で様々な苦労や曲折があることを表す四字熟語はどれですか。",
+    "options": [
+      "紆余曲折",
+      "波瀾万丈",
+      "試行錯誤",
+      "暗中模索"
+    ],
+    "answer": "紆余曲折",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「紆」「曲」ともに曲がることを意味し、交渉や計画がすんなり進まず様々なもめ事や紆余曲折を経ることを指します。"
+  },
+  {
+    "id": "kokugo_yoji_038",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【紆余曲折】「複雑な事情や経緯」を表す四字熟語「（　　）曲折」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "紆余",
+    "acceptableAnswers": [
+      "紆余",
+      "うよ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「紆余（うよ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_039",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【紆余曲折】「紆余曲折を経て合意に達した」とはどのような過程を経たのか、「紆余曲折」の意味を「苦労」「紆余曲折」を使わずに「困難」「回り道」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "順調には進まず、様々な困難や意見の対立による回り道を経たこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "困難",
+      "回り道"
+    ],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "直線的・スムーズには解決せず、幾度もトラブルや調整を乗り越えてようやく実を結んだ過程を表します。"
+  },
+  {
+    "id": "kokugo_yoji_040",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "02. 情景・自然・状態を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【白砂青松】白い砂浜と青々とした松林が続く、美しい日本の海岸の風景を表す四字熟語はどれですか。",
+    "options": [
+      "白砂青松",
+      "風光明媚",
+      "山紫水明",
+      "花鳥風月"
+    ],
+    "answer": "白砂青松",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・02. 情景・自然・状態を表す四字熟語",
+    "explanation": "「はくしゃせいしょう」または「はくさせいしょう」と読み、日本の伝統的な美しい海辺の景観を象徴します。"
+  },
+  {
+    "id": "kokugo_yoji_041",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一意専心】他のことに気を取られず、一つのことだけに心を集中して励むことを表す四字熟語はどれですか。",
+    "options": [
+      "一意専心",
+      "一生懸命",
+      "終始一貫",
+      "無我夢中"
+    ],
+    "answer": "一意専心",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "一つの目的に向かってひたすら心を集中させることを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_042",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【一意専心】「一つのことに心を集中する」四字熟語「一意（　　）心」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "専",
+    "acceptableAnswers": [
+      "専",
+      "せん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「専（せん）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_043",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【一意専心】「一意専心に受験勉強に取り組む」とはどのような態度か、「わき目も振らず」「集中」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "他のことにわき目も振らず、勉強だけに心を集中して励む態度。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "わき目も振らず",
+      "集中"
+    ],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "雑念を捨て去り、目標達成のために全エネルギーを注ぎ込む様子を表します。"
+  },
+  {
+    "id": "kokugo_yoji_044",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【温故知新】古い歴史や伝統を深く学び直すことで、そこから新しい知識や見解を発見することを表す四字熟語はどれですか。",
+    "options": [
+      "温故知新",
+      "切磋琢磨",
+      "日進月歩",
+      "試行錯誤"
+    ],
+    "answer": "温故知新",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "『論語』の「故（ふる）きを温（たず）ねて新しきを知れば、以って師と為るべし」に由来します。"
+  },
+  {
+    "id": "kokugo_yoji_045",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【温故知新】「昔の事を学んで新しい知識を得る」四字熟語「温（　　）知新」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "故",
+    "acceptableAnswers": [
+      "故",
+      "こ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「故（こ＝昔のこと・古い歴史）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_046",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【温故知新】孔子が説いた「温故知新」の学びの姿勢について、「過去の知恵」「新しい知識」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "過去の知恵や歴史を学び直すことを通じて、現代に役立つ新しい知識や発見を得る姿勢。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "過去の知恵",
+      "新しい知識"
+    ],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "単に昔を懐かしむのではなく、未来を切り開くための指針を過去から学ぶ創造的学習法です。"
+  },
+  {
+    "id": "kokugo_yoji_047",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【日進月歩】日に日に、月ごとに絶え間なく急速に進歩・発展していく様子を表す四字熟語はどれですか。",
+    "options": [
+      "日進月歩",
+      "一進一退",
+      "千変万化",
+      "電光石火"
+    ],
+    "answer": "日進月歩",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "科学技術や文明などが、休むことなく猛スピードで発展し続けることを表します。"
+  },
+  {
+    "id": "kokugo_yoji_048",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【日進月歩】「技術が急速に進歩する」四字熟語「日進（　　）歩」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "月",
+    "acceptableAnswers": [
+      "月",
+      "げつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「月（げつ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_049",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【試行錯誤】新しいことを行う際に、何度も失敗を重ねながら工夫して正しい方法を見つけ出していくことを表す四字熟語はどれですか。",
+    "options": [
+      "試行錯誤",
+      "暗中模索",
+      "紆余曲折",
+      "波瀾万丈"
+    ],
+    "answer": "試行錯誤",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "試み（試行）と誤り（錯誤）を繰り返すことで、解決策に近づいていく学習過程を表します。"
+  },
+  {
+    "id": "kokugo_yoji_050",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【試行錯誤】研究開発で「試行錯誤を繰り返す」とはどのように取り組むことか、「失敗」「工夫」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "何度も失敗を重ねながら工夫や改善を繰り返し、より良い方法を見つけ出していくこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "失敗",
+      "工夫"
+    ],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「錯（さく）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_051",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【粉骨砕身】骨を粉にし身を砕くほど、力の限り全力を尽くして努力することを表す四字熟語はどれですか。",
+    "options": [
+      "粉骨砕身",
+      "一意専心",
+      "自暴自棄",
+      "臥薪嘗胆"
+    ],
+    "answer": "粉骨砕身",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "自己を犠牲にするほど必死になって職務や使命に力を尽くすことを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_052",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【粉骨砕身】「骨を粉にし身を砕くほど尽力する」四字熟語「粉骨（　　）身」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "砕",
+    "acceptableAnswers": [
+      "砕",
+      "さい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「砕（さい）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_053",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【終始一貫】最初から最後まで、方針や態度を変えずに一貫して貫き通すことを表す四字熟語はどれですか。",
+    "options": [
+      "終始一貫",
+      "首尾一貫",
+      "徹頭徹尾",
+      "言行一致"
+    ],
+    "answer": "終始一貫",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "初めから終わりまでブレずに同じ信念を守り続けることです。「首尾一貫」もほぼ同義です。"
+  },
+  {
+    "id": "kokugo_yoji_054",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【首尾一貫】「首尾一貫した主張」とはどのような主張か、「最初から最後まで」「矛盾」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "最初から最後まで方針や態度が変わらず、筋が通っていて矛盾がない主張。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "最初から最後まで",
+      "矛盾"
+    ],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「首（しゅ＝頭）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_055",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【言行一致】口で言っていることと、実際の行動が完全に一致していることを表す四字熟語はどれですか。",
+    "options": [
+      "言行一致",
+      "有言実行",
+      "終始一貫",
+      "名実相伴う"
+    ],
+    "answer": "言行一致",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "言葉と行動に食い違いがない誠実な人格を表します。対義語は「言行不一致」です。"
+  },
+  {
+    "id": "kokugo_yoji_056",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【言行一致】「言葉と行動を一致させる」四字熟語「言（　　）一致」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "行",
+    "acceptableAnswers": [
+      "行",
+      "こう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「行（こう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_057",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【適材適所】人の才能や適性を見極め、それに最もふさわしい地位や任務につけることを表す四字熟語はどれですか。",
+    "options": [
+      "適材適所",
+      "取捨選択",
+      "十人十色",
+      "臨機応変"
+    ],
+    "answer": "適材適所",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "材木を用途に応じて使い分ける大工の知恵から、人事配置の理想を表す言葉です。"
+  },
+  {
+    "id": "kokugo_yoji_058",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【適材適所】「人の能力に合った仕事を与える」四字熟語「適（　　）適所」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "材",
+    "acceptableAnswers": [
+      "材",
+      "ざい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「材（ざい＝人材）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_059",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【徹頭徹尾】最初から最後まで、どこまでも徹底して自分の立場や主張を貫く様子を表す四字熟語はどれですか。",
+    "options": [
+      "徹頭徹尾",
+      "終始一貫",
+      "粉骨砕身",
+      "一意専心"
+    ],
+    "answer": "徹頭徹尾",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「頭（あたま）から尾（しっぽ）まで貫く」という意味で、中途半端を許さず徹底的な態度を表します。"
+  },
+  {
+    "id": "kokugo_yoji_060",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "03. 努力・志・学問を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【徹頭徹尾】「最初から最後まで徹底的に」を表す四字熟語「徹（　　）徹尾」の空欄に入る体の部分の漢字を答えなさい。",
+    "options": [],
+    "answer": "頭",
+    "acceptableAnswers": [
+      "頭",
+      "とう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・03. 努力・志・学問を表す四字熟語",
+    "explanation": "「頭（とう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_061",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一期一会】生涯に一度だけ出会うこと。一生に一度の出会いと思って、互いに誠意を尽くすことを表す四字熟語はどれですか。",
+    "options": [
+      "一期一会",
+      "一日千秋",
+      "千載一遇",
+      "一朝一夕"
+    ],
+    "answer": "一期一会",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "茶道の千利休の弟子・宗二の言葉に由来し、毎回の茶会を一回限りの大切な出会いとして重んじる精神です。"
+  },
+  {
+    "id": "kokugo_yoji_062",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【一期一会】「一生に一度の出会い」を表す茶道由来の四字熟語「一（　　）一会」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "期",
+    "acceptableAnswers": [
+      "期",
+      "ご"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「期（ご）」が入ります。「一期（いちご＝人の一生）」です。"
+  },
+  {
+    "id": "kokugo_yoji_063",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【一期一会】この四字熟語が教える人と接する時の心構えについて、「二度とない」「誠意」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "二度とない一度限りの出会いと考えて、相手に対して誠意を尽くす心構え。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "二度とない",
+      "誠意"
+    ],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "たとえ日常の出会いであっても、二度と同じ機会はないという緊張感と感謝をもって接する教えです。"
+  },
+  {
+    "id": "kokugo_yoji_064",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一目瞭然】ひと目見ただけで、はっきりと明白に分かる様子を表す四字熟語はどれですか。",
+    "options": [
+      "一目瞭然",
+      "一日千秋",
+      "一部始終",
+      "一網打尽"
+    ],
+    "answer": "一目瞭然",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「瞭然」ははっきりと明らかな様子。グラフや図表を見てすぐに理解できるときなどに使われます。"
+  },
+  {
+    "id": "kokugo_yoji_065",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【一目瞭然】「一目で明白に分かる」四字熟語「一目（　　）然」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "瞭",
+    "acceptableAnswers": [
+      "瞭",
+      "りょう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「瞭（りょう）」が入ります。「目へん」に「寮」の右側です。"
+  },
+  {
+    "id": "kokugo_yoji_066",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一挙両得】一つの行動で、同時に二つの利益や成果を手に入れることを表す四字熟語はどれですか。",
+    "options": [
+      "一挙両得",
+      "一石二鳥",
+      "一網打尽",
+      "一進一退"
+    ],
+    "answer": "一挙両得",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「一石二鳥」とまったく同義で、一度の手間で二つの成果をあげる効率のよさを意味します。"
+  },
+  {
+    "id": "kokugo_yoji_067",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【一挙両得】「一挙両得」とはどのような成果か、「一度の行動」「二つの利益」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "一度の行動や手間で、同時に二つの利益や好結果を手に入れること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "一度の行動",
+      "二つの利益"
+    ],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「一石二鳥（いっせきにちょう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_068",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一日千秋】待ち焦がれる気持ちが非常に強く、一日が千年のように長く感じられることを表す四字熟語はどれですか。",
+    "options": [
+      "一日千秋",
+      "一期一会",
+      "一朝一夕",
+      "千載一遇"
+    ],
+    "answer": "一日千秋",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "詩経に由来し、「一日三秋」とも言われます。待ち遠しくて時間が経つのが遅く感じられる心情です。"
+  },
+  {
+    "id": "kokugo_yoji_069",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【一日千秋】「待ち遠しくて一日が千年のように思える」四字熟語「一日千（　　）」の空欄に入る季節の漢字を答えなさい。",
+    "options": [],
+    "answer": "秋",
+    "acceptableAnswers": [
+      "秋",
+      "あき",
+      "しゅう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「秋（しゅう＝年）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_070",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【一網打尽】一度に一味の犯罪者や敵をことごとく捕らえることを表す四字熟語はどれですか。",
+    "options": [
+      "一網打尽",
+      "一刀両断",
+      "起死回生",
+      "一進一退"
+    ],
+    "answer": "一網打尽",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "一度網を打って魚をすべて捕まえ尽くすことから、悪人を一人残らず全員捕獲することを指します。"
+  },
+  {
+    "id": "kokugo_yoji_071",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【一網打尽】「一度に全員を捕まえ尽くす」四字熟語「一（　　）打尽」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "網",
+    "acceptableAnswers": [
+      "網",
+      "もう",
+      "あみ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「網（もう・あみ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_072",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【千載一遇】千年に一度しか巡り合えないような、めったにない絶好の機会を表す四字熟語はどれですか。",
+    "options": [
+      "千載一遇",
+      "一期一会",
+      "一日千秋",
+      "千差万別"
+    ],
+    "answer": "千載一遇",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「載」は年のこと。千年に一回しか出合えないほどのまたとない幸運なチャンスを「千載一遇の好機」といいます。"
+  },
+  {
+    "id": "kokugo_yoji_073",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【千載一遇】「めったにない絶好のチャンス」を表す四字熟語「千（　　）一遇」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "載",
+    "acceptableAnswers": [
+      "載",
+      "ざい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「載（ざい＝年）」が入ります。「千歳一遇」とも書かれます。"
+  },
+  {
+    "id": "kokugo_yoji_074",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【十人十色】人の性格や好み、考え方はそれぞれ異なっていて、一人ひとり違うという意味の四字熟語はどれですか。",
+    "options": [
+      "十人十色",
+      "千差万別",
+      "大同小異",
+      "一部始終"
+    ],
+    "answer": "十人十色",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "十人いれば十通りの個性があるという意味で、人の好みの多様性を認めるときに使われます。"
+  },
+  {
+    "id": "kokugo_yoji_075",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【十人十色】「好みや考え方は人それぞれである」四字熟語「十人（　　）色」の空欄に入る数字を漢字で答えなさい。",
+    "options": [],
+    "answer": "十",
+    "acceptableAnswers": [
+      "十",
+      "じゅう",
+      "とお"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「十（十人十色）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_076",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【大同小異】細かい部分にわずかな違いはあるが、全体としてはほぼ同じであることを表す四字熟語はどれですか。",
+    "options": [
+      "大同小異",
+      "五十歩百歩",
+      "針小棒大",
+      "千差万別"
+    ],
+    "answer": "大同小異",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「大いに同じくして、小さく異なる」という意味から、本質的な相違点がないことを指します。"
+  },
+  {
+    "id": "kokugo_yoji_077",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【大同小異】二つの案が「大同小異である」とはどういうことか、「細かい違い」「大体同じ」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "細かい部分にわずかな違いはあるものの、全体としては大体同じであること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "細かい違い",
+      "大体同じ"
+    ],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「小（しょう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_078",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【針小棒大】針のようにごく小さな物事を、棒のように大げさに誇張して話すことを表す四字熟語はどれですか。",
+    "options": [
+      "針小棒大",
+      "厚顔無恥",
+      "羊頭狗肉",
+      "朝三暮四"
+    ],
+    "answer": "針小棒大",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "些細なミスや事実を大げさに膨らませて騒ぎ立てる態度を批判する言葉です。"
+  },
+  {
+    "id": "kokugo_yoji_079",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【針小棒大】「小さなことを大げさに言う」四字熟語「針（　　）棒大」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "小",
+    "acceptableAnswers": [
+      "小",
+      "しょう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "「小（しょう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_080",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "04. 数字や対比を含む四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【針小棒大】「針小棒大に話す」とはどのように話すことか、「些細なこと」「大げさ」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "些細な出来事を、大げさに誇張して事実以上に大きく話すこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "些細なこと",
+      "大げさ"
+    ],
+    "knowledgeTag": "四字熟語・04. 数字や対比を含む四字熟語",
+    "explanation": "針ほどの小さな出来事を、棒のように巨大に見せかけて誇張する様子を表します。"
+  },
+  {
+    "id": "kokugo_yoji_081",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【以心伝心】言葉や文字を使わなくても、互いの心と心で気持ちが通じ合うことを表す四字熟語はどれですか。",
+    "options": [
+      "以心伝心",
+      "異口同音",
+      "意気投合",
+      "言行一致"
+    ],
+    "answer": "以心伝心",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "禅宗の仏教用語に由来し、仏の悟りは言葉ではなく心から心へ伝えられるという教えから転じました。"
+  },
+  {
+    "id": "kokugo_yoji_082",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【以心伝心】「言葉がなくても心が通じ合う」四字熟語「以（　　）伝心」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "心",
+    "acceptableAnswers": [
+      "心",
+      "しん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「心（しん）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_083",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【以心伝心】「二人は以心伝心の間柄だ」とはどのような関係か、「言葉」「気持ちが通じる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "言葉に出して言わなくても、互いに考えていることや気持ちが通じる親密な関係。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "言葉",
+      "気持ちが通じる"
+    ],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "深い信頼や長年の交友関係によって、沈黙の中でも相手の意図を察し合える様子を表します。"
+  },
+  {
+    "id": "kokugo_yoji_084",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【異口同音】大勢の人が口を揃えて、まったく同じ意見や言葉を述べる様子を表す四字熟語はどれですか。",
+    "options": [
+      "異口同音",
+      "以心伝心",
+      "満場一致",
+      "意気投合"
+    ],
+    "answer": "異口同音",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "口は別々（異口）なのに、発する言葉が同じ（同音）であることから、全員の意見が完全に一致することを指します。"
+  },
+  {
+    "id": "kokugo_yoji_085",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【異口同音】「大勢が口を揃えて同じことを言う」四字熟語「（　　）口同音」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "異",
+    "acceptableAnswers": [
+      "異",
+      "い"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「異（い＝異なる）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_086",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【疑心暗鬼】疑う心が強くなると、何でもない物事まで恐ろしく思えたり怪しく見えたりすることを表す四字熟語はどれですか。",
+    "options": [
+      "疑心暗鬼",
+      "自暴自棄",
+      "五里霧中",
+      "孤立無援"
+    ],
+    "answer": "疑心暗鬼",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「疑心、暗鬼を生ず（疑う心があると、暗闇の中に鬼の幻影を見てしまう）」という列子の故事によります。"
+  },
+  {
+    "id": "kokugo_yoji_087",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【疑心暗鬼】「疑うあまり何でも恐ろしく思える」四字熟語「疑心暗（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "鬼",
+    "acceptableAnswers": [
+      "鬼",
+      "き",
+      "おに"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「鬼（き・おに）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_088",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【疑心暗鬼】「疑心暗鬼に陥る」とはどのような精神状態か、「疑い」「恐れ」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "他者への疑いが深まるあまり、何でもないことまで怪しく思えて恐れを感じる状態。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "疑い",
+      "恐れ"
+    ],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "自分の心の中の疑念が妄想を生み出し、勝手に不安や恐怖に怯えている状態を表します。"
+  },
+  {
+    "id": "kokugo_yoji_089",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【起死回生】絶望的な危機や滅亡寸前の状態から、息を吹き返して一気に立ち直ることを表す四字熟語はどれですか。",
+    "options": [
+      "起死回生",
+      "絶体絶命",
+      "危機一髪",
+      "一網打尽"
+    ],
+    "answer": "起死回生",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "死にかけた者を生き返らせるという名医の力から、壊滅的な状況を奇跡的に逆転させることを指します。"
+  },
+  {
+    "id": "kokugo_yoji_090",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【起死回生】「危機から一転して生き返るような逆転」を表す四字熟語「起死（　　）生」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "回",
+    "acceptableAnswers": [
+      "回",
+      "かい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「回（かい）」が入ります。起死回生の一発逆転ホームランなどと使われます。"
+  },
+  {
+    "id": "kokugo_yoji_091",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【本末転倒】物事の根本的な大事なことと、枝葉の些細なことを取り違えることを表す四字熟語はどれですか。",
+    "options": [
+      "本末転倒",
+      "針小棒大",
+      "厚顔無恥",
+      "自暴自棄"
+    ],
+    "answer": "本末転倒",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「本」は木の根元、「末」は梢（枝の先）。優先すべき基本と、副次的な事柄が逆転してしまう誤りを批判する言葉です。"
+  },
+  {
+    "id": "kokugo_yoji_092",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【本末転倒】「大事なことと些細なことの優先順位を取り違える」四字熟語「本（　　）転倒」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "末",
+    "acceptableAnswers": [
+      "末",
+      "まつ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「末（まつ）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_093",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【本末転倒】「健康のために無理な運動をして病気になるのは本末転倒だ」の「本末転倒」の意味について、「目的」「手段」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "本来の目的と、そのための手段が逆転してしまい、目的が損なわれること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "目的",
+      "手段"
+    ],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "健康という目的のために始めた運動という手段が、かえって目的を破壊してしまうような倒錯を指します。"
+  },
+  {
+    "id": "kokugo_yoji_094",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【絶体絶命】逃げ場のない極めて危険で、追い詰められた窮地に陥ることを表す四字熟語はどれですか。",
+    "options": [
+      "絶体絶命",
+      "孤立無援",
+      "四面楚歌",
+      "起死回生"
+    ],
+    "answer": "絶体絶命",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "九星占いによる大凶の星の巡り合わせに由来し、どうにも逃れようのない命の危険や危機的状況を表します。"
+  },
+  {
+    "id": "kokugo_yoji_095",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【絶体絶命】「追い詰められて逃れられない窮地」を表す四字熟語「絶（　　）絶命」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "体",
+    "acceptableAnswers": [
+      "体",
+      "たい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「体（たい）」が入ります。「絶対絶命」と書く誤字に注意が必要です。"
+  },
+  {
+    "id": "kokugo_yoji_096",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【言語道断】あまりにもひどすぎて、言葉で言い表せないほどもってのほかであることを表す四字熟語はどれですか。",
+    "options": [
+      "言語道断",
+      "厚顔無恥",
+      "傍若無人",
+      "意味深長"
+    ],
+    "answer": "言語道断",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "仏教用語で言葉を超えた究極の真理を表す言葉でしたが、転じて口では言い表せないほどあきれ果てた不正や悪行を強く非難する言葉になりました。"
+  },
+  {
+    "id": "kokugo_yoji_097",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【言語道断】事件に対して「言語道断である」と非難する理由について、「言葉で言い表せない」「ひどい」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "あまりにも常識外れでひどく、言葉で言い表せないほどもってのほかであるから。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "言葉で言い表せない",
+      "ひどい"
+    ],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「道（どう）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_098",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【油断大敵】油断や気の緩みは、重大な失敗を招く最も恐ろしい敵であるという意味の四字熟語はどれですか。",
+    "options": [
+      "油断大敵",
+      "勝って兜",
+      "危機一髪",
+      "臨機応変"
+    ],
+    "answer": "油断大敵",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "比叡山延暦寺の「不滅の法灯」の油を絶やさぬよう注意したことに由来するとも言われ、油断の恐ろしさを警告しています。"
+  },
+  {
+    "id": "kokugo_yoji_099",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【油断大敵】「気の緩みは最大の敵である」四字熟語「油断（　　）敵」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "大",
+    "acceptableAnswers": [
+      "大",
+      "たい",
+      "だい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "「大（たい）」が入ります。"
+  },
+  {
+    "id": "kokugo_yoji_100",
+    "subject": "国語",
+    "category": "四字熟語",
+    "subCategory": "05. 人間関係・社会・教訓を表す四字熟語",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【満場一致】その場にいる全員の意見が完全に一つにまとまり、賛成することน้ำを表す四字熟語はどれですか。",
+    "options": [
+      "満場一致",
+      "異口同音",
+      "意気投合",
+      "以心伝心"
+    ],
+    "answer": "満場一致",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "四字熟語・05. 人間関係・社会・教訓を表す四字熟語",
+    "explanation": "会場にいる全員の賛成によって決定されることを「満場一致で可決する」などと言います。"
+  }
+]

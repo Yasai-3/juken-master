@@ -13,7 +13,7 @@ import { analyzeLearningProgress } from '../utils/advisorEngine';
 
 const Home = () => {
   const navigate = useNavigate();
-  const [wrongAnswersCounts, setWrongAnswersCounts] = useState({ science: 0, social: 0 });
+  const [wrongAnswersCounts, setWrongAnswersCounts] = useState({ science: 0, social: 0, japanese: 0 });
   const [menuData, setMenuData] = useState([]);
   const [totalQuestionsCount, setTotalQuestionsCount] = useState(0);
   const [topAdvice, setTopAdvice] = useState(null);
@@ -44,6 +44,7 @@ const Home = () => {
     setWrongAnswersCounts({
       science: wrongAnswers.filter((q) => q.subject === '理科').length,
       social: wrongAnswers.filter((q) => q.subject === '社会').length,
+      japanese: wrongAnswers.filter((q) => q.subject === '国語').length,
     });
 
     const history = getHistory();
@@ -87,8 +88,11 @@ const Home = () => {
       })),
     }));
 
-    // 理科・社会の順に表示
-    formattedMenu.sort((a, b) => (a.subject === '理科' ? -1 : b.subject === '理科' ? 1 : 0));
+    // 国語・理科・社会の順に表示
+    const subjectOrder = { 国語: 1, 理科: 2, 社会: 3 };
+    formattedMenu.sort(
+      (a, b) => (subjectOrder[a.subject] || 99) - (subjectOrder[b.subject] || 99)
+    );
     setMenuData(formattedMenu);
   }, []);
 
@@ -260,7 +264,7 @@ const Home = () => {
       {renderFilterBar()}
 
       {/* Subject Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className={`grid grid-cols-1 ${menuData.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-6`}>
         {menuData.map((data) => (
           <button
             key={data.subject}
@@ -269,7 +273,7 @@ const Home = () => {
             className="p-7 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl hover:border-indigo-400 border-2 border-transparent transition-all text-center group relative overflow-hidden"
           >
             <div className="text-6xl mb-3 group-hover:scale-105 transition-transform">
-              {data.subject === '理科' ? '🔬' : '🌏'}
+              {data.subject === '理科' ? '🔬' : data.subject === '国語' ? '📖' : '🌏'}
             </div>
             <h2 className="text-3xl font-extrabold text-gray-800 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
               {data.subject}
@@ -315,7 +319,15 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <button
+            type="button"
+            onClick={() => startQuiz('combined', { subject: '国語', limit: comprehensiveLimit })}
+            className="p-4 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center"
+          >
+            <span>📖 国語 総合テスト ({comprehensiveLimit}問)</span>
+            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2.5 py-1 rounded-lg">開始 →</span>
+          </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '理科', limit: comprehensiveLimit })}
@@ -336,12 +348,12 @@ const Home = () => {
       </div>
 
       {/* Review & Main Action Buttons */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* NEW: 志望校別 到達度 ＆ 合格ナビ */}
         <button
           type="button"
           onClick={() => navigate('/target-schools')}
-          className="md:col-span-2 p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl shadow-lg hover:opacity-95 transition-all font-black text-lg md:text-xl flex items-center justify-between px-6 border border-amber-300"
+          className="md:col-span-3 p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl shadow-lg hover:opacity-95 transition-all font-black text-lg md:text-xl flex items-center justify-between px-6 border border-amber-300"
         >
           <div className="flex items-center gap-3 text-left">
             <span className="text-3xl bg-white/20 p-2 rounded-xl">🎯</span>
@@ -362,6 +374,25 @@ const Home = () => {
           onClick={() =>
             startQuiz('review', {
               limit: 50,
+              subject: '国語',
+              difficulty: 'all',
+              questionType: 'all',
+            })
+          }
+          disabled={wrongAnswersCounts.japanese === 0}
+          className={`p-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-lg flex items-center justify-center space-x-2 ${
+            wrongAnswersCounts.japanese === 0 ? 'opacity-45 cursor-not-allowed' : ''
+          }`}
+        >
+          <span>📖</span>
+          <span>国語 弱点復習（{wrongAnswersCounts.japanese}問）</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() =>
+            startQuiz('review', {
+              limit: 50,
               subject: '理科',
               difficulty: 'all',
               questionType: 'all',
@@ -373,7 +404,7 @@ const Home = () => {
           }`}
         >
           <span>🔬</span>
-          <span>理科 弱点復習モード（{wrongAnswersCounts.science}問）</span>
+          <span>理科 弱点復習（{wrongAnswersCounts.science}問）</span>
         </button>
 
         <button
@@ -392,22 +423,22 @@ const Home = () => {
           }`}
         >
           <span>🌏</span>
-          <span>社会 弱点復習モード（{wrongAnswersCounts.social}問）</span>
+          <span>社会 弱点復習（{wrongAnswersCounts.social}問）</span>
         </button>
 
         <button
           type="button"
           onClick={() => navigate('/history')}
-          className="p-5 bg-white dark:bg-gray-800 border-2 border-indigo-200 dark:border-gray-700 text-indigo-700 dark:text-indigo-300 rounded-2xl shadow-md hover:bg-indigo-50 dark:hover:bg-gray-700 transition-all font-extrabold text-lg flex items-center justify-center space-x-2"
+          className="md:col-span-1 p-5 bg-white dark:bg-gray-800 border-2 border-indigo-200 dark:border-gray-700 text-indigo-700 dark:text-indigo-300 rounded-2xl shadow-md hover:bg-indigo-50 dark:hover:bg-gray-700 transition-all font-extrabold text-lg flex items-center justify-center space-x-2"
         >
           <span>📊</span>
-          <span>成績分析・伸ばすべき知識アドバイス</span>
+          <span>成績分析・学習アドバイス</span>
         </button>
 
         <button
           type="button"
           onClick={() => navigate('/admin')}
-          className="p-5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-extrabold text-lg flex items-center justify-center space-x-2"
+          className="md:col-span-2 p-5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-extrabold text-lg flex items-center justify-center space-x-2"
         >
           <span>✨</span>
           <span>AI作問スタジオ（画像・PDF読込）/ 管理</span>

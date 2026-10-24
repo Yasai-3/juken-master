@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "kokugo_wago_001",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【あえない】「あえない最期をとげる」の「あえない」の意味として最も適切なものはどれですか。",
+    "options": [
+      "あっけない",
+      "悲惨な",
+      "立派な",
+      "恐ろしい"
+    ],
+    "answer": "あっけない",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「あえない（呆気ない）」は、期待や予想に反して張り合いがない、あっけないという意味です。"
+  },
+  {
+    "id": "kokugo_wago_002",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【あえない】「あえなく敗れ去る」の「あえなく」と同じ意味をもつ、ひらがな５文字の言葉（あ○○○い）を答えなさい。",
+    "options": [],
+    "answer": "あっけない",
+    "acceptableAnswers": [
+      "あっけない",
+      "呆気ない"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「あっけない」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_003",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【あえない】「あえない勝利」「あえない最期」のように使われる「あえない」の意味について、「張り合い」「予想」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "予想に反して張り合いがなく、あっけない様子。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "張り合い",
+      "予想"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "苦闘が予想されたのに、案外簡単に勝負が決まってしまったり命を落としたりするあっけなさを表します。"
+  },
+  {
+    "id": "kokugo_wago_004",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【おびただしい】「おびただしい数のカラス」の「おびただしい」の意味はどれですか。",
+    "options": [
+      "非常に多い",
+      "恐ろしい",
+      "珍しい",
+      "不気味な"
+    ],
+    "answer": "非常に多い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「おびただしい」は、数や量がものすごく多いことを表します。"
+  },
+  {
+    "id": "kokugo_wago_005",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【おびただしい】「山崩れで（　　）土砂が道路をふさいだ」の空欄に入る、量が非常に多いことを表す和語（ひらがな６文字）を答えなさい。",
+    "options": [],
+    "answer": "おびただしい",
+    "acceptableAnswers": [
+      "おびただしい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「おびただしい」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_006",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【おぼつかない】「足元がおぼつかない」の「おぼつかない」の意味はどれですか。",
+    "options": [
+      "頼りなく不安定である",
+      "すばやい",
+      "重くて動かない",
+      "痛む"
+    ],
+    "answer": "頼りなく不安定である",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「おぼつかない」は、はっきりしない、頼りない、不安定で心細いという意味です。"
+  },
+  {
+    "id": "kokugo_wago_007",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【おぼつかない】「このペースでは試験の合格も（　　）」の空欄に入る、見込みが立たず頼りないことを表す和語を答えなさい。",
+    "options": [],
+    "answer": "おぼつかない",
+    "acceptableAnswers": [
+      "おぼつかない"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「おぼつかない」が入ります。「記憶がおぼつかない」「足元がおぼつかない」などと使います。"
+  },
+  {
+    "id": "kokugo_wago_008",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【しどけない】「しどけない生活」「しどけない着こなし」の「しどけない」の意味はどれですか。",
+    "options": [
+      "しまりがなく無頓着である",
+      "品格がある",
+      "華やかである",
+      "貧しい"
+    ],
+    "answer": "しまりがなく無頓着である",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「しどけない」は、衣服や態度がだらしなく崩れている、くつろぎすぎて締まりがない様子を表します。"
+  },
+  {
+    "id": "kokugo_wago_009",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【しどけない】態度や服装に締まりがなく、だらしない様子を表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "しどけない",
+    "acceptableAnswers": [
+      "しどけない"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「しどけない」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_010",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【さりげない】「さりげない気遣い」の「さりげない」の意味として最も適切なものはどれですか。",
+    "options": [
+      "何事もないように振る舞う",
+      "大げさである",
+      "冷たい態度をとる",
+      "計画的である"
+    ],
+    "answer": "何事もないように振る舞う",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「さりげない」は、何気ない様子を装う、わざとらしさがなく自然であるという意味です。"
+  },
+  {
+    "id": "kokugo_wago_011",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【さりげない】「さりげない気遣い」とはどのような配慮か、「何気ない」「自然」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "わざとらしさがなく、何気ない様子で自然に行う配慮。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "何気ない",
+      "自然"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「さりげない」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_012",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【さながら】「さながら映画のワンシーンのようだ」の「さながら」の意味はどれですか。",
+    "options": [
+      "まるで・あたかも",
+      "かろうじて",
+      "めったに",
+      "あらかじめ"
+    ],
+    "answer": "まるで・あたかも",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「さながら（宛ら）」は、「まるで〜のようだ」「そっくりそのまま」という意味の副詞です。"
+  },
+  {
+    "id": "kokugo_wago_013",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【さながら】「さながら〜のようだ」という表現の意味について、「まるで」「そっくり」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "まるでそのものであるかのように、そっくりそのまま似ている様子。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "まるで",
+      "そっくり"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「さながら」が入ります。比況を表す言葉です。"
+  },
+  {
+    "id": "kokugo_wago_014",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【つぶさに】「事件の全貌をつぶさに調べる」の「つぶさに」の意味はどれですか。",
+    "options": [
+      "詳しく細かく・すべて余すところなく",
+      "大雑把に",
+      "急いで",
+      "秘密裏に"
+    ],
+    "answer": "詳しく細かく・すべて余すところなく",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「つぶさに（具に・備に）」は、細かく詳しく、残らずすべてという意味です。"
+  },
+  {
+    "id": "kokugo_wago_015",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【つぶさに】「事の真相を（　　）語る」の空欄に入る、細部に至るまで詳しくという和語（ひらがな４文字）を答えなさい。",
+    "options": [],
+    "answer": "つぶさに",
+    "acceptableAnswers": [
+      "つぶさに"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「つぶさに」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_016",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【つぶさに】「つぶさに観察する」というときの「つぶさに」の意味について、「細かい部分」「漏れなく」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "細かい部分に至るまで、漏れなくすべて詳しく見ること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "細かい部分",
+      "漏れなく"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "全体を大雑把に見るのではなく、小さな点まで余すところなく詳細に調べる様子を表します。"
+  },
+  {
+    "id": "kokugo_wago_017",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【つまびらか】「事件の経緯をつまびらかにする」の「つまびらか」の意味はどれですか。",
+    "options": [
+      "明らか・詳細",
+      "適当",
+      "秘密",
+      "不確実"
+    ],
+    "answer": "明らか・詳細",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「つまびらか（詳らか）」は、物事の細かいところまではっきりしている、詳しい様子を表します。"
+  },
+  {
+    "id": "kokugo_wago_018",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【つまびらか】「真相をつまびらかにする」の「つまびらか」を漢字１文字で書いた場合の正しい漢字を答えなさい。",
+    "options": [],
+    "answer": "詳",
+    "acceptableAnswers": [
+      "詳",
+      "審"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「詳らか（つまびらか）」と書きます。「審らか」とも書きます。"
+  },
+  {
+    "id": "kokugo_wago_019",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【うるわしい】「うるわしい友情」の「うるわしい」の意味はどれですか。",
+    "options": [
+      "美しく立派である",
+      "珍しい",
+      "激しい",
+      "悲しい"
+    ],
+    "answer": "美しく立派である",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「うるわしい（麗しい）」は、整っていて美しい、感銘を受けるほど立派であるという意味です。"
+  },
+  {
+    "id": "kokugo_wago_020",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【うるわしい】「うるわしい友情」とはどのような友情か、「美しい」「心打たれる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "美しく立派で、深く心打たれるような友情。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "美しい",
+      "心打たれる"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「ご機嫌うるわしゅう（麗しゅう）」と使われます。"
+  },
+  {
+    "id": "kokugo_wago_021",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【うらぶれる】「うらぶれた港町」の「うらぶれる」の意味はどれですか。",
+    "options": [
+      "落ちぶれて寂しい様子になる",
+      "活気にあふれる",
+      "急激に発展する",
+      "歴史が古い"
+    ],
+    "answer": "落ちぶれて寂しい様子になる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「うらぶれる（心寂れる）」は、みじめな境遇になって落ちぶれ、わびしく寂しい様子になることです。"
+  },
+  {
+    "id": "kokugo_wago_022",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【うらぶれる】境遇が落ちぶれて、見る影もなく寂しくなることを表す動詞（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "うらぶれる",
+    "acceptableAnswers": [
+      "うらぶれる"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「うらぶれる」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_023",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ゆゆしい】「これはゆゆしい事態だ」の「ゆゆしい」の意味はどれですか。",
+    "options": [
+      "重大で看過できない・恐ろしい",
+      "喜ばしい",
+      "滑稽な",
+      "くだらない"
+    ],
+    "answer": "重大で看過できない・恐ろしい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「ゆゆしい（忌々しい・由々しい）」は、放置できないほど事態が深刻・重大である、不吉で恐ろしいという意味です。"
+  },
+  {
+    "id": "kokugo_wago_024",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【ゆゆしい】「看過できない重大な問題」を表す和語「（　　）事態」の空欄に入る言葉を答えなさい。",
+    "options": [],
+    "answer": "ゆゆしい",
+    "acceptableAnswers": [
+      "ゆゆしい",
+      "由々しい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "「ゆゆしい（由々しい）」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_025",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "01. 様子・状態を表す和語",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【ゆゆしい】「ゆゆしい問題」という表現において、どのような深刻さを指しているか、「重大」「見過ごせない」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "放置しておくと大変な結果を招く、重大で見過ごせない性質。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "重大",
+      "見過ごせない"
+    ],
+    "knowledgeTag": "和語・01. 様子・状態を表す和語",
+    "explanation": "簡単には見過ごすことができず、ただちに処置を講じなければならない深刻な状況を指します。"
+  },
+  {
+    "id": "kokugo_wago_026",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【いぶかしい】「いぶかしそうな目で見る」の「いぶかしい」の意味はどれですか。",
+    "options": [
+      "疑わしい・不審に思う",
+      "好ましい",
+      "恐ろしい",
+      "尊敬する"
+    ],
+    "answer": "疑わしい・不審に思う",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「いぶかしい（訝しい）」は、疑わしい、怪しい、本当かどうか疑問に思う様子です。"
+  },
+  {
+    "id": "kokugo_wago_027",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【いぶかしい】「彼の発言を（　　）思う」の空欄に入る、不審に思う・怪しむという意味の和語を答えなさい。",
+    "options": [],
+    "answer": "いぶかしく",
+    "acceptableAnswers": [
+      "いぶかしく",
+      "いぶかしい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「いぶかしく（訝しく）」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_028",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【いぶかしい】「いぶかしい表情をする」とはどのような表情か、「疑い」「不審」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "本当だろうかと疑問に思い、不審や疑いを抱いている表情。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "疑い",
+      "不審"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "素直に信用できず、何か裏や秘密があるのではないかと怪しんでいる顔つきを表します。"
+  },
+  {
+    "id": "kokugo_wago_029",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【いとおしい】「生まれたばかりの我が子がいとおしい」の「いとおしい」の意味はどれですか。",
+    "options": [
+      "かわいくてたまらない・大切にしたい",
+      "頼もしい",
+      "気の毒だ",
+      "誇らしい"
+    ],
+    "answer": "かわいくてたまらない・大切にしたい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「いとおしい（愛おしい）」は、たまらなくかわいらしい、大切に守りたいという深い愛情の感情を表します。"
+  },
+  {
+    "id": "kokugo_wago_030",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【いとおしい】「小さく弱いものを深く愛し、慈しむ気持ち」を表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "いとおしい",
+    "acceptableAnswers": [
+      "いとおしい",
+      "愛おしい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「いとおしい」が入ります。古語では「気の毒だ」という意味もありました。"
+  },
+  {
+    "id": "kokugo_wago_031",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【かたじけない】「ご親切にしていただき、かたじけない」の「かたじけない」の意味はどれですか。",
+    "options": [
+      "ありがたい・もったいない",
+      "申し訳ない",
+      "恥ずかしい",
+      "心苦しい"
+    ],
+    "answer": "ありがたい・もったいない",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「かたじけない（忝い）」は、身に余る恩恵や親切を受けて、もったいなく、心からありがたいと感じる気持ちです。"
+  },
+  {
+    "id": "kokugo_wago_032",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【かたじけない】時代劇などで感謝を伝える「（　　）お言葉を賜り、感謝いたします」の空欄に入る和語を答えなさい。",
+    "options": [],
+    "answer": "かたじけない",
+    "acceptableAnswers": [
+      "かたじけない",
+      "忝い"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「かたじけない」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_033",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【かたじけない】「かたじけない」という感情に含まれるニュアンスについて、「もったいない」「感謝」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "自分には過分で身に余る好意に恐縮し、もったいないと感じながら深く感謝する気持ち。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "もったいない",
+      "感謝"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "単なるありがとうではなく、相手の高貴さや親切に対して「自分のような者に恐れ多い」という謙虚な恐縮と感謝が混ざった心情です。"
+  },
+  {
+    "id": "kokugo_wago_034",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【もどかしい】「思うように言葉が出ずにもどかしい」の「もどかしい」の意味はどれですか。",
+    "options": [
+      "じれったく歯がゆい",
+      "悔しい",
+      "恥ずかしい",
+      "退屈だ"
+    ],
+    "answer": "じれったく歯がゆい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「もどかしい（焦れったい・歯がゆい）」は、物事が思い通りに進まず、いらいらしてじれったい様子です。"
+  },
+  {
+    "id": "kokugo_wago_035",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【もどかしい】「事態が思うように進まず、歯がゆくいらいらする気持ち」を表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "もどかしい",
+    "acceptableAnswers": [
+      "もどかしい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「もどかしい」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_036",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ねたましい】「友人の才能がねたましい」の「ねたましい」の意味はどれですか。",
+    "options": [
+      "うらやましくて憎らしい",
+      "尊敬できる",
+      "恐れ多い",
+      "哀れである"
+    ],
+    "answer": "うらやましくて憎らしい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「ねたましい（妬ましい・嫉ましい）」は、他人が自分より優れているのを羨み、同時に憎らしく思う嫉妬の感情です。"
+  },
+  {
+    "id": "kokugo_wago_037",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【ねたましい】「ねたましい」という感情について、「他人の長所」「うらやむ」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "他人の長所や成功をうらやみ、自分より優れていることを憎らしく思う気持ち。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "他人の長所",
+      "うらやむ"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「ねたましい」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_038",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【さもしい】「金のために友を裏切るさもしい根性」の「さもしい」の意味はどれですか。",
+    "options": [
+      "品性が下劣で見苦しい",
+      "気が小さい",
+      "冷淡である",
+      "貧弱である"
+    ],
+    "answer": "品性が下劣で見苦しい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「さもしい（浅ましい）」は、心が卑しく意地汚い、品格がなくて見苦しい様子を表します。"
+  },
+  {
+    "id": "kokugo_wago_039",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【さもしい】利欲に目がくらんで心が卑しい様子を表す和語（ひらがな４文字）を答えなさい。",
+    "options": [],
+    "answer": "さもしい",
+    "acceptableAnswers": [
+      "さもしい"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「さもしい」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_040",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【しおらしい】「注意されてしおらしく反省する」の「しおらしい」の意味はどれですか。",
+    "options": [
+      "控えめで素直でいじらしい",
+      "反抗的である",
+      "ふてくされている",
+      "大げさである"
+    ],
+    "answer": "控えめで素直でいじらしい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「しおらしい（萎らしい）」は、態度が従順で控えめ、素直でかわいらしい、いじらしい様子です。"
+  },
+  {
+    "id": "kokugo_wago_041",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【しおらしい】「しおらしい態度」とはどのような態度か、「控えめ」「素直」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "反抗せず、控えめで素直にいじらしい態度。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "控えめ",
+      "素直"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「しおらしい」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_042",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【つれない】「声をかけたがつれない返事だった」の「つれない」の意味はどれですか。",
+    "options": [
+      "冷淡で思いやりがない",
+      "熱心である",
+      "あいまいである",
+      "丁寧である"
+    ],
+    "answer": "冷淡で思いやりがない",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「つれない（連れない）」は、冷淡でよそよそしい、相手の気持ちに無関心でそっけない態度を表します。"
+  },
+  {
+    "id": "kokugo_wago_043",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【つれない】「つれない態度」とはどのような態度か、「思いやり」「冷淡」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手の気持ちへの思いやりがなく、冷淡でそっけない態度。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "思いやり",
+      "冷淡"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「つれない」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_044",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【はかなむ】「自分の薄幸な身の上をはかなむ」の「はかなむ」の意味はどれですか。",
+    "options": [
+      "無常を感じて思い悩む・絶望する",
+      "自慢する",
+      "他人に責任転嫁する",
+      "あきらめて笑う"
+    ],
+    "answer": "無常を感じて思い悩む・絶望する",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「はかなむ（儚む）」は、頼りなくはかないものとして悲観する、思い悩むという意味です。"
+  },
+  {
+    "id": "kokugo_wago_045",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【はかなむ】「人生を儚む」の「儚む」の読みがなを答えなさい。",
+    "options": [],
+    "answer": "はかなむ",
+    "acceptableAnswers": [
+      "はかなむ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「はかなむ」と読みます。"
+  },
+  {
+    "id": "kokugo_wago_046",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【かこつ】「境遇の不遇をかこつ」の「かこつ」の意味はどれですか。",
+    "options": [
+      "不平・愚痴を言う・言い訳にする",
+      "感謝する",
+      "耐え忍ぶ",
+      "誇らしく思う"
+    ],
+    "answer": "不平・愚痴を言う・言い訳にする",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「かこつ（託つ）」は、不満や愚痴を口にする、他のことのせいにして恨み言を言うことです。"
+  },
+  {
+    "id": "kokugo_wago_047",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【かこつ】「身の不運を（　　）」の空欄に入る、愚痴や不満を言うという意味の動詞（ひらがな３文字）を答えなさい。",
+    "options": [],
+    "answer": "かこつ",
+    "acceptableAnswers": [
+      "かこつ",
+      "託つ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「かこつ」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_048",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【おののく】「恐ろしさに身がおののく」の「おののく」の意味はどれですか。",
+    "options": [
+      "恐怖や寒さで震える",
+      "怒りで赤くなる",
+      "安心する",
+      "立ち止まる"
+    ],
+    "answer": "恐怖や寒さで震える",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「おののく（戦く）」は、恐怖や不安、寒さのために身体が震えることです。"
+  },
+  {
+    "id": "kokugo_wago_049",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【おののく】「戦慄（せんりつ）」の「戦」を訓読みした、恐怖で震え上がることを表す和語（ひらがな４文字）を答えなさい。",
+    "options": [],
+    "answer": "おののく",
+    "acceptableAnswers": [
+      "おののく",
+      "戦く"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "「おののく」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_050",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "02. 心情・感情を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【おののく】「怪物の足音に人々がおののいた」の「おののいた」とはどのような身体的・心理的状態か、「恐怖」「震える」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "激しい恐怖や不安を感じて、身体がわなわなと震えている状態。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "恐怖",
+      "震える"
+    ],
+    "knowledgeTag": "和語・02. 心情・感情を表す和語",
+    "explanation": "強い恐怖に圧倒されて足や身体が小刻みに震え、動けなくなっている様子を表します。"
+  },
+  {
+    "id": "kokugo_wago_051",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【あしらう】「新人の生意気な意見を軽くあしらう」の「あしらう」の意味はどれですか。",
+    "options": [
+      "適当に応対して受け流す",
+      "激しく叱責する",
+      "真剣に耳を傾ける",
+      "褒め称える"
+    ],
+    "answer": "適当に応対して受け流す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「あしらう（持て成す・遇う）」は、相手に対して適当な対応をする、軽く受け流して相手にしないという意味です。"
+  },
+  {
+    "id": "kokugo_wago_052",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【あしらう】「客をぞんざいに（　　）」の空欄に入る、応対・処遇するという意味の和語を答えなさい。",
+    "options": [],
+    "answer": "あしらう",
+    "acceptableAnswers": [
+      "あしらう"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「あしらう」が入ります。「鼻先であしらう」などの慣用表現もあります。"
+  },
+  {
+    "id": "kokugo_wago_053",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【いさめる】「危険な行動をとろうとする友をいさめる」の「いさめる」の意味はどれですか。",
+    "options": [
+      "過ちや悪い点を忠告して止めさせる",
+      "励まして応援する",
+      "厳しく罰する",
+      "無理矢理命令する"
+    ],
+    "answer": "過ちや悪い点を忠告して止めさせる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いさめる（諫める）」は、目上の人や友人などの誤りを指摘し、改めるように忠告することです。"
+  },
+  {
+    "id": "kokugo_wago_054",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【いさめる】王の暴政を正すために家臣が命がけで忠告することを「主君を（　　）」といいますが、空欄に入る動詞を答えなさい。",
+    "options": [],
+    "answer": "いさめる",
+    "acceptableAnswers": [
+      "いさめる",
+      "諫める"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いさめる（諫める）」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_055",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【いさめる】「友をいさめる」という行為の目的について、「過ち」「思いとどまらせる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "友人の過ちや危険な行動を忠告し、それを思いとどまらせること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "過ち",
+      "思いとどまらせる"
+    ],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "相手のためを思って、悪い行動や間違った考えを正すよう説得・忠告する行動を指します。"
+  },
+  {
+    "id": "kokugo_wago_056",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【いそしむ】「勉学にいそしむ」の「いそしむ」の意味はどれですか。",
+    "options": [
+      "熱心に励む",
+      "怠けて休む",
+      "適当にこなす",
+      "他人に教える"
+    ],
+    "answer": "熱心に励む",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いそしむ（勤しむ）」は、仕事や勉強などに一生懸命励む、精を出すという意味です。"
+  },
+  {
+    "id": "kokugo_wago_057",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【いそしむ】「研究に（　　）」の空欄に入る、一生懸命熱心に励むことを表す和語を答えなさい。",
+    "options": [],
+    "answer": "いそしむ",
+    "acceptableAnswers": [
+      "いそしむ",
+      "勤しむ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いそしむ」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_058",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【いつくしむ】「幼い小鳥をいつくしむように育てる」の「いつくしむ」の意味はどれですか。",
+    "options": [
+      "愛情を注いで大切にかわいがる",
+      "厳しくしつける",
+      "遠くから眺める",
+      "自慢する"
+    ],
+    "answer": "愛情を注いで大切にかわいがる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いつくしむ（慈しむ）」は、弱い者や幼い者に対して深い愛情を注ぎ、大切に育てる・いたわることです。"
+  },
+  {
+    "id": "kokugo_wago_059",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【いつくしむ】「慈愛」の「慈」を訓読みした、深い愛をもって大切にする意味の動詞（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "いつくしむ",
+    "acceptableAnswers": [
+      "いつくしむ",
+      "慈しむ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「いつくしむ」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_060",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【たしなめる】「大声で騒ぐ子どもをたしなめる」の「たしなめる」の意味はどれですか。",
+    "options": [
+      "反省を促すように穏やかに注意する",
+      "大声で怒鳴りつける",
+      "無視する",
+      "一緒に楽しむ"
+    ],
+    "answer": "反省を促すように穏やかに注意する",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「たしなめる（窘める）」は、不都合な言動を改めるよう、少し叱ったり穏やかに注意を与えたりすることです。"
+  },
+  {
+    "id": "kokugo_wago_061",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【たしなめる】「たしなめる」と「怒鳴る」の違いについて、「穏やか」「注意」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "感情的に怒鳴るのではなく、穏やかに善悪を教えて注意すること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "穏やか",
+      "注意"
+    ],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「たしなめる」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_062",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【たじろぐ】「相手の気迫に一瞬たじろぐ」の「たじろぐ」の意味はどれですか。",
+    "options": [
+      "圧倒されて後ずさりする・ひるむ",
+      "激怒して飛びかかる",
+      "落ち着き払っている",
+      "喜んで迎える"
+    ],
+    "answer": "圧倒されて後ずさりする・ひるむ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「たじろぐ」は、相手の勢いや困難に圧倒されて、気おくれする、ひるんでたじろぎ後退することです。"
+  },
+  {
+    "id": "kokugo_wago_063",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【たじろぐ】「強敵を前にたじろいだ」とはどういう状態か、「気おくれ」「後ずさり」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手の勢いや力に圧倒されて気おくれし、思わず後ずさりすること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "気おくれ",
+      "後ずさり"
+    ],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「たじろぐ」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_064",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【なじる】「約束を破った友を厳しくなじる」の「なじる」の意味はどれですか。",
+    "options": [
+      "問いつめて責める",
+      "慰める",
+      "見放す",
+      "許す"
+    ],
+    "answer": "問いつめて責める",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「なじる（詰る）」は、相手の失敗や悪い点を問い詰めて、言葉で強く非難・責めることです。"
+  },
+  {
+    "id": "kokugo_wago_065",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【なじる】「詰問」の「詰」の訓読みで、相手の過ちを問い詰めて責める意味の和語（ひらがな３文字）を答えなさい。",
+    "options": [],
+    "answer": "なじる",
+    "acceptableAnswers": [
+      "なじる",
+      "詰る"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「なじる」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_066",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【へつらう】「上役にへつらって機嫌を取る」の「へつらう」の意味はどれですか。",
+    "options": [
+      "お世辞を言って気に入られようとする",
+      "堂々と反論する",
+      "馬鹿にする",
+      "距離を置く"
+    ],
+    "answer": "お世辞を言って気に入られようとする",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「へつらう（諂う）」は、人の気に入るように媚びを売る、おべっかを使ってご機嫌をとることです。"
+  },
+  {
+    "id": "kokugo_wago_067",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【へつらう】「権力者にへつらう」とはどのような行動か、「媚びる」「お世辞」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手に気に入られようとして媚びを売り、お世辞を言って機嫌をとる行動。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "媚びる",
+      "お世辞"
+    ],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「へつらう」が入ります。「阿諛追従（あゆついしょう）」の「諂」です。"
+  },
+  {
+    "id": "kokugo_wago_068",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ほのめかす】「辞任の可能性をほのめかす」の「ほのめかす」の意味はどれですか。",
+    "options": [
+      "直接言わず、それとなく気配を漂わせる",
+      "はっきりと断言する",
+      "嘘をついてごまかす",
+      "大声で叫ぶ"
+    ],
+    "answer": "直接言わず、それとなく気配を漂わせる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「ほのめかす（仄めかす）」は、はっきりと口に出さず、それとなく暗示することです。"
+  },
+  {
+    "id": "kokugo_wago_069",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【ほのめかす】「本心をそれとなく匂わせる」ことを表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "ほのめかす",
+    "acceptableAnswers": [
+      "ほのめかす",
+      "仄めかす"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「ほのめかす」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_070",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【まどろむ】「春の暖かい日差しの中でまどろむ」の「まどろむ」の意味はどれですか。",
+    "options": [
+      "うとうとと浅く眠る",
+      "激しく運動する",
+      "熟睡する",
+      "物思いにふける"
+    ],
+    "answer": "うとうとと浅く眠る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「まどろむ（微睡む）」は、ぐっすりではなく、うとうとと心地よく浅い眠りにつくことです。"
+  },
+  {
+    "id": "kokugo_wago_071",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【まどろむ】「微睡む」の読みがなを答えなさい。",
+    "options": [],
+    "answer": "まどろむ",
+    "acceptableAnswers": [
+      "まどろむ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「まどろむ」と読みます。"
+  },
+  {
+    "id": "kokugo_wago_072",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【さとす】「過ちを犯した生徒を優しくさとす」の「さとす」の意味はどれですか。",
+    "options": [
+      "物事の道理をよく言い聞かせる",
+      "体罰を与える",
+      "警察に通報する",
+      "何もしない"
+    ],
+    "answer": "物事の道理をよく言い聞かせる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「さとす（諭す）」は、教え導くように、善悪や道理を丁寧に言い聞かせて納得させることです。"
+  },
+  {
+    "id": "kokugo_wago_073",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【さとす】「生徒を優しくさとす」とはどのように指導することか、「道理」「言い聞かせる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "善悪や物事の道理を順序立てて丁寧に言い聞かせること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "道理",
+      "言い聞かせる"
+    ],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「諭す（さとす）」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_074",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【うがつ】「物事の真相をうがった見方」の「うがつ」の本来の意味はどれですか。",
+    "options": [
+      "物事の本質や急所を的確にとらえる",
+      "疑い深くひねくれた見方をする",
+      "皮肉を言う",
+      "大雑把に捉える"
+    ],
+    "answer": "物事の本質や急所を的確にとらえる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「うがつ（穿つ）」は穴をあけるという意味から転じて、物事の隠れた真相や本質を鋭く見抜くという意味です。誤用で「ひねくれた見方」と混同されがちです。"
+  },
+  {
+    "id": "kokugo_wago_075",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "03. 行動・動作を表す和語",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【うがつ】「雨だれ石を（　　）」のことわざに入る、穴をあける・本質をつくという意味の動詞を答えなさい。",
+    "options": [],
+    "answer": "うがつ",
+    "acceptableAnswers": [
+      "うがつ",
+      "穿つ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・03. 行動・動作を表す和語",
+    "explanation": "「穿つ（うがつ）」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_076",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【おもむろに】「彼は席を立ち、おもむろに話し始めた」の「おもむろに」の正しい意味はどれですか。",
+    "options": [
+      "ゆっくりと落ち着いて",
+      "突然あわただしく",
+      "怒り狂って",
+      "いやいやながら"
+    ],
+    "answer": "ゆっくりと落ち着いて",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「おもむろに（徐に）」は、落ち着いてゆっくり行動を始めることです。「急に」という意味で使うのは代表的な誤用です。"
+  },
+  {
+    "id": "kokugo_wago_077",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【おもむろに】「徐に」の読みがなを答えなさい。",
+    "options": [],
+    "answer": "おもむろに",
+    "acceptableAnswers": [
+      "おもむろに"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「おもむろに」と読みます。「急に」ではなく「ゆっくりと」が正しい意味です。"
+  },
+  {
+    "id": "kokugo_wago_078",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【おもむろに】「おもむろに立ち上がった」という文における誤用と正しい意味の違いについて、「急に」「ゆっくり」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「急に立ち上がった」と誤解されやすいが、正しくは「ゆっくりと落ち着いて立ち上がった」という意味である。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "急に",
+      "ゆっくり"
+    ],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "多くの人が「出し抜けに・突然」と誤用していますが、本来は動作を慌てず落ち着いて静かに始めることを意味します。"
+  },
+  {
+    "id": "kokugo_wago_079",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【やおら】「やおら立ち上がって弓を構えた」の「やおら」の意味はどれですか。",
+    "options": [
+      "落ち着いて静かに行動を起こす様子",
+      "急激に飛び起きる様子",
+      "ふらつきながら",
+      "叫びながら"
+    ],
+    "answer": "落ち着いて静かに行動を起こす様子",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「やおら」は、ゆっくりと、静かに動作を始める様子を表します。これも「急に」と誤用されやすい言葉です。"
+  },
+  {
+    "id": "kokugo_wago_080",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【やおら】「静かにゆっくりと動作を始める様子」を表す和語（ひらがな３文字）を答えなさい。",
+    "options": [],
+    "answer": "やおら",
+    "acceptableAnswers": [
+      "やおら"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「やおら」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_081",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【あまつさえ】「雨が降り出し、あまつさえ雷まで鳴り始めた」の「あまつさえ」の意味はどれですか。",
+    "options": [
+      "そのうえ・おまけに",
+      "ようやく",
+      "まさか",
+      "あらかじめ"
+    ],
+    "answer": "そのうえ・おまけに",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「あまつさえ（剰え）」は、悪い状態のところに、さらに重なって困った事態が起こる（そのうえ・おまけに）という意味です。"
+  },
+  {
+    "id": "kokugo_wago_082",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【あまつさえ】「道に迷い、（　　）日も暮れてしまった」の空欄に入る、「そのうえ・おまけに」を意味する和語を答えなさい。",
+    "options": [],
+    "answer": "あまつさえ",
+    "acceptableAnswers": [
+      "あまつさえ",
+      "剰え"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「あまつさえ」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_083",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【あまつさえ】「あまつさえ」という言葉が使われる文脈の特徴について、「悪いこと」「重なる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "すでにある悪いことの上に、さらに別の悪い出来事が重なる文脈で使われる。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "悪いこと",
+      "重なる"
+    ],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「剰え」は単なる追加ではなく、好ましくない状況がさらに悪化・重複する際に用いられます。"
+  },
+  {
+    "id": "kokugo_wago_084",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【あやかる】「長寿の長老にあやかって命名する」の「あやかる」の意味はどれですか。",
+    "options": [
+      "良い影響を受け、同じような幸運にあずかる",
+      "他人の真似をしてからかう",
+      "命令に従う",
+      "お礼をする"
+    ],
+    "answer": "良い影響を受け、同じような幸運にあずかる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「あやかる（肖る）」は、幸福な人や優れた人に似て、自分もその恩恵や幸運にあずかることです。"
+  },
+  {
+    "id": "kokugo_wago_085",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【あやかる】「先輩の合格にあやかる」の「あやかる」を漢字で書いた場合の正しい漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "肖",
+    "acceptableAnswers": [
+      "肖",
+      "あやかる"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「肖る（あやかる）」と書きます。"
+  },
+  {
+    "id": "kokugo_wago_086",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【いみじくも】「彼はいみじくも問題の本質を指摘した」の「いみじくも」の意味はどれですか。",
+    "options": [
+      "非常に適切に・うまく",
+      "図々しくも",
+      "皮肉にも",
+      "偶然に"
+    ],
+    "answer": "非常に適切に・うまく",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「いみじくも」は、古語の「いみじ」から転じ、ぴったり適切に、見事に言い当てて、という意味です。"
+  },
+  {
+    "id": "kokugo_wago_087",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【いみじくも】「いみじくも指摘した」とはどのように指摘したことか、「適切」「見事」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "物事の核心を非常に適切に、見事に言い当てて指摘すること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "適切",
+      "見事"
+    ],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「いみじくも」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_088",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【いやしくも】「いやしくも武士たるもの、約束は守るべきだ」の「いやしくも」の意味はどれですか。",
+    "options": [
+      "仮にも・名乗るからには",
+      "身分が低くても",
+      "みすぼらしくても",
+      "絶対に"
+    ],
+    "answer": "仮にも・名乗るからには",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「いやしくも（苟も）」は、「仮にも」「まがりなりにもその立場にあるからには」という意味です。"
+  },
+  {
+    "id": "kokugo_wago_089",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【いやしくも】「（　　）受験生であるなら、毎日の復習を怠るな」の空欄に入る、「仮にも・一応そうであるなら」を意味する和語を答えなさい。",
+    "options": [],
+    "answer": "いやしくも",
+    "acceptableAnswers": [
+      "いやしくも",
+      "苟も"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「いやしくも」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_090",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【おのずから】「毎日コツコツ勉強していれば、おのずから結果はついてくる」の「おのずから」の意味はどれですか。",
+    "options": [
+      "自然に・無理しなくてもひとりでに",
+      "奇跡的に",
+      "他人のおかげで",
+      "たまには"
+    ],
+    "answer": "自然に・無理しなくてもひとりでに",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「おのずから（自ずから）」は、人の作為によらず、自然の成り行きでそうなる（ひとりでに）という意味です。"
+  },
+  {
+    "id": "kokugo_wago_091",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【おのずから】「自然とそうなる」ことを表す、「自ずから」の読みがなを答えなさい。",
+    "options": [],
+    "answer": "おのずから",
+    "acceptableAnswers": [
+      "おのずから"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「おのずから」と読みます。"
+  },
+  {
+    "id": "kokugo_wago_092",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ひねもす】「春の海ひねもすのたりのたりかな」の「ひねもす」の意味はどれですか。",
+    "options": [
+      "朝から晩まで一日中",
+      "一瞬の間",
+      "夜遅く",
+      "たまに"
+    ],
+    "answer": "朝から晩まで一日中",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「ひねもす（終日）」は、朝から晩まで一日じゅうという意味です。与謝蕪村の有名な俳句に出てきます。"
+  },
+  {
+    "id": "kokugo_wago_093",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【ひねもす】与謝蕪村の俳句「春の海（　　）のたりのたりかな」の空欄に入る、一日中を表す和語を答えなさい。",
+    "options": [],
+    "answer": "ひねもす",
+    "acceptableAnswers": [
+      "ひねもす",
+      "終日"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「ひねもす」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_094",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【よもすがら】「ひねもす（終日）」が一日中を指すのに対し、一晩中・夜通しを指す和語はどれですか。",
+    "options": [
+      "よもすがら",
+      "あまつさえ",
+      "さながら",
+      "つれづれ"
+    ],
+    "answer": "よもすがら",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「よもすがら（夜もすがら）」は、夜が明けるまで一晩中という意味です。百人一首などにも頻出します。"
+  },
+  {
+    "id": "kokugo_wago_095",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【よもすがら】「夜通し・一晩中」を表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "よもすがら",
+    "acceptableAnswers": [
+      "よもすがら",
+      "夜もすがら"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「よもすがら」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_096",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【ひしめく】「満員の会場に大勢の観客がひしめいている」の「ひしめく」の意味はどれですか。",
+    "options": [
+      "大勢が一カ所にぎっしり押し合っている",
+      "激しく口論している",
+      "静かに待機している",
+      "整列している"
+    ],
+    "answer": "大勢が一カ所にぎっしり押し合っている",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「ひしめく（犇めく）」は、多くの人や物が狭い場所にすき間なくぎっしり集まって押し合う様子です。"
+  },
+  {
+    "id": "kokugo_wago_097",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【ひしめく】牛が３つ集まった漢字「犇めく」の読みがなを答えなさい。",
+    "options": [],
+    "answer": "ひしめく",
+    "acceptableAnswers": [
+      "ひしめく"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「ひしめく」と読みます。"
+  },
+  {
+    "id": "kokugo_wago_098",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【もてはやす】「世間でもてはやされる」の「もてはやす」の意味はどれですか。",
+    "options": [
+      "評判にして大いに褒めたたえる",
+      "冷やかして馬鹿にする",
+      "無視する",
+      "厳しく批評する"
+    ],
+    "answer": "評判にして大いに褒めたたえる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「もてはやす（持て囃す）」は、人々が話題にして大いに褒め称えたり歓迎したりすることです。"
+  },
+  {
+    "id": "kokugo_wago_099",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【もてはやす】「ちやほやして褒めちぎる」ことを表す和語（ひらがな５文字）を答えなさい。",
+    "options": [],
+    "answer": "もてはやす",
+    "acceptableAnswers": [
+      "もてはやす",
+      "持て囃す"
+    ],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「もてはやす」が入ります。"
+  },
+  {
+    "id": "kokugo_wago_100",
+    "subject": "国語",
+    "category": "和語",
+    "subCategory": "04. 慣用的な和語・重ね言葉",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【しにせ】「代々二百年続いている和菓子のしにせ」の「しにせ」の正しい漢字表記はどれですか。",
+    "options": [
+      "老舗",
+      "古店",
+      "代店",
+      "旧家"
+    ],
+    "answer": "老舗",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "和語・04. 慣用的な和語・重ね言葉",
+    "explanation": "「しにせ」は「似せ（親の商売の仕方を真似る・似せる）」が語源で、長く信用を保ち続けてきた店を表し、「老舗」の漢字を当てます。"
+  }
+]

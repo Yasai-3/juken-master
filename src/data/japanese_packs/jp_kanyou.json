@@ -1,0 +1,1897 @@
+[
+  {
+    "id": "kokugo_kan_001",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【頭が下がる】相手の立派な行いや態度に対して、心から感服・尊敬することを表す慣用句はどれですか。",
+    "options": [
+      "頭が下がる",
+      "頭を抱える",
+      "頭を冷やす",
+      "顔が利く"
+    ],
+    "answer": "頭が下がる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "相手の崇高な行動に敬意を払い、深く感銘を受けることを「頭が下がる」といいます。"
+  },
+  {
+    "id": "kokugo_kan_002",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【頭が下がる】「被災地で献身的に活動するボランティアには（　　）が下がる」の空欄に入る体の部分を漢字で答えなさい。",
+    "options": [],
+    "answer": "頭",
+    "acceptableAnswers": [
+      "頭",
+      "あたま",
+      "こうべ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「頭（あたま・こうべ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_003",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【頭が下がる】「頭が下がる」とは相手に対してどのような心情を抱くことか、「尊敬」「感服」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手の優れた行動や努力に対して、深く尊敬し感服する心情。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "尊敬",
+      "感服"
+    ],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "自分の未熟さを自覚するとともに、相手の立派な態度に心から敬意を抱く様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_004",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【顔をつぶす】相手の面目や名誉を傷つけ、恥をかかせることを表す慣用句はどれですか。",
+    "options": [
+      "顔をつぶす",
+      "顔が利く",
+      "顔から火が出る",
+      "顔を立てる"
+    ],
+    "answer": "顔をつぶす",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "その人の社会的な評判や立場を台無しにして恥をかかせることを意味します。対義語は「顔を立てる」です。"
+  },
+  {
+    "id": "kokugo_kan_005",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【顔をつぶす】相手の「顔をつぶす」とはどういうことか、「面目」「評判」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手の面目を傷つけ、社会的な評判や立場を台無しにすること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "面目",
+      "評判"
+    ],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「顔（かお）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_006",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【顔から火が出る】非常に恥ずかしい思いをして、顔が真っ赤になる様子を表す慣用句はどれですか。",
+    "options": [
+      "顔から火が出る",
+      "目を丸くする",
+      "耳が痛い",
+      "口火を切る"
+    ],
+    "answer": "顔から火が出る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "大勢の前で失敗したり恥ずかしい秘密を知られたりして、顔全体がカッと熱くなるほどの羞恥心を表します。"
+  },
+  {
+    "id": "kokugo_kan_007",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【顔から火が出る】「皆の前で言い間違いをして（　　）から火が出るほど恥ずかしかった」の空欄に入る体の部分を漢字で答えなさい。",
+    "options": [],
+    "answer": "顔",
+    "acceptableAnswers": [
+      "顔",
+      "かお"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「顔（かお）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_008",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【目の色を変える】怒ったり、何かに夢中・必死になったりして、目つきを険しくする様子を表す慣用句はどれですか。",
+    "options": [
+      "目の色を変える",
+      "目を丸くする",
+      "目もくれない",
+      "目をかける"
+    ],
+    "answer": "目の色を変える",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "欲望や怒り、真剣さのために興奮して視線や表情が激変する様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_009",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【目を丸くする】「予想外の出来事に驚いて目を大きく見開く」ことを表す慣用句「目を（　　）くする」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "丸",
+    "acceptableAnswers": [
+      "丸",
+      "まる"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「丸（まる）くする」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_010",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【目もくれない】「目もくれない」とはどのような態度か、「見向きもせず」「関心」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "見向きもせず、まったく関心を示さない態度。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "見向きもせず",
+      "関心"
+    ],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "完全に無視して、視線すら向けない無関心な様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_011",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【耳が痛い】他人の意見や忠告が自分の弱点や過ちを突いていて、聞いていてつらい様子を表す慣用句はどれですか。",
+    "options": [
+      "耳が痛い",
+      "耳を傾ける",
+      "耳を疑う",
+      "耳にたこができる"
+    ],
+    "answer": "耳が痛い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "自分の欠点を的確に指摘されたために、納得はしつつも聞くのが苦痛である感情を表します。"
+  },
+  {
+    "id": "kokugo_kan_012",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【耳にたこができる】「耳にたこができる」とはどのような状態か、「同じ話」「うんざり」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "同じ話を何度も繰り返し聞かされて、すっかりうんざりしている状態。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "同じ話",
+      "うんざり"
+    ],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「耳（みみ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_013",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【鼻が高い】得意になって誇らしく、自慢したい気持ちであることを表す慣用句はどれですか。",
+    "options": [
+      "鼻が高い",
+      "鼻であしらう",
+      "鼻につく",
+      "目が高い"
+    ],
+    "answer": "鼻が高い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "誇らしい業績や名誉を得て、得意満面である様子を表します。「鼻高々（はなたかだか）」とも言います。"
+  },
+  {
+    "id": "kokugo_kan_014",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【鼻につく】「相手の気取った態度が嫌味で不快に感じられる」ことを表す慣用句「（　　）につく」の空欄に入る体の部分を答えなさい。",
+    "options": [],
+    "answer": "鼻",
+    "acceptableAnswers": [
+      "鼻",
+      "はな"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「鼻（はな）」が入ります。臭いが鼻について嫌になることが語源です。"
+  },
+  {
+    "id": "kokugo_kan_015",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【口が堅い】秘密や言ってはならないことを決して他人に漏らさない様子を表す慣用句はどれですか。",
+    "options": [
+      "口が堅い",
+      "口が滑る",
+      "口が重い",
+      "口が酸っぱい"
+    ],
+    "answer": "口が堅い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "秘密を守って余計なことを話さない人を「口が堅い」といいます。対義語は「口が軽い」です。"
+  },
+  {
+    "id": "kokugo_kan_016",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【口火を切る】「物事や戦い、議論などを最初に始める」ことを表す慣用句「（　　）火を切る」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "口",
+    "acceptableAnswers": [
+      "口",
+      "くち"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「口（くち）」が入ります。鉄砲の火薬に点火する口火から生まれた言葉です。"
+  },
+  {
+    "id": "kokugo_kan_017",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【口を酸っぱくする】「口を酸っぱくして注意する」とはどのように注意することか、「何度も」「繰り返し」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "同じ忠告や注意を、何度も繰り返し熱心に言い聞かせること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "何度も",
+      "繰り返し"
+    ],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "言うのが嫌になるほど頻繁に同じ注意を与える様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_018",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【舌を巻く】相手の優れた技術や能力に、あまりにも驚き感服して言葉も出ない様子を表す慣用句はどれですか。",
+    "options": [
+      "舌を巻く",
+      "舌が回る",
+      "二枚舌を使う",
+      "舌鼓を打つ"
+    ],
+    "answer": "舌を巻く",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "驚きと賞賛のあまり言葉を失い、舌を巻き込んでしまうような仕草に由来します。"
+  },
+  {
+    "id": "kokugo_kan_019",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【二枚舌を使う】「矛盾することを平気で言い、人をだます」ことを表す慣用句「（　　）枚舌を使う」の空欄に入る数字を漢字で答えなさい。",
+    "options": [],
+    "answer": "二",
+    "acceptableAnswers": [
+      "二",
+      "に"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「二（に）」が入ります。前に言ったことと正反対のことを言う不誠実な態度です。"
+  },
+  {
+    "id": "kokugo_kan_020",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【舌鼓を打つ】おいしいごちそうを味わい、満足そうに食べる様子を表す慣用句はどれですか。",
+    "options": [
+      "舌鼓を打つ",
+      "舌を巻く",
+      "口を濁す",
+      "喉が鳴る"
+    ],
+    "answer": "舌鼓を打つ",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・01. からだ",
+    "explanation": "「舌鼓（したづづみ・したづつみ）を打つ」で、美味に感嘆して舌を鳴らす様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_021",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【手を焼く】扱いや処理が難しく、どう対応してよいか分からず困り果てることを表す慣用句はどれですか。",
+    "options": [
+      "手を焼く",
+      "手を打つ",
+      "手を抜く",
+      "手を引く"
+    ],
+    "answer": "手を焼く",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "熱いものに触れて手を火傷しそうになるように、手に負えなくて苦慮することを意味します。"
+  },
+  {
+    "id": "kokugo_kan_022",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【手を抜く】「やるべき手順を省いていい加減に済ませる」ことを表す慣用句「手を（　　）く」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "抜",
+    "acceptableAnswers": [
+      "抜",
+      "ぬ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「抜（ぬ）く」が入ります。手抜き工事などの語源です。"
+  },
+  {
+    "id": "kokugo_kan_023",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【手を打つ】「事態が悪化する前に手を打つ」の「手を打つ」の意味について、「対策」「講じる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "問題の解決や悪化防止のために、必要な対策を講じること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "対策",
+      "講じる"
+    ],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "成り行き任せにせず、事態を好転させる具体的な処置をとることを指します。"
+  },
+  {
+    "id": "kokugo_kan_024",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【腕が鳴る】自分の技量や実力を発揮したくて、じっとしていられずウズウズする様子を表す慣用句はどれですか。",
+    "options": [
+      "腕が鳴る",
+      "腕を振るう",
+      "腕を磨く",
+      "腕を組む"
+    ],
+    "answer": "腕が鳴る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "能力を発揮する絶好の機会が訪れ、意気込んでやる気に満ちあふれている状態です。"
+  },
+  {
+    "id": "kokugo_kan_025",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【腕を振るう】「得意の料理の（　　）を振るって客をもてなす」の空欄に入る体の部分を漢字で答えなさい。",
+    "options": [],
+    "answer": "腕",
+    "acceptableAnswers": [
+      "腕",
+      "うで"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「腕（うで）」が入ります。技術を存分に発揮する意味です。"
+  },
+  {
+    "id": "kokugo_kan_026",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【足を引っ張る】仲間の前進や成功を妨げたり、組織全体の邪魔をしたりすることを表す慣用句はどれですか。",
+    "options": [
+      "足を引っ張る",
+      "足が出る",
+      "足元を見る",
+      "足が棒になる"
+    ],
+    "answer": "足を引っ張る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "走っている人の足をつかんで引き倒すように、他人の成功を妨害する行為を指します。"
+  },
+  {
+    "id": "kokugo_kan_027",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【足が出る】予算などに対して「足が出る」とはどういうことか、「予算」「赤字」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "予定していた予算や収入を超過してしまい、赤字になってしまうこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "予算",
+      "赤字"
+    ],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「足（あし）」が入ります。布団から足がはみ出ることから転じました。"
+  },
+  {
+    "id": "kokugo_kan_028",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【足元を見る】「店が客の足元を見て高い値段をつける」の「足元を見る」の意味について、「弱み」「つけ込む」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手の困っている状態や弱みを見抜いて、自分に有利になるようにつけ込むこと。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "弱み",
+      "つけ込む"
+    ],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "昔の街道の宿場町で、旅人の疲れた足元を見て法外な駕籠代（交通費）を要求したことに由来します。"
+  },
+  {
+    "id": "kokugo_kan_029",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【胸をなでおろす】心配事や危難が去って、ほっとして安心することを表す慣用句はどれですか。",
+    "options": [
+      "胸をなでおろす",
+      "胸を張る",
+      "胸を痛める",
+      "胸が騒ぐ"
+    ],
+    "answer": "胸をなでおろす",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "ドキドキしていた胸を手でなで下ろす仕草から、危機を脱して安堵する様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_030",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【胸を張る】「堂々として誇らしげな態度をとる」ことを表す慣用句「（　　）を張る」の空欄に入る体の部分を漢字で答えなさい。",
+    "options": [],
+    "answer": "胸",
+    "acceptableAnswers": [
+      "胸",
+      "むね"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「胸（むね）」が入ります。自信満々な態度です。"
+  },
+  {
+    "id": "kokugo_kan_031",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【腹を割る】本心を隠さず、包み隠さずにすべてを打ち明けて話すことを表す慣用句はどれですか。",
+    "options": [
+      "腹を割る",
+      "腹を決める",
+      "腹に据えかねる",
+      "腹が黒い"
+    ],
+    "answer": "腹を割る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "腹の中にある本当の考えをすべてさらけ出すことから、率直に語り合うことを「腹を割って話す」といいます。"
+  },
+  {
+    "id": "kokugo_kan_032",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【腹を決める】「強い覚悟を固める」ことを表す慣用句「（　　）を決める」の空欄に入る体の部分を漢字で答えなさい。",
+    "options": [],
+    "answer": "腹",
+    "acceptableAnswers": [
+      "腹",
+      "はら"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「腹（はら）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_033",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【腹に据えかねる】「腹に据えかねる」とはどのような状態か、「怒り」「我慢」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "激しい怒りが抑えきれず、もはや我慢できなくなる状態。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "怒り",
+      "我慢"
+    ],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "腹の中に怒りを収めておくことが限界を超え、爆発寸前である様子を表します。"
+  },
+  {
+    "id": "kokugo_kan_034",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【背を向ける】そっぽを向いて相手を無視したり、関わりを断って逃避したりすることを表す慣用句はどれですか。",
+    "options": [
+      "背を向ける",
+      "背中を押す",
+      "背に腹は代えられぬ",
+      "背伸びをする"
+    ],
+    "answer": "背を向ける",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "人や現実に背中を向けて無関心を決め込んだり、義務を放棄して逃げたりすることです。"
+  },
+  {
+    "id": "kokugo_kan_035",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【背中を押す】「躊躇している人の背後から後押しして決断を助ける」慣用句「（　　）を押す」の空欄に入る言葉を漢字で答えなさい。",
+    "options": [],
+    "answer": "背中",
+    "acceptableAnswers": [
+      "背中",
+      "せなか"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「背中（せなか）」が入ります。勇気づけて後押しする意味です。"
+  },
+  {
+    "id": "kokugo_kan_036",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【腰が重い】なかなか行動を起こそうとせず、取りかかるまでに時間がかかる様子を表す慣用句はどれですか。",
+    "options": [
+      "腰が重い",
+      "腰が低い",
+      "腰を折る",
+      "腰を据える"
+    ],
+    "answer": "腰が重い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "立ち上がろうとしない様子から、物事に取りかかる決断や行動が極めて鈍いことを指します。"
+  },
+  {
+    "id": "kokugo_kan_037",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【腰が低い】「腰が低い人」とはどのような態度をとる人か、「謙虚」「丁寧」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "誰に対しても偉ぶらず、謙虚で丁寧な姿勢で接する人。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "謙虚",
+      "丁寧"
+    ],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「腰（こし）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_038",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【腰を折る】他人が気持ちよく話している最中に割り込んで邪魔をすることを表す慣用句はどれですか。",
+    "options": [
+      "腰を折る",
+      "腰が引ける",
+      "腰を抜かす",
+      "腰を据える"
+    ],
+    "answer": "腰を折る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "途中で中折れさせて台無しにする意味から、会話や進行中の物事を中途で邪魔することを「腰を折る」といいます。"
+  },
+  {
+    "id": "kokugo_kan_039",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【腰を据える】「一つの場所に落ち着き、じっくりと腰を落ち着けて物事に取り組む」慣用句「腰を（　　）える」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "据",
+    "acceptableAnswers": [
+      "据",
+      "す"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "「据（す）える」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_040",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "02. からだ（手・腕・足・胸・腹・背・腰）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【肩身が狭い】世間や周囲に対して引け目を感じ、堂々としていられない肩身の狭さを表す慣用句はどれですか。",
+    "options": [
+      "肩身が狭い",
+      "肩の荷が下りる",
+      "肩を落とす",
+      "肩を入れる"
+    ],
+    "answer": "肩身が狭い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・02. からだ",
+    "explanation": "周囲に対して恥ずかしさや劣等感を覚え、堂々と振る舞えない状態を指します。対義語は「肩身が広い」です。"
+  },
+  {
+    "id": "kokugo_kan_041",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【気が置けない】気遣いや遠慮をする必要がなく、心から気楽に打ち解け合える関係を表す慣用句はどれですか。",
+    "options": [
+      "気が置けない",
+      "気が利かない",
+      "気が立っている",
+      "気が知れない"
+    ],
+    "answer": "気が置けない",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「油断できない」と誤解されがちですが、正しくは「気配り（遠慮）を間に置く必要がない＝遠慮のない親しい間柄」という意味です。"
+  },
+  {
+    "id": "kokugo_kan_042",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【気が置けない】「遠慮のいらない親しい友人」を表す慣用句「気が（　　）ない友人」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "置",
+    "acceptableAnswers": [
+      "置",
+      "おけ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「置（おけ）ない」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_043",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【気が置けない】この慣用句の誤用と正しい意味の違いについて、「油断できない」「遠慮」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "「油断できない相手」と誤解されやすいが、正しくは「遠慮する必要がない親しい間柄」という意味である。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "油断できない",
+      "遠慮"
+    ],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "心に壁や警戒を「置く」必要がないことから、打ち解けた関係を指します。"
+  },
+  {
+    "id": "kokugo_kan_044",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【肝を冷やす】思いがけない危険や恐怖に出会って、ぞっとして強いショックを受けることを表す慣用句はどれですか。",
+    "options": [
+      "肝を冷やす",
+      "肝が据わる",
+      "肝に銘じる",
+      "肝をつぶす"
+    ],
+    "answer": "肝を冷やす",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「肝（肝臓・内臓・精神）」が凍りつくように冷えることから、ヒヤリとして肝を冷やす危険な思いを表します。"
+  },
+  {
+    "id": "kokugo_kan_045",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【肝に銘じる】先生からの忠告を「肝に銘じる」とはどのように心に留めることか、「教訓」「忘れない」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "与えられた教訓や注意を深く心に刻み込み、決して忘れないようにすること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "教訓",
+      "忘れない"
+    ],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「肝（きも）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_046",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【骨が折れる】大変な苦労や困難が伴い、努力や苦心を要することを表す慣用句はどれですか。",
+    "options": [
+      "骨が折れる",
+      "骨身を惜しむ",
+      "骨抜きになる",
+      "骨を埋める"
+    ],
+    "answer": "骨が折れる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "骨が折れそうになるほどの激しい労働や苦労を要する仕事を「骨が折れる仕事」といいます。"
+  },
+  {
+    "id": "kokugo_kan_047",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【骨身を惜しまない】「苦労をいとわず、全力で懸命に働く」慣用句「（　　）を惜しまず働く」の空欄に入る漢字２文字を答えなさい。",
+    "options": [],
+    "answer": "骨身",
+    "acceptableAnswers": [
+      "骨身",
+      "ほねみ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「骨身（ほねみ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_048",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【気を揉む】どうなるかと心配して、やきもきと落ち着かない様子を表す慣用句はどれですか。",
+    "options": [
+      "気を揉む",
+      "気を利かせる",
+      "気を引く",
+      "気を落とす"
+    ],
+    "answer": "気を揉む",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "結果が心配で、心が落ち着かずやきもきと焦りや不安を感じる様子です。"
+  },
+  {
+    "id": "kokugo_kan_049",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【気を揉む】「合格発表まで心配で（　　）を揉む」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "気",
+    "acceptableAnswers": [
+      "気",
+      "き"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「気（き）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_050",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【虫の居所が悪い】機嫌が悪く、ちょっとしたことにも怒り出しそうな心理状態を表す慣用句はどれですか。",
+    "options": [
+      "虫の居所が悪い",
+      "虫がいい",
+      "虫が好かない",
+      "虫の知らせ"
+    ],
+    "answer": "虫の居所が悪い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "昔は人間の体内に様々な「虫」が住んで感情を支配していると考えられていたことに由来します。"
+  },
+  {
+    "id": "kokugo_kan_051",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【虫がいい】「虫がいい話」とはどのような話か、「自分勝手」「都合」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "自分勝手で、自分の都合のよいことばかりを考えている話。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "自分勝手",
+      "都合"
+    ],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「虫（むし）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_052",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【気を持たせる】相手に期待を抱かせるような態度や思わせぶりな言葉を使うことを表す慣用句はどれですか。",
+    "options": [
+      "気を持たせる",
+      "気を許す",
+      "気を抜く",
+      "気を配る"
+    ],
+    "answer": "気を持たせる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "実現するか分からないのに、相手が期待してしまうような態度をとることです。"
+  },
+  {
+    "id": "kokugo_kan_053",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【気を持たせる】「気を持たせるような返事」とはどのような返事か、「期待」「思わせぶり」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "相手に期待を抱かせるような、思わせぶりであいまいな返事。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "期待",
+      "思わせぶり"
+    ],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "その気がないのに、あるかのように見せて相手の期待を煽る態度を指します。"
+  },
+  {
+    "id": "kokugo_kan_054",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【腹黒い】心の中に悪だくみやよこしまな企みを隠し持っていることを表す慣用句はどれですか。",
+    "options": [
+      "腹黒い",
+      "太っ腹",
+      "腹立たしい",
+      "腹が据わる"
+    ],
+    "answer": "腹黒い",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "外見は親切そうに見えながら、内面では悪事や計算を巡らせている人を「腹黒い」といいます。"
+  },
+  {
+    "id": "kokugo_kan_055",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【太っ腹】「度量が広く、金銭などを惜しみなく気前よく出す」性格を表す慣用句を漢字３文字で答えなさい。",
+    "options": [],
+    "answer": "太っ腹",
+    "acceptableAnswers": [
+      "太っ腹",
+      "ふとっぱら"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「太っ腹（ふとっぱら）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_056",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【骨抜きにする】大事な中身や根幹を取り去って、無力・骨なしにしてしまうことを表す慣用句はどれですか。",
+    "options": [
+      "骨抜きにする",
+      "骨を折る",
+      "骨を埋める",
+      "骨惜しみ"
+    ],
+    "answer": "骨抜きにする",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "魚の骨を抜くように、計画や組織から最も重要な肝心の手応えを奪って腑抜けにすることです。"
+  },
+  {
+    "id": "kokugo_kan_057",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【骨を埋める】「その土地や仕事に一生を捧げて死ぬまで尽くす」慣用句「この地に骨を（　　）める」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "埋",
+    "acceptableAnswers": [
+      "埋",
+      "う"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「埋（う）める」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_058",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【気が知れない】相手の考えや好みが常識外れで、どうしてそんなことをするのか全く理解できない様子を表す慣用句はどれですか。",
+    "options": [
+      "気が知れない",
+      "気が置けない",
+      "気が合わない",
+      "気が乗らない"
+    ],
+    "answer": "気が知れない",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "相手の心理状態や動機が理解に苦しむときに「あんな危険なことをするなんて気が知れない」と使います。"
+  },
+  {
+    "id": "kokugo_kan_059",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【気に障る】「言動が人の感情を害し、不愉快な気分にさせる」慣用句「気に（　　）る」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "障",
+    "acceptableAnswers": [
+      "障",
+      "さわ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "「障（さわ）る」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_060",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "03. からだ（心・気・腹・肝・骨）の慣用句",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【臍を噛む】すでに手遅れとなってしまい、どうにもならず激しく悔やむことを表す慣用句はどれですか。",
+    "options": [
+      "臍を噛む",
+      "奥歯に物が挟まる",
+      "舌を巻く",
+      "胸を突く"
+    ],
+    "answer": "臍を噛む",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・03. からだ",
+    "explanation": "自分のへそ（臍）を口で噛もうとしても届かないように、後悔してもどうにもならない強い悔恨を表します。"
+  },
+  {
+    "id": "kokugo_kan_061",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【鶴の一声】多くの人の議論や争いを一瞬で決定づける、有力者や権力者の一言を何といいますか。",
+    "options": [
+      "鶴の一声",
+      "天の声",
+      "虎の威",
+      "雷が落ちる"
+    ],
+    "answer": "鶴の一声",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "鳥の鶴の甲高い鳴き声は遠くまで響き渡り他の鳥を一斉に黙らせることから、絶対的な権力者による最終決定の一声を指します。"
+  },
+  {
+    "id": "kokugo_kan_062",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【鶴の一声】「議論が紛糾したが、（　　）の一声で決着した」の空欄に入る鳥を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "鶴",
+    "acceptableAnswers": [
+      "鶴",
+      "つる"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「鶴（つる）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_063",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【鶴の一声】「鶴の一声」とはどのような言葉か、「有力者」「一瞬で決着」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "有力者の一言によって、それまでの議論が一瞬で決着すること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "有力者",
+      "一瞬で決着"
+    ],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "様々な意見が対立してまとまらないときに、頂点に立つ指導者の一撃の裁定で決まることを表します。"
+  },
+  {
+    "id": "kokugo_kan_064",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【虎の威を借る狐】力のない者が、権力者や強い者の威光を笠に着て偉そうにいばることを表す成語はどれですか。",
+    "options": [
+      "虎の威を借る狐",
+      "蛇足",
+      "守株",
+      "矛盾"
+    ],
+    "answer": "虎の威を借る狐",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "トラの前に捕まったキツネが「私は神から百獣の王に命じられた」と嘘をつき、トラを連れて歩き、動物たちが逃げたのはトラを恐れたからなのにトラ自身を信じさせたという故事（戦国策）によります。"
+  },
+  {
+    "id": "kokugo_kan_065",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【虎の威を借る狐】強い者の権勢を利用していばる小人を指す成語「虎の威を借る（　　）」の空欄に入る動物を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "狐",
+    "acceptableAnswers": [
+      "狐",
+      "きつね"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「狐（きつね）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_066",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【雀の涙】ごくわずかで、まったく足しにならないほど少ない量のたとえを何といいますか。",
+    "options": [
+      "雀の涙",
+      "猫の額",
+      "濡れ手で粟",
+      "焼け石に水"
+    ],
+    "answer": "雀の涙",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "小さなスズメが流す涙のように、極めてわずかな量や金額を指します。"
+  },
+  {
+    "id": "kokugo_kan_067",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【雀の涙】「ボーナスが出たが（　　）の涙ほどだった」の空欄に入る鳥を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "雀",
+    "acceptableAnswers": [
+      "雀",
+      "すずめ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「雀（すずめ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_068",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【猫の手も借りたい】誰でもよいから手伝ってほしいほど、極めて忙しい様子を表す慣用句はどれですか。",
+    "options": [
+      "猫の手も借りたい",
+      "犬の手も借りたい",
+      "猫の額",
+      "猫に小判"
+    ],
+    "answer": "猫の手も借りたい",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "普段は何の役にも立たない猫の手でさえ欲しくなるほど、猫の手も借りたい超多忙な状況を表します。"
+  },
+  {
+    "id": "kokugo_kan_069",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【猫の手も借りたい】「猫の手も借りたい」とはどのような状況か、「非常に忙しい」「手伝い」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "誰でもよいから手伝いが欲しいほど、非常に忙しい状況。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "非常に忙しい",
+      "手伝い"
+    ],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「猫（ねこ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_070",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【鵜呑みにする】他人の意見や情報を、何の疑いや吟味もせずそのまま信じ込んで受け入れることを表す慣用句はどれですか。",
+    "options": [
+      "鵜呑みにする",
+      "烏の行水",
+      "鵜の目鷹の目",
+      "尻馬に乗る"
+    ],
+    "answer": "鵜呑みにする",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "水鳥のウ（鵜）が魚を噛まずに丸呑みすることから、批判的精神を持たずにそのまま受け入れることを意味します。"
+  },
+  {
+    "id": "kokugo_kan_071",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【鵜呑み】「情報を真偽を確かめずに丸呑みする」慣用句「（　　）呑みにする」の空欄に入る鳥を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "鵜",
+    "acceptableAnswers": [
+      "鵜",
+      "う"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「鵜（う）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_072",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【鵜呑みにする】ネットの情報などを「鵜呑みにする」ことの危険性について、「真偽」「そのまま信じる」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "情報の真偽を自分で確かめず、そのまま信じることで誤った知識や嘘に騙される危険。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "真偽",
+      "そのまま信じる"
+    ],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "批判的に検討せず丸呑みにしてしまう軽率さを戒める表現です。"
+  },
+  {
+    "id": "kokugo_kan_073",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【烏の行水】入浴する時間が極めて短く、さっとお湯を浴びるだけですぐに出てきてしまうことを表す慣用句はどれですか。",
+    "options": [
+      "烏の行水",
+      "鵜呑み",
+      "雀の涙",
+      "水に流す"
+    ],
+    "answer": "烏の行水",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "カラスが水たまりや浅瀬でパチャパチャと短時間で水浴びを済ませる様子に由来します。"
+  },
+  {
+    "id": "kokugo_kan_074",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【烏の行水】「入浴時間が非常に短いこと」を表す慣用句「（　　）の行水」の空欄に入る鳥を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "烏",
+    "acceptableAnswers": [
+      "烏",
+      "カラス",
+      "からす"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「烏（からす）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_075",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【鯖を読む】数を多くごまかしたり、逆に少なく偽ったりして、都合よく勘定をごまかすことを表す慣用句はどれですか。",
+    "options": [
+      "鯖を読む",
+      "サバサバする",
+      "胡麻をする",
+      "油を売る"
+    ],
+    "answer": "鯖を読む",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "サバは傷みやすく腐りやすいため、魚市場で鮮度が落ちる前に大急ぎで数え、数にごまかしや狂いが多かったことに由来します。"
+  },
+  {
+    "id": "kokugo_kan_076",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【鯖を読む】「年齢や体重をごまかす」意味で使われる魚の名を使った慣用句「（　　）を読む」の空欄に入る魚の名前を答えなさい。",
+    "options": [],
+    "answer": "鯖",
+    "acceptableAnswers": [
+      "鯖",
+      "さば",
+      "サバ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「鯖（さば）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_077",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【道草を食う】目的地へ行く途中で、寄り道をして時間を無駄に費やすことを表す慣用句はどれですか。",
+    "options": [
+      "道草を食う",
+      "油を売る",
+      "足が出る",
+      "二の足を踏む"
+    ],
+    "answer": "道草を食う",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "馬が道端の草を食べて進まなくなることから、用事の途中で他のことに時間を取られることを指します。"
+  },
+  {
+    "id": "kokugo_kan_078",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【道草を食う】「途中で寄り道をして遅くなる」慣用句「（　　）を食う」の空欄に入る言葉を漢字２文字で答えなさい。",
+    "options": [],
+    "answer": "道草",
+    "acceptableAnswers": [
+      "道草",
+      "みちくさ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「道草（みちくさ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_079",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【尻馬に乗る】自分の確たる意見を持たず、他人の言動の後ろについて調子を合わせ軽はずみに同調することを何といいますか。",
+    "options": [
+      "尻馬に乗る",
+      "相乗りする",
+      "二の舞を演じる",
+      "鵜呑みにする"
+    ],
+    "answer": "尻馬に乗る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "他人の乗った馬のしりについて走ることから、人の意見に無批判に同調する軽薄さを批判する表現です。"
+  },
+  {
+    "id": "kokugo_kan_080",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "04. 動物・植物・自然を使った慣用句",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【尻馬に乗る】「人の言動に軽はずみに同調する」慣用句「（　　）に乗る」の空欄に入る言葉を漢字２文字で答えなさい。",
+    "options": [],
+    "answer": "尻馬",
+    "acceptableAnswers": [
+      "尻馬",
+      "しりうま"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・04. 動物・植物・自然を使った慣用句",
+    "explanation": "「尻馬（しりうま）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_081",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【太鼓判を押す】確実で間違いがないと、全責任を持って強く保証することを表す慣用句はどれですか。",
+    "options": [
+      "太鼓判を押す",
+      "折り紙付き",
+      "お墨付き",
+      "舌を巻く"
+    ],
+    "answer": "太鼓判を押す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "太鼓の皮のように大きな判子（印鑑）を押して証明したことから、絶対的な信頼と保証を与えることを意味します。"
+  },
+  {
+    "id": "kokugo_kan_082",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【太鼓判を押す】「彼の誠実さには先生も（　　）を押している」の空欄に入る楽器の名を含んだ言葉を答えなさい。",
+    "options": [],
+    "answer": "太鼓判",
+    "acceptableAnswers": [
+      "太鼓判",
+      "たいこばん"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「太鼓判（たいこばん）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_083",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【太鼓判を押す】「太鼓判を押す」とはどのような行為か、「確実」「保証」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "間違いなく確実であると、責任を持って強く保証すること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "確実",
+      "保証"
+    ],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "人柄や品質などが完全であると絶対的な信用を与える表現です。"
+  },
+  {
+    "id": "kokugo_kan_084",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【匙を投げる】医者が治療を諦めたり、いくら手を尽くしても回復の見込みがないと見放したりすることを表す慣用句はどれですか。",
+    "options": [
+      "匙を投げる",
+      "匙加減",
+      "下駄を預ける",
+      "手を引く"
+    ],
+    "answer": "匙を投げる",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "昔の医者が薬を調合するスプーン（匙＝さじ）を投げ捨てて治療を断念した故事に由来します。"
+  },
+  {
+    "id": "kokugo_kan_085",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【匙を投げる】「見込みがないとして救済や指導を断念する」慣用句「（　　）を投げる」の空欄に入る道具を表す漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "匙",
+    "acceptableAnswers": [
+      "匙",
+      "さじ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「匙（さじ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_086",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【油を売る】仕事の途中で無駄話をして怠けたり、時間を潰したりすることを表す慣用句はどれですか。",
+    "options": [
+      "油を売る",
+      "道草を食う",
+      "油を注ぐ",
+      "手を抜く"
+    ],
+    "answer": "油を売る",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "江戸時代の髪油売りの商人が、油が容器に落ちるのに時間がかかる間、客の女性と世間話をして長居したことに由来します。"
+  },
+  {
+    "id": "kokugo_kan_087",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "descriptive",
+    "question": "【油を売る】仕事中に「油を売る」とはどのような行動か、「無駄話」「怠ける」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "仕事の途中で無駄話などをして時間を潰し、怠けること。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "無駄話",
+      "怠ける"
+    ],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「油（あぶら）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_088",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【火の車】家計や財政が非常に苦しく、借金などで立ち行かない状態を表す慣用句はどれですか。",
+    "options": [
+      "火の車",
+      "火の手が上がる",
+      "火をつける",
+      "背水の陣"
+    ],
+    "answer": "火の車",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "仏教で生前に悪行を犯した者を地獄へ運ぶ、炎に包まれた燃え盛る車（火車）の苦痛に由来します。"
+  },
+  {
+    "id": "kokugo_kan_089",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【火の車】「経済状態が極めて苦しい様子」を表す慣用句「我が家の家計は（　　）の車だ」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "火",
+    "acceptableAnswers": [
+      "火",
+      "ひ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「火（ひ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_090",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【水に流す】過去の揉め事や失敗をすべてなかったことにし、互いに恨みを帳消しにすることを表す慣用句はどれですか。",
+    "options": [
+      "水に流す",
+      "水を差す",
+      "水清ければ",
+      "寝耳に水"
+    ],
+    "answer": "水に流す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "汚れを清らかな水で洗い流して清める日本固有の禊（みそぎ）の文化に由来します。"
+  },
+  {
+    "id": "kokugo_kan_091",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【水に流す】「過去のいざこざを帳消しにする」慣用句「過去の過ちを（　　）に流す」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "水",
+    "acceptableAnswers": [
+      "水",
+      "みず"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「水（みず）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_092",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "advanced",
+    "questionType": "descriptive",
+    "question": "【水に流す】「水に流す」という発想の背景にある日本的な考え方について、「過去の対立」「清算」という言葉を使って説明しなさい。",
+    "options": [],
+    "answer": "過去の対立や遺恨を引きずらず、清らかな水ですべて清算して新しくやり直す考え方。",
+    "acceptableAnswers": [],
+    "keywords": [
+      "過去の対立",
+      "清算"
+    ],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "いつまでも執着して争い続けず、綺麗さっぱり忘れて和解する姿勢です。"
+  },
+  {
+    "id": "kokugo_kan_093",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【水を差す】うまく進んでいる物事や良好な雰囲気に、横から邪魔を入れてぶち壊すことを表す慣用句はどれですか。",
+    "options": [
+      "水を差す",
+      "水に流す",
+      "水を得た魚",
+      "油を注ぐ"
+    ],
+    "answer": "水を差す",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "熱湯の中に冷水を注ぎ込んで冷ましてしまうように、盛り上がっている座の空気を白けさせることを意味します。"
+  },
+  {
+    "id": "kokugo_kan_094",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【水を差す】「良好な調和や雰囲気を横から邪魔する」慣用句「仲の良い二人の間に（　　）を差す」の空欄に入る漢字１文字を答えなさい。",
+    "options": [],
+    "answer": "水",
+    "acceptableAnswers": [
+      "水",
+      "みず"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「水（みず）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_095",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "choice",
+    "question": "【折り紙付き】品質や実力が確実に保証されており、誰もが認めていることを表す慣用句はどれですか。",
+    "options": [
+      "折り紙付き",
+      "太鼓判を押す",
+      "お墨付き",
+      "看板に偽りなし"
+    ],
+    "answer": "折り紙付き",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "平安時代末期から、刀剣や美術品の鑑定書として二つ折りの奉書紙（折り紙）を添えたことに由来します。"
+  },
+  {
+    "id": "kokugo_kan_096",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【折り紙付き】「確かな保証があること」を表す、鑑定書に由来する慣用句「（　　）付きの腕前」の空欄に入る言葉を答えなさい。",
+    "options": [],
+    "answer": "折り紙",
+    "acceptableAnswers": [
+      "折り紙",
+      "おりがみ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「折り紙（おりがみ）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_097",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "basic",
+    "questionType": "choice",
+    "question": "【下駄を預ける】物事の処理や後始末の全責任を、すべて相手に任せて委ねてしまうことを表す慣用句はどれですか。",
+    "options": [
+      "下駄を預ける",
+      "匙を投げる",
+      "手を引く",
+      "太鼓判を押す"
+    ],
+    "answer": "下駄を預ける",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "履き物である下駄を預けてしまえば自分では歩けないことから、全権を相手に一任することを意味します。"
+  },
+  {
+    "id": "kokugo_kan_098",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【下駄を預ける】「全権を相手に一任する」慣用句「進退の判断を（　　）を預ける」の空欄に入る履き物を漢字で答えなさい。",
+    "options": [],
+    "answer": "下駄",
+    "acceptableAnswers": [
+      "下駄",
+      "げた"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「下駄（げた）」が入ります。"
+  },
+  {
+    "id": "kokugo_kan_099",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "advanced",
+    "questionType": "choice",
+    "question": "【味噌をつける】失敗して面目を失ったり、恥をかいたりすることを表す慣用句はどれですか。",
+    "options": [
+      "味噌をつける",
+      "手前味噌",
+      "糠味噌を利かす",
+      "油を売る"
+    ],
+    "answer": "味噌をつける",
+    "acceptableAnswers": [],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "火傷の治療に味噌を塗ったことから、失敗して痛い目に遭うこと、またはせっかくの評判を汚すことを指します。"
+  },
+  {
+    "id": "kokugo_kan_100",
+    "subject": "国語",
+    "category": "慣用句",
+    "subCategory": "05. 道具・生活・日常の慣用句",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【手前味噌】「自分で自分のことを得意になって自慢する」慣用句「（　　）を並べる」の空欄に入る調味料を含む言葉を答えなさい。",
+    "options": [],
+    "answer": "手前味噌",
+    "acceptableAnswers": [
+      "手前味噌",
+      "てまえみそ"
+    ],
+    "keywords": [],
+    "knowledgeTag": "慣用句・05. 道具・生活・日常の慣用句",
+    "explanation": "「手前味噌（てまえみそ）」が入ります。自分で仕込んだ味噌を自賛することから転じました。"
+  }
+]
