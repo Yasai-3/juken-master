@@ -45,6 +45,8 @@ const HistoryPage = () => {
   const [unitSubjectFilter, setUnitSubjectFilter] = useState('all');
   const [wrongSubjectFilter, setWrongSubjectFilter] = useState('all');
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [revealedAnswers, setRevealedAnswers] = useState({});
+  const [showAllAnswers, setShowAllAnswers] = useState(false);
 
   // AI Report state
   const [aiReport, setAiReport] = useState(null);
@@ -1280,34 +1282,60 @@ const HistoryPage = () => {
             </div>
 
             {wrongAnswers.length > 0 && (
-              <button
-                type="button"
-                onClick={() => {
-                  const filtered =
-                    wrongSubjectFilter === 'all'
-                      ? wrongAnswers
-                      : wrongAnswers.filter((q) => q.subject === wrongSubjectFilter);
-                  if (filtered.length === 0) return;
-                  navigate('/quiz', {
-                    state: {
-                      mode: 'custom_list',
-                      customQuestionsList: filtered,
-                      limit: Math.min(filtered.length, 30),
-                    },
-                  });
-                }}
-                className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-extrabold rounded-xl shadow transition flex items-center gap-1.5"
-              >
-                <span>▶</span>
-                <span>
-                  {wrongSubjectFilter === 'all'
-                    ? '弱点をまとめて復習する'
-                    : `${wrongSubjectFilter}の弱点を復習`}
-                </span>
-              </button>
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (showAllAnswers) {
+                      setShowAllAnswers(false);
+                      setRevealedAnswers({});
+                    } else {
+                      setShowAllAnswers(true);
+                    }
+                  }}
+                  className="px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-xs font-bold transition flex items-center gap-1 shadow-xs"
+                >
+                  <span>{showAllAnswers ? '🙈 すべての答えを隠す' : '👁️ すべての答えを表示'}</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    const filtered =
+                      wrongSubjectFilter === 'all'
+                        ? wrongAnswers
+                        : wrongAnswers.filter((q) => q.subject === wrongSubjectFilter);
+                    if (filtered.length === 0) return;
+                    navigate('/quiz', {
+                      state: {
+                        mode: 'custom_list',
+                        customQuestionsList: filtered,
+                        limit: Math.min(filtered.length, 30),
+                      },
+                    });
+                  }}
+                  className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-extrabold rounded-xl shadow transition flex items-center gap-1.5"
+                >
+                  <span>▶</span>
+                  <span>
+                    {wrongSubjectFilter === 'all'
+                      ? '弱点をまとめて復習する'
+                      : `${wrongSubjectFilter}の弱点を復習`}
+                  </span>
+                </button>
+              </div>
             )}
           </div>
         </div>
+
+        {wrongAnswers.length > 0 && (
+          <div className="px-3.5 py-2.5 bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-100/70 dark:border-indigo-900/50 rounded-xl text-xs text-indigo-700 dark:text-indigo-300 flex items-center gap-2">
+            <span>💡</span>
+            <span>
+              <strong>暗記チェック機能</strong>：問題文を読んで頭の中で答えてから「👁️ 答えと解説を見る」を押すか、答えを見ずに「この問題を再挑戦 →」を押してテストできます。
+            </span>
+          </div>
+        )}
 
         {wrongAnswers.length === 0 ? (
           <div className="text-center py-12 text-gray-400 space-y-2">
@@ -1331,70 +1359,99 @@ const HistoryPage = () => {
 
           return (
             <div className="space-y-3">
-              {filteredWrongs.map((q) => (
-                <div
-                  key={q.id}
-                  className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/40 transition space-y-2"
-                >
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span
-                        className={`px-2 py-0.5 text-xs font-extrabold rounded ${
-                          q.subject === '国語'
-                            ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200'
-                            : q.subject === '社会'
-                              ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200'
-                              : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200'
-                        }`}
-                      >
-                        {q.subject}
-                      </span>
-                      <span className="px-2 py-0.5 text-xs font-bold rounded bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
-                        {q.category} / {q.subCategory}
-                      </span>
-                      <span className="px-2 py-0.5 text-xs font-bold rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
-                        {DIFFICULTY_LABELS[q.difficulty] || '標準'} ・{' '}
-                        {QUESTION_TYPE_LABELS[q.questionType] || '4択'}
-                      </span>
-                      {q.knowledgeTag && (
-                        <span className="text-xs font-bold text-amber-700 dark:text-amber-300">
-                          🏷️ {q.knowledgeTag}
+              {filteredWrongs.map((q) => {
+                const isRevealed = showAllAnswers || !!revealedAnswers[q.id];
+                return (
+                  <div
+                    key={q.id}
+                    className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:bg-gray-50/60 dark:hover:bg-gray-700/30 transition space-y-3 bg-white dark:bg-gray-800/50 shadow-xs"
+                  >
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span
+                          className={`px-2 py-0.5 text-xs font-extrabold rounded ${
+                            q.subject === '国語'
+                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200'
+                              : q.subject === '社会'
+                                ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200'
+                                : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200'
+                          }`}
+                        >
+                          {q.subject}
                         </span>
-                      )}
+                        <span className="px-2 py-0.5 text-xs font-bold rounded bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+                          {q.category} / {q.subCategory}
+                        </span>
+                        <span className="px-2 py-0.5 text-xs font-bold rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                          {DIFFICULTY_LABELS[q.difficulty] || '標準'} ・{' '}
+                          {QUESTION_TYPE_LABELS[q.questionType] || '4択'}
+                        </span>
+                        {q.knowledgeTag && (
+                          <span className="text-xs font-bold text-amber-700 dark:text-amber-300">
+                            🏷️ {q.knowledgeTag}
+                          </span>
+                        )}
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          navigate('/quiz', {
+                            state: {
+                              mode: 'custom_list',
+                              customQuestionsList: [q],
+                              limit: 1,
+                            },
+                          })
+                        }
+                        className="px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-extrabold shadow-xs transition flex items-center gap-1"
+                      >
+                        <span>この問題を再挑戦</span>
+                        <span>→</span>
+                      </button>
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={() =>
-                        navigate('/quiz', {
-                          state: {
-                            mode: 'custom_list',
-                            customQuestionsList: [q],
-                            limit: 1,
-                          },
-                        })
-                      }
-                      className="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-extrabold shadow-2xs transition"
-                    >
-                      この問題を再挑戦 →
-                    </button>
-                  </div>
-
-                  <p className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base leading-relaxed">
-                    Q. {q.question}
-                  </p>
-
-                  <div className="text-xs md:text-sm text-indigo-700 dark:text-indigo-300 font-bold bg-indigo-50/70 dark:bg-indigo-950/40 p-2.5 rounded-lg border border-indigo-100 dark:border-indigo-900">
-                    正解: {q.answer}
-                  </div>
-
-                  {q.explanation && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-                      💡 解説: {q.explanation}
+                    <p className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base leading-relaxed pl-0.5">
+                      Q. {q.question}
                     </p>
-                  )}
-                </div>
-              ))}
+
+                    <div className="pt-0.5">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setRevealedAnswers((prev) => ({
+                            ...prev,
+                            [q.id]: !isRevealed,
+                          }));
+                        }}
+                        className={`px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+                          isRevealed
+                            ? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                            : 'bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800'
+                        }`}
+                      >
+                        <span>{isRevealed ? '🙈 答えと解説を隠す' : '👁️ 答えと解説を見る'}</span>
+                      </button>
+
+                      {isRevealed && (
+                        <div className="mt-2.5 p-3 rounded-lg bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900 space-y-2">
+                          <div className="text-xs md:text-sm font-bold text-gray-700 dark:text-gray-200 flex items-center gap-2">
+                            <span className="text-gray-500 dark:text-gray-400">正解:</span>
+                            <span className="text-rose-600 dark:text-rose-400 font-black text-sm md:text-base">
+                              {q.answer}
+                            </span>
+                          </div>
+                          {q.explanation && (
+                            <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed pt-1.5 border-t border-indigo-100 dark:border-indigo-900/60">
+                              💡 解説: {q.explanation}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           );
         })()}
