@@ -28,6 +28,35 @@ const QuizCard = ({ questionData, onAnswer }) => {
 
   const [textAnswer, setTextAnswer] = useState('');
 
+  const displaySubject =
+    subject ||
+    (['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(category)
+      ? '国語'
+      : ['歴史', '地理', '公民'].includes(category)
+        ? '社会'
+        : '理科');
+
+  const subjectLabel =
+    displaySubject === '国語'
+      ? '📖 国語'
+      : displaySubject === '理科'
+        ? '🔬 理科'
+        : '🌏 社会';
+
+  const headerGradient =
+    displaySubject === '国語'
+      ? 'from-emerald-600 to-teal-700'
+      : displaySubject === '理科'
+        ? 'from-blue-600 to-indigo-700'
+        : 'from-amber-600 to-orange-700';
+
+  const subbarColor =
+    displaySubject === '国語'
+      ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border-emerald-100 dark:border-emerald-900/60'
+      : displaySubject === '理科'
+        ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border-blue-100 dark:border-blue-900/60'
+        : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-100 dark:border-amber-900/60';
+
   useEffect(() => {
     setTextAnswer('');
   }, [questionData?.id]);
@@ -40,20 +69,20 @@ const QuizCard = ({ questionData, onAnswer }) => {
   return (
     <div className="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700 animate-fade-in">
       {/* Header Badges */}
-      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-4 flex flex-wrap items-center justify-between gap-2">
+      <div className={`bg-gradient-to-r ${headerGradient} p-4 flex flex-wrap items-center justify-between gap-2`}>
         <div className="flex flex-wrap items-center gap-2">
-          {subject && (
+          {displaySubject && (
             <span className="text-xs font-extrabold tracking-wider text-white bg-white/20 px-3 py-1 rounded-full border border-white/30">
-              {subject === '理科' ? '🔬 理科' : '🌏 社会'}
+              {subjectLabel}
             </span>
           )}
           {category && (
-            <span className="text-xs font-bold text-indigo-50 bg-indigo-900/30 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold text-white/90 bg-black/20 px-3 py-1 rounded-full">
               {category}
             </span>
           )}
           {subCategory && (
-            <span className="text-xs font-bold text-indigo-50 bg-indigo-900/30 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold text-white/90 bg-black/20 px-3 py-1 rounded-full">
               {subCategory}
             </span>
           )}
@@ -67,7 +96,7 @@ const QuizCard = ({ questionData, onAnswer }) => {
           >
             {DIFFICULTY_STARS[difficulty] || '★★☆'} {DIFFICULTY_LABELS[difficulty] || '標準'}
           </span>
-          <span className="text-xs font-bold bg-white text-indigo-700 px-2.5 py-1 rounded-full shadow-sm">
+          <span className="text-xs font-bold bg-white text-gray-800 px-2.5 py-1 rounded-full shadow-sm">
             {QUESTION_TYPE_LABELS[questionType] || '4択選択'}
           </span>
         </div>
@@ -75,7 +104,7 @@ const QuizCard = ({ questionData, onAnswer }) => {
 
       {/* Knowledge Tag Subbar */}
       {knowledgeTag && (
-        <div className="bg-indigo-50 dark:bg-gray-700/60 px-6 py-2 text-xs font-medium text-indigo-700 dark:text-indigo-300 border-b border-indigo-100 dark:border-gray-700 flex items-center gap-1.5">
+        <div className={`${subbarColor} px-6 py-2 text-xs font-medium border-b flex items-center gap-1.5`}>
           <span>🏷️ テーマ:</span>
           <span className="font-bold">{knowledgeTag}</span>
         </div>
