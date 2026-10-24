@@ -6,7 +6,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】イカやタコを数えるときに用いる助数詞として最も適切なものはどれですか。",
+    "question": "イカやタコを数えるときに用いる助数詞として最も適切なものはどれですか。",
     "options": [
       "杯",
       "匹",
@@ -26,7 +26,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【助数詞】「イカ２（　　）をさばく」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「イカ２（　　）をさばく」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "杯",
     "acceptableAnswers": [
@@ -44,7 +44,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】イカやタコを「匹」ではなく「杯」と数える由来について、「胴体」「器」という言葉を使って説明しなさい。",
+    "question": "イカやタコを「匹」ではなく「杯」と数える由来について、「胴体」「器」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "胴体の形が、酒や水を入れる器（杯）に似ていることから。",
     "acceptableAnswers": [],
@@ -62,7 +62,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】タンス（箪笥）を数えるときに用いる伝統的な助数詞はどれですか。",
+    "question": "タンス（箪笥）を数えるときに用いる伝統的な助数詞はどれですか。",
     "options": [
       "棹",
       "台",
@@ -82,7 +82,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【助数詞】「婚礼家具としてタンスを一（　　）購入した」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「婚礼家具としてタンスを一（　　）購入した」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "棹",
     "acceptableAnswers": [
@@ -100,7 +100,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】タンスを「棹（さお）」と数えるようになった歴史的理由について、「棒」「担ぐ」という言葉を使って説明しなさい。",
+    "question": "タンスを「棹（さお）」と数えるようになった歴史的理由について、「棒」「担ぐ」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "火事などの緊急時に、棒（棹）を金具に通して担いで運んだことから。",
     "acceptableAnswers": [],
@@ -118,7 +118,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】ウサギを鳥と同じように数える助数詞はどれですか。",
+    "question": "ウサギを鳥と同じように数える助数詞はどれですか。",
     "options": [
       "羽",
       "匹",
@@ -138,7 +138,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "descriptive",
-    "question": "【助数詞】ウサギを「匹」ではなく「羽」と数える由来について、「鳥」「耳」という言葉を使って説明しなさい。",
+    "question": "ウサギを「匹」ではなく「羽」と数える由来について、「鳥」「耳」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "耳が鳥の翼に見えることや、獣肉食を禁じられた僧侶が鳥と見なして食べたことに由来する。",
     "acceptableAnswers": [],
@@ -156,7 +156,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】豆腐を数えるときに用いる助数詞はどれですか。",
+    "question": "豆腐を数えるときに用いる助数詞はどれですか。",
     "options": [
       "丁",
       "挺",
@@ -176,7 +176,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【助数詞】「木綿豆腐を一（　　）買う」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「木綿豆腐を一（　　）買う」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "丁",
     "acceptableAnswers": [
@@ -194,7 +194,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】箸（はし）を一揃い（２本）数えるときの助数詞はどれですか。",
+    "question": "箸（はし）を一揃い（２本）数えるときの助数詞はどれですか。",
     "options": [
       "膳",
       "対",
@@ -214,7 +214,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】箸を「膳」と数える理由について、「食事」「一揃い」という言葉を使って説明しなさい。",
+    "question": "箸を「膳」と数える理由について、「食事」「一揃い」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "食事用のお膳に、箸を一揃い添えて配膳したことに由来する。",
     "acceptableAnswers": [],
@@ -232,7 +232,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】大型の客船や軍艦など、大きな船を数えるときの助数詞はどれですか。",
+    "question": "大型の客船や軍艦など、大きな船を数えるときの助数詞はどれですか。",
     "options": [
       "隻",
       "艘",
@@ -252,7 +252,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【助数詞】「巨大なタンカーが港に一（　　）停泊している」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「巨大なタンカーが港に一（　　）停泊している」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "隻",
     "acceptableAnswers": [
@@ -270,7 +270,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【助数詞】屏風（びょうぶ）の一組（左右一対）を数えるときの助数詞はどれですか。",
+    "question": "屏風（びょうぶ）の一組（左右一対）を数えるときの助数詞はどれですか。",
     "options": [
       "双",
       "隻",
@@ -290,7 +290,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【助数詞】「紅白梅図屏風は六曲一（　　）の傑作である」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「紅白梅図屏風は六曲一（　　）の傑作である」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "双",
     "acceptableAnswers": [
@@ -308,7 +308,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】刀や太刀を数えるときに用いる助数詞はどれですか。",
+    "question": "刀や太刀を数えるときに用いる助数詞はどれですか。",
     "options": [
       "振",
       "本",
@@ -328,7 +328,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【助数詞】「名刀を一（　　）携える」の空欄に入る、刀を数える漢字１文字を答えなさい。",
+    "question": "「名刀を一（　　）携える」の空欄に入る、刀を数える漢字１文字を答えなさい。",
     "options": [],
     "answer": "振",
     "acceptableAnswers": [
@@ -348,7 +348,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】神仏や神霊、位牌（いはい）を数えるときの助数詞はどれですか。",
+    "question": "神仏や神霊、位牌（いはい）を数えるときの助数詞はどれですか。",
     "options": [
       "柱",
       "体",
@@ -368,7 +368,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【助数詞】「神社の祭神として二（　　）の神が祀られている」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「神社の祭神として二（　　）の神が祀られている」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "柱",
     "acceptableAnswers": [
@@ -386,7 +386,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【助数詞】神様を「人」ではなく「柱（はしら）」と数える理由について、「天と地」「大黒柱」という言葉を使って説明しなさい。",
+    "question": "神様を「人」ではなく「柱（はしら）」と数える理由について、「天と地」「大黒柱」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "天と地をつなぐ神聖な木や、家を支える大黒柱に神が宿ると考えられたから。",
     "acceptableAnswers": [],
@@ -404,7 +404,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】着物（和服）を一着数えるときに用いる伝統的な助数詞はどれですか。",
+    "question": "着物（和服）を一着数えるときに用いる伝統的な助数詞はどれですか。",
     "options": [
       "領",
       "枚",
@@ -424,7 +424,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【助数詞】「武将の鎧兜を一（　　）身につける」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「武将の鎧兜を一（　　）身につける」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "領",
     "acceptableAnswers": [
@@ -442,7 +442,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】掛軸（かけじく）を数えるときに用いる助数詞はどれですか。",
+    "question": "掛軸（かけじく）を数えるときに用いる助数詞はどれですか。",
     "options": [
       "幅",
       "本",
@@ -462,7 +462,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】掛軸を「幅（ふく）」と数える理由について、「布や紙の幅」「広げる」という言葉を使って説明しなさい。",
+    "question": "掛軸を「幅（ふく）」と数える理由について、「布や紙の幅」「広げる」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "布や紙の幅に合わせて仕立てられ、上下に広げて鑑賞することに由来する。",
     "acceptableAnswers": [],
@@ -480,7 +480,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】硯（すずり）を数えるときに用いる助数詞はどれですか。",
+    "question": "硯（すずり）を数えるときに用いる助数詞はどれですか。",
     "options": [
       "面",
       "個",
@@ -500,7 +500,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【助数詞】「書道道具の硯を一（　　）用意する」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「書道道具の硯を一（　　）用意する」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "面",
     "acceptableAnswers": [
@@ -518,7 +518,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【助数詞】テントや蚊帳（かや）を数えるときの助数詞はどれですか。",
+    "question": "テントや蚊帳（かや）を数えるときの助数詞はどれですか。",
     "options": [
       "張",
       "棟",
@@ -538,7 +538,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】テントを「張（はり）」と数える理由について、「布」「ロープで張る」という言葉を使って説明しなさい。",
+    "question": "テントを「張（はり）」と数える理由について、「布」「ロープで張る」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "布地を骨組みやロープで張って設営することから「張」と数える。",
     "acceptableAnswers": [],
@@ -556,7 +556,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【助数詞】仏像を数えるときに用いる助数詞として最も適切なものはどれですか。",
+    "question": "仏像を数えるときに用いる助数詞として最も適切なものはどれですか。",
     "options": [
       "体",
       "柱",
@@ -576,7 +576,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【助数詞】「寺の本堂に阿弥陀如来像が一（　　）安置されている」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「寺の本堂に阿弥陀如来像が一（　　）安置されている」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "体",
     "acceptableAnswers": [
@@ -594,7 +594,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【助数詞】海苔（のり）を全形10枚まとめて束ねた単位を表す助数詞はどれですか。",
+    "question": "海苔（のり）を全形10枚まとめて束ねた単位を表す助数詞はどれですか。",
     "options": [
       "帖",
       "反",
@@ -614,7 +614,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【助数詞】「焼き海苔を一（　　）贈答用に包む」の空欄に入る助数詞を漢字１文字で答えなさい。",
+    "question": "「焼き海苔を一（　　）贈答用に包む」の空欄に入る助数詞を漢字１文字で答えなさい。",
     "options": [],
     "answer": "帖",
     "acceptableAnswers": [
@@ -632,7 +632,7 @@
     "subCategory": "01. 物の数え方（助数詞）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【助数詞】日本語の助数詞が物の形や性質によって細かく分かれている利点について、「言葉を聞くだけで」「形状」という言葉を使って説明しなさい。",
+    "question": "日本語の助数詞が物の形や性質によって細かく分かれている利点について、「言葉を聞くだけで」「形状」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "数える対象の名前が分からなくても、助数詞を聞くだけで物の形状や特徴が想像できる点。",
     "acceptableAnswers": [],
@@ -650,7 +650,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「安堵（あんど）」とほぼ同じ意味をもつ熟語はどれですか。",
+    "question": "「安堵（あんど）」とほぼ同じ意味をもつ熟語はどれですか。",
     "options": [
       "安心",
       "失望",
@@ -670,7 +670,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【類義語】「安堵する」の類義語で、「心配がなくなり心が落ち着くこと」を表す熟語（漢字２文字）を答えなさい。",
+    "question": "「安堵する」の類義語で、「心配がなくなり心が落ち着くこと」を表す熟語（漢字２文字）を答えなさい。",
     "options": [],
     "answer": "安心",
     "acceptableAnswers": [
@@ -688,7 +688,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「懸念（けねん）」とほぼ同じ意味をもつ熟語はどれですか。",
+    "question": "「懸念（けねん）」とほぼ同じ意味をもつ熟語はどれですか。",
     "options": [
       "心配",
       "期待",
@@ -708,7 +708,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「事態の悪化を懸念する」の「懸念」の類義語で、「危ぶみ恐れること」を表す漢字２文字を答えなさい。",
+    "question": "「事態の悪化を懸念する」の「懸念」の類義語で、「危ぶみ恐れること」を表す漢字２文字を答えなさい。",
     "options": [],
     "answer": "危惧",
     "acceptableAnswers": [
@@ -728,7 +728,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【類義語】「懸念」と「心配」の共通する心情について、「不安」「気にかかる」という言葉を使って説明しなさい。",
+    "question": "「懸念」と「心配」の共通する心情について、「不安」「気にかかる」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "悪い結果になるのではないかと気にかかり、不安に思う心情。",
     "acceptableAnswers": [],
@@ -746,7 +746,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「克明（こくめい）」と最も近い意味をもつ言葉はどれですか。",
+    "question": "「克明（こくめい）」と最も近い意味をもつ言葉はどれですか。",
     "options": [
       "詳細",
       "簡単",
@@ -766,7 +766,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「克明な日記」の「克明」の類義語で、「細部まで詳しいこと」を表す漢字２文字を答えなさい。",
+    "question": "「克明な日記」の「克明」の類義語で、「細部まで詳しいこと」を表す漢字２文字を答えなさい。",
     "options": [],
     "answer": "詳細",
     "acceptableAnswers": [
@@ -785,7 +785,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「承諾（しょうだく）」とほぼ同じ意味をもつ熟語はどれですか。",
+    "question": "「承諾（しょうだく）」とほぼ同じ意味をもつ熟語はどれですか。",
     "options": [
       "快諾",
       "拒絶",
@@ -805,7 +805,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【類義語】「承諾」と「快諾」のニュアンスの違いについて、「快く」「引き受ける」という言葉を使って説明しなさい。",
+    "question": "「承諾」と「快諾」のニュアンスの違いについて、「快く」「引き受ける」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「承諾」は引き受けること全般を指し、「快諾」は喜んで快く引き受けることを指す。",
     "acceptableAnswers": [],
@@ -823,7 +823,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「周到（しゅうとう）」と最も近い意味をもつ言葉はどれですか。",
+    "question": "「周到（しゅうとう）」と最も近い意味をもつ言葉はどれですか。",
     "options": [
       "入念",
       "杜撰",
@@ -843,7 +843,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「用意周到」の「周到」の類義語で、「細部まで心を配って念を入れること」を表す漢字２文字（綿○○）を答えなさい。",
+    "question": "「用意周到」の「周到」の類義語で、「細部まで心を配って念を入れること」を表す漢字２文字（綿○○）を答えなさい。",
     "options": [],
     "answer": "綿密",
     "acceptableAnswers": [
@@ -862,7 +862,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「辞退（じたい）」とほぼ同じ意味をもつ言葉はどれですか。",
+    "question": "「辞退（じたい）」とほぼ同じ意味をもつ言葉はどれですか。",
     "options": [
       "遠慮",
       "受諾",
@@ -882,7 +882,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【類義語】「辞退」と「固辞」の違いについて、「強く」「断る」という言葉を使って説明しなさい。",
+    "question": "「辞退」と「固辞」の違いについて、「強く」「断る」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「辞退」は申し出を断ることであり、「固辞」は強い決意を持って頑なに断ることである。",
     "acceptableAnswers": [],
@@ -900,7 +900,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「核心（かくしん）」と最も近い意味をもつ熟語はどれですか。",
+    "question": "「核心（かくしん）」と最も近い意味をもつ熟語はどれですか。",
     "options": [
       "要点",
       "末節",
@@ -920,7 +920,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「問題の核心に迫る」の「核心」の類義語で、「最も重要な中心点」を表す漢字２文字（要○○）を答えなさい。",
+    "question": "「問題の核心に迫る」の「核心」の類義語で、「最も重要な中心点」を表す漢字２文字（要○○）を答えなさい。",
     "options": [],
     "answer": "要点",
     "acceptableAnswers": [
@@ -939,7 +939,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「露骨（ろこつ）」と最も近い意味をもつ言葉はどれですか。",
+    "question": "「露骨（ろこつ）」と最も近い意味をもつ言葉はどれですか。",
     "options": [
       "あからさま",
       "ひかえめ",
@@ -959,7 +959,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「露骨な嫌悪感」の「露骨」を和語で言い換えた「包み隠さずむき出しな様子」を表す言葉（あから○○）を答えなさい。",
+    "question": "「露骨な嫌悪感」の「露骨」を和語で言い換えた「包み隠さずむき出しな様子」を表す言葉（あから○○）を答えなさい。",
     "options": [],
     "answer": "あからさま",
     "acceptableAnswers": [
@@ -976,7 +976,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【類義語】「露骨」と「あからさま」が共通して批判される理由について、「包み隠さず」「周囲への配慮」という言葉を使って説明しなさい。",
+    "question": "「露骨」と「あからさま」が共通して批判される理由について、「包み隠さず」「周囲への配慮」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "感情や本音を包み隠さずむき出しにして、周囲への配慮に欠けているから。",
     "acceptableAnswers": [],
@@ -994,7 +994,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「切望（せつぼう）」と最も近い意味をもつ熟語はどれですか。",
+    "question": "「切望（せつぼう）」と最も近い意味をもつ熟語はどれですか。",
     "options": [
       "渇望",
       "失望",
@@ -1014,7 +1014,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「平和を切望する」の「切望」の類義語で、「のどが渇くほど激しく望むこと」を表す漢字２文字を答えなさい。",
+    "question": "「平和を切望する」の「切望」の類義語で、「のどが渇くほど激しく望むこと」を表す漢字２文字を答えなさい。",
     "options": [],
     "answer": "渇望",
     "acceptableAnswers": [
@@ -1033,7 +1033,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【類義語】「平穏（へいおん）」とほぼ同じ意味をもつ熟語はどれですか。",
+    "question": "「平穏（へいおん）」とほぼ同じ意味をもつ熟語はどれですか。",
     "options": [
       "安穏",
       "波乱",
@@ -1053,7 +1053,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「平穏無事な暮らし」の「平穏」の類義語で、「安らかで穏やかなこと」を表す漢字２文字（安○○）を答えなさい。",
+    "question": "「平穏無事な暮らし」の「平穏」の類義語で、「安らかで穏やかなこと」を表す漢字２文字（安○○）を答えなさい。",
     "options": [],
     "answer": "安穏",
     "acceptableAnswers": [
@@ -1072,7 +1072,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「機転（きてん）」と最も近い意味をもつ熟語はどれですか。",
+    "question": "「機転（きてん）」と最も近い意味をもつ熟語はどれですか。",
     "options": [
       "機智",
       "無頓着",
@@ -1092,7 +1092,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【類義語】「機転」の類義語で、「その場に応じた鋭い知恵」を表す漢字２文字（機○○）を答えなさい。",
+    "question": "「機転」の類義語で、「その場に応じた鋭い知恵」を表す漢字２文字（機○○）を答えなさい。",
     "options": [],
     "answer": "機智",
     "acceptableAnswers": [
@@ -1111,7 +1111,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「素朴（そぼく）」と最も近い意味をもつ言葉はどれですか。",
+    "question": "「素朴（そぼく）」と最も近い意味をもつ言葉はどれですか。",
     "options": [
       "飾り気がない",
       "華やかである",
@@ -1131,7 +1131,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【類義語】「素朴」と「純朴」の共通する美点について、「飾り気がない」「純粋」という言葉を使って説明しなさい。",
+    "question": "「素朴」と「純朴」の共通する美点について、「飾り気がない」「純粋」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "人工的な飾り気がなく、生まれつきのままで純粋な性質。",
     "acceptableAnswers": [],
@@ -1149,7 +1149,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【類義語】「掌握（しょうあく）」と最も近い意味をもつ熟語はどれですか。",
+    "question": "「掌握（しょうあく）」と最も近い意味をもつ熟語はどれですか。",
     "options": [
       "支配",
       "放棄",
@@ -1169,7 +1169,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【類義語】「政権を掌握する」の「掌握」の類義語で、「自分の勢力下に置くこと」を表す漢字２文字を答えなさい。",
+    "question": "「政権を掌握する」の「掌握」の類義語で、「自分の勢力下に置くこと」を表す漢字２文字を答えなさい。",
     "options": [],
     "answer": "支配",
     "acceptableAnswers": [
@@ -1188,7 +1188,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【類義語】「画策（かくさく）」と最も近い意味をもつ言葉はどれですか。",
+    "question": "「画策（かくさく）」と最も近い意味をもつ言葉はどれですか。",
     "options": [
       "企て",
       "断念",
@@ -1208,7 +1208,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【類義語】「裏で画策する」の「画策」の類義語で、「前もって策略を巡らすこと」を表す漢字２文字（企○○）を答えなさい。",
+    "question": "「裏で画策する」の「画策」の類義語で、「前もって策略を巡らすこと」を表す漢字２文字（企○○）を答えなさい。",
     "options": [],
     "answer": "企図",
     "acceptableAnswers": [
@@ -1227,7 +1227,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【類義語】「高配（こうはい）」とほぼ同じ意味をもつ敬語表現はどれですか。",
+    "question": "「高配（こうはい）」とほぼ同じ意味をもつ敬語表現はどれですか。",
     "options": [
       "配慮",
       "指示",
@@ -1247,7 +1247,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【類義語】「平素のご高配に感謝いたします」の「高配」の一般的な言葉での言い換え（漢字２文字）を答えなさい。",
+    "question": "「平素のご高配に感謝いたします」の「高配」の一般的な言葉での言い換え（漢字２文字）を答えなさい。",
     "options": [],
     "answer": "配慮",
     "acceptableAnswers": [
@@ -1266,7 +1266,7 @@
     "subCategory": "02. 類義語（意味の似た言葉）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【類義語】「杜撰（ずさん）」と「粗雑（そざつ）」の共通する仕事ぶりについて、「いい加減」「手抜き」という言葉を使って説明しなさい。",
+    "question": "「杜撰（ずさん）」と「粗雑（そざつ）」の共通する仕事ぶりについて、「いい加減」「手抜き」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "正確さや丁寧さに欠け、いい加減で手抜きが多い仕事ぶり。",
     "acceptableAnswers": [],
@@ -1284,7 +1284,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「曖昧（あいまい）」の対義語として最も適切なものはどれですか。",
+    "question": "「曖昧（あいまい）」の対義語として最も適切なものはどれですか。",
     "options": [
       "明瞭",
       "模糊",
@@ -1304,7 +1304,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【対義語】「曖昧な返事」の「曖昧」の対義語で、「はっきりして疑う余地がないこと」を表す漢字２文字（明○○）を答えなさい。",
+    "question": "「曖昧な返事」の「曖昧」の対義語で、「はっきりして疑う余地がないこと」を表す漢字２文字（明○○）を答えなさい。",
     "options": [],
     "answer": "明瞭",
     "acceptableAnswers": [
@@ -1324,7 +1324,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【対義語】「曖昧」と「明瞭」の違いについて、「境界」「判断」という言葉を使って説明しなさい。",
+    "question": "「曖昧」と「明瞭」の違いについて、「境界」「判断」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「曖昧」は境界が不確かで判断に迷う状態であり、「明瞭」ははっきりしていて誰でも容易に判断できる状態である。",
     "acceptableAnswers": [],
@@ -1342,7 +1342,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「具体（ぐたい）」の対義語として最も適切なものはどれですか。",
+    "question": "「具体（ぐたい）」の対義語として最も適切なものはどれですか。",
     "options": [
       "抽象",
       "全体",
@@ -1362,7 +1362,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【対義語】「具体的な例」の「具体」の対義語を漢字２文字で答えなさい。",
+    "question": "「具体的な例」の「具体」の対義語を漢字２文字で答えなさい。",
     "options": [],
     "answer": "抽象",
     "acceptableAnswers": [
@@ -1380,7 +1380,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「過密（かみつ）」の対義語として最も適切なものはどれですか。",
+    "question": "「過密（かみつ）」の対義語として最も適切なものはどれですか。",
     "options": [
       "過疎",
       "密集",
@@ -1400,7 +1400,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "descriptive",
-    "question": "【対義語】「過密」と「過疎」の地域社会の違いについて、「人口」「集中」という言葉を使って説明しなさい。",
+    "question": "「過密」と「過疎」の地域社会の違いについて、「人口」「集中」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「過密」は人口が過度に集中している状態であり、「過疎」は人口が激減してまばらな状態である。",
     "acceptableAnswers": [],
@@ -1418,7 +1418,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「需要（じゅよう）」の対義語として最も適切なものはどれですか。",
+    "question": "「需要（じゅよう）」の対義語として最も適切なものはどれですか。",
     "options": [
       "供給",
       "消費",
@@ -1438,7 +1438,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【対義語】「需要と（　　）のバランス」の空欄に入る対義語を漢字２文字で答えなさい。",
+    "question": "「需要と（　　）のバランス」の空欄に入る対義語を漢字２文字で答えなさい。",
     "options": [],
     "answer": "供給",
     "acceptableAnswers": [
@@ -1456,7 +1456,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「主観（しゅかん）」の対義語として最も適切なものはどれですか。",
+    "question": "「主観（しゅかん）」の対義語として最も適切なものはどれですか。",
     "options": [
       "客観",
       "直感",
@@ -1476,7 +1476,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【対義語】「主観的な意見」の「主観」の対義語を漢字２文字で答えなさい。",
+    "question": "「主観的な意見」の「主観」の対義語を漢字２文字で答えなさい。",
     "options": [],
     "answer": "客観",
     "acceptableAnswers": [
@@ -1494,7 +1494,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【対義語】「主観」と「客観」の視点の違いについて、「自分」「第三者」という言葉を使って説明しなさい。",
+    "question": "「主観」と「客観」の視点の違いについて、「自分」「第三者」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「主観」は自分自身の感情や偏見に基づく視点であり、「客観」は第三者の公平で中立な視点である。",
     "acceptableAnswers": [],
@@ -1512,7 +1512,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「必然（ひつぜん）」の対義語として最も適切なものはどれですか。",
+    "question": "「必然（ひつぜん）」の対義語として最も適切なものはどれですか。",
     "options": [
       "偶然",
       "当然",
@@ -1532,7 +1532,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【対義語】「必然の結果」の「必然」の対義語を漢字２文字で答えなさい。",
+    "question": "「必然の結果」の「必然」の対義語を漢字２文字で答えなさい。",
     "options": [],
     "answer": "偶然",
     "acceptableAnswers": [
@@ -1550,7 +1550,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「多弁（たべん）」の対義語として最も適切なものはどれですか。",
+    "question": "「多弁（たべん）」の対義語として最も適切なものはどれですか。",
     "options": [
       "寡黙",
       "能弁",
@@ -1570,7 +1570,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【対義語】「多弁な人」の「多弁」の対義語で、「口数が少ないこと」を表す漢字２文字（寡○○）を答えなさい。",
+    "question": "「多弁な人」の「多弁」の対義語で、「口数が少ないこと」を表す漢字２文字（寡○○）を答えなさい。",
     "options": [],
     "answer": "寡黙",
     "acceptableAnswers": [
@@ -1588,7 +1588,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「保守（ほしゅ）」の対義語として最も適切なものはどれですか。",
+    "question": "「保守（ほしゅ）」の対義語として最も適切なものはどれですか。",
     "options": [
       "革新",
       "維持",
@@ -1608,7 +1608,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【対義語】「保守」と「革新」の政治的立場の違いについて、「伝統を守る」「新しく変える」という言葉を使って説明しなさい。",
+    "question": "「保守」と「革新」の政治的立場の違いについて、「伝統を守る」「新しく変える」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「保守」は既存の制度や伝統を守る立場であり、「革新」は現状を新しく変える立場である。",
     "acceptableAnswers": [],
@@ -1626,7 +1626,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「隠蔽（いんぺい）」の対義語として最も適切なものはどれですか。",
+    "question": "「隠蔽（いんぺい）」の対義語として最も適切なものはどれですか。",
     "options": [
       "公開",
       "暴露",
@@ -1646,7 +1646,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【対義語】「証拠を隠蔽する」の「隠蔽」の対義語で、「広く世間に明らかにする」ことを表す漢字２文字を答えなさい。",
+    "question": "「証拠を隠蔽する」の「隠蔽」の対義語で、「広く世間に明らかにする」ことを表す漢字２文字を答えなさい。",
     "options": [],
     "answer": "公開",
     "acceptableAnswers": [
@@ -1666,7 +1666,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【対義語】「優柔不断（ゆうじゅうふだん）」の対義語として最も適切な四字熟語はどれですか。",
+    "question": "「優柔不断（ゆうじゅうふだん）」の対義語として最も適切な四字熟語はどれですか。",
     "options": [
       "迅速果断",
       "乾坤一擲",
@@ -1686,7 +1686,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【対義語】「優柔不断」の対義語で、「思い切って決断を下すこと」を表す四字熟語「迅速（　　）」の空欄に入る漢字２文字を答えなさい。",
+    "question": "「優柔不断」の対義語で、「思い切って決断を下すこと」を表す四字熟語「迅速（　　）」の空欄に入る漢字２文字を答えなさい。",
     "options": [],
     "answer": "果断",
     "acceptableAnswers": [
@@ -1704,7 +1704,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「栄達（えいだつ）」の対義語として最も適切なものはどれですか。",
+    "question": "「栄達（えいだつ）」の対義語として最も適切なものはどれですか。",
     "options": [
       "没落",
       "昇進",
@@ -1724,7 +1724,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【対義語】「栄達」の対義語で、「勢いを失って滅び落ちること」を表す漢字２文字（没○○）を答えなさい。",
+    "question": "「栄達」の対義語で、「勢いを失って滅び落ちること」を表す漢字２文字（没○○）を答えなさい。",
     "options": [],
     "answer": "没落",
     "acceptableAnswers": [
@@ -1742,7 +1742,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「軽率（けいそつ）」の対義語として最も適切なものはどれですか。",
+    "question": "「軽率（けいそつ）」の対義語として最も適切なものはどれですか。",
     "options": [
       "慎重",
       "真面目",
@@ -1762,7 +1762,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "descriptive",
-    "question": "【対義語】「軽率」と「慎重」な行動の違いについて、「深く考えず」「注意深く」という言葉を使って説明しなさい。",
+    "question": "「軽率」と「慎重」な行動の違いについて、「深く考えず」「注意深く」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「軽率」は深く考えずに行動することであり、「慎重」は先々の影響まで注意深く配慮して行動することである。",
     "acceptableAnswers": [],
@@ -1780,7 +1780,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【対義語】「高尚（こうしょう）」の対義語として最も適切なものはどれですか。",
+    "question": "「高尚（こうしょう）」の対義語として最も適切なものはどれですか。",
     "options": [
       "低俗",
       "下品",
@@ -1800,7 +1800,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【対義語】「高尚な趣味」の「高尚」の対義語で、「品位が低いこと」を表す漢字２文字（低○○）を答えなさい。",
+    "question": "「高尚な趣味」の「高尚」の対義語で、「品位が低いこと」を表す漢字２文字（低○○）を答えなさい。",
     "options": [],
     "answer": "低俗",
     "acceptableAnswers": [
@@ -1818,7 +1818,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【対義語】「名誉（めいよ）」の対義語として最も適切なものはどれですか。",
+    "question": "「名誉（めいよ）」の対義語として最も適切なものはどれですか。",
     "options": [
       "汚名",
       "不名誉",
@@ -1838,7 +1838,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【対義語】「汚名を返上する」の「汚名」の対義語を漢字２文字で答えなさい。",
+    "question": "「汚名を返上する」の「汚名」の対義語を漢字２文字で答えなさい。",
     "options": [],
     "answer": "名誉",
     "acceptableAnswers": [
@@ -1856,7 +1856,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【対義語】「歓喜（かんき）」の対義語として最も適切なものはどれですか。",
+    "question": "「歓喜（かんき）」の対義語として最も適切なものはどれですか。",
     "options": [
       "悲嘆",
       "哀悼",
@@ -1876,7 +1876,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【対義語】「歓喜の声」の「歓喜」の対義語で、「深く悲しみ嘆くこと」を表す漢字２文字（悲○○）を答えなさい。",
+    "question": "「歓喜の声」の「歓喜」の対義語で、「深く悲しみ嘆くこと」を表す漢字２文字（悲○○）を答えなさい。",
     "options": [],
     "answer": "悲嘆",
     "acceptableAnswers": [
@@ -1894,7 +1894,7 @@
     "subCategory": "03. 対義語（反対の意味の言葉）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【対比】「自発的」と「受動的」な学習態度の違いについて、「自ら進んで」「指示待ち」という言葉を使って説明しなさい。",
+    "question": "「自発的」と「受動的」な学習態度の違いについて、「自ら進んで」「指示待ち」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「自発的」は他人に言われなくても自ら進んで学ぶ態度であり、「受動的」は指示待ちで他人に動かされて学ぶ態度である。",
     "acceptableAnswers": [],

@@ -6,7 +6,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】俳句で「朧月（おぼろづき）」が表す季節はどれですか。",
+    "question": "俳句で「朧月（おぼろづき）」が表す季節はどれですか。",
     "options": [
       "春",
       "夏",
@@ -26,7 +26,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】春の夜にぼんやりと霞んだ月を表す、春の季語（漢字３文字）を答えなさい。",
+    "question": "春の夜にぼんやりと霞んだ月を表す、春の季語（漢字３文字）を答えなさい。",
     "options": [],
     "answer": "朧月",
     "acceptableAnswers": [
@@ -45,7 +45,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】春の「朧月」と秋の「名月」の見え方の違いについて、「澄んだ」「霞んだ」という言葉を使って説明しなさい。",
+    "question": "春の「朧月」と秋の「名月」の見え方の違いについて、「澄んだ」「霞んだ」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "春の朧月は水蒸気でぼんやりと霞んだ月であり、秋の名月は空気が澄んだ夜空に鮮やかに輝く月である。",
     "acceptableAnswers": [],
@@ -63,7 +63,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】南から吹いて気温を上げ、春の訪れを告げる最初の強い風を表す季語はどれですか。",
+    "question": "南から吹いて気温を上げ、春の訪れを告げる最初の強い風を表す季語はどれですか。",
     "options": [
       "春一番",
       "東風",
@@ -83,7 +83,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】「春一番」とはどのような気象現象か、「春の訪れ」「強い南風」という言葉を使って説明しなさい。",
+    "question": "「春一番」とはどのような気象現象か、「春の訪れ」「強い南風」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "立春から春分の間に初めて吹く、春の訪れを告げる強い南風。",
     "acceptableAnswers": [],
@@ -101,7 +101,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】俳句で「東風（こち）」が表す季節はどれですか。",
+    "question": "俳句で「東風（こち）」が表す季節はどれですか。",
     "options": [
       "春",
       "夏",
@@ -121,7 +121,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】菅原道真の和歌「（　　）吹かば匂ひおこせよ梅の花」の空欄に入る、春風を表す言葉（漢字２文字）を答えなさい。",
+    "question": "菅原道真の和歌「（　　）吹かば匂ひおこせよ梅の花」の空欄に入る、春風を表す言葉（漢字２文字）を答えなさい。",
     "options": [],
     "answer": "東風",
     "acceptableAnswers": [
@@ -139,7 +139,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】春に南方から日本へ渡ってきて巣作りをする鳥で、春の季語となるものはどれですか。",
+    "question": "春に南方から日本へ渡ってきて巣作りをする鳥で、春の季語となるものはどれですか。",
     "options": [
       "燕（つばめ）",
       "雁（がん）",
@@ -159,7 +159,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】ツバメが「春」の季語とされる理由について、「南方から渡ってきて」「巣作り」という言葉を使って説明しなさい。",
+    "question": "ツバメが「春」の季語とされる理由について、「南方から渡ってきて」「巣作り」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "春になると南方から渡ってきて、軒先などで巣作りを始めるから。",
     "acceptableAnswers": [],
@@ -177,7 +177,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】「春の野や何に（　　）行く人と連れ」（加賀千代女）の空欄に入る、春の季語となる植物はどれですか。",
+    "question": "「春の野や何に（　　）行く人と連れ」（加賀千代女）の空欄に入る、春の季語となる植物はどれですか。",
     "options": [
       "菜の花",
       "朝顔",
@@ -197,7 +197,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】与謝蕪村の有名な俳句「（　　）や月は東に日は西に」の空欄に入る、黄色い花を咲かせる春の季語を答えなさい。",
+    "question": "与謝蕪村の有名な俳句「（　　）や月は東に日は西に」の空欄に入る、黄色い花を咲かせる春の季語を答えなさい。",
     "options": [],
     "answer": "菜の花",
     "acceptableAnswers": [
@@ -216,7 +216,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【季語】俳句で「目借時（めかりどき）」とは、どのような時期を表す春の季語ですか。",
+    "question": "俳句で「目借時（めかりどき）」とは、どのような時期を表す春の季語ですか。",
     "options": [
       "春の暖かさで心地よい眠気に襲われる頃",
       "田植えの時期",
@@ -236,7 +236,7 @@
     "subCategory": "01. 春の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【季語】「霞（かすみ）」と「霧（きり）」の季節の使い分けについて、「春」「秋」という言葉を使って説明しなさい。",
+    "question": "「霞（かすみ）」と「霧（きり）」の季節の使い分けについて、「春」「秋」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "大気中の水蒸気で遠くがぼやける現象を、春は「霞」、秋は「霧」と呼び分ける。",
     "acceptableAnswers": [],
@@ -254,7 +254,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】俳句で「五月雨（さみだれ）」が表す季節はどれですか。",
+    "question": "俳句で「五月雨（さみだれ）」が表す季節はどれですか。",
     "options": [
       "夏",
       "春",
@@ -274,7 +274,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】松尾芭蕉の俳句「（　　）をあつめて早し最上川」の空欄に入る、梅雨の雨を表す夏の季語（漢字３文字）を答えなさい。",
+    "question": "松尾芭蕉の俳句「（　　）をあつめて早し最上川」の空欄に入る、梅雨の雨を表す夏の季語（漢字３文字）を答えなさい。",
     "options": [],
     "answer": "五月雨",
     "acceptableAnswers": [
@@ -292,7 +292,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】「五月雨」が現代の5月（春）ではなく「夏」の季語である理由について、「旧暦」「梅雨」という言葉を使って説明しなさい。",
+    "question": "「五月雨」が現代の5月（春）ではなく「夏」の季語である理由について、「旧暦」「梅雨」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "旧暦の5月は現在の6月頃にあたり、梅雨の長雨のことを指すから。",
     "acceptableAnswers": [],
@@ -310,7 +310,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】夏にもくもくと垂直に湧き上がる積乱雲を表す、夏の季語はどれですか。",
+    "question": "夏にもくもくと垂直に湧き上がる積乱雲を表す、夏の季語はどれですか。",
     "options": [
       "雲の峰",
       "鰯雲",
@@ -330,7 +330,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】「夏空にそびえる入道雲」を表す夏の季語「雲の（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "question": "「夏空にそびえる入道雲」を表す夏の季語「雲の（　　）」の空欄に入る漢字１文字を答えなさい。",
     "options": [],
     "answer": "峰",
     "acceptableAnswers": [
@@ -349,7 +349,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】松尾芭蕉の有名な俳句「閑さや岩にしみ入る（　　）の声」の空欄に入る、夏の季語となる昆虫はどれですか。",
+    "question": "松尾芭蕉の有名な俳句「閑さや岩にしみ入る（　　）の声」の空欄に入る、夏の季語となる昆虫はどれですか。",
     "options": [
       "蝉",
       "鈴虫",
@@ -369,7 +369,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】「閑さや岩にしみ入る（　　）の声」の空欄に入る、夏の季語となる昆虫を漢字１文字で答えなさい。",
+    "question": "「閑さや岩にしみ入る（　　）の声」の空欄に入る、夏の季語となる昆虫を漢字１文字で答えなさい。",
     "options": [],
     "answer": "蝉",
     "acceptableAnswers": [
@@ -388,7 +388,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】夏の夜の水辺を淡い光を放ちながら飛ぶ、夏の季語となる昆虫はどれですか。",
+    "question": "夏の夜の水辺を淡い光を放ちながら飛ぶ、夏の季語となる昆虫はどれですか。",
     "options": [
       "蛍",
       "蜻蛉",
@@ -408,7 +408,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】夏の水辺で光る昆虫で、夏の季語となる「ほたる」を漢字１文字で答えなさい。",
+    "question": "夏の水辺で光る昆虫で、夏の季語となる「ほたる」を漢字１文字で答えなさい。",
     "options": [],
     "answer": "蛍",
     "acceptableAnswers": [
@@ -427,7 +427,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】夏の午後に突然激しく降り出す驟雨（にわか雨）を表す、夏の季語はどれですか。",
+    "question": "夏の午後に突然激しく降り出す驟雨（にわか雨）を表す、夏の季語はどれですか。",
     "options": [
       "夕立",
       "春雨",
@@ -447,7 +447,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】「夕立」とはどのような雨か、「夏の午後」「激しいにわか雨」という言葉を使って説明しなさい。",
+    "question": "「夕立」とはどのような雨か、「夏の午後」「激しいにわか雨」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "夏の午後から夕方にかけて積乱雲から降る、激しいにわか雨。",
     "acceptableAnswers": [],
@@ -465,7 +465,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】七夕（たなばた）の行事が表す俳句の伝統的な季節はどれですか。",
+    "question": "七夕（たなばた）の行事が表す俳句の伝統的な季節はどれですか。",
     "options": [
       "秋",
       "夏",
@@ -485,7 +485,7 @@
     "subCategory": "02. 夏の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【季語】現代の感覚では夏に行われる「七夕」が、俳句では「秋」の季語とされる理由について、「旧暦7月」「初秋」という言葉を使って説明しなさい。",
+    "question": "現代の感覚では夏に行われる「七夕」が、俳句では「秋」の季語とされる理由について、「旧暦7月」「初秋」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "旧暦の7月は現在の8月頃にあたり、季節の上では「初秋（秋の初め）」に分類されるから。",
     "acceptableAnswers": [],
@@ -503,7 +503,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】秋の夜空に細かく一面に広がる巻積雲を表す、秋の季語はどれですか。",
+    "question": "秋の夜空に細かく一面に広がる巻積雲を表す、秋の季語はどれですか。",
     "options": [
       "鰯雲（いわしぐも）",
       "雲の峰",
@@ -523,7 +523,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】秋の空に現れる巻積雲の別名で、魚の名を冠した秋の季語「（　　）雲」の空欄に入る魚の名を漢字で答えなさい。",
+    "question": "秋の空に現れる巻積雲の別名で、魚の名を冠した秋の季語「（　　）雲」の空欄に入る魚の名を漢字で答えなさい。",
     "options": [],
     "answer": "鰯",
     "acceptableAnswers": [
@@ -542,7 +542,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】俳句で単に「名月（めいげつ）」または「月」と詠んだ場合、どの季節を表しますか。",
+    "question": "俳句で単に「名月（めいげつ）」または「月」と詠んだ場合、どの季節を表しますか。",
     "options": [
       "秋",
       "春",
@@ -562,7 +562,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【季語】「中秋の名月」とはいつのどのような月か、「旧暦8月15日」「満月」という言葉を使って説明しなさい。",
+    "question": "「中秋の名月」とはいつのどのような月か、「旧暦8月15日」「満月」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "旧暦8月15日の夜に昇る、空が澄み渡った美しい満月のこと。",
     "acceptableAnswers": [],
@@ -580,7 +580,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】秋の野山で美しく色づく木の葉を表す、秋の季語はどれですか。",
+    "question": "秋の野山で美しく色づく木の葉を表す、秋の季語はどれですか。",
     "options": [
       "紅葉（もみじ）",
       "新緑",
@@ -600,7 +600,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】秋に赤く染まった木々の葉を表す季語「紅葉」の読みがなを答えなさい。",
+    "question": "秋に赤く染まった木々の葉を表す季語「紅葉」の読みがなを答えなさい。",
     "options": [],
     "answer": "もみじ",
     "acceptableAnswers": [
@@ -618,7 +618,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】秋の夕暮れの空を群れをなして飛ぶ、秋の季語となる昆虫はどれですか。",
+    "question": "秋の夕暮れの空を群れをなして飛ぶ、秋の季語となる昆虫はどれですか。",
     "options": [
       "赤とんぼ",
       "蝉",
@@ -638,7 +638,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】秋の訪れを告げる「赤（　　）」の空欄に入る昆虫の名前を答えなさい。",
+    "question": "秋の訪れを告げる「赤（　　）」の空欄に入る昆虫の名前を答えなさい。",
     "options": [],
     "answer": "とんぼ",
     "acceptableAnswers": [
@@ -657,7 +657,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】秋の夜に草むらで美しい声で鳴く「鈴虫（すずむし）」や「松虫」は、どの季節の季語ですか。",
+    "question": "夜の草むらで美しい鳴き声を響かせる「鈴虫（すずむし）」や「松虫」は、どの季節の季語ですか。",
     "options": [
       "秋",
       "夏",
@@ -677,7 +677,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】秋に日本を襲う猛烈な暴風雨（台風）を表す、古風な秋の季語はどれですか。",
+    "question": "秋に日本を襲う猛烈な暴風雨（台風）を表す、古風な秋の季語はどれですか。",
     "options": [
       "野分（のわき）",
       "春一番",
@@ -697,7 +697,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【季語】秋の強い台風を意味する古語・季語「野（　　）」の空欄に入る漢字１文字を答えなさい。",
+    "question": "秋の強い台風を意味する古語・季語「野（　　）」の空欄に入る漢字１文字を答えなさい。",
     "options": [],
     "answer": "分",
     "acceptableAnswers": [
@@ -716,7 +716,7 @@
     "subCategory": "03. 秋の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【季語】「野分（のわき）」という言葉の語源について、「野の草」「吹き分ける」という言葉を使って説明しなさい。",
+    "question": "「野分（のわき）」という言葉の語源について、「野の草」「吹き分ける」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "猛烈な嵐の風が、野の草を左右になぎ倒して吹き分ける様子から。",
     "acceptableAnswers": [],
@@ -734,7 +734,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】晩秋から初冬にかけて吹きすさぶ、木々の葉を吹き落とす冷たい強風を表す季語はどれですか。",
+    "question": "晩秋から初冬にかけて吹きすさぶ、木々の葉を吹き落とす冷たい強風を表す季語はどれですか。",
     "options": [
       "木枯らし",
       "春一番",
@@ -754,7 +754,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【季語】冬の訪れを告げる冷たい北風「木（　　）し」の空欄に入る言葉を漢字で答えなさい。",
+    "question": "冬の訪れを告げる冷たい北風「木（　　）し」の空欄に入る言葉を漢字で答えなさい。",
     "options": [],
     "answer": "枯ら",
     "acceptableAnswers": [
@@ -773,7 +773,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】冬の朝、地中の水分が凍って地面の土を柱状に持ち上げる現象を表す季語はどれですか。",
+    "question": "冬の朝、地中の水分が凍って地面の土を柱状に持ち上げる現象を表す季語はどれですか。",
     "options": [
       "霜柱（しもばしら）",
       "雪解け",
@@ -793,7 +793,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "descriptive",
-    "question": "【季語】「霜柱」が冬の朝にできる仕組みについて、「地中の水分」「凍る」という言葉を使って説明しなさい。",
+    "question": "「霜柱」が冬の朝にできる仕組みについて、「地中の水分」「凍る」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "冬の冷え込みによって地中の水分が吸い上げられ、柱状に凍る現象。",
     "acceptableAnswers": [],
@@ -811,7 +811,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】屋根の軒先などに垂れ下がる氷の棒を表す、冬の季語はどれですか。",
+    "question": "屋根の軒先などに垂れ下がる氷の棒を表す、冬の季語はどれですか。",
     "options": [
       "つらら",
       "霜柱",
@@ -831,7 +831,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】「氷柱」の訓読み（ひらがな３文字）を答えなさい。",
+    "question": "「氷柱」の訓読み（ひらがな３文字）を答えなさい。",
     "options": [],
     "answer": "つらら",
     "acceptableAnswers": [
@@ -848,7 +848,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【季語】俳句の歳時記で「門松（かどまつ）」や「お年玉」が分類される季節はどれですか。",
+    "question": "俳句の歳時記で「門松（かどまつ）」や「お年玉」が分類される季節はどれですか。",
     "options": [
       "新年",
       "冬",
@@ -868,7 +868,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【季語】大晦日の夜に寺院で108回突かれる鐘の音を表す季語「（　　）の鐘」の空欄に入る漢字２文字を答えなさい。",
+    "question": "大晦日の夜に寺院で108回突かれる鐘の音を表す季語「（　　）の鐘」の空欄に入る漢字２文字を答えなさい。",
     "options": [],
     "answer": "除夜",
     "acceptableAnswers": [
@@ -886,7 +886,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】冬の寒さの中で、吐き出した息が白く見える現象を表す冬の季語はどれですか。",
+    "question": "冬の寒さの中で、吐き出した息が白く見える現象を表す冬の季語はどれですか。",
     "options": [
       "息白し",
       "白息",
@@ -906,7 +906,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【季語】冬の寒気で吐く息が白く見える情景を表す季語「息（　　）し」の空欄に入る漢字１文字を答えなさい。",
+    "question": "冬の厳しい寒気で吐く息が目に見える情景を表す季語「息（　　）し」の空欄に入る漢字１文字を答えなさい。",
     "options": [],
     "answer": "白",
     "acceptableAnswers": [
@@ -924,7 +924,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【季語】新年の季語である「初日の出」と同様に、「初」がつく季語のうち新年に属さないものはどれですか。",
+    "question": "新年の季語である「初日の出」と同様に、「初」がつく季語のうち新年に属さないものはどれですか。",
     "options": [
       "初桜",
       "初詣",
@@ -944,7 +944,7 @@
     "subCategory": "04. 冬・新年の季語（時候・天文・地理・生活・行事・動植物）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【季語】「初雪」と「初日の出」の季語としての季節の違いについて、「冬」「新年」という言葉を使って説明しなさい。",
+    "question": "「初雪」と「初日の出」の季語としての季節の違いについて、「冬」「新年」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「初雪」はその冬に初めて降る雪なので「冬」の季語であり、「初日の出」は元日の朝の太陽なので「新年」の季語である。",
     "acceptableAnswers": [],
@@ -962,7 +962,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】年齢や障害の有無に関わらず、すべての人が利用しやすいように設計されたデザインを何といいますか。",
+    "question": "年齢や障害の有無に関わらず、すべての人が利用しやすいように設計された製品や環境の考え方を何といいますか。",
     "options": [
       "ユニバーサルデザイン",
       "バリアフリー",
@@ -982,7 +982,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【外来語】社会生活の障壁（バリア）を取り除く考え方をカタカナで「（　　）フリー」というか答えなさい。",
+    "question": "高齢者や障害者などの社会生活における様々な障壁を取り除く考え方を、カタカナで「（　　）フリー」というか答えなさい。",
     "options": [],
     "answer": "バリア",
     "acceptableAnswers": [
@@ -1000,7 +1000,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「バリアフリー」と「ユニバーサルデザイン」の違いについて、「障壁を取り除く」「最初からすべての人」という言葉を使って説明しなさい。",
+    "question": "「バリアフリー」と「ユニバーサルデザイン」の違いについて、「障壁を取り除く」「最初からすべての人」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "バリアフリーは既存の障害や障壁を取り除くことに対し、ユニバーサルデザインは最初からすべての人が使いやすいように設計すること。",
     "acceptableAnswers": [],
@@ -1018,7 +1018,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】自発的に無償で社会貢献活動や人道支援を行う人のことを何といいますか。",
+    "question": "自発的に無償で社会貢献活動や人道支援を行う人のことを何といいますか。",
     "options": [
       "ボランティア",
       "リーダー",
@@ -1038,7 +1038,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【外来語】「自主的に社会奉仕を行う人」を表すカタカナ語を答えなさい。",
+    "question": "「自主的に社会奉仕を行う人」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "ボランティア",
     "acceptableAnswers": [
@@ -1056,7 +1056,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】個人情報や私生活の秘密をみだりに侵害されない権利を何といいますか。",
+    "question": "個人情報や私生活の秘密をみだりに侵害されない権利を何といいますか。",
     "options": [
       "プライバシー",
       "アイデンティティ",
@@ -1076,7 +1076,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「プライバシー」を守ることの重要性について、「個人の私生活」「他人に知られない」という言葉を使って説明しなさい。",
+    "question": "「プライバシー」を守ることの重要性について、「個人の私生活」「他人に知られない」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "個人の私生活の自由を守り、みだりに他人に知られないようにするため。",
     "acceptableAnswers": [],
@@ -1094,7 +1094,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】「自分が自分であること」という自己同一性や存在証明を表す言葉はどれですか。",
+    "question": "「自分が自分であること」という自己同一性や存在証明を表す言葉はどれですか。",
     "options": [
       "アイデンティティ",
       "イニシアチブ",
@@ -1114,7 +1114,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】心理学用語で「自己同一性」と訳される、自分らしさの確立を表すカタカナ語を答えなさい。",
+    "question": "心理学用語で「自己同一性」と訳される、自分らしさの確立を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "アイデンティティ",
     "acceptableAnswers": [
@@ -1133,7 +1133,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「アイデンティティ」とはどのような認識か、「自分は何者か」「自己同一性」という言葉を使って説明しなさい。",
+    "question": "「アイデンティティ」とはどのような認識か、「自分は何者か」「自己同一性」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "「自分は何者か」「自分らしさとは何か」を自覚し、確信を持つ自己同一性の認識。",
     "acceptableAnswers": [],
@@ -1151,7 +1151,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】人種・性別・年齢・障害などに関わらず、多様な人々が共存する「多様性」を表す言葉はどれですか。",
+    "question": "人種・性別・年齢・障害などに関わらず、多様な人々が共存する「多様性」を表す言葉はどれですか。",
     "options": [
       "ダイバーシティ",
       "グローバリゼーション",
@@ -1171,7 +1171,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「多様性」を意味し、多国籍企業などで推進されるカタカナ語を答えなさい。",
+    "question": "「多様性」を意味し、多国籍企業などで推進されるカタカナ語を答えなさい。",
     "options": [],
     "answer": "ダイバーシティ",
     "acceptableAnswers": [
@@ -1189,7 +1189,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】将来にわたって地球環境を破壊せず、持続可能な発展を続けられる性質を表す言葉はどれですか。",
+    "question": "将来にわたって地球環境を破壊せず、持続可能な発展を続けられる性質を表す言葉はどれですか。",
     "options": [
       "サステナビリティ",
       "エコロジー",
@@ -1209,7 +1209,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「サステナビリティ（持続可能性）」の理念について、「将来の世代」「環境を壊さない」という言葉を使って説明しなさい。",
+    "question": "「サステナビリティ（持続可能性）」の理念について、「将来の世代」「環境を壊さない」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "将来の世代の利益を損なわず、環境を壊さないように発展を維持すること。",
     "acceptableAnswers": [],
@@ -1227,7 +1227,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】テレビ・新聞・ラジオ・雑誌など、大衆に大量の情報を一方向に伝達する報道機関を何といいますか。",
+    "question": "テレビ・新聞・ラジオ・雑誌など、大衆に大量の情報を一方向に伝達する報道機関を何といいますか。",
     "options": [
       "マスメディア",
       "ソーシャルメディア",
@@ -1247,7 +1247,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「新聞やテレビなどの大衆媒体」を表すカタカナ語を答えなさい。",
+    "question": "「新聞やテレビなどの大衆媒体」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "マスメディア",
     "acceptableAnswers": [
@@ -1266,7 +1266,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】自分の企画や研究成果などを、図表やスライドを用いて聴衆に分かりやすく説明・発表することを何といいますか。",
+    "question": "自分の企画や研究成果などを、図表やスライドを用いて聴衆に分かりやすく説明・発表することを何といいますか。",
     "options": [
       "プレゼンテーション",
       "オリエンテーション",
@@ -1286,7 +1286,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「発表・提示」を意味し、スライドを使って説明する行為のカタカナ語を答えなさい。",
+    "question": "「発表・提示」を意味し、スライドを使って説明する行為のカタカナ語を答えなさい。",
     "options": [],
     "answer": "プレゼンテーション",
     "acceptableAnswers": [
@@ -1305,7 +1305,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】参加者が講義を一方的に聞くだけでなく、自ら体験・作業・討論を行う「参加体験型講座」を何といいますか。",
+    "question": "参加者が講義を一方的に聞くだけでなく、自ら体験・作業・討論を行う「参加体験型講座」を何といいますか。",
     "options": [
       "ワークショップ",
       "シンポジウム",
@@ -1325,7 +1325,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「体験型講座・共同作業の研究会」を意味するカタカナ語を答えなさい。",
+    "question": "「体験型講座・共同作業の研究会」を意味するカタカナ語を答えなさい。",
     "options": [],
     "answer": "ワークショップ",
     "acceptableAnswers": [
@@ -1343,7 +1343,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】地球規模で国境を越えて経済や文化が一体化していく現象を何といいますか。",
+    "question": "地球規模で国境を越えて経済や文化が一体化していく現象を何といいますか。",
     "options": [
       "グローバリゼーション",
       "ローカリゼーション",
@@ -1363,7 +1363,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「グローバル化」が進む現代社会の課題について、「世界的一体化」「地域固有の文化」という言葉を使って説明しなさい。",
+    "question": "「グローバル化」が進む現代社会の課題について、「世界的一体化」「地域固有の文化」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "世界的一体化が進む一方で、地域固有の文化や伝統の独自性をどう維持するかという課題。",
     "acceptableAnswers": [],
@@ -1381,7 +1381,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】新入生や新入社員に対して、環境や方針、履修手続きなどを説明して適応させる指導・説明会を何といいますか。",
+    "question": "新入生や新入社員に対して、環境や方針、履修手続きなどを説明して適応させる指導・説明会を何といいますか。",
     "options": [
       "オリエンテーション",
       "プレゼンテーション",
@@ -1401,7 +1401,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「新入者への適応ガイダンス」を表すカタカナ語を答えなさい。",
+    "question": "「新入者への適応ガイダンス」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "オリエンテーション",
     "acceptableAnswers": [
@@ -1419,7 +1419,7 @@
     "subCategory": "05. 日常生活・社会・文化の外来語（カタカナ語）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【外来語】住環境や都市空間において、快適さ、心地よさ、魅力的な環境条件を表す言葉はどれですか。",
+    "question": "住環境や都市空間において、快適さ、心地よさ、魅力的な環境条件を表す言葉はどれですか。",
     "options": [
       "アメニティ",
       "ホスピタリティ",
@@ -1439,7 +1439,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】どちらを選んでも好ましくない結果になるため、板挟みになって思い悩む状態を何といいますか。",
+    "question": "どちらを選んでも好ましくない結果になるため、板挟みになって思い悩む状態を何といいますか。",
     "options": [
       "ジレンマ",
       "パラドックス",
@@ -1459,7 +1459,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【外来語】「二つの選択肢の間で板挟みになる苦境」を表すカタカナ語（４文字）を答えなさい。",
+    "question": "「二つの選択肢の間で板挟みになる苦境」を表すカタカナ語（４文字）を答えなさい。",
     "options": [],
     "answer": "ジレンマ",
     "acceptableAnswers": [
@@ -1477,7 +1477,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「ジレンマに陥る」とはどのような状態か、「板挟み」「相反する」という言葉を使って説明しなさい。",
+    "question": "「ジレンマに陥る」とはどのような状態か、「板挟み」「相反する」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "相反する二つの選択肢のどちらを選んでも不利益があり、板挟みになって身動きが取れない状態。",
     "acceptableAnswers": [],
@@ -1495,7 +1495,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】正しそうに見える前提から、論理的に導き出された結論が受け入れがたい矛盾や不合理になってしまうことを何といいますか。",
+    "question": "正しそうに見える前提から、論理的に導き出された結論が受け入れがたい矛盾や不合理になってしまうことを何といいますか。",
     "options": [
       "パラドックス",
       "ジレンマ",
@@ -1515,7 +1515,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】日本語で「逆説」と訳される、矛盾を含んだ論理や命題を表すカタカナ語を答えなさい。",
+    "question": "日本語で「逆説」と訳される、矛盾を含んだ論理や命題を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "パラドックス",
     "acceptableAnswers": [
@@ -1533,7 +1533,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】本音とは裏腹のことを言って相手をからかったり、皮肉を込めて批判したりする表現手法を何といいますか。",
+    "question": "本音とは裏腹のことを言って相手をからかったり、皮肉を込めて批判したりする表現手法を何といいますか。",
     "options": [
       "アイロニー",
       "ユーモア",
@@ -1553,7 +1553,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「皮肉・逆説的なあてこすり」を表すカタカナ語（５文字）を答えなさい。",
+    "question": "「皮肉・逆説的なあてこすり」を表すカタカナ語（５文字）を答えなさい。",
     "options": [],
     "answer": "アイロニー",
     "acceptableAnswers": [
@@ -1571,7 +1571,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】物事を行う意欲、やる気、動機づけのことを何といいますか。",
+    "question": "物事を行う意欲、やる気、動機づけのことを何といいますか。",
     "options": [
       "モチベーション",
       "ポテンシャル",
@@ -1591,7 +1591,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "input",
-    "question": "【外来語】「学習意欲ややる気」を表すカタカナ語（７文字）を答えなさい。",
+    "question": "「学習意欲ややる気」を表すカタカナ語（７文字）を答えなさい。",
     "options": [],
     "answer": "モチベーション",
     "acceptableAnswers": [
@@ -1609,7 +1609,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】言葉のわずかな響きの違いや、感情や意味の細かい微妙な差・陰影のことを何といいますか。",
+    "question": "言葉のわずかな響きの違いや、感情や意味の細かい微妙な差・陰影のことを何といいますか。",
     "options": [
       "ニュアンス",
       "トーン",
@@ -1629,7 +1629,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「言葉の微妙な意味合いやニュアンスの違い」を表すカタカナ語（５文字）を答えなさい。",
+    "question": "「言葉の微妙な意味合いや言外の響きの違い」を表すカタカナ語（５文字）を答えなさい。",
     "options": [],
     "answer": "ニュアンス",
     "acceptableAnswers": [
@@ -1647,7 +1647,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】「言葉のニュアンス」とは何のことか、「微妙な違い」「言葉の響き」という言葉を使って説明しなさい。",
+    "question": "「言葉のニュアンス」とは何のことか、「微妙な違い」「言葉の響き」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "辞書の意味だけでは表せない、言葉の響きや文脈に伴う微妙な違いや感情の陰影。",
     "acceptableAnswers": [],
@@ -1665,7 +1665,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】企業や組織が、法律や社会的な規範、ルールを厳格に遵守することを何といいますか。",
+    "question": "企業や組織が、法律や社会的な規範、ルールを厳格に遵守することを何といいますか。",
     "options": [
       "コンプライアンス",
       "ガバナンス",
@@ -1685,7 +1685,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「法令遵守」を意味するビジネス用語のカタカナ語を答えなさい。",
+    "question": "「法令遵守」を意味するビジネス用語のカタカナ語を答えなさい。",
     "options": [],
     "answer": "コンプライアンス",
     "acceptableAnswers": [
@@ -1703,7 +1703,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】集団や組織において、全員の意見が一致して得られた「合意」のことを何といいますか。",
+    "question": "集団や組織において、全員の意見が一致して得られた「合意」のことを何といいますか。",
     "options": [
       "コンセンサス",
       "妥協",
@@ -1723,7 +1723,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「関係者間の合意形成」を表すカタカナ語を答えなさい。",
+    "question": "「関係者間の合意形成」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "コンセンサス",
     "acceptableAnswers": [
@@ -1741,7 +1741,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "basic",
     "questionType": "choice",
-    "question": "【外来語】他者に先駆けて主導権を握り、物事を先頭に立って引っ張っていくことを何といいますか。",
+    "question": "他者に先駆けて主導権を握り、物事を先頭に立って引っ張っていくことを何といいますか。",
     "options": [
       "イニシアチブ",
       "リーダーシップ",
@@ -1761,7 +1761,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「物事の主導権や率先した行動」を表すカタカナ語を答えなさい。",
+    "question": "「物事の主導権や率先した行動」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "イニシアチブ",
     "acceptableAnswers": [
@@ -1779,7 +1779,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】複数の物事の中で、どれを先に行うべきかという「優先順位」のことを何といいますか。",
+    "question": "複数の物事の中で、どれを先に行うべきかという「優先順位」のことを何といいますか。",
     "options": [
       "プライオリティ",
       "スケジュール",
@@ -1799,7 +1799,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "descriptive",
-    "question": "【外来語】ビジネスで「プライオリティを決める」とはどういうことか、「重要度」「優先順位」という言葉を使って説明しなさい。",
+    "question": "ビジネスで「プライオリティを決める」とはどういうことか、「重要度」「優先順位」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "複数の課題の重要度や緊急性を判断し、業務の優先順位を決めること。",
     "acceptableAnswers": [],
@@ -1817,7 +1817,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "choice",
-    "question": "【外来語】多くの人が根拠なく思い込んでいる「固定観念」や「型にはまった偏見」のことを何といいますか。",
+    "question": "多くの人が根拠なく思い込んでいる「固定観念」や「型にはまった偏見」のことを何といいますか。",
     "options": [
       "ステレオタイプ",
       "バイアス",
@@ -1837,7 +1837,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "standard",
     "questionType": "input",
-    "question": "【外来語】「固定観念・紋切り型の見方」を表すカタカナ語を答えなさい。",
+    "question": "「固定観念・紋切り型の見方」を表すカタカナ語を答えなさい。",
     "options": [],
     "answer": "ステレオタイプ",
     "acceptableAnswers": [
@@ -1855,7 +1855,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "advanced",
     "questionType": "descriptive",
-    "question": "【外来語】「ステレオタイプな見方」の弊害について、「画一的」「個々の違い」という言葉を使って説明しなさい。",
+    "question": "「ステレオタイプな見方」の弊害について、「画一的」「個々の違い」という言葉を使って説明しなさい。",
     "options": [],
     "answer": "画一的な型に当てはめて判断してしまい、個々の違いや実態を正しく認識できなくなること。",
     "acceptableAnswers": [],
@@ -1873,7 +1873,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "advanced",
     "questionType": "choice",
-    "question": "【外来語】過去に経験した激しい精神的ショックが、後になっても悪影響を及ぼし続ける「心的外傷」のことを何といいますか。",
+    "question": "過去に経験した激しい精神的ショックが、後になっても悪影響を及ぼし続ける「心的外傷」のことを何といいますか。",
     "options": [
       "トラウマ",
       "ストレス",
@@ -1893,7 +1893,7 @@
     "subCategory": "06. 思考・概念・心情・ビジネスの外来語（カタカナ語）",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【外来語】「心的外傷」を意味するカタカナ語（４文字）を答えなさい。",
+    "question": "「心的外傷」を意味するカタカナ語（４文字）を答えなさい。",
     "options": [],
     "answer": "トラウマ",
     "acceptableAnswers": [
