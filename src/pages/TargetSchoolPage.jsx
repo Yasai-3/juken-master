@@ -204,7 +204,7 @@ const TargetSchoolPage = () => {
               {report.isNada && (
                 <div className="px-3.5 py-2 rounded-xl bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold flex items-center gap-2">
                   <span>💡</span>
-                  <span>灘校は国・算・理の3教科入試のため、社会の出題はなく理科4分野のみで判定します。</span>
+                  <span>灘校は国・算・理の3教科入試のため、社会の出題はなく理科と国語の重要分野で判定します。</span>
                 </div>
               )}
 
@@ -291,7 +291,18 @@ const TargetSchoolPage = () => {
                 }`}
               >
                 <div className="flex justify-between items-center mb-1">
-                  <div className="flex items-center gap-1.5">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span
+                      className={`text-[10px] font-black px-1.5 py-0.5 rounded ${
+                        c.subject === '国語'
+                          ? 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200'
+                          : c.subject === '理科'
+                            ? 'bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200'
+                            : 'bg-purple-100 dark:bg-purple-900/60 text-purple-800 dark:text-purple-200'
+                      }`}
+                    >
+                      {c.subject}
+                    </span>
                     <span className="font-extrabold text-sm text-gray-800 dark:text-gray-100">
                       {c.category}
                     </span>

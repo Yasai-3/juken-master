@@ -1,7 +1,7 @@
 /**
  * 志望校別 出題プロファイル マスターデータ（全8校）
  * - targetScore: 合格目安総合到達度 (%)
- * - examSubjects: 受験対象教科 (灘は理科のみの3教科型、他校は理科・社会の4教科型)
+ * - examSubjects: 受験対象教科 (灘は国語・理科の3教科型、他校は国語・理科・社会の4教科型)
  * - weights: 分野別の重要度倍率 (1.0 = 標準, 1.3〜2.2 = 重点単元)
  * - questionTypeWeights: 形式別の重要度倍率
  * - difficultyWeights: 難易度別の重要度倍率
@@ -17,14 +17,15 @@ export const TARGET_SCHOOLS = [
     name: '灘中学校',
     region: '関西（兵庫）',
     category: '最難関・男子校（3教科入試）',
-    examSubjects: ['理科'], // 3教科型入試のため社会は完全除外！
+    examSubjects: ['国語', '理科'], // 3教科型入試のため社会は完全除外！
     targetScore: 90, // 日本最高峰の合格到達度目標
-    requiredCount: 50, // 最低50問の理科実戦演習が必要
-    minAdvancedCount: 4, // 難問正解4問以上でなければB判定以上不可
-    tagline: '最高峰の思考力と実験データ分析・物理化学計算の極致（理科特化）',
+    requiredCount: 60, // 最低60問の実戦演習が必要
+    minAdvancedCount: 5, // 難問正解5問以上でなければB判定以上不可
+    tagline: '最高峰の語彙力・思考力 ＆ 実験データ分析・物理化学計算の極致',
     features: [
-      '入試教科は国・算・理の3教科。社会の出題はなく理科の配点比重が非常に高い',
-      '物理・化学の初見実験・複雑計算が合否を決定づける（高度な論理的考察力）',
+      '入試教科は国・算・理の3教科（社会は出題なし）。国語は1日目（知識語彙）と2日目（長文読解）の2日制',
+      '国語1日目は難関故事成語・四字熟語・慣用句・和語・外来語が大量出題され、語彙知識の深さが合否を直撃',
+      '理科は物理・化学の初見実験・複雑計算が合否を決定づける（高度な論理的考察力）',
       '標準問題をいくら解いても合格圏に届かず、超難問（発展・考察）の突破力が必須',
     ],
     weights: {
@@ -34,6 +35,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.0,
       歴史: 0.0,
       地理: 0.0,
+      故事成語: 1.8,
+      四字熟語: 1.8,
+      慣用句: 1.6,
+      和語: 1.6,
+      ことわざ: 1.5,
+      '助数詞・類義語・対義語': 1.5,
+      '季語・外来語': 1.4,
     },
     difficultyWeights: {
       basic: 0.3,
@@ -46,9 +54,9 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.8,
     },
     targetRadar: {
-      knowledge: 82,
+      knowledge: 85,
       thinking: 96, // 応用考察力が突出して高い合格水準
-      expression: 86,
+      expression: 88,
       stability: 90,
     },
     focusTags: [
@@ -56,8 +64,10 @@ export const TARGET_SCHOOLS = [
       '電流と回路・オームの法則・電力と熱量',
       '酸化と還元・発熱と吸熱・質量保存と定比例の法則',
       '化学実験データ計算',
-      '植物のつくりとはたらき（光合成・呼吸・蒸散）',
-      '気象観測・気圧・湿度と雲のでき方',
+      '中国の古典・歴史に由来する故事成語①（思想・処世）',
+      '人物の性格・態度・行動を表す四字熟語',
+      'からだ（頭・顔・目・耳・鼻・口・舌）の慣用句',
+      '慣用的な和語・重ね言葉',
     ],
   },
   {
@@ -65,13 +75,14 @@ export const TARGET_SCHOOLS = [
     name: '筑波大学附属駒場中学校',
     region: '関東（東京）',
     category: '最難関・国立男子校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 90, // 日本一の合格難易度
-    requiredCount: 60,
-    minAdvancedCount: 4,
-    tagline: '日本一の合格難易度 ＆ 多面的な科学的探究力・高度な資料分析記述',
+    requiredCount: 65,
+    minAdvancedCount: 5,
+    tagline: '日本一の合格難易度 ＆ 多面的な科学的探究力・高度な語彙記述',
     features: [
-      '40分で密度の濃い大問4題。思考力・考察力・計算力を高い次元で融合させた超難問',
+      '国語は詩歌や随筆、高度な語彙・心情表現・外来語の正確な把握と深い記述力が要求される',
+      '理科は40分で密度の濃い大問4題。思考力・考察力・計算力を高い次元で融合させた超難問',
       '社会は地形図の精密読解、歴史資料の深い背景理解、時事と現代社会の論述記述',
       '基礎の正答率が高いだけでは届かず、超難問と多面的記述のクリアが必須',
     ],
@@ -82,6 +93,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.4,
       歴史: 1.6,
       地理: 1.6,
+      和語: 1.7,
+      '季語・外来語': 1.7,
+      慣用句: 1.5,
+      故事成語: 1.4,
+      四字熟語: 1.4,
+      ことわざ: 1.3,
+      '助数詞・類義語・対義語': 1.4,
     },
     difficultyWeights: {
       basic: 0.4,
@@ -94,18 +112,19 @@ export const TARGET_SCHOOLS = [
       descriptive: 2.0, // 記述配点が極めて高い
     },
     targetRadar: {
-      knowledge: 88,
+      knowledge: 90,
       thinking: 96, // 応用考察力最難関
-      expression: 94, // 記述表現力最難関
+      expression: 95, // 記述表現力最難関
       stability: 92,
     },
     focusTags: [
       '運動と力・仕事と力学的エネルギー・熱の伝わり方',
       '化学実験データ計算',
-      '生物の進化と歴史・地質時代',
-      '天体の1日の動き・年周運動',
       '地図の読み方・縮尺・地形図と日本の領域',
       '戦後・現代（占領改革〜平成・令和）',
+      '思考・概念・心情・ビジネスの外来語（カタカナ語）',
+      '心情・感情を表す和語',
+      '春の季語（時候・天文・地理・生活・行事・動植物）',
     ],
   },
   {
@@ -113,12 +132,13 @@ export const TARGET_SCHOOLS = [
     name: '開成中学校',
     region: '関東（東京）',
     category: '最難関・男子校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 50,
-    minAdvancedCount: 2,
-    tagline: '4分野均等バランス ＆ 長文リード文からの実験考察・短文記述',
+    requiredCount: 55,
+    minAdvancedCount: 3,
+    tagline: '4分野均等 ＆ 記述・語彙力と長文リード文からの実験考察',
     features: [
+      '国語は長文読解に加え、ことわざ・慣用句・語句知識の正確な運用と記述説明力が問われる',
       '理科4分野（物化生地）から均等出題。会話文や初見の実験条件を読み解く記述力',
       '社会は地理・歴史・公民の複合問題、近現代史や時事問題の記述が頻出',
       '知識の深さに加え、理由や背景を端的に説明できる文章表現力が必須',
@@ -130,6 +150,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.3,
       歴史: 1.4,
       地理: 1.3,
+      慣用句: 1.5,
+      ことわざ: 1.4,
+      四字熟語: 1.4,
+      和語: 1.4,
+      故事成語: 1.3,
+      '助数詞・類義語・対義語': 1.4,
+      '季語・外来語': 1.3,
     },
     difficultyWeights: {
       basic: 0.6,
@@ -145,15 +172,16 @@ export const TARGET_SCHOOLS = [
       knowledge: 88,
       thinking: 88,
       expression: 90,
-      stability: 85,
+      stability: 86,
     },
     focusTags: [
       '植物のつくりとはたらき（光合成・呼吸・蒸散）',
       '水溶液の性質・溶解度と再結晶・濃度計算',
       '前線と天気の変化・日本の四季と気団・台風と防災',
-      '運動と力・仕事と力学的エネルギー・熱の伝わり方',
       '戦後・現代（占領改革〜平成・令和）',
-      '日本の農林水産業・工業・エネルギー・伝統工芸',
+      'からだ（手・腕・足・胸・腹・背・腰）の慣用句',
+      '人間・生き方・教訓のことわざ',
+      '数字や対比を含む四字熟語',
     ],
   },
   {
@@ -161,13 +189,14 @@ export const TARGET_SCHOOLS = [
     name: '聖光学院中学校',
     region: '関東（神奈川）',
     category: '最難関・男子校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 50,
+    requiredCount: 55,
     minAdvancedCount: 2,
     tagline: '超緻密な知識網羅性 ＆ 膨大な問題数を捌く圧倒的スピードと正確性',
     features: [
-      '神奈川最難関校。小問数が非常に多く、膨大な知識の網羅率とミスゼロが要求される',
+      '神奈川最難関校。小問数が非常に多く、語彙・助数詞・類義語対義語から理社まで隙のない完成度勝負',
+      '国語は語句・漢字・文法・語彙の処理スピードとノーミス精度が合格の前提条件',
       '理科は計算・グラフ・細かい知識まで隙のない完成度が必要で高得点勝負',
       '社会は地理・歴史・公民・時事の全域から標準〜発展知識が隈なく出題される',
     ],
@@ -178,6 +207,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.3,
       歴史: 1.4,
       地理: 1.4,
+      '助数詞・類義語・対義語': 1.5,
+      四字熟語: 1.4,
+      慣用句: 1.4,
+      ことわざ: 1.3,
+      故事成語: 1.3,
+      和語: 1.3,
+      '季語・外来語': 1.3,
     },
     difficultyWeights: {
       basic: 0.8,
@@ -190,18 +226,18 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.2,
     },
     targetRadar: {
-      knowledge: 94, // 知識網羅性が最高峰
+      knowledge: 95, // 知識網羅性が最高峰
       thinking: 84,
-      expression: 80,
-      stability: 94, // 安定度・正確性が最高峰
+      expression: 82,
+      stability: 95, // 安定度・正確性が最高峰
     },
     focusTags: [
       '水溶液の性質・溶解度と再結晶・濃度計算',
       '人体①（消化・吸収・呼吸・排出・血液循環）',
-      '恒星の一生・銀河系と宇宙の広がり・宇宙の進化',
       '日本の農林水産業・工業・エネルギー・伝統工芸',
-      '日本の人口・交通通信・貿易・国際協力',
-      '通史・文化史・旧国名・単位',
+      '物の数え方（助数詞）',
+      '類義語（意味の似た言葉）',
+      '対義語（反対の意味の言葉）',
     ],
   },
   {
@@ -209,11 +245,12 @@ export const TARGET_SCHOOLS = [
     name: '東大寺学園中学校',
     region: '関西（奈良）',
     category: '最難関・男子校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 45,
-    tagline: '圧倒的な処理スピードと計算量・ハイレベルな考察と記述',
+    requiredCount: 50,
+    tagline: '圧倒的な処理スピードと計算量・古典背景・ハイレベルな考察と記述',
     features: [
+      '国語は文学的・思想的な長文に加え、故事成語や四字熟語などの古典的背景を持つ語彙が頻出',
       '問題数が多く、制限時間内に膨大な計算とデータ読み取りをこなす瞬発力',
       '理科は浮力・てこ、水溶液・気体計算の難問が名物',
       '社会は統計資料・史料の読み解きと、歴史の因果関係を説明する語句・短文記述',
@@ -225,6 +262,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.2,
       歴史: 1.3,
       地理: 1.3,
+      故事成語: 1.6,
+      四字熟語: 1.5,
+      慣用句: 1.5,
+      ことわざ: 1.4,
+      和語: 1.4,
+      '助数詞・類義語・対義語': 1.4,
+      '季語・外来語': 1.3,
     },
     difficultyWeights: {
       basic: 0.6,
@@ -237,18 +281,17 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.5,
     },
     targetRadar: {
-      knowledge: 84,
+      knowledge: 86,
       thinking: 90,
-      expression: 82,
-      stability: 84,
+      expression: 84,
+      stability: 85,
     },
     focusTags: [
       '力のつり合い・水圧と浮力・力の合成と分解',
       '酸化と還元・発熱と吸熱・質量保存と定比例の法則',
-      '気体の発生と性質・熱膨張と比熱',
-      '太陽と月（満ち欠け・日食と月食）・太陽系の惑星',
+      '中国の古典・歴史に由来する故事成語②（戦い・勝敗）',
+      '人間関係・社会・教訓を表す四字熟語',
       '欧米の近代化と幕末・開国',
-      '環境問題・世界遺産・生活文化・重要統計資料',
     ],
   },
   {
@@ -256,12 +299,13 @@ export const TARGET_SCHOOLS = [
     name: '西大和学園中学校',
     region: '関西（奈良）',
     category: '最難関・共学校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 40,
-    tagline: '超スピード高得点勝負 ＆ 現代社会・時事問題・世界地理の宝庫',
+    requiredCount: 45,
+    tagline: '超スピード高得点勝負 ＆ 現代社会・時事問題・国語語彙の宝庫',
     features: [
-      '合格最低点が高く、標準〜発展の知識を1問も落とさないスピードと正確性',
+      '合格最低点が高く、国語・理科・社会の標準〜発展の知識を1問も落とさないスピードと正確性',
+      '国語は語彙・四字熟語・慣用句・助数詞の一問一答形式が確実に得点源となる',
       '社会は時事問題の出題割合が日本一レベルで、世界地理や現代社会・SDGsが頻出',
       '理科も広範な知識と典型的な実験計算を素早くミスゼロで処理する力',
     ],
@@ -272,6 +316,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.2,
       歴史: 1.3,
       地理: 1.7,
+      '助数詞・類義語・対義語': 1.5,
+      四字熟語: 1.5,
+      慣用句: 1.4,
+      故事成語: 1.4,
+      和語: 1.3,
+      ことわざ: 1.3,
+      '季語・外来語': 1.3,
     },
     difficultyWeights: {
       basic: 0.7,
@@ -284,18 +335,18 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.1,
     },
     targetRadar: {
-      knowledge: 90,
+      knowledge: 92,
       thinking: 82,
-      expression: 78,
+      expression: 80,
       stability: 92,
     },
     focusTags: [
       '世界地理（自然・気候・宗教・各州の産業と生活）',
       '日本の人口・交通通信・貿易・国際協力',
-      '環境問題・世界遺産・生活文化・重要統計資料',
       '水溶液の性質・溶解度と再結晶・濃度計算',
-      '電流と回路・オームの法則・電力と熱量',
-      '人体①（消化・吸収・呼吸・排出・血液循環）',
+      '物の数え方（助数詞）',
+      '慣用的な和語・重ね言葉',
+      '人物の性格・態度・行動を表す四字熟語',
     ],
   },
   {
@@ -303,13 +354,14 @@ export const TARGET_SCHOOLS = [
     name: '大阪星光学院中学校',
     region: '関西（大阪）',
     category: '難関・男子校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 76,
-    requiredCount: 35,
-    tagline: '正統派・標準発展のノーミス完成度 ＆ 典型実験計算の完全攻略',
+    requiredCount: 40,
+    tagline: '正統派・標準発展のノーミス完成度 ＆ 典型実験計算・語彙の完全攻略',
     features: [
       '奇問悪問はなく、中学受験の王道良問がズラリと並ぶ完成度勝負',
-      '理科は力学・電気・中和・溶解度など頻出計算問題で確実に満点を狙う',
+      '国語はことわざ・慣用句・四字熟語・漢字の基本〜標準問題で確実に満点を狙う',
+      '理科は力学・電気・中和・溶解度など頻出計算問題で確実に得点',
       '社会は通史の正しい時代把握、各地方の地誌・産業データを網羅する力',
     ],
     weights: {
@@ -319,6 +371,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.2,
       歴史: 1.3,
       地理: 1.3,
+      ことわざ: 1.4,
+      慣用句: 1.4,
+      四字熟語: 1.4,
+      故事成語: 1.3,
+      和語: 1.3,
+      '助数詞・類義語・対義語': 1.3,
+      '季語・外来語': 1.3,
     },
     difficultyWeights: {
       basic: 0.8,
@@ -331,18 +390,17 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.1,
     },
     targetRadar: {
-      knowledge: 85,
+      knowledge: 86,
       thinking: 80,
       expression: 78,
-      stability: 84,
+      stability: 85,
     },
     focusTags: [
       '電流と回路・オームの法則・電力と熱量',
       '水溶液の性質・溶解度と再結晶・濃度計算',
-      '運動と力・仕事と力学的エネルギー・熱の伝わり方',
-      '江戸時代',
-      '明治時代（維新・憲法・日清日露）',
-      '日本の農林水産業・工業・エネルギー・伝統工芸',
+      '努力・油断・失敗のことわざ',
+      '動物・植物・自然を使った慣用句',
+      '数字や対比を含む四字熟語',
     ],
   },
   {
@@ -350,12 +408,13 @@ export const TARGET_SCHOOLS = [
     name: '高槻中学校',
     region: '関西（大阪）',
     category: '難関・共学校（4教科入試）',
-    examSubjects: ['理科', '社会'],
+    examSubjects: ['国語', '理科', '社会'],
     targetScore: 72,
-    requiredCount: 30,
-    tagline: '基礎標準の堅実な穴埋め ＆ 生命・環境・科学的思考力問題',
+    requiredCount: 35,
+    tagline: '基礎標準の堅実な穴埋め ＆ 生命・環境・国語知識の確実な定着',
     features: [
       '近年共学化で難易度急上昇。標準的な知識の抜け漏れがないことが絶対条件',
+      '国語は助数詞・慣用句・ことわざなど日常生活に根ざした語彙知識の一問一答が確実に出題',
       '医大系列として生物や人体・環境分野への関心と思考力を問う問題が特徴',
       '社会は地理・歴史の重要語句・漢字を正しく書く一問一答と基本短文記述',
     ],
@@ -366,6 +425,13 @@ export const TARGET_SCHOOLS = [
       地学: 1.1,
       歴史: 1.2,
       地理: 1.1,
+      '助数詞・類義語・対義語': 1.3,
+      慣用句: 1.3,
+      ことわざ: 1.2,
+      四字熟語: 1.2,
+      故事成語: 1.2,
+      和語: 1.2,
+      '季語・外来語': 1.2,
     },
     difficultyWeights: {
       basic: 1.0,
@@ -378,18 +444,17 @@ export const TARGET_SCHOOLS = [
       descriptive: 1.1,
     },
     targetRadar: {
-      knowledge: 80,
-      thinking: 72,
-      expression: 70,
-      stability: 78,
+      knowledge: 82,
+      thinking: 74,
+      expression: 72,
+      stability: 80,
     },
     focusTags: [
       '人体①（消化・吸収・呼吸・排出・血液循環）',
-      '人体②（感覚・神経・脳・骨格と筋肉）',
       '植物のつくりとはたらき（光合成・呼吸・蒸散）',
-      '顕微鏡・細胞・水中の小さな生物',
-      '水溶液の性質・溶解度と再結晶・濃度計算',
-      '日本の地形・気候区分と自然災害・防災',
+      '物の数え方（助数詞）',
+      '道具・生活・日常の慣用句',
+      '人間・生き方・教訓のことわざ',
     ],
   },
 ];
@@ -411,6 +476,13 @@ const CATEGORY_TO_SUBJECT = {
   歴史: '社会',
   地理: '社会',
   公民: '社会',
+  ことわざ: '国語',
+  慣用句: '国語',
+  故事成語: '国語',
+  四字熟語: '国語',
+  和語: '国語',
+  '季語・外来語': '国語',
+  '助数詞・類義語・対義語': '国語',
 };
 
 /**
@@ -441,7 +513,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   let overallTotal = 0;
   let overallCorrect = 0;
 
-  // 分野別スコア
+  // 分野別スコア（理科・社会・国語）
   const subjectScores = {
     物理: { correct: 0, total: 0, weight: school.weights['物理'] || 1.0 },
     化学: { correct: 0, total: 0, weight: school.weights['化学'] || 1.0 },
@@ -454,6 +526,20 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     subjectScores['地理'] = { correct: 0, total: 0, weight: school.weights['地理'] || 1.0 };
   }
 
+  // 国語の全7分野（全校共通）
+  const KOKUGO_CATS = [
+    'ことわざ',
+    '慣用句',
+    '故事成語',
+    '四字熟語',
+    '和語',
+    '季語・外来語',
+    '助数詞・類義語・対義語',
+  ];
+  KOKUGO_CATS.forEach((cat) => {
+    subjectScores[cat] = { correct: 0, total: 0, weight: school.weights[cat] || 1.0 };
+  });
+
   const tagStats = {};
 
   (history || []).forEach((entry) => {
@@ -464,7 +550,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       const diff = q.difficulty || 'standard';
       const qType = q.questionType || 'choice';
 
-      // 灘の場合は社会の解答データを完全に除外
+      // 灘の場合は社会の解答データのみ除外（国語・理科は集計）
       if (isNada && subj === '社会') {
         return;
       }
@@ -528,7 +614,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   let progressScore = Math.round(rawWeightedAcc * (0.35 + 0.65 * experienceFactor));
 
   // 灘・筑駒のシビアな足切り判定（難問未修時の安全装置）
-  // 難問(advanced)の正解数が足りない場合、どれだけ基礎が良くても合格圏(70%以上)には到達させない
   let severeWarning = null;
   const minAdv = school.minAdvancedCount || 0;
   if ((isNada || isTsukukoma) && minAdv > 0 && advancedCorrect < minAdv) {
@@ -536,8 +621,8 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       progressScore = 68; // C判定上限に抑え込む
     }
     severeWarning = isNada
-      ? `※灘中合格ライン判定には、理科（物理・化学）の難問・実験考察の正解実績（現在${advancedCorrect}問/目標${minAdv}問以上）が必須です。`
-      : `※筑駒合格ライン判定には、高度な応用考察・記述問題の正解実績（現在${advancedCorrect}問/目標${minAdv}問以上）が必須です。`;
+      ? `※灘中合格ライン判定には、理科・国語の難問（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`
+      : `※筑駒合格ライン判定には、高度な応用考察・記述問題（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`;
   }
 
   // 合否判定ランク (A, B, C, D)
@@ -547,7 +632,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   const diffToTarget = school.targetScore - progressScore;
 
   if (isNada || isTsukukoma) {
-    // 灘・筑駒の厳格な合否判定
     if (progressScore >= 90 && advancedCorrect >= minAdv) {
       rank = 'A';
       rankLabel = 'A判定：合格安全圏 🎉';
@@ -566,7 +650,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       rankColor = 'text-rose-600 bg-rose-50 border-rose-300';
     }
   } else {
-    // 他校の合否判定
     if (progressScore >= school.targetScore) {
       rank = 'A';
       rankLabel = 'A判定：合格安全圏 🎉';
@@ -587,7 +670,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   }
 
   // 4軸レーダーチャートの算出
-  // 生徒の実際の能力（基礎・応用・記述・安定）を自然に評価し、学校の合格目標ライン(target)と比較
   const calcCurrentKnowledge = () => {
     if (basicStandardTotal === 0) return 0;
     const rate = (basicStandardCorrect / basicStandardTotal) * 100;
@@ -595,9 +677,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   };
 
   const calcCurrentThinking = () => {
-    // 応用問題の正解率と演習量を評価
     if (advancedTotal === 0) {
-      // 応用をまだ解いていない場合は基礎力に応じた低い初期値
       return Math.round(calcCurrentKnowledge() * 0.35);
     }
     const acc = (advancedCorrect / advancedTotal) * 100;
@@ -637,28 +717,28 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       subject: '基礎網羅率',
       current: currentKnowledge,
       target: targetRadar.knowledge,
-      value: currentKnowledge, // 互換性用
+      value: currentKnowledge,
       fullMark: 100,
     },
     {
       subject: '応用考察力',
       current: currentThinking,
       target: targetRadar.thinking,
-      value: currentThinking, // 互換性用
+      value: currentThinking,
       fullMark: 100,
     },
     {
       subject: '記述表現力',
       current: currentExpression,
       target: targetRadar.expression,
-      value: currentExpression, // 互換性用
+      value: currentExpression,
       fullMark: 100,
     },
     {
       subject: '全体安定度',
       current: currentStability,
       target: targetRadar.stability,
-      value: currentStability, // 互換性用
+      value: currentStability,
       fullMark: 100,
     },
   ];
@@ -670,6 +750,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     const isPriority = (val.weight || 1.0) >= 1.3;
     return {
       category: cat,
+      subject: CATEGORY_TO_SUBJECT[cat] || 'その他',
       accuracy: acc,
       total: val.total,
       weight: val.weight,
@@ -680,15 +761,13 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   });
 
   // 合格ToDoアクションリスト
-  // ※ToDoの表示内容（教科・分野・単元・難易度・形式）と、実際に出題される問題が必ず一致するよう
-  //   quizFilter には subject / category / subCategory を明示的に指定する
   const todos = [];
   const TODO_LIMIT = 5;
   const DIFF_LABEL = { basic: '基礎', standard: '標準', advanced: '応用・難問' };
 
-  // 灘は社会を出題対象外にするため、問題プールも理科のみに限定
+  // 灘は社会を除外し、国語・理科を出題対象とする
   const eligibleQuestions = (allQuestions || []).filter(
-    (q) => !isNada || (q.subject || '理科') === '理科'
+    (q) => !isNada || (q.subject || '理科') !== '社会'
   );
   const countQuestions = (f) =>
     eligibleQuestions.filter(
@@ -700,7 +779,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
         (!f.questionType || q.questionType === f.questionType)
     ).length;
 
-  // 1. 最重点分野
+  // 1. 最重点分野（理科・社会・国語から最も底上げが必要な分野）
   const weakPriorityCat = categoryStatus
     .filter((c) => c.isPriority && c.accuracy < school.targetScore)
     .sort((a, b) => a.accuracy - b.accuracy)[0];
@@ -708,7 +787,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   if (weakPriorityCat) {
     const cat = weakPriorityCat.category;
     const subj = CATEGORY_TO_SUBJECT[cat];
-    // 灘・筑駒は応用問題で特訓。ただし該当分野の応用問題が不足する場合は全難易度から出題
     let diff = isNada || isTsukukoma ? 'advanced' : 'standard';
     if (countQuestions({ subject: subj, category: cat, difficulty: diff }) < TODO_LIMIT) {
       diff = 'all';
@@ -748,10 +826,10 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   if (targetTag) {
     const info = tagIndex[targetTag];
     todos.push({
-      id: 'todo_tag',
-      badge: `出題頻度★★★（${info.subject}・${info.category}）`,
-      title: `合否を分ける名物単元「${targetTag}」を特訓`,
-      description: `${school.name}の過去問で頻出の重要単元です（${info.subject} ＞ ${info.category}）。確実な得点源に仕上げましょう。`,
+      id: 'todo_focus_tag',
+      badge: `キー単元（${info.subject}）`,
+      title: `${school.name}合否直結単元「${targetTag}」を${TODO_LIMIT}問特訓`,
+      description: `過去問頻出の最重要テーマです。この単元での取りこぼしを防ぐことが合格圏入りの鍵となります。`,
       quizFilter: {
         subject: info.subject,
         category: info.category,
@@ -762,71 +840,48 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     });
   }
 
-  // 3. 難度・形式特訓
-  if (isNada || isTsukukoma) {
-    // 灘：物理・化学の応用問題（ToDo①と重複しない分野を優先）／筑駒：理科・社会の応用問題
-    const nadaCat = isNada
-      ? ['物理', '化学'].find(
-          (c) =>
-            c !== weakPriorityCat?.category &&
-            countQuestions({ subject: '理科', category: c, difficulty: 'advanced' }) >= TODO_LIMIT
-        )
-      : undefined;
+  // 3. 難問・考察対策（灘・筑駒・開成など）
+  if (isNada || isTsukukoma || school.id === 'kaisei') {
+    const advCount = countQuestions({ difficulty: 'advanced' });
     todos.push({
       id: 'todo_advanced',
-      badge: `${school.name}必須難問`,
-      title: isNada
-        ? `合否を決める「理科${nadaCat ? `・${nadaCat}` : ''}」の応用・実験考察問題に挑戦`
-        : `合否を決める「理科・社会」の応用・資料考察問題に挑戦`,
-      description: isNada
-        ? `灘の合否は物理・化学の難問突破力で決まります。初見の実験考察や複雑な計算を解き切る特訓です。`
-        : `筑駒の合否は難問の突破力で決まります。理科・社会の応用問題から出題します。`,
+      badge: '超難問・実験考察突破',
+      title: `${school.name}突破のための「応用・難問」を${TODO_LIMIT}問特訓`,
+      description: `現在難問正解数 ${advancedCorrect}問（合格圏目安: ${minAdv}問以上/総問題プール: ${advCount}問）。差がつく高難度問題への対応力を鍛えます。`,
       quizFilter: {
-        subject: isNada ? '理科' : undefined,
-        category: nadaCat,
         difficulty: 'advanced',
-        limit: TODO_LIMIT,
-      },
-    });
-  } else if (school.questionTypeWeights.descriptive >= 1.5) {
-    todos.push({
-      id: 'todo_descriptive',
-      badge: '記述力養成',
-      title: `差がつく「短文記述トレーニング（理科・社会）」を${TODO_LIMIT}問クリア`,
-      description: `${school.name}で頻出の理由・背景説明記述で満点を狙います。`,
-      quizFilter: {
-        questionType: 'descriptive',
-        difficulty: 'all',
-        limit: TODO_LIMIT,
-      },
-    });
-  } else {
-    todos.push({
-      id: 'todo_speed',
-      badge: '高得点勝負',
-      title: `落とせない「標準レベルの語句入力（理科・社会）」を${TODO_LIMIT}問特訓`,
-      description: `${school.name}は高得点争い。ケアレスミスをゼロにするスピード演習です。`,
-      quizFilter: {
-        difficulty: 'standard',
-        questionType: 'input',
         limit: TODO_LIMIT,
       },
     });
   }
 
-  // 4. 弱点復習
-  const relevantWrong = (wrongAnswers || []).filter((w) => !isNada || w.subject === '理科');
-  if (relevantWrong.length > 0) {
+  // 4. 記述・入力対策（筑駒・開成・東大寺など）
+  if (school.questionTypeWeights.descriptive >= 1.5) {
     todos.push({
-      id: 'todo_wrong',
-      badge: 'ミス撲滅',
-      title: `弱点復習ノートから未解消の${isNada ? '理科の' : ''}ミスを${TODO_LIMIT}問解き直す`,
-      description: `現在 ${relevantWrong.length}問のミスが残っています。同じ間違いをゼロにすることが合格への最短ルートです。`,
+      id: 'todo_descriptive',
+      badge: '記述・短文論述特訓',
+      title: `${school.name}特有の「記述・短文論述問題」を${TODO_LIMIT}問特訓`,
+      description: `理由説明やキーワードを含む表現力を実戦形式で演習します（現在の記述正答率 ${
+        expressionTotal > 0 ? Math.round((expressionCorrect / expressionTotal) * 100) : 0
+      }%）。`,
+      quizFilter: {
+        questionType: 'descriptive',
+        limit: TODO_LIMIT,
+      },
+    });
+  }
+
+  // 5. 弱点復習（誤答プールからの復習）
+  const relevantWrongs = (wrongAnswers || []).filter((q) => !isNada || q.subject !== '社会');
+  if (relevantWrongs.length > 0) {
+    todos.push({
+      id: 'todo_review',
+      badge: '弱点即効克服',
+      title: `過去に間違えた問題から${Math.min(TODO_LIMIT, relevantWrongs.length)}問を再挑戦`,
+      description: `現在${relevantWrongs.length}問のミスがあります。同じミスを本番で繰り返さないよう完全に定着させます。`,
       quizFilter: {
         mode: 'review',
-        subject: isNada ? '理科' : undefined,
-        difficulty: 'all',
-        limit: TODO_LIMIT,
+        limit: Math.min(TODO_LIMIT, relevantWrongs.length),
       },
     });
   }
@@ -835,16 +890,15 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     school,
     isNada,
     isTsukukoma,
+    totalAnswered: schoolEligibleAnswered,
     progressScore,
-    targetScore: school.targetScore,
     diffToTarget,
     rank,
     rankLabel,
     rankColor,
-    severeWarning,
-    totalAnswered: schoolEligibleAnswered,
     radarData,
     categoryStatus,
     todos,
+    severeWarning,
   };
 }
