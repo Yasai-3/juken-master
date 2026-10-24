@@ -35,6 +35,18 @@ const Home = () => {
   const [lastSyncInfo, setLastSyncInfo] = useState(getLastSyncInfo());
   const [showSyncModal, setShowSyncModal] = useState(false);
   const [syncServerUrlInput, setSyncServerUrlInput] = useState(getSettings().syncServerUrl || '');
+  const [isOnline, setIsOnline] = useState(typeof navigator !== 'undefined' ? navigator.onLine : true);
+
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
 
   const loadDashboardData = useCallback(() => {
     const allQuestions = getAllQuestions();
@@ -568,10 +580,14 @@ const Home = () => {
       <div className="w-full max-w-4xl mt-4 md:mt-8 mb-12">
         <header className="text-center mb-8">
           <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold">
-              <span>⚡ オフライン学習対応</span>
+            <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-extrabold border ${
+              isOnline
+                ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-200 border-emerald-200 dark:border-emerald-800'
+                : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border-amber-300 dark:border-amber-700 animate-pulse'
+            }`}>
+              <span>{isOnline ? '🟢 完全オフライン対応（全問保存済）' : '📡 オフライン動作中（全問学習可能）'}</span>
               <span>・</span>
-              <span>全 {totalQuestionsCount} 問収録</span>
+              <span>全 {totalQuestionsCount} 問</span>
             </div>
 
             <button

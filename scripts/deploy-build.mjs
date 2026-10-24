@@ -16,6 +16,9 @@ const sourceIndexHtml = `<!doctype html>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="中学受験マスター2" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <title>中学受験マスター2 - AI作問＆弱点コーチング</title>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
@@ -40,6 +43,29 @@ if (fs.existsSync(rootAssets)) {
   fs.rmSync(rootAssets, { recursive: true, force: true });
 }
 execSync(`cp -r "${distAssets}" "${rootAssets}"`);
+
+// PWA / Service Worker 関連アセットのルート配置
+const pwaFiles = [
+  'sw.js',
+  'manifest.json',
+  'icon.svg',
+  'icon-192.png',
+  'icon-512.png',
+  'apple-touch-icon.png',
+];
+
+for (const file of pwaFiles) {
+  const distFile = path.join(rootDir, 'dist', file);
+  const publicFile = path.join(rootDir, 'public', file);
+  const rootTarget = path.join(rootDir, file);
+
+  if (fs.existsSync(distFile)) {
+    fs.copyFileSync(distFile, rootTarget);
+  } else if (fs.existsSync(publicFile)) {
+    fs.copyFileSync(publicFile, rootTarget);
+  }
+}
+console.log('   PWA・Service Worker ファイル群をルートに配置しました。');
 
 console.log('4. スタンドアローン版 HTML を生成中...');
 execSync('node scripts/build-standalone.mjs', { stdio: 'inherit' });
