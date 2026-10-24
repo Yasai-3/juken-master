@@ -21,6 +21,7 @@ export const analyzeLearningProgress = (history = [], wrongAnswers = [], allQues
   const bySubject = {
     理科: { correct: 0, total: 0 },
     社会: { correct: 0, total: 0 },
+    国語: { correct: 0, total: 0 },
   };
   const byDifficulty = {
     basic: { label: '基礎（用語・基本）', correct: 0, total: 0 },
@@ -42,8 +43,16 @@ export const analyzeLearningProgress = (history = [], wrongAnswers = [], allQues
     if (Array.isArray(session.results)) {
       session.results.forEach((r) => {
         const refQ = questionMap.get(r.questionId) || {};
-        const subject = r.subject || refQ.subject || '理科';
         const category = r.category || refQ.category || 'その他';
+        const detectedSubject =
+          r.subject ||
+          refQ.subject ||
+          (['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(category)
+            ? '国語'
+            : ['歴史', '地理', '公民'].includes(category)
+              ? '社会'
+              : '理科');
+        const subject = detectedSubject;
         const subCategory = r.subCategory || refQ.subCategory || '基本';
         const difficulty = r.difficulty || refQ.difficulty || 'standard';
         const qType = r.questionType || refQ.questionType || 'choice';

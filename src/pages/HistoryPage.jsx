@@ -102,7 +102,7 @@ const HistoryPage = () => {
       } else if (subjs.length === 1) {
         categoryLabel = `${subjs[0]}総合`;
       } else if (subjs.length > 1) {
-        categoryLabel = '理社総合';
+        categoryLabel = '教科横断総合';
       } else if (entry.filters?.category) {
         categoryLabel = entry.filters.category;
       } else if (entry.filters?.subject) {
@@ -125,9 +125,16 @@ const HistoryPage = () => {
           const sub = r.subCategory || '未分類';
           const subKey = `${cat}__${sub}`;
           if (!subMap[subKey]) {
+            const detectedSubj =
+              r.subject ||
+              (['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(cat)
+                ? '国語'
+                : ['歴史', '地理', '公民'].includes(cat)
+                  ? '社会'
+                  : '理科');
             subMap[subKey] = {
               name: sub,
-              subject: r.subject || '理科',
+              subject: detectedSubj,
               category: cat,
               correct: 0,
               total: 0,
@@ -252,6 +259,15 @@ const HistoryPage = () => {
     公民: '#8b5cf6',
     理科総合: '#84cc16',
     社会総合: '#eab308',
+    国語総合: '#10b981',
+    教科横断総合: '#059669',
+    ことわざ: '#ec4899',
+    慣用句: '#f43f5e',
+    故事成語: '#8b5cf6',
+    四字熟語: '#a855f7',
+    和語: '#06b6d4',
+    '季語・外来語': '#14b8a6',
+    '助数詞・類義語・対義語': '#3b82f6',
     復習: '#94a3b8',
     その他: '#64748b',
   };
@@ -526,45 +542,106 @@ const HistoryPage = () => {
 
         {/* Top Summary KPI Cards */}
         {analysis && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-              <div className="text-xs font-bold text-gray-400">累計解答数</div>
-              <div className="text-3xl font-extrabold text-gray-800 dark:text-white mt-1">
-                {analysis.totalAnswered}
-                <span className="text-sm font-normal text-gray-500 ml-1">問</span>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+            {/* 累計解答数 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-bold text-gray-400">累計解答数</div>
+                <div className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-white mt-1">
+                  {analysis.totalAnswered}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">問</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60 flex flex-wrap gap-x-2 gap-y-0.5">
+                <span className="text-blue-600 dark:text-blue-400">理: {analysis.bySubject?.['理科']?.total || 0}</span>
+                <span className="text-amber-600 dark:text-amber-400">社: {analysis.bySubject?.['社会']?.total || 0}</span>
+                <span className="text-emerald-600 dark:text-emerald-400">国: {analysis.bySubject?.['国語']?.total || 0}</span>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-              <div className="text-xs font-bold text-gray-400">総合正答率</div>
-              <div className="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-1">
-                {analysis.overallAccuracy}
-                <span className="text-sm font-normal text-gray-500 ml-1">%</span>
+
+            {/* 総合正答率 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-bold text-gray-400">総合正答率</div>
+                <div className="text-2xl md:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-1">
+                  {analysis.overallAccuracy}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">%</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
+                正解: {analysis.totalCorrect} / {analysis.totalAnswered}問
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-              <div className="text-xs font-bold text-gray-400">理科の正答率</div>
-              <div className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mt-1">
-                {analysis.bySubject?.['理科']?.total > 0
-                  ? Math.round(
-                      (analysis.bySubject['理科'].correct /
-                        analysis.bySubject['理科'].total) *
-                        100
-                    )
-                  : '--'}
-                <span className="text-sm font-normal text-gray-500 ml-1">%</span>
+
+            {/* 理科の正答率 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-bold text-gray-400 flex items-center justify-between">
+                  <span>理科の正答率</span>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/60 dark:text-blue-200">理科</span>
+                </div>
+                <div className="text-2xl md:text-3xl font-extrabold text-blue-600 dark:text-blue-400 mt-1">
+                  {analysis.bySubject?.['理科']?.total > 0
+                    ? Math.round(
+                        (analysis.bySubject['理科'].correct /
+                          analysis.bySubject['理科'].total) *
+                          100
+                      )
+                    : '--'}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">%</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
+                解答: {analysis.bySubject?.['理科']?.total || 0}問
+                {analysis.bySubject?.['理科']?.total > 0 && ` (${analysis.bySubject['理科'].correct}問正解)`}
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-              <div className="text-xs font-bold text-gray-400">社会の正答率</div>
-              <div className="text-3xl font-extrabold text-amber-600 dark:text-amber-400 mt-1">
-                {analysis.bySubject?.['社会']?.total > 0
-                  ? Math.round(
-                      (analysis.bySubject['社会'].correct /
-                        analysis.bySubject['社会'].total) *
-                        100
-                    )
-                  : '--'}
-                <span className="text-sm font-normal text-gray-500 ml-1">%</span>
+
+            {/* 社会の正答率 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-bold text-gray-400 flex items-center justify-between">
+                  <span>社会の正答率</span>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/60 dark:text-amber-200">社会</span>
+                </div>
+                <div className="text-2xl md:text-3xl font-extrabold text-amber-600 dark:text-amber-400 mt-1">
+                  {analysis.bySubject?.['社会']?.total > 0
+                    ? Math.round(
+                        (analysis.bySubject['社会'].correct /
+                          analysis.bySubject['社会'].total) *
+                          100
+                      )
+                    : '--'}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">%</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
+                解答: {analysis.bySubject?.['社会']?.total || 0}問
+                {analysis.bySubject?.['社会']?.total > 0 && ` (${analysis.bySubject['社会'].correct}問正解)`}
+              </div>
+            </div>
+
+            {/* 国語の正答率 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between col-span-2 sm:col-span-1">
+              <div>
+                <div className="text-xs font-bold text-gray-400 flex items-center justify-between">
+                  <span>国語の正答率</span>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-900/60 dark:text-emerald-200">国語</span>
+                </div>
+                <div className="text-2xl md:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">
+                  {analysis.bySubject?.['国語']?.total > 0
+                    ? Math.round(
+                        (analysis.bySubject['国語'].correct /
+                          analysis.bySubject['国語'].total) *
+                          100
+                      )
+                    : '--'}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">%</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
+                解答: {analysis.bySubject?.['国語']?.total || 0}問
+                {analysis.bySubject?.['国語']?.total > 0 && ` (${analysis.bySubject['国語'].correct}問正解)`}
               </div>
             </div>
           </div>
