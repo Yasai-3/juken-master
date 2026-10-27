@@ -216,7 +216,7 @@ const TargetSchoolPage = () => {
 
               {report.totalAnswered < report.requiredCount && (
                 <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
-                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には最低<strong>{report.requiredCount}問以上</strong>の実戦演習が必要です（あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
+                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上</strong>（全体目標<strong>{report.requiredCount}問</strong>）の実戦演習が必要です（全体あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
                 </div>
               )}
 

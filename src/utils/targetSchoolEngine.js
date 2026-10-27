@@ -20,9 +20,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（3教科入試）',
     examSubjects: ['国語', '理科'], // 3教科型入試のため社会は完全除外！
     targetScore: 90, // 日本最高峰の合格到達度目標
-    requiredCount: 150, // 最低150問の実戦演習が必要
-    categoryMinCount: 10, // 各分野最低10問演習で判定有効
-    minAdvancedCount: 8, // 難問正解8問以上でなければB判定以上不可
+    requiredCount: 1500, // 全体で1500問以上の実戦演習が必要
+    categoryMinCount: 150, // 各分野で最低150問演習して初めて実力判定が満額評価！
+    minAdvancedCount: 15, // 難問正解15問以上でなければB判定以上不可
     tagline: '最高峰の語彙力・思考力 ＆ 実験データ分析・物理化学計算の極致',
     features: [
       '入試教科は国・算・理の3教科（社会は出題なし）。国語は1日目（知識語彙）と2日目（長文読解）の2日制',
@@ -79,9 +79,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・国立男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 90, // 日本一の合格難易度
-    requiredCount: 160,
-    categoryMinCount: 10,
-    minAdvancedCount: 8,
+    requiredCount: 1500,
+    categoryMinCount: 150,
+    minAdvancedCount: 15,
     tagline: '日本一の合格難易度 ＆ 多面的な科学的探究力・高度な語彙記述',
     features: [
       '国語は詩歌や随筆、高度な語彙・心情表現・外来語の正確な把握と深い記述力が要求される',
@@ -137,9 +137,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 130,
-    categoryMinCount: 8,
-    minAdvancedCount: 6,
+    requiredCount: 1200,
+    categoryMinCount: 120,
+    minAdvancedCount: 10,
     tagline: '4分野均等 ＆ 記述・語彙力と長文リード文からの実験考察',
     features: [
       '国語は長文読解に加え、ことわざ・慣用句・語句知識の正確な運用と記述説明力が問われる',
@@ -195,9 +195,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 120,
-    categoryMinCount: 8,
-    minAdvancedCount: 4,
+    requiredCount: 1100,
+    categoryMinCount: 110,
+    minAdvancedCount: 8,
     tagline: '超緻密な知識網羅性 ＆ 膨大な問題数を捌く圧倒的スピードと正確性',
     features: [
       '神奈川最難関校。小問数が非常に多く、語彙・助数詞・類義語対義語から理社まで隙のない完成度勝負',
@@ -252,9 +252,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 100,
-    categoryMinCount: 7,
-    minAdvancedCount: 3,
+    requiredCount: 1000,
+    categoryMinCount: 100, // 各分野最低100問演習で判定有効！
+    minAdvancedCount: 8,
     tagline: '圧倒的な処理スピードと計算量・古典背景・ハイレベルな考察と記述',
     features: [
       '国語は文学的・思想的な長文に加え、故事成語や四字熟語などの古典的背景を持つ語彙が頻出',
@@ -308,9 +308,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・共学校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 90,
-    categoryMinCount: 6,
-    minAdvancedCount: 2,
+    requiredCount: 800,
+    categoryMinCount: 80,
+    minAdvancedCount: 6,
     tagline: '超スピード高得点勝負 ＆ 現代社会・時事問題・国語語彙の宝庫',
     features: [
       '合格最低点が高く、国語・理科・社会の標準〜発展の知識を1問も落とさないスピードと正確性',
@@ -365,9 +365,9 @@ export const TARGET_SCHOOLS = [
     category: '難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 76,
-    requiredCount: 70,
-    categoryMinCount: 5,
-    minAdvancedCount: 1,
+    requiredCount: 600,
+    categoryMinCount: 60,
+    minAdvancedCount: 4,
     tagline: '正統派・標準発展のノーミス完成度 ＆ 典型実験計算・語彙の完全攻略',
     features: [
       '奇問悪問はなく、中学受験の王道良問がズラリと並ぶ完成度勝負',
@@ -421,9 +421,9 @@ export const TARGET_SCHOOLS = [
     category: '難関・共学校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 72,
-    requiredCount: 50,
-    categoryMinCount: 4,
-    minAdvancedCount: 0,
+    requiredCount: 500,
+    categoryMinCount: 50, // 各分野最低50問演習で判定有効！
+    minAdvancedCount: 2,
     tagline: '基礎標準の堅実な穴埋め ＆ 生命・環境・国語知識の確実な定着',
     features: [
       '近年共学化で難易度急上昇。標準的な知識の抜け漏れがないことが絶対条件',
@@ -749,7 +749,8 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       return Math.round(calcCurrentKnowledge() * 0.35);
     }
     const acc = (advancedCorrect / advancedTotal) * 100;
-    const advExp = Math.min(1.0, advancedTotal / (isNada || isTsukukoma ? 8 : 5));
+    const targetAdv = minAdv > 0 ? minAdv * 1.5 : 12;
+    const advExp = Math.min(1.0, advancedTotal / targetAdv);
     return Math.min(100, Math.round(acc * (0.4 + 0.6 * advExp)));
   };
 
@@ -758,7 +759,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       return Math.round(calcCurrentKnowledge() * 0.4);
     }
     const acc = (expressionCorrect / expressionTotal) * 100;
-    const expExp = Math.min(1.0, expressionTotal / 6);
+    const expExp = Math.min(1.0, expressionTotal / 15);
     return Math.min(100, Math.round(acc * (0.4 + 0.6 * expExp)));
   };
 
