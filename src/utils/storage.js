@@ -38,6 +38,7 @@ export const normalizeQuestion = (q, index = 0) => {
     keywords: Array.isArray(q.keywords) ? q.keywords : [],
     knowledgeTag: q.knowledgeTag || `${q.category || ''}・${q.subCategory || ''}`.replace(/^・|・$/g, ''),
     explanation: q.explanation || '',
+    figureSvg: q.figureSvg || '',
     sourceTitle: q.sourceTitle || '',
     createdAt: q.createdAt || null,
   };
@@ -291,6 +292,7 @@ export const getWrongAnswers = () => {
         acceptableAnswers: master.acceptableAnswers || q.acceptableAnswers,
         explanation: master.explanation || q.explanation,
         knowledgeTag: master.knowledgeTag || q.knowledgeTag,
+        figureSvg: master.figureSvg || q.figureSvg || '',
       },
       i
     );
@@ -614,6 +616,7 @@ export const syncWithCloud = async () => {
       acceptableAnswers: master?.acceptableAnswers || w.acceptableAnswers,
       explanation: master?.explanation || w.explanation,
       knowledgeTag: master?.knowledgeTag || w.knowledgeTag,
+      figureSvg: master?.figureSvg || w.figureSvg || '',
     };
     if (cleaned.question && cleaned.question.startsWith('【')) {
       cleaned.question = cleaned.question.replace(/^【.*?】\s*/, '').trim();
