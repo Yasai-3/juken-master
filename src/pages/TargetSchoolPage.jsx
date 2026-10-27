@@ -180,10 +180,45 @@ const TargetSchoolPage = () => {
                 </span>
               </div>
 
+              {/* 演習問題数の充足度ゲージ */}
+              <div className="w-full max-w-xs mt-3 px-3 py-2 rounded-xl bg-white/10 border border-white/15 text-left space-y-1.5">
+                <div className="flex justify-between items-center text-xs">
+                  <span className="text-indigo-200 font-bold">演習量進捗</span>
+                  <span className="font-extrabold text-white">
+                    {report.totalAnswered} / {report.requiredCount}問
+                    <span className="text-[11px] text-amber-300 ml-1">
+                      ({Math.min(100, Math.round((report.totalAnswered / report.requiredCount) * 100))}%)
+                    </span>
+                  </span>
+                </div>
+                <div className="w-full bg-white/20 h-2 rounded-full overflow-hidden">
+                  <div
+                    className={`h-2 rounded-full transition-all duration-700 ${
+                      report.totalAnswered >= report.requiredCount
+                        ? 'bg-emerald-400'
+                        : 'bg-gradient-to-r from-amber-400 to-indigo-300'
+                    }`}
+                    style={{
+                      width: `${Math.min(100, (report.totalAnswered / report.requiredCount) * 100)}%`,
+                    }}
+                  />
+                </div>
+                <div className="flex justify-between text-[10px] text-indigo-200">
+                  <span>分野網羅: {report.qualifiedCatCount}/{report.totalCatCount}分野 判定基準クリア</span>
+                  <span>各分野{report.categoryMinCount}問以上</span>
+                </div>
+              </div>
+
               <div className="mt-3 px-4 py-2 rounded-2xl border text-sm font-black bg-white/20 border-white/40 text-white shadow-sm flex items-center justify-center gap-2">
                 <span className="text-xl">🏆</span>
                 <span>{report.rankLabel}</span>
               </div>
+
+              {report.totalAnswered < report.requiredCount && (
+                <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
+                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には最低<strong>{report.requiredCount}問以上</strong>の実戦演習が必要です（あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
+                </div>
+              )}
 
               {report.severeWarning && (
                 <div className="mt-2.5 p-2.5 rounded-xl bg-rose-500/30 border border-rose-300/40 text-rose-100 text-xs font-semibold leading-relaxed">
@@ -272,12 +307,17 @@ const TargetSchoolPage = () => {
                 <span>{school.name} 頻出分野別の到達度バランス</span>
               </h2>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                ★マークがついている分野はこの学校で特に合否を分ける最重要分野です
+                ★マークは合否を分ける最重要分野。各分野最低<strong>{report.categoryMinCount}問</strong>の演習を達成すると到達度判定が満額評価されます。
               </p>
             </div>
-            <span className="text-xs font-bold px-3 py-1 bg-slate-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full">
-              全解答数: {report.totalAnswered}問
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold px-3 py-1 bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 rounded-full border border-indigo-200 dark:border-indigo-800">
+                網羅度: {report.qualifiedCatCount}/{report.totalCatCount}分野
+              </span>
+              <span className="text-xs font-bold px-3 py-1 bg-slate-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full">
+                全解答数: {report.totalAnswered}問
+              </span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
@@ -290,7 +330,7 @@ const TargetSchoolPage = () => {
                     : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'
                 }`}
               >
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex justify-between items-center mb-1.5">
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span
                       className={`text-[10px] font-black px-1.5 py-0.5 rounded ${
@@ -312,26 +352,54 @@ const TargetSchoolPage = () => {
                       </span>
                     )}
                   </div>
-                  <span
-                    className={`text-xs font-black ${
-                      c.isPassed ? 'text-emerald-600' : 'text-rose-500'
-                    }`}
-                  >
-                    {c.isPassed ? '合格水準 🎉' : `あと ${Math.abs(c.diff)}%`}
-                  </span>
+                  {c.total === 0 ? (
+                    <span className="text-[11px] font-bold text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded">
+                      未演習
+                    </span>
+                  ) : !c.isQualified ? (
+                    <span className="text-[11px] font-bold text-amber-700 dark:text-amber-300 bg-amber-100/80 dark:bg-amber-900/50 px-2 py-0.5 rounded">
+                      演習中 (あと{c.remainingToQualify}問)
+                    </span>
+                  ) : (
+                    <span
+                      className={`text-xs font-black ${
+                        c.isPassed ? 'text-emerald-600' : 'text-rose-500'
+                      }`}
+                    >
+                      {c.isPassed ? '合格水準 🎉' : `あと ${Math.abs(c.diff)}%`}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex justify-between text-xs text-gray-500 mb-1.5">
-                  <span>正答率: <strong className="text-gray-800 dark:text-white">{c.accuracy}%</strong> ({c.total}問演習)</span>
+                  {c.isQualified ? (
+                    <span>
+                      実効到達度: <strong className="text-gray-800 dark:text-white">{c.effectiveAccuracy}%</strong>
+                      <span className="text-[11px] text-gray-400 ml-1">({c.total}問済・有効)</span>
+                    </span>
+                  ) : (
+                    <span>
+                      実効到達度: <strong className="text-amber-600 dark:text-amber-400">{c.effectiveAccuracy}%</strong>
+                      <span className="text-[11px] text-gray-400 ml-1">
+                        (暫定{c.accuracy}%・{c.total}/{c.minRequired}問)
+                      </span>
+                    </span>
+                  )}
                   <span>目標: {report.targetScore}%</span>
                 </div>
 
                 <div className="w-full bg-gray-200 dark:bg-gray-700 h-2.5 rounded-full overflow-hidden">
                   <div
                     className={`h-2.5 rounded-full transition-all ${
-                      c.isPassed ? 'bg-emerald-500' : c.accuracy >= 50 ? 'bg-amber-400' : 'bg-rose-500'
+                      c.isPassed
+                        ? 'bg-emerald-500'
+                        : c.isQualified && c.effectiveAccuracy >= 50
+                          ? 'bg-amber-400'
+                          : c.total === 0
+                            ? 'bg-transparent'
+                            : 'bg-indigo-400'
                     }`}
-                    style={{ width: `${Math.min(100, c.accuracy)}%` }}
+                    style={{ width: `${Math.min(100, c.effectiveAccuracy)}%` }}
                   />
                 </div>
               </div>

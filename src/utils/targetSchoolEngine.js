@@ -8,7 +8,8 @@
  * - focusTags: 合否を分ける最頻出キー単元
  * - features: 学校ごとの出題特徴と攻略ポイント
  * - targetRadar: 学校が求める4軸の合格目標水準 (0-100)
- * - requiredCount: 信頼性のある到達度判定に必要な実戦問題数
+ * - requiredCount: 信頼性のある到達度判定に必要な実戦問題数（難関校ほど多く要求）
+ * - categoryMinCount: 各分野で判定有効となるための最低演習数（満たない場合は実効到達度が減衰）
  * - minAdvancedCount: 合格圏(B判定以上)に必要な難問正解数
  */
 export const TARGET_SCHOOLS = [
@@ -19,8 +20,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（3教科入試）',
     examSubjects: ['国語', '理科'], // 3教科型入試のため社会は完全除外！
     targetScore: 90, // 日本最高峰の合格到達度目標
-    requiredCount: 60, // 最低60問の実戦演習が必要
-    minAdvancedCount: 5, // 難問正解5問以上でなければB判定以上不可
+    requiredCount: 150, // 最低150問の実戦演習が必要
+    categoryMinCount: 10, // 各分野最低10問演習で判定有効
+    minAdvancedCount: 8, // 難問正解8問以上でなければB判定以上不可
     tagline: '最高峰の語彙力・思考力 ＆ 実験データ分析・物理化学計算の極致',
     features: [
       '入試教科は国・算・理の3教科（社会は出題なし）。国語は1日目（知識語彙）と2日目（長文読解）の2日制',
@@ -77,8 +79,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・国立男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 90, // 日本一の合格難易度
-    requiredCount: 65,
-    minAdvancedCount: 5,
+    requiredCount: 160,
+    categoryMinCount: 10,
+    minAdvancedCount: 8,
     tagline: '日本一の合格難易度 ＆ 多面的な科学的探究力・高度な語彙記述',
     features: [
       '国語は詩歌や随筆、高度な語彙・心情表現・外来語の正確な把握と深い記述力が要求される',
@@ -134,8 +137,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 55,
-    minAdvancedCount: 3,
+    requiredCount: 130,
+    categoryMinCount: 8,
+    minAdvancedCount: 6,
     tagline: '4分野均等 ＆ 記述・語彙力と長文リード文からの実験考察',
     features: [
       '国語は長文読解に加え、ことわざ・慣用句・語句知識の正確な運用と記述説明力が問われる',
@@ -191,8 +195,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 84,
-    requiredCount: 55,
-    minAdvancedCount: 2,
+    requiredCount: 120,
+    categoryMinCount: 8,
+    minAdvancedCount: 4,
     tagline: '超緻密な知識網羅性 ＆ 膨大な問題数を捌く圧倒的スピードと正確性',
     features: [
       '神奈川最難関校。小問数が非常に多く、語彙・助数詞・類義語対義語から理社まで隙のない完成度勝負',
@@ -247,7 +252,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 50,
+    requiredCount: 100,
+    categoryMinCount: 7,
+    minAdvancedCount: 3,
     tagline: '圧倒的な処理スピードと計算量・古典背景・ハイレベルな考察と記述',
     features: [
       '国語は文学的・思想的な長文に加え、故事成語や四字熟語などの古典的背景を持つ語彙が頻出',
@@ -301,7 +308,9 @@ export const TARGET_SCHOOLS = [
     category: '最難関・共学校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 80,
-    requiredCount: 45,
+    requiredCount: 90,
+    categoryMinCount: 6,
+    minAdvancedCount: 2,
     tagline: '超スピード高得点勝負 ＆ 現代社会・時事問題・国語語彙の宝庫',
     features: [
       '合格最低点が高く、国語・理科・社会の標準〜発展の知識を1問も落とさないスピードと正確性',
@@ -356,7 +365,9 @@ export const TARGET_SCHOOLS = [
     category: '難関・男子校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 76,
-    requiredCount: 40,
+    requiredCount: 70,
+    categoryMinCount: 5,
+    minAdvancedCount: 1,
     tagline: '正統派・標準発展のノーミス完成度 ＆ 典型実験計算・語彙の完全攻略',
     features: [
       '奇問悪問はなく、中学受験の王道良問がズラリと並ぶ完成度勝負',
@@ -410,7 +421,9 @@ export const TARGET_SCHOOLS = [
     category: '難関・共学校（4教科入試）',
     examSubjects: ['国語', '理科', '社会'],
     targetScore: 72,
-    requiredCount: 35,
+    requiredCount: 50,
+    categoryMinCount: 4,
+    minAdvancedCount: 0,
     tagline: '基礎標準の堅実な穴埋め ＆ 生命・環境・国語知識の確実な定着',
     features: [
       '近年共学化で難易度急上昇。標準的な知識の抜け漏れがないことが絶対条件',
@@ -605,24 +618,72 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     });
   });
 
-  // 経験問題数によるペナルティ係数（灘・筑駒は他校よりも多くの演習を要求）
-  const requiredCount = school.requiredCount || 40;
+  // 分野別最低演習数（各校の難易度に応じた基準値）
+  const categoryMinCount = school.categoryMinCount || 5;
+
+  // 分野別実効到達度（演習不足分野の減衰評価）と網羅率の集計
+  let totalCatWeight = 0;
+  let weightedCatSum = 0;
+  let qualifiedCatCount = 0;
+  let totalCatCount = 0;
+
+  const categoryStatus = Object.entries(subjectScores).map(([cat, val]) => {
+    const rawAcc = val.total > 0 ? Math.round((val.correct / val.total) * 100) : 0;
+    const isPriority = (val.weight || 1.0) >= 1.3;
+    const isQualified = val.total >= categoryMinCount;
+    const experienceRate = Math.min(1.0, val.total / categoryMinCount);
+    // 演習数が最低基準に満たない場合は、演習充足率に応じて到達度判定への寄与を減衰
+    const effectiveAccuracy = Math.round(rawAcc * experienceRate);
+    const target = school.targetScore;
+
+    if (val.weight > 0) {
+      totalCatCount++;
+      totalCatWeight += val.weight;
+      weightedCatSum += effectiveAccuracy * val.weight;
+      if (isQualified) {
+        qualifiedCatCount++;
+      }
+    }
+
+    return {
+      category: cat,
+      subject: CATEGORY_TO_SUBJECT[cat] || 'その他',
+      accuracy: rawAcc,
+      effectiveAccuracy,
+      total: val.total,
+      minRequired: categoryMinCount,
+      isQualified,
+      remainingToQualify: Math.max(0, categoryMinCount - val.total),
+      weight: val.weight,
+      isPriority,
+      isPassed: isQualified && effectiveAccuracy >= target,
+      diff: effectiveAccuracy - target,
+    };
+  });
+
+  // 分野別加重平均実効到達度 (0-100%)
+  const weightedEffectiveAcc = totalCatWeight > 0 ? weightedCatSum / totalCatWeight : 0;
+
+  // 全体経験問題数によるペナルティ係数（灘・東大寺など難関校ほど多くの演習量を要求）
+  const requiredCount = school.requiredCount || 50;
   const experienceFactor = Math.min(1.0, schoolEligibleAnswered / requiredCount);
 
   // 総合到達度スコア (0-100%)
-  const rawWeightedAcc = totalWeightedMax > 0 ? (totalWeightedScore / totalWeightedMax) * 100 : 0;
-  let progressScore = Math.round(rawWeightedAcc * (0.35 + 0.65 * experienceFactor));
+  // 分野別実効正答度（演習不足ペナルティ適用済み）× 全体演習充足係数
+  let progressScore = Math.round(weightedEffectiveAcc * (0.35 + 0.65 * experienceFactor));
 
-  // 灘・筑駒のシビアな足切り判定（難問未修時の安全装置）
+  // 灘・筑駒・開成等のシビアな足切り判定（難問未修時の安全装置）
   let severeWarning = null;
   const minAdv = school.minAdvancedCount || 0;
-  if ((isNada || isTsukukoma) && minAdv > 0 && advancedCorrect < minAdv) {
+  if (minAdv > 0 && advancedCorrect < minAdv) {
     if (progressScore > 68) {
       progressScore = 68; // C判定上限に抑え込む
     }
     severeWarning = isNada
       ? `※灘中合格ライン判定には、理科・国語の難問（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`
-      : `※筑駒合格ライン判定には、高度な応用考察・記述問題（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`;
+      : isTsukukoma
+        ? `※筑駒合格ライン判定には、高度な応用考察・記述問題（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`
+        : `※${school.name}合格ライン判定には、応用考察・難問（現在${advancedCorrect}問/目標${minAdv}問以上）の実戦正解実績が必須です。`;
   }
 
   // 合否判定ランク (A, B, C, D)
@@ -631,12 +692,15 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   let rankColor = 'text-rose-600 bg-rose-50 border-rose-300';
   const diffToTarget = school.targetScore - progressScore;
 
+  // 演習数が全体目標の半分未満、または分野網羅率が極めて低い場合の判定ガイダンス
+  const isEarlyStage = schoolEligibleAnswered < Math.round(requiredCount * 0.5);
+
   if (isNada || isTsukukoma) {
-    if (progressScore >= 90 && advancedCorrect >= minAdv) {
+    if (progressScore >= 90 && advancedCorrect >= minAdv && !isEarlyStage) {
       rank = 'A';
       rankLabel = 'A判定：合格安全圏 🎉';
       rankColor = 'text-emerald-700 bg-emerald-50 border-emerald-300';
-    } else if (progressScore >= 82 && advancedCorrect >= Math.max(2, minAdv - 1)) {
+    } else if (progressScore >= 82 && advancedCorrect >= Math.max(2, minAdv - 1) && !isEarlyStage) {
       rank = 'B';
       rankLabel = 'B判定：合格射程圏 🎯';
       rankColor = 'text-blue-700 bg-blue-50 border-blue-300';
@@ -646,15 +710,17 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       rankColor = 'text-amber-700 bg-amber-50 border-amber-300';
     } else {
       rank = 'D';
-      rankLabel = 'D判定：要特訓 ⚠️';
+      rankLabel = isEarlyStage
+        ? `D判定：演習蓄積中（現在${schoolEligibleAnswered}/${requiredCount}問）`
+        : 'D判定：要特訓 ⚠️';
       rankColor = 'text-rose-600 bg-rose-50 border-rose-300';
     }
   } else {
-    if (progressScore >= school.targetScore) {
+    if (progressScore >= school.targetScore && !isEarlyStage) {
       rank = 'A';
       rankLabel = 'A判定：合格安全圏 🎉';
       rankColor = 'text-emerald-700 bg-emerald-50 border-emerald-300';
-    } else if (progressScore >= school.targetScore - 7) {
+    } else if (progressScore >= school.targetScore - 7 && !isEarlyStage) {
       rank = 'B';
       rankLabel = 'B判定：合格射程圏 🎯';
       rankColor = 'text-blue-700 bg-blue-50 border-blue-300';
@@ -664,7 +730,9 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
       rankColor = 'text-amber-700 bg-amber-50 border-amber-300';
     } else {
       rank = 'D';
-      rankLabel = 'D判定：要特訓';
+      rankLabel = isEarlyStage
+        ? `D判定：演習蓄積中（現在${schoolEligibleAnswered}/${requiredCount}問）`
+        : 'D判定：要特訓';
       rankColor = 'text-rose-600 bg-rose-50 border-rose-300';
     }
   }
@@ -743,23 +811,6 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     },
   ];
 
-  // 分野別達成状況リスト
-  const categoryStatus = Object.entries(subjectScores).map(([cat, val]) => {
-    const acc = val.total > 0 ? Math.round((val.correct / val.total) * 100) : 0;
-    const target = school.targetScore;
-    const isPriority = (val.weight || 1.0) >= 1.3;
-    return {
-      category: cat,
-      subject: CATEGORY_TO_SUBJECT[cat] || 'その他',
-      accuracy: acc,
-      total: val.total,
-      weight: val.weight,
-      isPriority,
-      isPassed: acc >= target,
-      diff: acc - target,
-    };
-  });
-
   // 合格ToDoアクションリスト
   const todos = [];
   const TODO_LIMIT = 5;
@@ -779,10 +830,15 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
         (!f.questionType || q.questionType === f.questionType)
     ).length;
 
-  // 1. 最重点分野（理科・社会・国語から最も底上げが必要な分野）
+  // 1. 最重点分野（演習不足、または実効到達度が低い重点単元を最優先）
   const weakPriorityCat = categoryStatus
-    .filter((c) => c.isPriority && c.accuracy < school.targetScore)
-    .sort((a, b) => a.accuracy - b.accuracy)[0];
+    .filter((c) => c.isPriority && (!c.isQualified || c.effectiveAccuracy < school.targetScore))
+    .sort((a, b) => {
+      // 演習不足（未判定）のものを最優先、次に実効到達度が低い順
+      if (!a.isQualified && b.isQualified) return -1;
+      if (a.isQualified && !b.isQualified) return 1;
+      return a.effectiveAccuracy - b.effectiveAccuracy;
+    })[0];
 
   if (weakPriorityCat) {
     const cat = weakPriorityCat.category;
@@ -791,14 +847,14 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     if (countQuestions({ subject: subj, category: cat, difficulty: diff }) < TODO_LIMIT) {
       diff = 'all';
     }
-    const remaining = Math.max(0, 12 - weakPriorityCat.total);
+    const remaining = weakPriorityCat.remainingToQualify;
     todos.push({
       id: 'todo_cat',
       badge: `最重要分野（${subj}）`,
       title: `${school.name}最頻出の「${subj}・${cat}」${diff !== 'all' ? `${DIFF_LABEL[diff]}問題` : ''}を${TODO_LIMIT}問特訓`,
-      description: `現在正答率 ${weakPriorityCat.accuracy}%（合格目標 ${school.targetScore}%）・解答数 ${weakPriorityCat.total}問${
-        remaining > 0 ? `（安定判定まであと${remaining}問）` : ''
-      }。重点配点分野の底上げが最優先です。`,
+      description: weakPriorityCat.isQualified
+        ? `現在実効到達度 ${weakPriorityCat.effectiveAccuracy}%（正答率 ${weakPriorityCat.accuracy}%/合格目標 ${school.targetScore}%）。重点配点分野の更なる強化が必要です。`
+        : `現在演習数 ${weakPriorityCat.total}問（最低基準 ${categoryMinCount}問まであと${remaining}問）。演習数を満たすことで到達度判定が有効化されます！`,
       quizFilter: {
         subject: subj,
         category: cat,
@@ -891,6 +947,11 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     isNada,
     isTsukukoma,
     totalAnswered: schoolEligibleAnswered,
+    requiredCount,
+    categoryMinCount,
+    qualifiedCatCount,
+    totalCatCount,
+    isEarlyStage,
     progressScore,
     diffToTarget,
     rank,
