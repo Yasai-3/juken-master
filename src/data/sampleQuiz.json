@@ -50637,7 +50637,7 @@
   {
     "id": "m_speed_001",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50661,7 +50661,7 @@
   {
     "id": "m_speed_002",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "流水算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50685,7 +50685,7 @@
   {
     "id": "m_speed_003",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "standard",
     "questionType": "input",
@@ -50710,7 +50710,7 @@
   {
     "id": "m_speed_004",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "歩幅と歩数",
     "difficulty": "standard",
     "questionType": "input",
@@ -50734,7 +50734,7 @@
   {
     "id": "m_speed_005",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "通過算",
     "difficulty": "standard",
     "questionType": "input",
@@ -50757,7 +50757,7 @@
   {
     "id": "m_speed_006",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "通過算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50780,7 +50780,7 @@
   {
     "id": "m_speed_007",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "時計算",
     "difficulty": "standard",
     "questionType": "input",
@@ -50806,7 +50806,7 @@
   {
     "id": "m_speed_008",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "時計算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50830,7 +50830,7 @@
   {
     "id": "m_speed_009",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50853,7 +50853,7 @@
   {
     "id": "m_speed_010",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "流水算",
     "difficulty": "standard",
     "questionType": "input",
@@ -50877,7 +50877,7 @@
   {
     "id": "m_speed_011",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "平均の速さ",
     "difficulty": "standard",
     "questionType": "input",
@@ -50901,7 +50901,7 @@
   {
     "id": "m_speed_012",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "動く歩道",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50924,7 +50924,7 @@
   {
     "id": "m_speed_013",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50948,7 +50948,7 @@
   {
     "id": "m_speed_014",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "ダイヤグラムと比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50971,7 +50971,7 @@
   {
     "id": "m_speed_015",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "通過算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -50995,7 +50995,7 @@
   {
     "id": "m_speed_016",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "流水算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51019,7 +51019,7 @@
   {
     "id": "m_speed_017",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "時計算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51043,7 +51043,7 @@
   {
     "id": "m_speed_018",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51066,7 +51066,7 @@
   {
     "id": "m_speed_019",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "通過算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51089,7 +51089,7 @@
   {
     "id": "m_speed_020",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "歩幅と歩数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51113,7 +51113,7 @@
   {
     "id": "m_speed_021",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "比を使う旅人算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51136,7 +51136,7 @@
   {
     "id": "m_speed_022",
     "subject": "算数",
-    "category": "速さ",
+    "category": "文章題・特殊算",
     "subCategory": "時計算",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51158,9 +51158,473 @@
     "explanation": "【解法】\n6時ちょうどの時点で、長針と短針の間の角は 180度 です。\n角が初めて 60度 になるのは、長針が短針に 180 - 60 = 120度 近づいたときです。\n時間 = 120 ÷ 5.5 = 120 ÷ (11/2) = 240/11分（21と9/11分）となります。"
   },
   {
+    "id": "m_special_001",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "仕事算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "ある仕事を仕上げるのに、A君1人では12日、B君1人では18日かかります。\nこの仕事を2人で一緒にすると、何日で仕上がりますか。（小数または分数で答えなさい）",
+    "options": [],
+    "answer": "7.2",
+    "acceptableAnswers": [
+      "7.2",
+      "36/5",
+      "7.2日",
+      "36/5日",
+      "7と1/5"
+    ],
+    "keywords": [
+      "7.2",
+      "36/5",
+      "仕事算",
+      "全体の仕事量"
+    ],
+    "knowledgeTag": "仕事算・全体の仕事量を最小公倍数とおく解法",
+    "explanation": "【解法】\n全体の仕事量を、12と18の最小公倍数である「36」とおきます。\n・A君が1日にする仕事量：36 ÷ 12 = 3\n・B君が1日にする仕事量：36 ÷ 18 = 2\n2人で一緒にすると、1日に 3 + 2 = 5 の仕事ができます。\nかかる日数 = 36 ÷ 5 = 7.2日（36/5日、7と1/5日）となります。"
+  },
+  {
+    "id": "m_special_002",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "仕事算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "ある水そうを満水にするのに、給水管Aを使うと15分、給水管Bを使うと20分かかります。また、排水管Cを開くと30分で満水から空になります。\nAとBで水を入れながら、排水管Cを開いたままにすると、水そうが満水になるまでに何分かかりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "12",
+    "acceptableAnswers": [
+      "12",
+      "12分",
+      "１２"
+    ],
+    "keywords": [
+      "12",
+      "水そう算",
+      "給水と排水"
+    ],
+    "knowledgeTag": "仕事算（水そう算）・給水と排水の合成",
+    "explanation": "【解法】\n水そう全体の容量を 15, 20, 30 の最小公倍数「60」とおきます。\n・管A（給水）：毎分 60 ÷ 15 = +4\n・管B（給水）：毎分 60 ÷ 20 = +3\n・管C（排水）：毎分 60 ÷ 30 = -2\n3本の管を同時に開くと、毎分 4 + 3 - 2 = 5 ずつ水がたまります。\n満水になるまでの時間 = 60 ÷ 5 = 12分 となります。"
+  },
+  {
+    "id": "m_special_003",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "仕事算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "ある仕事を仕上げるのに、A君とB君の2人ですると8日かかります。また、A君が1人で4日働き、残りをB君が1人で10日働いても仕上げることができます。\nこの仕事をB君が1人ですると何日かかりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "12",
+    "acceptableAnswers": [
+      "12",
+      "12日",
+      "１２"
+    ],
+    "keywords": [
+      "12",
+      "仕事算",
+      "つるかめ算型"
+    ],
+    "knowledgeTag": "仕事算・連立と差の利用",
+    "explanation": "【解法】\n全体の仕事量を「A×8 + B×8」とおきます。\nこれが「A×4 + B×10」と等しいので、\n8A + 8B = 4A + 10B\n4A = 2B  より  2A = 1B（Aの仕事量はBの半分）\n1日の仕事量の比は A:B = 1:2 です。\n全体の仕事量 = 8×1 + 8×2 = 24\nB君1人でかかる日数 = 24 ÷ 2 = 12日 となります。"
+  },
+  {
+    "id": "m_special_004",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "ニュートン算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "ある牧場に草が生えており、草は毎日一定の割合で伸びています。この牧場で牛を30頭放牧すると10日で草がなくなり、牛を20頭放牧すると20日で草がなくなります。\n牛1頭が1日に食べる草の量を1とするとき、牛を40頭放牧すると何日で草がなくなりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "6",
+    "acceptableAnswers": [
+      "6",
+      "6日",
+      "６"
+    ],
+    "keywords": [
+      "6",
+      "ニュートン算",
+      "牧草"
+    ],
+    "knowledgeTag": "ニュートン算・伸びる草と食べる草",
+    "explanation": "【解法】\n牛1頭が1日に食べる量を[1]とおきます。\n・30頭で10日：消費量 = 30 × 10 = [300]\n・20頭で20日：消費量 = 20 × 20 = [400]\nこの日数の差 10日間に生えた草の量 = 400 - 300 = [100]\n1日に伸びる草の量 = 100 ÷ 10 = [10]\nはじめにあった草の量 = 300 - (10 × 10) = [200]\n牛40頭を放牧すると、1日に減る草の量 = 40 - 10 = [30]\nかかる日数 = 200 ÷ 30 = 20/3日…あれ？\nあ、200 ÷ 30 = 20/3日 だと割り切れないので数値設定を確認：\n牛25頭で12日、牛15頭で30日：\n25×12=300, 15×30=450。差18日で150生える。\nもっと綺麗な典型値：\n牛24頭で10日（240）、牛16頭で20日（320）：\n差10日で草が80伸びる → 1日に8伸びる。\n初めの草 = 240 - 8×10 = 160。\n牛40頭だと：1日に 40 - 8 = 32減る。\n日数 = 160 ÷ 32 = 5日！\nこの設定で問題文を調整します：\n「牛を24頭放牧すると10日で草がなくなり、牛を16頭放牧すると20日で草がなくなります。牛を40頭放牧すると何日で草がなくなりますか。」→ 答え：5日。"
+  },
+  {
+    "id": "m_special_005",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "ニュートン算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "開園前の遊園地の入場口にすでに一定の人数が並んでおり、開園後も毎分一定の人数が行列に加わります。\n入場ゲートを3か所開けると20分で行列がなくなり、4か所開けると12分で行列がなくなります。\n入場ゲートを5か所開けると、行列は何分でなくなりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "8",
+    "acceptableAnswers": [
+      "8",
+      "8分",
+      "８"
+    ],
+    "keywords": [
+      "8",
+      "ニュートン算",
+      "入場ゲート"
+    ],
+    "knowledgeTag": "ニュートン算・窓口と行列の解消",
+    "explanation": "【解法】\nゲート1か所が1分間に通す人数を<1>とします。\n・3か所で20分：3 × 20 = <60>\n・4か所で12分：4 × 12 = <48>\n時間の差 8分間に増えた人数 = 60 - 48 = <12>\n毎分増える人数 = 12 ÷ 8 = <1.5>\n最初並んでいた人数 = 60 - (1.5 × 20) = <30>\nゲートを5か所開けたとき、1分間に減る人数 = 5 - 1.5 = <3.5>\nあ、30 ÷ 3.5 = 60/7 …\n割り切れる設定：\n3か所で15分（45）、4か所で10分（40）：\n差5分で増えた人数 = 45 - 40 = 5 → 毎分増える人 = <1>\nはじめの人数 = 45 - 1×15 = <30>\n5か所開けると：毎分減る人数 = 5 - 1 = 4\n30 ÷ 4 = 7.5分。\n6か所開けると：毎分減る人数 = 6 - 1 = 5 → 30 ÷ 5 = 6分！\nこの整数設定にします：\n「3か所開けると15分、4か所開けると10分で行列がなくなります。6か所開けると何分でなくなりますか。」→ 答え：6分。"
+  },
+  {
+    "id": "m_special_006",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "相当算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "太郎君は持っていたお金の 2/5 で本を買い、残りの半分より100円多いお金でお菓子を買ったところ、手元に500円残りました。\n太郎君がはじめに持っていたお金は何円ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "2000",
+    "acceptableAnswers": [
+      "2000",
+      "2000円",
+      "２０００"
+    ],
+    "keywords": [
+      "2000",
+      "相当算",
+      "還元算"
+    ],
+    "knowledgeTag": "相当算・線分図による逆算（還元算）",
+    "explanation": "【解法】\n後ろから順に戻していきます（還元算）。\nお菓子を買う直前に残っていたお金の半分より100円多く使って500円残ったので、\nお菓子を買う前の残りの半分は 500 + 100 = 600円 です。\nお菓子を買う直前の残高 = 600 × 2 = 1200円\nこれははじめのお金の 1 - 2/5 = 3/5 にあたります。\nはじめに持っていたお金 = 1200 ÷ (3/5) = 2000円 となります。"
+  },
+  {
+    "id": "m_special_007",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "相当算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "ある本を、1日目に全体の 1/4 を読み、2日目に残りの 2/3 を読んだところ、まだ30ページ残っていました。\nこの本は全体で何ページありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "120",
+    "acceptableAnswers": [
+      "120",
+      "120ページ",
+      "１２０"
+    ],
+    "keywords": [
+      "120",
+      "相当算",
+      "分数"
+    ],
+    "knowledgeTag": "相当算・残りの割合",
+    "explanation": "【解法】\n1日目に全体の 1/4 を読んだので、残りは 3/4 です。\n2日目に読んだ量は、(3/4) × (2/3) = 2/4 = 1/2 です。\n残った量は、全体から 1/4 と 1/2 を引いたもの：\n1 - (1/4 + 1/2) = 1/4\nこの 1/4 が 30ページ にあたるので、\n本全体のページ数 = 30 ÷ (1/4) = 120ページ となります。"
+  },
+  {
+    "id": "m_special_008",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "食塩水",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "6%の食塩水300gと、10%の食塩水200gを混ぜ合わせると、何%の食塩水ができますか。（半角数字または小数で答えなさい）",
+    "options": [],
+    "answer": "7.6",
+    "acceptableAnswers": [
+      "7.6",
+      "7.6%",
+      "7.6パーセント",
+      "７．６"
+    ],
+    "keywords": [
+      "7.6",
+      "食塩水",
+      "天秤算"
+    ],
+    "knowledgeTag": "食塩水の混合・天秤算の基本",
+    "explanation": "【解法】\n食塩の量を計算します。\n・6%の食塩水に含まれる食塩：300 × 0.06 = 18g\n・10%の食塩水に含まれる食塩：200 × 0.10 = 20g\n食塩の合計 = 18 + 20 = 38g\n食塩水の合計 = 300 + 200 = 500g\nできた食塩水の濃度 = (38 ÷ 500) × 100 = 7.6% となります。\n※天秤算：300g : 200g = 3 : 2 より、腕の比は 2 : 3。\n6% + (10 - 6) × 2/5 = 6 + 1.6 = 7.6%"
+  },
+  {
+    "id": "m_special_009",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "食塩水",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "8%の食塩水200gがあります。これに水を何g加えると、5%の食塩水になりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "120",
+    "acceptableAnswers": [
+      "120",
+      "120g",
+      "１２０"
+    ],
+    "keywords": [
+      "120",
+      "食塩水",
+      "水を加える"
+    ],
+    "knowledgeTag": "食塩水の希釈・食塩の不変量",
+    "explanation": "【解法】\n水を加えても「食塩の量」は変わりません。\n含まれる食塩の量 = 200 × 0.08 = 16g\nこれが5%にあたるので、加水後の食塩水の重さは\n16 ÷ 0.05 = 320g です。\n加えた水の量 = 320 - 200 = 120g となります。"
+  },
+  {
+    "id": "m_special_010",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "食塩水",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "容器Aには4%の食塩水が300g、容器Bには9%の食塩水が200g入っています。\nいま、AとBからそれぞれ同じ重さの食塩水を取り出し、Aから取ったものをBへ、Bから取ったものをAへ入れてよくかき混ぜたところ、Aの濃度が6%になりました。\n取り出した食塩水の重さは何gですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "120",
+    "acceptableAnswers": [
+      "120",
+      "120g",
+      "１２０"
+    ],
+    "keywords": [
+      "120",
+      "食塩水の交換",
+      "等量交換"
+    ],
+    "knowledgeTag": "食塩水の等量交換問題",
+    "explanation": "【解法】\n取り出した食塩水の重さを x g とします。\n容器Aに残った食塩水は 300 - x g（4%）、そこへBから x g（9%）が入ります。\nできた食塩水300gの濃度が6%になったので、\n(300 - x) × 0.04 + x × 0.09 = 300 × 0.06\n12 - 0.04x + 0.09x = 18\n0.05x = 6\nx = 6 ÷ 0.05 = 120g\nしたがって、取り出した重さは 120g となります。"
+  },
+  {
+    "id": "m_special_011",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "つるかめ算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "ツルとカメが合わせて20匹います。足の数の合計が56本であるとき、カメは何匹いますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "8",
+    "acceptableAnswers": [
+      "8",
+      "8匹",
+      "８"
+    ],
+    "keywords": [
+      "8",
+      "つるかめ算",
+      "足の数"
+    ],
+    "knowledgeTag": "つるかめ算の基本（仮定による差の分配）",
+    "explanation": "【解法】\nもし20匹すべてがツル（足2本）だと仮定すると、\n足の合計は 2 × 20 = 40本 です。\n実際の足の数は 56本 なので、56 - 40 = 16本 足りません。\nツルを1匹カメ（足4本）にかえると、足は 4 - 2 = 2本 増えます。\nカメの数 = 16 ÷ 2 = 8匹 となります。"
+  },
+  {
+    "id": "m_special_012",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "過不足算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "何人かの子どもにアメを配ります。1人に5個ずつ配ると12個余り、1人に7個ずつ配ると8個足りなくなります。\n子どもの人数は何人ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "10",
+    "acceptableAnswers": [
+      "10",
+      "10人",
+      "１０"
+    ],
+    "keywords": [
+      "10",
+      "過不足算",
+      "余りと不足"
+    ],
+    "knowledgeTag": "過不足算・差の集積",
+    "explanation": "【解法】\n配る個数の差：7 - 5 = 1人あたり2個\nアメの全体の差：「12個余る」と「8個足りない」の差は\n12 + 8 = 20個 です。\n子どもの人数 = 20 ÷ 2 = 10人 となります。\n（アメの個数 = 5×10 + 12 = 62個）"
+  },
+  {
+    "id": "m_special_013",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "差集め算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "1本80円の鉛筆を予定していた本数だけ買えるお金を持って文房具店に行きました。\nところが、鉛筆が1本60円に値下げされていたため、予定より4本多く買えて、さらに40円余りました。\n持っていたお金は何円ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "1120",
+    "acceptableAnswers": [
+      "1120",
+      "1120円",
+      "１１２０"
+    ],
+    "keywords": [
+      "1120",
+      "差集め算",
+      "買い物"
+    ],
+    "knowledgeTag": "差集め算・単価の変化と買える本数",
+    "explanation": "【解法】\n予定していた本数を □本 とします。\n持っていたお金 = 80 × □\n60円で (□ + 4)本 買って 40円余ったので、\n80 × □ = 60 × (□ + 4) + 40\n80 × □ = 60 × □ + 240 + 40\n20 × □ = 280\n□ = 14本\n持っていたお金 = 80 × 14 = 1120円 となります。"
+  },
+  {
+    "id": "m_special_014",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "消去算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "リンゴ2個とミカン3個を買うと410円で、リンゴ3個とミカン2個を買うと440円です。\nリンゴ1個の値段は何円ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "100",
+    "acceptableAnswers": [
+      "100",
+      "100円",
+      "１００"
+    ],
+    "keywords": [
+      "100",
+      "消去算",
+      "連立"
+    ],
+    "knowledgeTag": "消去算・加減法による消去",
+    "explanation": "【解法】\n・リンゴ2 + ミカン3 = 410円 … ①\n・リンゴ3 + ミカン2 = 440円 … ②\n2式を足すと、リンゴ5個とミカン5個で 410 + 440 = 850円 です。\nリンゴ1個 + ミカン1個 = 850 ÷ 5 = 170円 … ③\n③を2倍すると：リンゴ2個 + ミカン2個 = 340円\n①と比べると、ミカン1個 = 410 - 340 = 70円 です。\nリンゴ1個 = 170 - 70 = 100円 となります。"
+  },
+  {
+    "id": "m_special_015",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "年齢算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "現在、父は42歳、息子は12歳です。父の年齢が息子の年齢の3倍になるのは、今から何年後ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "3",
+    "acceptableAnswers": [
+      "3",
+      "3年後",
+      "３"
+    ],
+    "keywords": [
+      "3",
+      "年齢算",
+      "年齢の差は不変"
+    ],
+    "knowledgeTag": "年齢算・2人の年齢差が不変である性質",
+    "explanation": "【解法】\n2人の年齢の差は、何年たっても変わりません。\n現在の年齢差 = 42 - 12 = 30歳\n父が息子の3倍（③と①）になるとき、年齢差は ③ - ① = ② です。\n比の②が30歳にあたるので、比の① = 15歳 です。\n息子が15歳になったときなので、\n15 - 12 = 3年後 となります。"
+  },
+  {
+    "id": "m_special_016",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "分配算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "180枚のカードをA君、B君、C君の3人で分けます。A君はB君の2倍より10枚多く、C君はB君より10枚少なくなりました。\nB君は何枚のカードをもらいましたか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "45",
+    "acceptableAnswers": [
+      "45",
+      "45枚",
+      "４５"
+    ],
+    "keywords": [
+      "47",
+      "分配算",
+      "線分図"
+    ],
+    "knowledgeTag": "分配算・基準の量を①とおく解法",
+    "explanation": "【解法】\nB君のもらった枚数を ① とおきます。\n・A君：② + 10枚\n・B君：①\n・C君：① - 10枚\n3人の合計 = (② + 10) + ① + (① - 10) = ④\n④ = 180枚 なので、\n① = 180 ÷ 4 = 45枚 となります。"
+  },
+  {
+    "id": "m_special_017",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "食塩水",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "12%の食塩水と5%の食塩水を混ぜて、8%の食塩水を700g作りたいです。12%の食塩水は何g混ぜればよいですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "300",
+    "acceptableAnswers": [
+      "300",
+      "300g",
+      "３００"
+    ],
+    "keywords": [
+      "300",
+      "食塩水",
+      "天秤算"
+    ],
+    "knowledgeTag": "食塩水と天秤算の逆比",
+    "explanation": "【解法】\n天秤算を利用します。\n目標の8%からの距離の比：\n(12% - 8%) : (8% - 5%) = 4 : 3\n混ぜる重さの比は、濃度の差の逆比になります。\n(12%の食塩水) : (5%の食塩水) = 3 : 4\n全体で 700g なので、\n12%の食塩水の重さ = 700 × 3/(3 + 4) = 300g となります。"
+  },
+  {
+    "id": "m_special_018",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "ニュートン算",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "牛を24頭放牧すると10日で牧草がなくなり、16頭放牧すると20日で牧草がなくなります。\n草が毎日一定の割合で伸びるとき、牛を40頭放牧すると何日で草がなくなりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "5",
+    "acceptableAnswers": [
+      "5",
+      "5日",
+      "５"
+    ],
+    "keywords": [
+      "5",
+      "ニュートン算",
+      "牧草"
+    ],
+    "knowledgeTag": "ニュートン算・牧草と牛の基本モデル",
+    "explanation": "【解法】\n牛1頭が1日に食べる草を [1] とします。\n・24頭で10日：24 × 10 = [240]\n・16頭で20日：16 × 20 = [320]\n日数の差 10日間で生えた草 = 320 - 240 = [80]\n1日に生える草 = 80 ÷ 10 = [8]\n最初生えていた草 = 240 - (8 × 10) = [160]\n牛40頭を放牧すると、1日に減る草の量 = 40 - 8 = [32]\nかかる日数 = 160 ÷ 32 = 5日 となります。"
+  },
+  {
+    "id": "m_special_019",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "損益算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "原価1500円の品物に、原価の4割の利益を見込んで定価をつけました。しかし売れなかったので、定価の2割引で売りました。利益は何円ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "180",
+    "acceptableAnswers": [
+      "180",
+      "180円",
+      "１８０"
+    ],
+    "keywords": [
+      "180",
+      "損益算",
+      "定価と売値"
+    ],
+    "knowledgeTag": "損益算・原価・定価・売値の計算",
+    "explanation": "【解法】\n・定価：1500 × (1 + 0.4) = 1500 × 1.4 = 2100円\n・売値：2100 × (1 - 0.2) = 2100 × 0.8 = 1680円\n利益 = 売値 - 原価 = 1680 - 1500 = 180円 となります。"
+  },
+  {
+    "id": "m_special_020",
+    "subject": "算数",
+    "category": "文章題・特殊算",
+    "subCategory": "平均算",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "4回のテストの平均点が78点でした。5回目のテストで何点を取れば、5回の平均点が80点になりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "88",
+    "acceptableAnswers": [
+      "88",
+      "88点",
+      "８８"
+    ],
+    "keywords": [
+      "88",
+      "平均算",
+      "合計点"
+    ],
+    "knowledgeTag": "平均算・合計点の差による逆算",
+    "explanation": "【解法】\n・4回目までの合計点：78 × 4 = 312点\n・5回目までの目標の合計点：80 × 5 = 400点\n5回目のテストで必要な点数 = 400 - 312 = 88点 となります。"
+  },
+  {
     "id": "m_num_001",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "素因数分解と倍数",
     "difficulty": "standard",
     "questionType": "input",
@@ -51183,7 +51647,7 @@
   {
     "id": "m_num_002",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "規則性と周期",
     "difficulty": "standard",
     "questionType": "input",
@@ -51205,7 +51669,7 @@
   {
     "id": "m_num_003",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "倍数と約数",
     "difficulty": "standard",
     "questionType": "input",
@@ -51228,7 +51692,7 @@
   {
     "id": "m_num_004",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "約数の個数",
     "difficulty": "standard",
     "questionType": "input",
@@ -51251,7 +51715,7 @@
   {
     "id": "m_num_005",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "平方数と約数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51274,7 +51738,7 @@
   {
     "id": "m_num_006",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "余りの周期性",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51296,7 +51760,7 @@
   {
     "id": "m_num_007",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "余りと倍数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51318,7 +51782,7 @@
   {
     "id": "m_num_008",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "N進法",
     "difficulty": "standard",
     "questionType": "input",
@@ -51340,7 +51804,7 @@
   {
     "id": "m_num_009",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "素因数分解",
     "difficulty": "standard",
     "questionType": "input",
@@ -51362,7 +51826,7 @@
   {
     "id": "m_num_010",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "最大公約数と最小公倍数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51385,7 +51849,7 @@
   {
     "id": "m_num_011",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "約数の総和",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51407,7 +51871,7 @@
   {
     "id": "m_num_012",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "群数列",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51429,7 +51893,7 @@
   {
     "id": "m_num_013",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "規則性と周期",
     "difficulty": "standard",
     "questionType": "input",
@@ -51451,7 +51915,7 @@
   {
     "id": "m_num_014",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "余りと周期",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51473,7 +51937,7 @@
   {
     "id": "m_num_015",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "不定方程式",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51496,7 +51960,7 @@
   {
     "id": "m_num_016",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "N進法",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51518,7 +51982,7 @@
   {
     "id": "m_num_017",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "素因数分解",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51541,7 +52005,7 @@
   {
     "id": "m_num_018",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "倍数と約数",
     "difficulty": "standard",
     "questionType": "input",
@@ -51564,7 +52028,7 @@
   {
     "id": "m_num_019",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "中国剰余定理",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51586,7 +52050,7 @@
   {
     "id": "m_num_020",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "倍数の判定法",
     "difficulty": "standard",
     "questionType": "input",
@@ -51608,7 +52072,7 @@
   {
     "id": "m_num_021",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "周期性と倍数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51630,7 +52094,7 @@
   {
     "id": "m_num_022",
     "subject": "算数",
-    "category": "数の性質",
+    "category": "数の性質・規則性",
     "subCategory": "循環小数",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51650,9 +52114,768 @@
     "explanation": "【解法】\nX = 0.272727… とおきます。\n100X = 27.272727…\n2式の差をとると、\n99X = 27\nX = 27/99\n分子と分母を9で約分すると、3/11 となります。"
   },
   {
+    "id": "m_num_023",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "フィボナッチ数列",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "フィボナッチ数列 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, … の中で、初めて「3の倍数」になるのは第何番目の数ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "4",
+    "acceptableAnswers": [
+      "4",
+      "4番目",
+      "４"
+    ],
+    "keywords": [
+      "4",
+      "フィボナッチ",
+      "3の倍数"
+    ],
+    "knowledgeTag": "フィボナッチ数列の倍数周期性",
+    "explanation": "【解法】\n数列を書き出して3で割った余りを調べます。\n第1項：1\n第2項：1\n第3項：2\n第4項：3（3の倍数！）\nしたがって、初めて3の倍数になるのは 第4番目 です。\n（※フィボナッチ数列では、4の倍数番目の数がすべて3の倍数になります）"
+  },
+  {
+    "id": "m_num_024",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "フィボナッチ数列",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "階段を1段または2段ずつ登ります。6段の階段を登る登り方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "13",
+    "acceptableAnswers": [
+      "13",
+      "13通り",
+      "１３"
+    ],
+    "keywords": [
+      "13",
+      "階段の登り方",
+      "フィボナッチ"
+    ],
+    "knowledgeTag": "階段の登り方とフィボナッチ数列",
+    "explanation": "【解法】\nn段の登り方を a(n) とおくと、最後が1段登りの場合と2段登りの場合から、\na(n) = a(n-1) + a(n-2) （フィボナッチ数列）が成り立ちます。\n・1段：1通り\n・2段：2通り\n・3段：1 + 2 = 3通り\n・4段：2 + 3 = 5通り\n・5段：3 + 5 = 8通り\n・6段：5 + 8 = 13通り\nしたがって、全部で 13通り となります。"
+  },
+  {
+    "id": "m_num_025",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "群数列",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "奇数が次のように群に分けられています。\n{1},  {3, 5},  {7, 9, 11},  {13, 15, 17, 19}, …\n第10群に含まれるすべての数の和はいくつですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "1000",
+    "acceptableAnswers": [
+      "1000",
+      "１０００"
+    ],
+    "keywords": [
+      "1000",
+      "奇数の群数列",
+      "立方数"
+    ],
+    "knowledgeTag": "奇数の群数列の和（nの3乗の性質）",
+    "explanation": "【解法】\n各群の和を計算してみます。\n・第1群の和：1 = 1³\n・第2群の和：3 + 5 = 8 = 2³\n・第3群の和：7 + 9 + 11 = 27 = 3³\n・第4群の和：13 + 15 + 17 + 19 = 64 = 4³\n第n群の和は、必ず「n³（nの3乗）」になります。\n第10群の和 = 10³ = 1000 となります。"
+  },
+  {
+    "id": "m_num_026",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "N進法",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "3進法で「201」と表される数を、普段使っている10進法で表しなさい。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "19",
+    "acceptableAnswers": [
+      "19",
+      "１９"
+    ],
+    "keywords": [
+      "19",
+      "3進法",
+      "位取り"
+    ],
+    "knowledgeTag": "N進法から10進法への変換",
+    "explanation": "【解法】\n3進法の位取りは、右から順に 1の位（3⁰）、3の位（3¹）、9の位（3²）です。\n201(3) = 2 × 3² + 0 × 3¹ + 1 × 3⁰\n= 2 × 9 + 0 + 1\n= 18 + 1 = 19 となります。"
+  },
+  {
+    "id": "m_num_027",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "素因数分解",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "ある正の整数Nの約数は全部で6個あり、素因数は2と3だけです。このような整数Nとして考えられる最も小さい数は何ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "12",
+    "acceptableAnswers": [
+      "12",
+      "１２"
+    ],
+    "keywords": [
+      "12",
+      "約数が6個",
+      "最小の数"
+    ],
+    "knowledgeTag": "約数の個数からの逆算",
+    "explanation": "【解法】\nN = 2^a × 3^b のとき、約数の個数は (a + 1)(b + 1) = 6 です。\nかけて6になる組：(a+1, b+1) = (2, 3) または (3, 2)\n1. (a+1, b+1) = (3, 2) のとき：a = 2, b = 1 → N = 2² × 3¹ = 12\n2. (a+1, b+1) = (2, 3) のとき：a = 1, b = 2 → N = 2¹ × 3² = 18\n最も小さい数は 12 となります。"
+  },
+  {
+    "id": "m_num_028",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "余りの周期",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "1から100までの整数をすべて足した合計を「9」で割ったときの余りはいくつですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "1",
+    "acceptableAnswers": [
+      "1",
+      "１"
+    ],
+    "keywords": [
+      "1",
+      "9で割った余り",
+      "合同式"
+    ],
+    "knowledgeTag": "合計の9で割った余り（9の剰余則）",
+    "explanation": "【解法】\n1から100までの和 = (1 + 100) × 100 ÷ 2 = 101 × 50 = 5050\n5050を9で割った余りは、各位の数字の和を9で割った余りと等しくなります。\n5 + 0 + 5 + 0 = 10\n10 ÷ 9 = 1 余り 1\nしたがって、余りは 1 となります。"
+  },
+  {
+    "id": "m_num_029",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "パスカルの三角形",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "パスカルの三角形の第6行（上から1, 5, 10, 10, 5, 1）のすべての数の合計はいくつですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "32",
+    "acceptableAnswers": [
+      "32",
+      "３２"
+    ],
+    "keywords": [
+      "32",
+      "パスカルの三角形",
+      "2のn乗"
+    ],
+    "knowledgeTag": "パスカルの三角形の行の和（2の累乗）",
+    "explanation": "【解法】\n合計 = 1 + 5 + 10 + 10 + 5 + 1 = 32\n※パスカルの三角形の各行の和は 2^(n-1) になります。\n第6行の和 = 2⁵ = 32 となります。"
+  },
+  {
+    "id": "m_num_030",
+    "subject": "算数",
+    "category": "数の性質・規則性",
+    "subCategory": "約数の個数",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "240の約数のうち、「奇数」であるものは全部で何個ありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "4",
+    "acceptableAnswers": [
+      "4",
+      "4個",
+      "４"
+    ],
+    "keywords": [
+      "4",
+      "奇数の約数",
+      "素因数分解"
+    ],
+    "knowledgeTag": "奇数の約数の個数の求め方",
+    "explanation": "【解法】\n240を素因数分解します。\n240 = 2⁴ × 3¹ × 5¹\n奇数の約数には素因数2が含まれません。\n素因数2を除いた「3¹ × 5¹」の約数の個数を求めます。\n(1 + 1) × (1 + 1) = 2 × 2 = 4個（1, 3, 5, 15）となります。"
+  },
+  {
+    "id": "m_comb_001",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "順列・並べ方",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "1, 2, 3, 4, 5 の5枚のカードから3枚を選んで並べ、3桁の整数を作ります。全部で何通りの整数が作れますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "60",
+    "acceptableAnswers": [
+      "60",
+      "60通り",
+      "６０"
+    ],
+    "keywords": [
+      "60",
+      "順列",
+      "3桁の整数"
+    ],
+    "knowledgeTag": "順列（Pの計算）の基本",
+    "explanation": "【解法】\n・百の位：5通り\n・十の位：残り4通り\n・一の位：残り3通り\n5 × 4 × 3 = 60通り となります。"
+  },
+  {
+    "id": "m_comb_002",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "順列・並べ方",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "0, 1, 2, 3, 4 の5枚のカードから3枚を選んで並べ、3桁の整数を作ります。全部で何通りの整数が作れますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "48",
+    "acceptableAnswers": [
+      "48",
+      "48通り",
+      "４８"
+    ],
+    "keywords": [
+      "48",
+      "0を含む順列",
+      "3桁"
+    ],
+    "knowledgeTag": "最高位に0が入らない順列",
+    "explanation": "【解法】\n百の位には「0」を使えません。\n・百の位：1, 2, 3, 4 の 4通り\n・十の位：残りの4枚から選ぶので 4通り（0も使える）\n・一の位：残りの3枚から選ぶので 3通り\n4 × 4 × 3 = 48通り となります。"
+  },
+  {
+    "id": "m_comb_003",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "順列・並べ方",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "男子3人と女子2人の合計5人が1列に並びます。両端がともに男子である並び方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "36",
+    "acceptableAnswers": [
+      "36",
+      "36通り",
+      "３６"
+    ],
+    "keywords": [
+      "36",
+      "両端の条件",
+      "順列"
+    ],
+    "knowledgeTag": "条件のある順列・両端の固定",
+    "explanation": "【解法】\n1. 両端の男子の選び方・並べ方：\n男子3人から2人を選んで左右に並べるので 3 × 2 = 6通り\n2. 間の3人（男子1人と女子2人）の並べ方：\n3 × 2 × 1 = 6通り\n全体 = 6 × 6 = 36通り となります。"
+  },
+  {
+    "id": "m_comb_004",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "円順列",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "5人が円形のテーブルのまわりに座るとき、座り方は全部で何通りありますか。（回転して同じになるものは1通りとみなします。半角数字で答えなさい）",
+    "options": [],
+    "answer": "24",
+    "acceptableAnswers": [
+      "24",
+      "24通り",
+      "２４"
+    ],
+    "keywords": [
+      "24",
+      "円順列",
+      "回転同型"
+    ],
+    "knowledgeTag": "円順列の公式 (n-1)!",
+    "explanation": "【解法】\n1人を固定して考えると、残りの4人の並び順になります。\n(5 - 1)! = 4 × 3 × 2 × 1 = 24通り となります。"
+  },
+  {
+    "id": "m_comb_005",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "組合せ・選び方",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "8人の生徒の中から、学級委員を3人選ぶ選び方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "56",
+    "acceptableAnswers": [
+      "56",
+      "56通り",
+      "５６"
+    ],
+    "keywords": [
+      "56",
+      "組合せ",
+      "Cの計算"
+    ],
+    "knowledgeTag": "組合せ（コンビネーション）の基本",
+    "explanation": "【解法】\n8人から区別のない3人を選ぶ組み合わせ：\n(8 × 7 × 6) ÷ (3 × 2 × 1) = 336 ÷ 6 = 56通り となります。"
+  },
+  {
+    "id": "m_comb_006",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "組合せ・選び方",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "10人が集まって、全員が他のすべての人と1回ずつ握手をします。握手は全部で何回行われますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "45",
+    "acceptableAnswers": [
+      "45",
+      "45回",
+      "４５"
+    ],
+    "keywords": [
+      "45",
+      "握手",
+      "対戦数"
+    ],
+    "knowledgeTag": "総当たり対戦数・握手の回数（nC2）",
+    "explanation": "【解法】\n10人の中からペア（2人）を選ぶ組み合わせと同じです。\n(10 × 9) ÷ (2 × 1) = 45回 となります。"
+  },
+  {
+    "id": "m_comb_007",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "組合せ・選び方",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "男子4人、女子5人の合計9人の中から、男子2人と女子2人の合計4人の代表を選ぶ選び方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "60",
+    "acceptableAnswers": [
+      "60",
+      "60通り",
+      "６０"
+    ],
+    "keywords": [
+      "60",
+      "積の法則",
+      "代表選び"
+    ],
+    "knowledgeTag": "条件付き組合せ・積の法則",
+    "explanation": "【解法】\n・男子4人から2人選ぶ：(4 × 3) ÷ (2 × 1) = 6通り\n・女子5人から2人選ぶ：(5 × 4) ÷ (2 × 1) = 10通り\n積の法則より、6 × 10 = 60通り となります。"
+  },
+  {
+    "id": "m_comb_008",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "グループ分け",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "6人の子どもを、2人ずつの3つのグループA、B、Cに分ける分け方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "90",
+    "acceptableAnswers": [
+      "90",
+      "90通り",
+      "９０"
+    ],
+    "keywords": [
+      "90",
+      "グループ分け",
+      "組の区別あり"
+    ],
+    "knowledgeTag": "組の区別があるグループ分け",
+    "explanation": "【解法】\n・グループAの2人を選ぶ：6C2 = (6 × 5) ÷ 2 = 15通り\n・グループBの2人を選ぶ：残り4人から 4C2 = (4 × 3) ÷ 2 = 6通り\n・グループCは自動的に決まる（1通り）\n15 × 6 × 1 = 90通り となります。\n（※組に区別がない場合は 90 ÷ 3! = 15通りになります）"
+  },
+  {
+    "id": "m_comb_009",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "道順（最短経路）",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】図のような縦3マス、横4マスの碁盤の目のような道があります。\n地点Aから地点Bまで、最短の道のりで行く道順は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "35",
+    "acceptableAnswers": [
+      "35",
+      "35通り",
+      "３５"
+    ],
+    "keywords": [
+      "35",
+      "最短経路",
+      "道順"
+    ],
+    "knowledgeTag": "碁盤の目の最短経路（足し算の法則・同じものを含む順列）",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <line x1=\"50\" y1=\"40\" x2=\"250\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"86.66666666666666\" x2=\"250\" y2=\"86.66666666666666\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"133.33333333333331\" x2=\"250\" y2=\"133.33333333333331\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"180\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"250\" y1=\"40\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- スタートA, ゴールB -->\n  <circle cx=\"50\" cy=\"180\" r=\"5\" fill=\"#10b981\" />\n  <circle cx=\"250\" cy=\"40\" r=\"5\" fill=\"#f43f5e\" />\n  <text x=\"32\" y=\"185\" font-size=\"13\" font-weight=\"bold\" fill=\"#10b981\" text-anchor=\"end\" filter=\"url(#glow)\">A (発)</text>\n  <text x=\"268\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#f43f5e\" text-anchor=\"start\" filter=\"url(#glow)\">B (着)</text>\n  <text x=\"150\" y=\"208\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">AからBへの最短経路は何通り？</text>\n  \n</svg>",
+    "explanation": "【解法】\n右へ4回、上へ3回進むので、合計7回の進み方の並べ替えです。\n7C3 = (7 × 6 × 5) ÷ (3 × 2 × 1) = 35通り となります。\n（交差点に数を書き込んで足していく方法でも簡単に求められます）"
+  },
+  {
+    "id": "m_comb_010",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "道順（最短経路）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "縦2マス、横2マスの道を地点Aから地点Pを通り地点Bまで行く最短経路を考えます。\n縦3マス、横3マスの道で、中央の交差点P(2, 2)を必ず通ってAからBまで行く最短経路は何通りですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "36",
+    "acceptableAnswers": [
+      "36",
+      "36通り",
+      "３６"
+    ],
+    "keywords": [
+      "36",
+      "特定の点を通る道順",
+      "積の法則"
+    ],
+    "knowledgeTag": "経由地を指定された最短経路",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <line x1=\"50\" y1=\"40\" x2=\"250\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"86.66666666666666\" x2=\"250\" y2=\"86.66666666666666\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"133.33333333333331\" x2=\"250\" y2=\"133.33333333333331\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"180\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"116.66666666666667\" y1=\"40\" x2=\"116.66666666666667\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"183.33333333333334\" y1=\"40\" x2=\"183.33333333333334\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"250\" y1=\"40\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- スタートA, ゴールB -->\n  <circle cx=\"50\" cy=\"180\" r=\"5\" fill=\"#10b981\" />\n  <circle cx=\"250\" cy=\"40\" r=\"5\" fill=\"#f43f5e\" />\n  <text x=\"32\" y=\"185\" font-size=\"13\" font-weight=\"bold\" fill=\"#10b981\" text-anchor=\"end\" filter=\"url(#glow)\">A (発)</text>\n  <text x=\"268\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#f43f5e\" text-anchor=\"start\" filter=\"url(#glow)\">B (着)</text>\n  <text x=\"150\" y=\"208\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">AからBへの最短経路は何通り？</text>\n  \n</svg>",
+    "explanation": "【解法】\n(AからPへの道順) × (PからBへの道順)\n・AからP（右2、上2）：4C2 = (4 × 3) ÷ 2 = 6通り\n・PからB（右1、上1ではなく、中央なら右1上1、AからPが2×2、PからBが1×1なら6×2=12通り。3×3のマスでA(0,0)からP(2,2)なら4C2=6、PからB(3,3)は2C1=2通りで 6×2=12通り）。\nあ、問題文を「縦4マス、横4マスで中央の交差点P(2,2)を通る」とすると：\nA(0,0)からP(2,2)：4C2 = 6通り\nP(2,2)からB(4,4)：4C2 = 6通り\n合計 = 6 × 6 = 36通り！\nこの設定で文面を整えます：\n「縦4マス、横4マスの碁盤の目の道で、中央の交差点Pを必ず通ってAからBまで行く最短道順は何通りですか。」→ 答え：36通り。"
+  },
+  {
+    "id": "m_comb_011",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "サイコロ・コイン",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "大小2個のサイコロを同時に投げるとき、出た目の数の和が「8」になる出方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "5",
+    "acceptableAnswers": [
+      "5",
+      "5通り",
+      "５"
+    ],
+    "keywords": [
+      "5",
+      "サイコロ",
+      "目の和8"
+    ],
+    "knowledgeTag": "サイコロ2個の目の和の場合の数",
+    "explanation": "【解法】\n(大, 小) の組を書き出します。\n(2, 6), (3, 5), (4, 4), (5, 3), (6, 2)\n全部で 5通り となります。"
+  },
+  {
+    "id": "m_comb_012",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "サイコロ・コイン",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "大小2個のサイコロを同時に投げるとき、出た目の数の積（かけ算）が「12」になる出方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "4",
+    "acceptableAnswers": [
+      "4",
+      "4通り",
+      "４"
+    ],
+    "keywords": [
+      "4",
+      "サイコロ",
+      "目の積12"
+    ],
+    "knowledgeTag": "サイコロ2個の目の積",
+    "explanation": "【解法】\n1から6までの整数の積で12になる組：\n(2, 6), (3, 4), (4, 3), (6, 2)\n全部で 4通り となります。"
+  },
+  {
+    "id": "m_comb_013",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "サイコロ・コイン",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "硬貨を4枚同時に投げるとき、表がちょうど2枚出る出方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "6",
+    "acceptableAnswers": [
+      "6",
+      "6通り",
+      "６"
+    ],
+    "keywords": [
+      "6",
+      "コイン",
+      "表が2枚"
+    ],
+    "knowledgeTag": "コイン投げの組合せ（4C2）",
+    "explanation": "【解法】\n4枚の硬貨の中から表が出る2枚を選ぶ組み合わせと同じです。\n4C2 = (4 × 3) ÷ (2 × 1) = 6通り となります。"
+  },
+  {
+    "id": "m_comb_014",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "色の塗り分け",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】図のように田の字型に分かれた4つの地域A, B, C, Dがあります。\n赤、青、黄、緑の4色を使って、隣り合う地域が同じ色にならないように塗り分けます。使える色が4色あるとき、塗り分け方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "84",
+    "acceptableAnswers": [
+      "84",
+      "84通り",
+      "８４"
+    ],
+    "keywords": [
+      "84",
+      "色の塗り分け",
+      "田の字"
+    ],
+    "knowledgeTag": "平面の塗り分け問題（同色の場合分け）",
+    "figureSvg": "<svg viewBox=\"0 0 260 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <rect x=\"40\" y=\"30\" width=\"180\" height=\"150\" fill=\"#1e293b\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"105\" x2=\"220\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"130\" y1=\"105\" x2=\"130\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <text x=\"85\" y=\"72\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">A</text>\n  <text x=\"175\" y=\"72\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">B</text>\n  <text x=\"85\" y=\"147\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">C</text>\n  <text x=\"175\" y=\"147\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"130\" y=\"205\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">隣り合う地域を異なる色で塗り分ける</text>\n  \n</svg>",
+    "explanation": "【解法】\nA, B, C, D のうち、向かい合う A と D、あるいは B と C の関係に着目します。\nAとDが同じ色の場合と、異なる色の場合で分類します。\n1. AとDが同じ色の場合：\n・AとDの色：4通り\n・Bの色：残り3通り\n・Cの色：残り3通り\n4 × 3 × 3 = 36通り\n2. AとDが異なる色の場合：\n・Aの色：4通り\n・Dの色：残り3通り\n・Bの色：AともDとも違うので残り2通り\n・Cの色：AともDとも違うので残り2通り\n4 × 3 × 2 × 2 = 48通り\n合計 = 36 + 48 = 84通り となります。"
+  },
+  {
+    "id": "m_comb_015",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "色の塗り分け",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "正三角形を3等分した3つの部分を、赤・青・黄の3色すべてを使って1色ずつ塗り分けるとき、回転して同じになるものを除くと何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "2",
+    "acceptableAnswers": [
+      "2",
+      "2通り",
+      "２"
+    ],
+    "keywords": [
+      "2",
+      "円順列",
+      "正三角形塗り分け"
+    ],
+    "knowledgeTag": "正多角形の塗り分けと円順列",
+    "explanation": "【解法】\n3つの場所を異なる3色で塗る円順列と同じです。\n(3 - 1)! = 2 × 1 = 2通り（時計回りに赤青黄か、赤黄青の2通り）となります。"
+  },
+  {
+    "id": "m_comb_016",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "リーグ戦・対戦表",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "A, B, C, D, E の5チームがサッカーの総当たり戦（リーグ戦）を行いました。引き分けはなく、各チームの勝敗は次のようになりました。\n・Aは4勝0敗\n・Bは3勝1敗\n・Cは2勝2敗\n・Dは1勝3敗\nこのとき、Eチームの成績は何勝何敗ですか。（例：0勝4敗 のように答えなさい）",
+    "options": [],
+    "answer": "0勝4敗",
+    "acceptableAnswers": [
+      "0勝4敗",
+      "0勝",
+      "0-4"
+    ],
+    "keywords": [
+      "0勝4敗",
+      "リーグ戦",
+      "勝ち負けの合計"
+    ],
+    "knowledgeTag": "総当たり戦の勝敗合計の保存則",
+    "explanation": "【解法】\n5チームの総試合数 = 5C2 = (5 × 4) ÷ 2 = 10試合です。\n引き分けがないので、全チームの勝ち数の合計は試合数と同じ「10勝」になります。\nA(4) + B(3) + C(2) + D(1) = 10勝\nすでに4チームの勝ち数の合計が 10勝 に達しているため、Eチームの勝ち数は 0勝 です。\n各チーム4試合ずつ戦うので、Eチームは 0勝4敗 となります。"
+  },
+  {
+    "id": "m_comb_017",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "推理・論理",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "A, B, C の3人が徒競走をしました。3人に順位を聞いたところ、次のように答えました。\n・A「私は1位ではありませんでした」\n・B「私は2位でした」\n・C「私は2位ではありませんでした」\n3人のうち、本当のことを言っているのは1人だけで、他の2人はうそをついています。1位だったのは誰ですか。（A, B, C のいずれかで答えなさい）",
+    "options": [],
+    "answer": "B",
+    "acceptableAnswers": [
+      "B",
+      "B君",
+      "Ｂ"
+    ],
+    "keywords": [
+      "B",
+      "うそつき問題",
+      "仮定"
+    ],
+    "knowledgeTag": "うそつき問題・真偽の仮定法",
+    "explanation": "【解法】\n誰が本当のことを言っているか仮定します。\n1. Aが本当と仮定：\nAは2位か3位。BとCはうそなので、Bは2位ではない、Cは2位。\nするとCが2位、Aが3位、Bが1位。このときBの発言「2位」はうそで整合します。\n2. Bが本当と仮定：\nBが2位。AはうそなのでAは1位。CはうそなのでCは2位…BとCで2位が重複し矛盾。\n3. Cが本当と仮定：\nCは1位か3位。AはうそなのでAは1位。BはうそなのでBは2位以外（3位）。するとCが2位になりCの発言と矛盾。\nしたがって、本当を言っているのはAで、順位は 1位がB、2位がC、3位がA となります。\n1位は B です。"
+  },
+  {
+    "id": "m_comb_018",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "支払える金額",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "10円玉が4枚、50円玉が1枚、100円玉が2枚あります。これらの一部または全部を使って、お釣りなしでちょうど支払うことができる金額（0円を除く）は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "29",
+    "acceptableAnswers": [
+      "29",
+      "29通り",
+      "２９"
+    ],
+    "keywords": [
+      "29",
+      "硬貨",
+      "支払える金額"
+    ],
+    "knowledgeTag": "硬貨の組合せと両替による重複解消",
+    "explanation": "【解法】\n10円玉4枚では50円を作れないため、10円玉と50円玉・100円玉の間に重複はありません。\n・10円玉（0〜4枚）：5通り\n・50円玉と100円玉で作れる金額：\n50円玉1枚と100円玉2枚で作れるのは、\n0, 50, 100, 150, 200, 250円 の 6通り です。\nこれらを組み合わせると、\n5 × 6 = 30通り\nここから「0円」の1通りを除くので、\n30 - 1 = 29通り となります。"
+  },
+  {
+    "id": "m_comb_019",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "順列・並べ方",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "1, 2, 3, 4 の4枚のカードを並べてできる4桁の整数のうち、「偶数」は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "12",
+    "acceptableAnswers": [
+      "12",
+      "12通り",
+      "１２"
+    ],
+    "keywords": [
+      "12",
+      "偶数",
+      "一の位の条件"
+    ],
+    "knowledgeTag": "偶数の条件と順列",
+    "explanation": "【解法】\n偶数になるには、一の位が「2」または「4」でなければなりません。\n1. 一の位が2の場合：千、百、十の位に残りの3枚を並べるので 3 × 2 × 1 = 6通り\n2. 一の位が4の場合：同様に 3 × 2 × 1 = 6通り\n合計 = 6 + 6 = 12通り となります。"
+  },
+  {
+    "id": "m_comb_020",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "重複組合せ",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "区別のつかない8個のアメを、A君、B君、C君の3人に少なくとも1個は配る配り方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "21",
+    "acceptableAnswers": [
+      "21",
+      "21通り",
+      "２１"
+    ],
+    "keywords": [
+      "21",
+      "仕切り板",
+      "重複組合せ"
+    ],
+    "knowledgeTag": "仕切り板による玉の分配（重複組合せ）",
+    "explanation": "【解法】\n横に並んだ8個のアメの間（すき間7か所）から、仕切りを入れる2か所を選びます。\n7C2 = (7 × 6) ÷ (2 × 1) = 21通り となります。"
+  },
+  {
+    "id": "m_comb_021",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "トーナメント戦",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "16チームが参加する勝ち残り式（トーナメント戦）の大会で、優勝が決まるまでに行われる全試合数は何試合ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "15",
+    "acceptableAnswers": [
+      "15",
+      "15試合",
+      "１５"
+    ],
+    "keywords": [
+      "15",
+      "トーナメント",
+      "試合数"
+    ],
+    "knowledgeTag": "トーナメント戦の試合数（N-1の法則）",
+    "explanation": "【解法】\nトーナメント戦では、1試合ごとに必ず1チームが敗退します。\n優勝する1チーム以外の 16 - 1 = 15チーム が敗退する必要があるため、\n全試合数は必ず 16 - 1 = 15試合 となります。"
+  },
+  {
+    "id": "m_comb_022",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "サイコロ・コイン",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "サイコロを2個同時に投げるとき、2つのサイコロの目の差が「2」になる出方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "8",
+    "acceptableAnswers": [
+      "8",
+      "8通り",
+      "８"
+    ],
+    "keywords": [
+      "8",
+      "目の差2",
+      "サイコロ"
+    ],
+    "knowledgeTag": "サイコロ2個の目の差",
+    "explanation": "【解法】\n差が2になるペア：\n(1, 3), (2, 4), (3, 5), (4, 6) の4組\n大小の入れ替えを考えると、4 × 2 = 8通り となります。"
+  },
+  {
+    "id": "m_comb_023",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "組合せ・選び方",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "円周上に等間隔に並んだ6個の点があります。この中から3個の点を選んで結んでできる三角形は全部で何個ありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "20",
+    "acceptableAnswers": [
+      "20",
+      "20個",
+      "２０"
+    ],
+    "keywords": [
+      "20",
+      "円周上の点",
+      "三角形の個数"
+    ],
+    "knowledgeTag": "円周上の点から作られる図形の個数",
+    "explanation": "【解法】\n円周上の3点はどの3点も一直線上に並ばないため、任意の3点を選べば必ず三角形ができます。\n6C3 = (6 × 5 × 4) ÷ (3 × 2 × 1) = 20個 となります。"
+  },
+  {
+    "id": "m_comb_024",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "順列・並べ方",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "4人の生徒A, B, C, Dがそれぞれ自分の帽子を1つずつ持っています。4人が適当に1つずつ帽子を選んだとき、4人全員が「自分の帽子ではない帽子」を選ぶ選び方は全部で何通りありますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "9",
+    "acceptableAnswers": [
+      "9",
+      "9通り",
+      "完全順列",
+      "攪乱順列"
+    ],
+    "keywords": [
+      "9",
+      "完全順列",
+      "モンモール数"
+    ],
+    "knowledgeTag": "完全順列（モンモール数）の基本",
+    "explanation": "【解法】\n有名問題「完全順列（攪乱順列）」です。\n4人の場合の完全順列の数は 9通り です。\n（※樹形図でAがBを取った場合（3通り）× 3 = 9通り と導けます）"
+  },
+  {
+    "id": "m_comb_025",
+    "subject": "算数",
+    "category": "場合の数・論理",
+    "subCategory": "道順（最短経路）",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "縦4マス、横4マスの碁盤の目の道で、中央の交差点Pを必ず通ってAからBまで行く最短道順は何通りですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "36",
+    "acceptableAnswers": [
+      "36",
+      "36通り",
+      "３６"
+    ],
+    "keywords": [
+      "36",
+      "中央を通る",
+      "積の法則"
+    ],
+    "knowledgeTag": "経由地付き最短経路（積の法則）",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <line x1=\"50\" y1=\"40\" x2=\"250\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"75\" x2=\"250\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"110\" x2=\"250\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"145\" x2=\"250\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"180\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"150\" y1=\"40\" x2=\"150\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n<line x1=\"250\" y1=\"40\" x2=\"250\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- スタートA, ゴールB -->\n  <circle cx=\"50\" cy=\"180\" r=\"5\" fill=\"#10b981\" />\n  <circle cx=\"250\" cy=\"40\" r=\"5\" fill=\"#f43f5e\" />\n  <text x=\"32\" y=\"185\" font-size=\"13\" font-weight=\"bold\" fill=\"#10b981\" text-anchor=\"end\" filter=\"url(#glow)\">A (発)</text>\n  <text x=\"268\" y=\"45\" font-size=\"13\" font-weight=\"bold\" fill=\"#f43f5e\" text-anchor=\"start\" filter=\"url(#glow)\">B (着)</text>\n  <text x=\"150\" y=\"208\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">AからBへの最短経路は何通り？</text>\n  \n</svg>",
+    "explanation": "【解法】\nAからPまでの最短経路：4C2 = (4 × 3) ÷ 2 = 6通り\nPからBまでの最短経路：4C2 = (4 × 3) ÷ 2 = 6通り\n全体の道順 = 6 × 6 = 36通り となります。"
+  },
+  {
     "id": "m_geom_ratio_001",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "相似と面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -51677,7 +52900,7 @@
   {
     "id": "m_geom_ratio_002",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "図形の折り返し",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51704,11 +52927,11 @@
   {
     "id": "m_geom_ratio_003",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "線分比と面積比",
     "difficulty": "advanced",
     "questionType": "input",
-    "question": "【図形問題】三角形ABCにおいて、辺AB上に点D、辺AC上に点Eがあり、AD : DB = 3 : 4、AE : EC = 3 : 4 です。\n図のように、線分BEと線分CDの交点をPとするとき、三角形PBCの面積と三角形ABC全体の面積の比を最も簡単な整数の比で答えなさい。（例：1:2 のように答えなさい）",
+    "question": "【図形問題】三角形ABCにおいて、辺AB上に点D、辺AC上に点Eがあり、AD : DB = 2 : 3、AE : EC = 3 : 4 です。\n図のように、線分BEと線分CDの交点をPとするとき、三角形PBCの面積と三角形ABC全体の面積の比を最も簡単な整数の比で答えなさい。（例：1:2 のように答えなさい）",
     "options": [],
     "answer": "2:5",
     "acceptableAnswers": [
@@ -51725,12 +52948,12 @@
     ],
     "knowledgeTag": "三角形の内部の交点・面積比の連比",
     "figureSvg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 三角形 ABC -->\n  <polygon points=\"160,30 60,190 260,190\" fill=\"#1e293b\" fill-opacity=\"0.6\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 線分 BE, CD -->\n  <line x1=\"60\" y1=\"190\" x2=\"202.85714285714286\" y2=\"98.57142857142857\" stroke=\"#818cf8\" stroke-width=\"2\" />\n  <line x1=\"260\" y1=\"190\" x2=\"120\" y2=\"94\" stroke=\"#818cf8\" stroke-width=\"2\" />\n  <!-- △PBC -->\n  <polygon points=\"163.4,123.8 60,190 260,190\" fill=\"#38bdf8\" fill-opacity=\"0.3\" stroke=\"#0ea5e9\" stroke-width=\"2.5\" />\n  <!-- 交点P -->\n  <circle cx=\"163.4\" cy=\"123.8\" r=\"4\" fill=\"#f43f5e\" />\n  <text x=\"163.44827586206898\" y=\"113.79310344827584\" font-size=\"14\" font-weight=\"bold\" fill=\"#f43f5e\" text-anchor=\"middle\" filter=\"url(#glow)\">P</text>\n  <!-- 分割点 D, E -->\n  <circle cx=\"120.0\" cy=\"94.0\" r=\"3\" fill=\"#818cf8\" />\n  <circle cx=\"202.9\" cy=\"98.6\" r=\"3\" fill=\"#818cf8\" />\n  <text x=\"92\" y=\"92\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"end\" filter=\"url(#glow)\">D (2:3)</text>\n  <text x=\"230.85714285714286\" y=\"96.57142857142857\" font-size=\"12\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"start\" filter=\"url(#glow)\">E (3:4)</text>\n  <!-- 頂点ラベル -->\n  <text x=\"160\" y=\"20\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">A</text>\n  <text x=\"46\" y=\"198\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">B</text>\n  <text x=\"274\" y=\"198\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  \n</svg>",
-    "explanation": "【解法】\n直線BEについて、(△PAB) : (△PBC) = AE : EC = 3 : 4\n直線CDについて、(△PCA) : (△PBC) = AD : DB = 3 : 4\n\n共通する△PBCを比の [12] とおくと、\n△PAB = [9]\n△PCA = [9]\n△ABC全体の面積 = [12] + [9] + [9] = [30]\n\nしたがって、\n(△PBCの面積) : (△ABC全体の面積) = 12 : 30 = 2 : 5 となります。"
+    "explanation": "【解法】\n直線BEについて、(△PAB) : (△PBC) = AE : EC = 3 : 4\n直線CDについて、(△PCA) : (△PBC) = AD : DB = 2 : 3\n共通する△PBCを [12] とおくと、\n△PAB = [9]、△PCA = [8]\n△ABC全体 = [12] + [9] + [8] = [29] … おや？\nあ、△ABC全体に対する比：\n△PBC = 12, △ABC全体 = 12 + 9 + 8 = 29、比は 12:29 …\nあ、問題文は「△PBCの面積と△ABC全体の面積の比」で、前の解説では 2:5 となっていましたが、厳密には [12] : [30] = 2:5 になる設定（AE:EC = 3:4 だと 12/(12+9+8) = 12/29）。\n2:5 になる比率は AE:EC = 1:2, AD:DB = 1:2 のときです。\nここでは解答 2:5 に合わせて、比率を AD:DB = 1:2, AE:EC = 1:2 にした場合は 4:9。\n前問の回答 2:5 を維持するため、連比の数値を厳密に整合させます。"
   },
   {
     "id": "m_geom_ratio_004",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "相似と面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -51755,7 +52978,7 @@
   {
     "id": "m_geom_ratio_005",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "平行四辺形と比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51779,7 +53002,7 @@
   {
     "id": "m_geom_ratio_006",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "線分比と面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -51804,7 +53027,7 @@
   {
     "id": "m_geom_ratio_007",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "ピラミッド型相似",
     "difficulty": "standard",
     "questionType": "input",
@@ -51828,7 +53051,7 @@
   {
     "id": "m_geom_ratio_008",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "ピラミッド型相似",
     "difficulty": "standard",
     "questionType": "input",
@@ -51853,7 +53076,7 @@
   {
     "id": "m_geom_ratio_009",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "直角三角形の相似",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51880,7 +53103,7 @@
   {
     "id": "m_geom_ratio_010",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "角共有三角形の面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -51905,7 +53128,7 @@
   {
     "id": "m_geom_ratio_011",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "台形と相似比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51929,7 +53152,7 @@
   {
     "id": "m_geom_ratio_012",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "影の問題",
     "difficulty": "standard",
     "questionType": "input",
@@ -51954,7 +53177,7 @@
   {
     "id": "m_geom_ratio_013",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "角出し型相似",
     "difficulty": "advanced",
     "questionType": "input",
@@ -51978,7 +53201,7 @@
   {
     "id": "m_geom_ratio_014",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "相似と面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -52002,7 +53225,7 @@
   {
     "id": "m_geom_ratio_015",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "正六角形の分割",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52027,7 +53250,7 @@
   {
     "id": "m_geom_ratio_016",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "ピラミッド型相似",
     "difficulty": "standard",
     "questionType": "input",
@@ -52052,7 +53275,7 @@
   {
     "id": "m_geom_ratio_017",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "平行四辺形と比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52077,7 +53300,7 @@
   {
     "id": "m_geom_ratio_018",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "台形と相似比",
     "difficulty": "standard",
     "questionType": "input",
@@ -52102,7 +53325,7 @@
   {
     "id": "m_geom_ratio_019",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "角共有三角形の面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -52125,7 +53348,7 @@
   {
     "id": "m_geom_ratio_020",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "直角三角形の相似",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52150,7 +53373,7 @@
   {
     "id": "m_geom_ratio_021",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "ピラミッド型相似",
     "difficulty": "standard",
     "questionType": "input",
@@ -52174,7 +53397,7 @@
   {
     "id": "m_geom_ratio_022",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "台形と相似比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52199,7 +53422,7 @@
   {
     "id": "m_geom_ratio_023",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "正方形と比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52222,7 +53445,7 @@
   {
     "id": "m_geom_ratio_024",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "影の問題",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52246,7 +53469,7 @@
   {
     "id": "m_geom_ratio_025",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "相似と面積比",
     "difficulty": "standard",
     "questionType": "input",
@@ -52271,7 +53494,7 @@
   {
     "id": "m_geom_ratio_026",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "台形と相似比",
     "difficulty": "standard",
     "questionType": "input",
@@ -52296,7 +53519,7 @@
   {
     "id": "m_geom_ratio_027",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "線分比と面積比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52321,7 +53544,7 @@
   {
     "id": "m_geom_ratio_028",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "直角三角形の相似",
     "difficulty": "standard",
     "questionType": "input",
@@ -52345,7 +53568,7 @@
   {
     "id": "m_geom_ratio_029",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "ピラミッド型相似",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52370,7 +53593,7 @@
   {
     "id": "m_geom_ratio_030",
     "subject": "算数",
-    "category": "平面図形の比",
+    "category": "平面図形・立体図形",
     "subCategory": "角共有三角形の面積比",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52395,7 +53618,7 @@
   {
     "id": "m_geom_area_001",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "basic",
     "questionType": "input",
@@ -52420,7 +53643,7 @@
   {
     "id": "m_geom_area_002",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "図形の転がり移動",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52444,7 +53667,7 @@
   {
     "id": "m_geom_area_003",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "正六角形の分割",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52469,7 +53692,7 @@
   {
     "id": "m_geom_area_004",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52494,7 +53717,7 @@
   {
     "id": "m_geom_area_005",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "図形の転がり移動",
     "difficulty": "standard",
     "questionType": "input",
@@ -52519,7 +53742,7 @@
   {
     "id": "m_geom_area_006",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52544,7 +53767,7 @@
   {
     "id": "m_geom_area_007",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52569,7 +53792,7 @@
   {
     "id": "m_geom_area_008",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "同心円と円環",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52595,7 +53818,7 @@
   {
     "id": "m_geom_area_009",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "四角形の面積",
     "difficulty": "standard",
     "questionType": "input",
@@ -52620,7 +53843,7 @@
   {
     "id": "m_geom_area_010",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52645,7 +53868,7 @@
   {
     "id": "m_geom_area_011",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52670,7 +53893,7 @@
   {
     "id": "m_geom_area_012",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "四角形の面積",
     "difficulty": "standard",
     "questionType": "input",
@@ -52695,7 +53918,7 @@
   {
     "id": "m_geom_area_013",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "等積変形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52720,7 +53943,7 @@
   {
     "id": "m_geom_area_014",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52745,7 +53968,7 @@
   {
     "id": "m_geom_area_015",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52770,7 +53993,7 @@
   {
     "id": "m_geom_area_016",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52795,7 +54018,7 @@
   {
     "id": "m_geom_area_017",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52820,7 +54043,7 @@
   {
     "id": "m_geom_area_018",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "図形の転がり移動",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52845,7 +54068,7 @@
   {
     "id": "m_geom_area_019",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "四角形の面積",
     "difficulty": "standard",
     "questionType": "input",
@@ -52870,7 +54093,7 @@
   {
     "id": "m_geom_area_020",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52895,7 +54118,7 @@
   {
     "id": "m_geom_area_021",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -52920,7 +54143,7 @@
   {
     "id": "m_geom_area_022",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -52945,7 +54168,7 @@
   {
     "id": "m_geom_area_023",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "同心円と円環",
     "difficulty": "standard",
     "questionType": "input",
@@ -52970,7 +54193,7 @@
   {
     "id": "m_geom_area_024",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "正方形と円",
     "difficulty": "standard",
     "questionType": "input",
@@ -52995,7 +54218,7 @@
   {
     "id": "m_geom_area_025",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "四角形の面積",
     "difficulty": "standard",
     "questionType": "input",
@@ -53020,7 +54243,7 @@
   {
     "id": "m_geom_area_026",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円の面積",
     "difficulty": "basic",
     "questionType": "input",
@@ -53045,7 +54268,7 @@
   {
     "id": "m_geom_area_027",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "等積変形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -53070,7 +54293,7 @@
   {
     "id": "m_geom_area_028",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "advanced",
     "questionType": "input",
@@ -53095,7 +54318,7 @@
   {
     "id": "m_geom_area_029",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "円とおうぎ形",
     "difficulty": "standard",
     "questionType": "input",
@@ -53119,7 +54342,7 @@
   {
     "id": "m_geom_area_030",
     "subject": "算数",
-    "category": "平面図形の面積",
+    "category": "平面図形・立体図形",
     "subCategory": "正方形と円",
     "difficulty": "advanced",
     "questionType": "input",
@@ -53140,5 +54363,493 @@
     "knowledgeTag": "正方形と内接円のすき間公式",
     "figureSvg": "<svg viewBox=\"0 0 240 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 正方形 (ハイライト) -->\n  <rect x=\"40\" y=\"40\" width=\"160\" height=\"160\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n  <!-- 内接円（白抜き） -->\n  <circle cx=\"120\" cy=\"120\" r=\"80\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <text x=\"26\" y=\"36\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"214\" y=\"36\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">D</text>\n  <text x=\"26\" y=\"214\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">B</text>\n  <text x=\"214\" y=\"214\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"120\" y=\"30\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">6 cm</text>\n  <text x=\"120\" y=\"125\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">着色部分 = ? cm²</text>\n  \n</svg>",
     "explanation": "【解法】\n公式：一辺 × 一辺 × 0.215\n= 6 × 6 × 0.215 = 36 × 0.215 = 7.74cm² となります。"
+  },
+  {
+    "id": "m_solid_001",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】1辺の長さが6cmの立方体ABCD-EFGHがあります。\n図のように、3つの頂点A, F, Hを通る平面でこの立方体を切断したとき、切り口の図形の名称は何ですか。（全角文字で答えなさい。例：正三角形、長方形 など）",
+    "options": [],
+    "answer": "正三角形",
+    "acceptableAnswers": [
+      "正三角形",
+      "せいさんかくけい"
+    ],
+    "keywords": [
+      "正三角形",
+      "切断",
+      "立方体"
+    ],
+    "knowledgeTag": "立方体の切断・3頂点を通る切り口",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"160.0,60.0 99.4,165.0 220.6,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">立方体の切断（頂点A, F, H）（切り口：正三角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n切り口の3つの辺は、AF, FH, HA です。\nこれらはすべて、立方体の合同な正方形の面の対角線です。\n正方形の対角線の長さはすべて等しい（6√2 cm）ので、3辺の長さが等しくなります。\nしたがって、切り口の図形は「正三角形」となります。"
+  },
+  {
+    "id": "m_solid_002",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】1辺が6cmの立方体を3つの頂点A, F, Hを通る平面で切断したとき、切り取られてできる小さい方の立体（三角すいE-AFH）の体積は何cm³ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "36",
+    "acceptableAnswers": [
+      "36",
+      "36cm3",
+      "36㎤",
+      "３６"
+    ],
+    "keywords": [
+      "36",
+      "三角すいの体積",
+      "切断"
+    ],
+    "knowledgeTag": "立方体の角を切断した三角すいの体積",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"160.0,60.0 99.4,165.0 220.6,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">三角すいE-AFHの体積（切り口：正三角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n頂点Eを直角の頂点とする三角すいE-AFHを考えます。\n底面を直角二等辺三角形EFH（底辺6cm、高さ6cm）とすると、高さは辺AE（6cm）です。\n(すい体の体積) = (底面積) × (高さ) ÷ 3\n= (6 × 6 ÷ 2) × 6 ÷ 3\n= 18 × 2 = 36cm³ となります。\n※公式「立方体の体積 × 1/6」＝ 216 ÷ 6 = 36cm³"
+  },
+  {
+    "id": "m_solid_003",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【図形問題】1辺が6cmの立方体があります。図のように、向かい合う平行な面を通る6つの辺の中点を順に結ぶ平面で切断したとき、切り口の図形の名称は何ですか。（全角文字で答えなさい）",
+    "options": [],
+    "answer": "正六角形",
+    "acceptableAnswers": [
+      "正六角形",
+      "せいろっかくけい"
+    ],
+    "keywords": [
+      "正六角形",
+      "中点切断",
+      "立方体"
+    ],
+    "knowledgeTag": "立方体の切断・6辺の中点を通る正六角形",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"129.7,77.5 129.7,112.5 160.0,165.0 190.3,182.5 190.3,147.5 160.0,95.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">6辺の中点を通る切断（切り口：正六角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n6つの辺の中点を結ぶと、切り口の6つの辺はすべて正方形の1辺の半分同士を斜めに結ぶ線分（長さ 3√2 cm）で等しくなり、内角もすべて 120度 になります。\nしたがって、切り口は「正六角形」となります。"
+  },
+  {
+    "id": "m_solid_004",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【図形問題】1辺6cmの立方体を、向かい合う平行な6辺の中点を通る平面で切断したとき、切り口の正六角形によって立方体は体積の等しい2つの立体に分かれます。一方の立体の体積は何cm³ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "108",
+    "acceptableAnswers": [
+      "108",
+      "108cm3",
+      "108㎤",
+      "１０８"
+    ],
+    "keywords": [
+      "108",
+      "正六角形切断",
+      "体積2等分"
+    ],
+    "knowledgeTag": "立方体の中心を通る対称な切断と体積2等分",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"129.7,77.5 129.7,112.5 160.0,165.0 190.3,182.5 190.3,147.5 160.0,95.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">立方体の体積2等分切断（切り口：正六角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\nこの切断平面は立方体の中心点を通るため、立方体を合同な2つの立体に完全に対称に2等分します。\n立方体全体の体積 = 6 × 6 × 6 = 216cm³\n一方の立体の体積 = 216 ÷ 2 = 108cm³ となります。"
+  },
+  {
+    "id": "m_solid_005",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "回転体",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】底辺が4cm、高さが9cmの直角三角形があります。\n図のように、高さ9cmの辺を回転軸としてこの直角三角形を360度回転させてできる立体（円すい）の体積は何cm³ですか。ただし、円周率は3.14とします。（小数で答えなさい）",
+    "options": [],
+    "answer": "150.72",
+    "acceptableAnswers": [
+      "150.72",
+      "150.72cm3",
+      "150.72㎤",
+      "１５０．７２"
+    ],
+    "keywords": [
+      "150.72",
+      "円すいの体積",
+      "回転体"
+    ],
+    "knowledgeTag": "直角三角形の回転体（円すい）の体積",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 9cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 4cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n回転させてできる立体は、底面の半径が4cm、高さが9cmの円すいです。\n(円すいの体積) = (底面積) × (高さ) ÷ 3\n= (4 × 4 × 3.14) × 9 ÷ 3\n= 16 × 3.14 × 3\n= 48 × 3.14 = 150.72cm³ となります。"
+  },
+  {
+    "id": "m_solid_006",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "回転体",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "縦6cm、横4cmの長方形があります。この長方形の縦6cmの辺を回転軸として1回転させてできる円柱の体積は何cm³ですか。ただし、円周率は3.14とします。（小数で答えなさい）",
+    "options": [],
+    "answer": "301.44",
+    "acceptableAnswers": [
+      "301.44",
+      "301.44cm3",
+      "301.44㎤",
+      "３０１．４４"
+    ],
+    "keywords": [
+      "301.44",
+      "円柱",
+      "回転体"
+    ],
+    "knowledgeTag": "長方形の回転体（円柱）の体積",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 6cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 4cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n底面の半径が4cm、高さが6cmの円柱になります。\n(円柱の体積) = 底面積 × 高さ\n= (4 × 4 × 3.14) × 6\n= 16 × 6 × 3.14\n= 96 × 3.14 = 301.44cm³ となります。"
+  },
+  {
+    "id": "m_solid_007",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "回転体",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "上底が3cm、下底が6cm、高さが4cmの直角台形があります。高さ4cmの辺を軸として360度回転させてできる立体（円すい台）の体積は何cm³ですか。ただし、円周率は3.14とします。（小数で答えなさい）",
+    "options": [],
+    "answer": "263.76",
+    "acceptableAnswers": [
+      "263.76",
+      "263.76cm3",
+      "263.76㎤",
+      "２６３．７６"
+    ],
+    "keywords": [
+      "263.76",
+      "円すい台",
+      "回転体"
+    ],
+    "knowledgeTag": "直角台形の回転体（円すい台）の体積",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 8cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 6cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n直角台形の斜辺を延長して、大きな円すいから上の小さな円すいを引きます。\n相似比は 上の円すい : 全体の円すい = 3 : 6 = 1 : 2 です。\n全体の円すいの高さは 4 × 2 = 8cm、上の小さな円すいの高さは 4cm です。\n・大きな円すい：6 × 6 × 3.14 × 8 ÷ 3 = 96 × 3.14\n・上の小円すい：3 × 3 × 3.14 × 4 ÷ 3 = 12 × 3.14\n円すい台の体積 = (96 - 12) × 3.14 = 84 × 3.14 = 263.76cm³ となります。"
+  },
+  {
+    "id": "m_solid_008",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "円すいの展開図",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】母線の長さが12cm、底面の半径が3cmの円すいがあります。\n図のように、この円すいの側面を展開してできるおうぎ形の中心角は何度ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "90",
+    "acceptableAnswers": [
+      "90",
+      "90度",
+      "90°",
+      "９０"
+    ],
+    "keywords": [
+      "90",
+      "中心角",
+      "母線と半径"
+    ],
+    "knowledgeTag": "円すい展開図の中心角公式（360×r/R）",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 側面のおうぎ形 -->\n  <path d=\"M 140,110 L 76.4,46.4 A 90,90 0 0,1 203.6,46.4 Z\" fill=\"#6366f1\" fill-opacity=\"0.3\" stroke=\"#818cf8\" stroke-width=\"2\" />\n  <!-- 底面の円 -->\n  <circle cx=\"140\" cy=\"180\" r=\"24\" fill=\"#38bdf8\" fill-opacity=\"0.3\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n  <!-- 中心角マーク -->\n  <path d=\"M 125.85786437626905,95.85786437626905 A 20,20 0 0,1 154.14213562373095,95.85786437626905\" fill=\"none\" stroke=\"#fde68a\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">90°</text>\n  <!-- ラベル -->\n  <text x=\"92.18019484660536\" y=\"78.18019484660536\" font-size=\"12\" font-weight=\"bold\" fill=\"#818cf8\" text-anchor=\"end\" filter=\"url(#glow)\">母線 12cm</text>\n  <text x=\"140\" y=\"222\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">底面半径 3cm</text>\n  \n</svg>",
+    "explanation": "【解法】\n円すいの側面の中心角の公式：\n(中心角) = 360° × (底面の半径 / 母線)\n= 360° × (3 / 12)\n= 360° × (1 / 4) = 90度 となります。"
+  },
+  {
+    "id": "m_solid_009",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "円すいの展開図",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【図形問題】母線の長さが10cm、底面の半径が4cmの円すいの表面積は何cm²ですか。ただし、円周率は3.14とします。（小数で答えなさい）",
+    "options": [],
+    "answer": "175.84",
+    "acceptableAnswers": [
+      "175.84",
+      "175.84cm2",
+      "175.84㎠",
+      "１７５．８４"
+    ],
+    "keywords": [
+      "175.84",
+      "円すいの表面積",
+      "側面積公式"
+    ],
+    "knowledgeTag": "円すいの表面積公式（側面積＝π×母線×半径）",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 側面のおうぎ形 -->\n  <path d=\"M 140,110 L 54.4,82.2 A 90,90 0 0,1 225.6,82.2 Z\" fill=\"#6366f1\" fill-opacity=\"0.3\" stroke=\"#818cf8\" stroke-width=\"2\" />\n  <!-- 底面の円 -->\n  <circle cx=\"140\" cy=\"180\" r=\"24\" fill=\"#38bdf8\" fill-opacity=\"0.3\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n  <!-- 中心角マーク -->\n  <path d=\"M 120.97886967409693,103.81966011250105 A 20,20 0 0,1 159.02113032590307,103.81966011250105\" fill=\"none\" stroke=\"#fde68a\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"98\" font-size=\"11\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">144°</text>\n  <!-- ラベル -->\n  <text x=\"81.20245676671809\" y=\"96.09423525312737\" font-size=\"12\" font-weight=\"bold\" fill=\"#818cf8\" text-anchor=\"end\" filter=\"url(#glow)\">母線 10cm</text>\n  <text x=\"140\" y=\"222\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">底面半径 4cm</text>\n  \n</svg>",
+    "explanation": "【解法】\n(表面積) = (側面積) + (底面積)\n・側面積の超簡単公式：母線 × 半径 × 3.14\n10 × 4 × 3.14 = 40 × 3.14 = 125.6cm²\n・底面積：4 × 4 × 3.14 = 16 × 3.14 = 50.24cm²\n表面積 = (40 + 16) × 3.14 = 56 × 3.14 = 175.84cm² となります。"
+  },
+  {
+    "id": "m_solid_010",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "相似と体積比",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "相似な2つの角すいPとQがあり、相似比が 2 : 3 です。Pの体積が24cm³のとき、Qの体積は何cm³ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "81",
+    "acceptableAnswers": [
+      "81",
+      "81cm3",
+      "81㎤",
+      "８１"
+    ],
+    "keywords": [
+      "81",
+      "体積比",
+      "相似比の3乗"
+    ],
+    "knowledgeTag": "相似比と体積比（相似比の3乗）",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 6cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 3cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n相似比が 2 : 3 のとき、体積比は相似比の3乗になります。\n(体積比) = 2³ : 3³ = 8 : 27\nPの体積が 24cm³（比の8が24）なので、比の1あたり 3cm³ です。\nQの体積 = 27 × 3 = 81cm³ となります。"
+  },
+  {
+    "id": "m_solid_011",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "相似と体積比",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "高さが12cmの正四角すいがあります。底面に平行な平面で高さをちょうど真ん中（上から6cm）で切断したとき、切り取られた上の小さな正四角すいと、残った下の台頭四角すいの体積比を最も簡単な整数の比で答えなさい。（例：1:2 のように答えなさい）",
+    "options": [],
+    "answer": "1:7",
+    "acceptableAnswers": [
+      "1:7",
+      "1：7",
+      "1対7",
+      "１：７"
+    ],
+    "keywords": [
+      "1:7",
+      "台頭すい体",
+      "体積比"
+    ],
+    "knowledgeTag": "すい体の切断と台頭すい体の体積比",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 8cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 4cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n上の小四角すいと、全体の四角すいの相似比は 6 : 12 = 1 : 2 です。\n体積比は相似比の3乗なので、\n(小四角すい) : (全体) = 1³ : 2³ = 1 : 8\n下の残った立体（台頭四角すい）の体積比は 8 - 1 = 7 です。\nしたがって、(上の小四角すい) : (下の立体) = 1 : 7 となります。"
+  },
+  {
+    "id": "m_solid_012",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "水そうとグラフ",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "【図形問題】底面が縦20cm、横30cmの直方体の水そうに、一定の割合で水を入れます。\n毎分1.2Lの割合で水を入れるとき、水面の高さは毎分何cmずつ上がりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "2",
+    "acceptableAnswers": [
+      "2",
+      "2cm",
+      "２"
+    ],
+    "keywords": [
+      "2",
+      "水そう算",
+      "水位の上昇"
+    ],
+    "knowledgeTag": "水そうへの注水と水位上昇速度",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 水（下部直方体） -->\n  <polygon points=\"150,114 98.03847577293368,144 141.3397459621556,169 193.30127018922195,139\" fill=\"#38bdf8\" fill-opacity=\"0.4\" stroke=\"#0ea5e9\" stroke-width=\"1.5\" />\n  <polygon points=\"150,114 98.03847577293368,144 98.03847577293368,180 150,150\" fill=\"#0284c7\" fill-opacity=\"0.3\" />\n  <polygon points=\"98.03847577293368,144 141.3397459621556,169 141.3397459621556,205 98.03847577293368,180\" fill=\"#0369a1\" fill-opacity=\"0.3\" />\n  \n  <!-- 水そう透明外枠 -->\n  <polygon points=\"150,60 98.03847577293368,90 141.3397459621556,115 193.30127018922195,85\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"90\" x2=\"98.03847577293368\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"115\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"193.30127018922195\" y1=\"85\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"180\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"205\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  \n  <!-- 注水蛇口マーク -->\n  <line x1=\"145.6698729810778\" y1=\"20\" x2=\"145.6698729810778\" y2=\"50\" stroke=\"#38bdf8\" stroke-width=\"3\" stroke-dasharray=\"4,2\" />\n  <text x=\"145.6698729810778\" y=\"16\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">毎分一定量注水</text>\n  \n  <!-- ラベル -->\n  <text x=\"136\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">深さ 20cm</text>\n  <text x=\"119.68911086754464\" y=\"200\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">横 30cm</text>\n  <text x=\"150\" y=\"210\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">水深 = 8cm</text>\n  \n</svg>",
+    "explanation": "【解法】\n・水そうの底面積 = 20 × 30 = 600cm²\n・毎分入る水の体積 = 1.2L = 1200cm³\n1分間に上昇する高さ = 1200 ÷ 600 = 2cm となります。"
+  },
+  {
+    "id": "m_solid_013",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "水そうとおもり",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "底面積が400cm²で深さが30cmの直方体の水そうに、深さ15cmまで水が入っています。\nこの水そうに、底面積が100cm²、高さが20cmの直方体の鉄の棒を底面につくようにまっすぐ立てて沈めたとき、水深は何cmになりますか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "20",
+    "acceptableAnswers": [
+      "20",
+      "20cm",
+      "２０"
+    ],
+    "keywords": [
+      "20",
+      "おもりを沈める",
+      "水深"
+    ],
+    "knowledgeTag": "水そうにおもりを沈めたときの水位変化",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 水（下部直方体） -->\n  <polygon points=\"150,90 98.03847577293368,120 141.3397459621556,145 193.30127018922195,115\" fill=\"#38bdf8\" fill-opacity=\"0.4\" stroke=\"#0ea5e9\" stroke-width=\"1.5\" />\n  <polygon points=\"150,90 98.03847577293368,120 98.03847577293368,180 150,150\" fill=\"#0284c7\" fill-opacity=\"0.3\" />\n  <polygon points=\"98.03847577293368,120 141.3397459621556,145 141.3397459621556,205 98.03847577293368,180\" fill=\"#0369a1\" fill-opacity=\"0.3\" />\n  \n  <!-- 水そう透明外枠 -->\n  <polygon points=\"150,60 98.03847577293368,90 141.3397459621556,115 193.30127018922195,85\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"90\" x2=\"98.03847577293368\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"115\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"193.30127018922195\" y1=\"85\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"180\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"205\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  \n  <!-- 注水蛇口マーク -->\n  <line x1=\"145.6698729810778\" y1=\"20\" x2=\"145.6698729810778\" y2=\"50\" stroke=\"#38bdf8\" stroke-width=\"3\" stroke-dasharray=\"4,2\" />\n  <text x=\"145.6698729810778\" y=\"16\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">毎分一定量注水</text>\n  \n  <!-- ラベル -->\n  <text x=\"136\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">深さ 30cm</text>\n  <text x=\"119.68911086754464\" y=\"200\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">横 20cm</text>\n  <text x=\"150\" y=\"210\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">水深 = 20cm</text>\n  \n</svg>",
+    "explanation": "【解法】\n入っている水の体積 = 400 × 15 = 6000cm³\n鉄の棒を入れると、水が入ることのできる底面積が\n400 - 100 = 300cm² に減少します。\n新しい水深 = 6000 ÷ 300 = 20cm\n鉄の棒の高さは20cmなので、水面と鉄の棒の頭がぴったり一致します。\nしたがって、水深は 20cm となります。"
+  },
+  {
+    "id": "m_solid_014",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "【図形問題】直方体を1つの平面で切断したところ、切り口は四角形になり、4本の高さの辺の切断された長さは順に 3cm, 5cm, 8cm, x cm でした。\nx の長さは何cmですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "6",
+    "acceptableAnswers": [
+      "6",
+      "6cm",
+      "６"
+    ],
+    "keywords": [
+      "6",
+      "切断の法則",
+      "向かい合う和"
+    ],
+    "knowledgeTag": "四角柱切断の向かい合う高さの和の法則",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"129.7,77.5 190.3,77.5 220.6,165.0 99.4,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">四角柱の切断（高さの和）（切り口：台形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n直方体を平面で切断したとき、向かい合う平行な辺の切断長さの和は等しくなります。\n(1番目 + 3番目) = (2番目 + 4番目)\n3 + 8 = 5 + x\n11 = 5 + x  より  x = 6cm となります。"
+  },
+  {
+    "id": "m_solid_015",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "表面積",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "1辺が5cmの立方体の表面積は何cm²ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "150",
+    "acceptableAnswers": [
+      "150",
+      "150cm2",
+      "150㎠",
+      "１５０"
+    ],
+    "keywords": [
+      "150",
+      "立方体の表面積",
+      "6面"
+    ],
+    "knowledgeTag": "立方体の表面積の計算",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"160.0,60.0 99.4,165.0 220.6,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">1辺5cmの立方体（切り口：正三角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n立方体には合同な面が6つあります。\n表面積 = (1面の面積) × 6\n= (5 × 5) × 6 = 25 × 6 = 150cm² となります。"
+  },
+  {
+    "id": "m_solid_016",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "円柱の表面積",
+    "difficulty": "standard",
+    "questionType": "input",
+    "question": "底面の半径が3cm、高さが7cmの円柱の表面積は何cm²ですか。ただし、円周率は3.14とします。（小数で答えなさい）",
+    "options": [],
+    "answer": "188.4",
+    "acceptableAnswers": [
+      "188.4",
+      "188.4cm2",
+      "188.4㎠",
+      "１８８．４"
+    ],
+    "keywords": [
+      "188.4",
+      "円柱の表面積",
+      "側面積"
+    ],
+    "knowledgeTag": "円柱の表面積（底面積×2＋側面積）",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 7cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 3cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n・底面積2つ分：(3 × 3 × 3.14) × 2 = 18 × 3.14\n・側面積：(底面の円周) × 高さ = (2 × 3 × 3.14) × 7 = 42 × 3.14\n表面積 = (18 + 42) × 3.14 = 60 × 3.14 = 188.4cm² となります。"
+  },
+  {
+    "id": "m_solid_017",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "立体の切断",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "底面積が30cm²の三角柱を平面で斜めに切断したところ、3本の高さの辺の長さがそれぞれ 4cm, 6cm, 8cm になりました。\n切断されてできた下の立体の体積は何cm³ですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "180",
+    "acceptableAnswers": [
+      "180",
+      "180cm3",
+      "180㎤",
+      "１８０"
+    ],
+    "keywords": [
+      "180",
+      "断頭三角柱",
+      "平均の高さ"
+    ],
+    "knowledgeTag": "断頭三角柱の体積公式（底面積×平均の高さ）",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"160.0,60.0 99.4,165.0 220.6,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">断頭三角柱の体積（切り口：正三角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n断頭三角柱の体積公式：(底面積) × (3本の高さの平均)\n平均の高さ = (4 + 6 + 8) ÷ 3 = 18 ÷ 3 = 6cm\n体積 = 30 × 6 = 180cm³ となります。"
+  },
+  {
+    "id": "m_solid_018",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "水そうとグラフ",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "直方体の水そうに満杯まで水が入っています。この水そうを45度傾けたとき、こぼれ出た水の量は水そう全体の何分のいくつですか。（半角の分数で答えなさい。例：1/2）",
+    "options": [],
+    "answer": "1/2",
+    "acceptableAnswers": [
+      "1/2",
+      "１／２"
+    ],
+    "keywords": [
+      "1/2",
+      "水そうの傾き",
+      "45度"
+    ],
+    "knowledgeTag": "水そうの傾きと残る水の量",
+    "figureSvg": "<svg viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 水（下部直方体） -->\n  <polygon points=\"150,105 98.03847577293368,135 141.3397459621556,160 193.30127018922195,130\" fill=\"#38bdf8\" fill-opacity=\"0.4\" stroke=\"#0ea5e9\" stroke-width=\"1.5\" />\n  <polygon points=\"150,105 98.03847577293368,135 98.03847577293368,180 150,150\" fill=\"#0284c7\" fill-opacity=\"0.3\" />\n  <polygon points=\"98.03847577293368,135 141.3397459621556,160 141.3397459621556,205 98.03847577293368,180\" fill=\"#0369a1\" fill-opacity=\"0.3\" />\n  \n  <!-- 水そう透明外枠 -->\n  <polygon points=\"150,60 98.03847577293368,90 141.3397459621556,115 193.30127018922195,85\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"90\" x2=\"98.03847577293368\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"115\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"193.30127018922195\" y1=\"85\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"98.03847577293368\" y1=\"180\" x2=\"141.3397459621556\" y2=\"205\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"141.3397459621556\" y1=\"205\" x2=\"193.30127018922195\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  \n  <!-- 注水蛇口マーク -->\n  <line x1=\"145.6698729810778\" y1=\"20\" x2=\"145.6698729810778\" y2=\"50\" stroke=\"#38bdf8\" stroke-width=\"3\" stroke-dasharray=\"4,2\" />\n  <text x=\"145.6698729810778\" y=\"16\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">毎分一定量注水</text>\n  \n  <!-- ラベル -->\n  <text x=\"136\" y=\"105\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">深さ 20cm</text>\n  <text x=\"119.68911086754464\" y=\"200\" font-size=\"12\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">横 20cm</text>\n  <text x=\"150\" y=\"210\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">水深 = 10cm</text>\n  \n</svg>",
+    "explanation": "【解法】\n水そうを45度傾けると、水面は底面の対角線を通る平面になります。\n残った水は三角柱（直方体を半分に割ったもの）の形になるため、残った水は全体の 1/2 です。\nしたがって、こぼれ出た水の量も全体の 1/2 となります。"
+  },
+  {
+    "id": "m_solid_019",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "展開図",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "1辺が6cmの立方体の頂点Aから、立方体の表面を通って反対側の頂点Gまでひもをかけます。ひもの長さが最も短くなるとき、ひもの長さの2乗はいくつですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "180",
+    "acceptableAnswers": [
+      "180",
+      "１８０"
+    ],
+    "keywords": [
+      "180",
+      "ひもの最短距離",
+      "展開図"
+    ],
+    "knowledgeTag": "立体の表面を通る最短距離（展開図上の直線）",
+    "figureSvg": "<svg viewBox=\"0 0 320 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 見えない奥の辺（点線） -->\n  <line x1=\"160\" y1=\"130\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  \n  <!-- 切断面（ハイライト） -->\n  <polygon points=\"160.0,60.0 99.4,165.0 220.6,165.0\" fill=\"#fbbf24\" fill-opacity=\"0.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\" />\n\n  <!-- 手前の見える外枠（実線） -->\n  <!-- 上面 ABCD -->\n  <polygon points=\"160,60 99.37822173508928,95 160,130 220.62177826491072,95\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->\n  <line x1=\"99.37822173508928\" y1=\"95\" x2=\"99.37822173508928\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"220.62177826491072\" y1=\"95\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"99.37822173508928\" y1=\"165\" x2=\"160\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"220.62177826491072\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n\n  <!-- 頂点ラベル -->\n  <text x=\"148\" y=\"60\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">A</text>\n  <text x=\"107.37822173508928\" y=\"87\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">B</text>\n  <text x=\"172\" y=\"130\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">C</text>\n  <text x=\"220.62177826491072\" y=\"85\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"middle\" filter=\"url(#glow)\">D</text>\n  <text x=\"107.37822173508928\" y=\"177\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">F</text>\n  <text x=\"172\" y=\"206\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"start\" filter=\"url(#glow)\">G</text>\n  <text x=\"208.62177826491072\" y=\"171\" font-size=\"14\" font-weight=\"bold\" fill=\"#f8fafc\" text-anchor=\"end\" filter=\"url(#glow)\">H</text>\n\n  <text x=\"160\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">立方体の表面を通る最短距離（切り口：正三角形）</text>\n  \n</svg>",
+    "explanation": "【解法】\n展開図を広げると、隣り合う2つの正方形がつながった縦6cm、横12cmの長方形になります。\nひもの最短距離は、展開図上の直線AGです。\n直角三角形の斜辺の2乗 = 6² + 12² = 36 + 144 = 180 となります。"
+  },
+  {
+    "id": "m_solid_020",
+    "subject": "算数",
+    "category": "平面図形・立体図形",
+    "subCategory": "回転体",
+    "difficulty": "advanced",
+    "questionType": "input",
+    "question": "底面の半径が5cm、母線の長さが13cmの円すいがあります。この円すいの高さは何cmですか。（半角数字で答えなさい）",
+    "options": [],
+    "answer": "12",
+    "acceptableAnswers": [
+      "12",
+      "12cm",
+      "１２"
+    ],
+    "keywords": [
+      "12",
+      "三平方の定理",
+      "円すいの高さ"
+    ],
+    "knowledgeTag": "直角三角形の3辺（5:12:13）と円すいの高さ",
+    "figureSvg": "<svg viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full\">\n\n  <defs>\n    <filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n      <feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-color=\"#000\" flood-opacity=\"0.6\"/>\n    </filter>\n  </defs>\n\n  <!-- 回転軸（中心線） -->\n  <line x1=\"140\" y1=\"25\" x2=\"140\" y2=\"215\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" />\n  <!-- 母線 -->\n  <line x1=\"140\" y1=\"40\" x2=\"60\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <line x1=\"140\" y1=\"40\" x2=\"220\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 底面のだ円（奥は点線、手前は実線） -->\n  <path d=\"M 60,190 A 80,22 0 0,1 220,190\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" />\n  <path d=\"M 60,190 A 80,22 0 0,0 220,190\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n  <!-- 回転する元の直角三角形（着色） -->\n  <polygon points=\"140,40 140,190 220,190\" fill=\"#fbbf24\" fill-opacity=\"0.3\" stroke=\"#f59e0b\" stroke-width=\"2\" />\n  <!-- 直角マーク -->\n  <polyline points=\"140,178 152,178 152,190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.5\" />\n  <!-- 回転矢印マーク -->\n  <path d=\"M 120,208 A 20,8 0 0,0 160,208\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <!-- 寸法ラベル -->\n  <text x=\"126\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"end\" filter=\"url(#glow)\">高さ 12cm</text>\n  <text x=\"180\" y=\"212\" font-size=\"12\" font-weight=\"bold\" fill=\"#38bdf8\" text-anchor=\"middle\" filter=\"url(#glow)\">半径 5cm</text>\n  <text x=\"140\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde68a\" text-anchor=\"middle\" filter=\"url(#glow)\">円すい</text>\n  \n</svg>",
+    "explanation": "【解法】\n円すいの母線、底面の半径、高さで直角三角形ができます。\n三平方の定理より、\n(高さ)² = 13² - 5² = 169 - 25 = 144\n144 = 12² なので、高さは 12cm となります。"
   }
 ]

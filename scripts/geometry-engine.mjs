@@ -701,3 +701,247 @@ export function createCircleInscribedSquare({ r = 5 }) {
   ${labelText(cx, 25, "円と正方形のすき間面積 = ? cm²", "middle", "#fde68a", 12)}
   `);
 }
+
+// -------------------------------------------------------------
+// 立体図形・アイソメトリック投影エンジン (3D Isometric Engine)
+// -------------------------------------------------------------
+
+// 3D (x, y, z) -> 2D (X, Y) 変換 (等角投影法: 30度)
+export function isoProject(x, y, z, originX = 160, originY = 140, scale = 1.0) {
+  const cos30 = Math.cos(Math.PI / 6); // 0.866
+  const sin30 = Math.sin(Math.PI / 6); // 0.5
+  const X = originX + (y - x) * cos30 * scale;
+  const Y = originY + (x + y) * sin30 * scale - z * scale;
+  return { x: X, y: Y };
+}
+
+// 25. 立方体の切断（3点切断・アイソメトリック3D表示）
+// cutPoints: 3つの切断点の辺上の位置 [{edge: 'AE', ratio: 0.5}, ...]
+export function createCubeCut({ cutType = 'triangle', title = '立体の切断' }) {
+  const width = 320, height = 240;
+  const ox = 160, oy = 130, S = 70; // 1辺 70px
+  
+  // 立方体の8頂点 (x: 左前, y: 右前, z: 上)
+  // 底面: E(0,0,0), F(S,0,0), G(S,S,0), H(0,S,0)
+  // 上面: A(0,0,S), B(S,0,S), C(S,S,S), D(0,S,S)
+  const A = isoProject(0, 0, S, ox, oy);
+  const B = isoProject(S, 0, S, ox, oy);
+  const C = isoProject(S, S, S, ox, oy);
+  const D = isoProject(0, S, S, ox, oy);
+  const E = isoProject(0, 0, 0, ox, oy);
+  const F = isoProject(S, 0, 0, ox, oy);
+  const G = isoProject(S, S, 0, ox, oy);
+  const H = isoProject(0, S, 0, ox, oy);
+
+  let cutPolygon = "";
+  let cutLabel = "";
+  
+  if (cutType === 'triangle') {
+    // 3頂点 A, F, H を通る切断（正三角形）
+    // A=(0,0,S), F=(S,0,0), H=(0,S,0)
+    // 辺 AF, FH, HA
+    cutPolygon = `<polygon points="${A.x.toFixed(1)},${A.y.toFixed(1)} ${F.x.toFixed(1)},${F.y.toFixed(1)} ${H.x.toFixed(1)},${H.y.toFixed(1)}" fill="#fbbf24" fill-opacity="0.4" stroke="#f59e0b" stroke-width="2.5" />`;
+    cutLabel = "切り口：正三角形";
+  } else if (cutType === 'hexagon') {
+    // 6辺の中点を通る切断（正六角形）
+    // AB中点, BC中点, CG中点, GH中点, HE中点, EA中点
+    const p1 = isoProject(S/2, 0, S, ox, oy);
+    const p2 = isoProject(S, S/2, S, ox, oy);
+    const p3 = isoProject(S, S, S/2, ox, oy);
+    const p4 = isoProject(S/2, S, 0, ox, oy);
+    const p5 = isoProject(0, S/2, 0, ox, oy);
+    const p6 = isoProject(0, 0, S/2, ox, oy);
+    cutPolygon = `<polygon points="${p1.x.toFixed(1)},${p1.y.toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)} ${p3.x.toFixed(1)},${p3.y.toFixed(1)} ${p4.x.toFixed(1)},${p4.y.toFixed(1)} ${p5.x.toFixed(1)},${p5.y.toFixed(1)} ${p6.x.toFixed(1)},${p6.y.toFixed(1)}" fill="#fbbf24" fill-opacity="0.4" stroke="#f59e0b" stroke-width="2.5" />`;
+    cutLabel = "切り口：正六角形";
+  } else {
+    // 二等辺台形 (AB中点, AD中点, F, H)
+    const p1 = isoProject(S/2, 0, S, ox, oy);
+    const p2 = isoProject(0, S/2, S, ox, oy);
+    cutPolygon = `<polygon points="${p1.x.toFixed(1)},${p1.y.toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)} ${H.x.toFixed(1)},${H.y.toFixed(1)} ${F.x.toFixed(1)},${F.y.toFixed(1)}" fill="#fbbf24" fill-opacity="0.4" stroke="#f59e0b" stroke-width="2.5" />`;
+    cutLabel = "切り口：台形";
+  }
+
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  <!-- 見えない奥の辺（点線） -->
+  <line x1="${E.x}" y1="${E.y}" x2="${H.x}" y2="${H.y}" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3" />
+  <line x1="${E.x}" y1="${E.y}" x2="${F.x}" y2="${F.y}" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3" />
+  <line x1="${E.x}" y1="${E.y}" x2="${A.x}" y2="${A.y}" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3" />
+  
+  <!-- 切断面（ハイライト） -->
+  ${cutPolygon}
+
+  <!-- 手前の見える外枠（実線） -->
+  <!-- 上面 ABCD -->
+  <polygon points="${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y} ${D.x},${D.y}" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <!-- 側面 BFGC, CDHG, AEHD, ABFE -->
+  <line x1="${B.x}" y1="${B.y}" x2="${F.x}" y2="${F.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${C.x}" y1="${C.y}" x2="${G.x}" y2="${G.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${D.x}" y1="${D.y}" x2="${H.x}" y2="${H.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${F.x}" y1="${F.y}" x2="${G.x}" y2="${G.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${G.x}" y1="${G.y}" x2="${H.x}" y2="${H.y}" stroke="#94a3b8" stroke-width="2" />
+
+  <!-- 頂点ラベル -->
+  ${labelText(A.x - 12, A.y, "A", "end")}
+  ${labelText(B.x + 8, B.y - 8, "B", "start")}
+  ${labelText(C.x + 12, C.y, "C", "start")}
+  ${labelText(D.x, D.y - 10, "D", "middle")}
+  ${labelText(F.x + 8, F.y + 12, "F", "start")}
+  ${labelText(G.x + 12, G.y + 6, "G", "start")}
+  ${labelText(H.x - 12, H.y + 6, "H", "end")}
+
+  ${labelText(width / 2, 25, `${title}（${cutLabel}）`, "middle", "#fde68a", 13)}
+  `);
+}
+
+// 26. 回転体（円すい・円柱・円すい台）
+export function createConeRevolving({ r = 4, h = 9 }) {
+  const width = 280, height = 240;
+  const cx = 140, topY = 40, bottomY = 190;
+  const rx = 80, ry = 22; // 底面のだ円
+  
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  <!-- 回転軸（中心線） -->
+  <line x1="${cx}" y1="25" x2="${cx}" y2="215" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" />
+  <!-- 母線 -->
+  <line x1="${cx}" y1="${topY}" x2="${cx - rx}" y2="${bottomY}" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="${cx}" y1="${topY}" x2="${cx + rx}" y2="${bottomY}" stroke="#38bdf8" stroke-width="2.5" />
+  <!-- 底面のだ円（奥は点線、手前は実線） -->
+  <path d="M ${cx - rx},${bottomY} A ${rx},${ry} 0 0,1 ${cx + rx},${bottomY}" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,3" />
+  <path d="M ${cx - rx},${bottomY} A ${rx},${ry} 0 0,0 ${cx + rx},${bottomY}" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+  <!-- 回転する元の直角三角形（着色） -->
+  <polygon points="${cx},${topY} ${cx},${bottomY} ${cx + rx},${bottomY}" fill="#fbbf24" fill-opacity="0.3" stroke="#f59e0b" stroke-width="2" />
+  <!-- 直角マーク -->
+  <polyline points="${cx},${bottomY - 12} ${cx + 12},${bottomY - 12} ${cx + 12},${bottomY}" fill="none" stroke="#f59e0b" stroke-width="1.5" />
+  <!-- 回転矢印マーク -->
+  <path d="M ${cx - 20},${bottomY + 18} A 20,8 0 0,0 ${cx + 20},${bottomY + 18}" fill="none" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- 寸法ラベル -->
+  ${labelText(cx - 14, (topY + bottomY)/2, `高さ ${h}cm`, "end", "#38bdf8", 12)}
+  ${labelText(cx + rx/2, bottomY + 22, `半径 ${r}cm`, "middle", "#38bdf8", 12)}
+  ${labelText(cx, topY - 10, "円すい", "middle", "#fde68a", 13)}
+  `);
+}
+
+// 27. 円すいの展開図（側面のおうぎ形＋底面の円）
+export function createConeNet({ R = 12, r = 3, angle = 90 }) {
+  const width = 280, height = 240;
+  const ox = 140, oy = 110;
+  const radius = 90;
+  const rad = (angle * Math.PI) / 180;
+  const startAng = -Math.PI / 2 - rad / 2;
+  const endAng = -Math.PI / 2 + rad / 2;
+  
+  const p1 = { x: ox + radius * Math.cos(startAng), y: oy + radius * Math.sin(startAng) };
+  const p2 = { x: ox + radius * Math.cos(endAng), y: oy + radius * Math.sin(endAng) };
+  
+  // 底面の円
+  const circleR = 24;
+  const circleCy = oy + 70;
+  
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  <!-- 側面のおうぎ形 -->
+  <path d="M ${ox},${oy} L ${p1.x.toFixed(1)},${p1.y.toFixed(1)} A ${radius},${radius} 0 0,1 ${p2.x.toFixed(1)},${p2.y.toFixed(1)} Z" fill="#6366f1" fill-opacity="0.3" stroke="#818cf8" stroke-width="2" />
+  <!-- 底面の円 -->
+  <circle cx="${ox}" cy="${circleCy}" r="${circleR}" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="2" />
+  <!-- 中心角マーク -->
+  <path d="M ${ox + 20 * Math.cos(startAng)},${oy + 20 * Math.sin(startAng)} A 20,20 0 0,1 ${ox + 20 * Math.cos(endAng)},${oy + 20 * Math.sin(endAng)}" fill="none" stroke="#fde68a" stroke-width="1.5" />
+  ${labelText(ox, oy - 12, `${angle}°`, "middle", "#fde68a", 11)}
+  <!-- ラベル -->
+  ${labelText((ox + p1.x)/2 - 16, (oy + p1.y)/2, `母線 ${R}cm`, "end", "#818cf8", 12)}
+  ${labelText(ox, circleCy + circleR + 18, `底面半径 ${r}cm`, "middle", "#38bdf8", 12)}
+  `);
+}
+
+// 28. 水そうとグラフ（注水問題）
+export function createWaterTank({ widthW = 10, heightH = 15, depthD = 8, waterH = 10 }) {
+  const width = 300, height = 220;
+  const ox = 150, oy = 150;
+  const sx = 60, sy = 50, sz = 90;
+  
+  // 水そう枠
+  const A = isoProject(0, 0, sz, ox, oy);
+  const B = isoProject(sx, 0, sz, ox, oy);
+  const C = isoProject(sx, sy, sz, ox, oy);
+  const D = isoProject(0, sy, sz, ox, oy);
+  const E = isoProject(0, 0, 0, ox, oy);
+  const F = isoProject(sx, 0, 0, ox, oy);
+  const G = isoProject(sx, sy, 0, ox, oy);
+  const H = isoProject(0, sy, 0, ox, oy);
+  
+  // 水面 (z = sz * (waterH / heightH))
+  const wz = sz * (waterH / heightH);
+  const wA = isoProject(0, 0, wz, ox, oy);
+  const wB = isoProject(sx, 0, wz, ox, oy);
+  const wC = isoProject(sx, sy, wz, ox, oy);
+  const wD = isoProject(0, sy, wz, ox, oy);
+
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  <!-- 水（下部直方体） -->
+  <polygon points="${wA.x},${wA.y} ${wB.x},${wB.y} ${wC.x},${wC.y} ${wD.x},${wD.y}" fill="#38bdf8" fill-opacity="0.4" stroke="#0ea5e9" stroke-width="1.5" />
+  <polygon points="${wA.x},${wA.y} ${wB.x},${wB.y} ${F.x},${F.y} ${E.x},${E.y}" fill="#0284c7" fill-opacity="0.3" />
+  <polygon points="${wB.x},${wB.y} ${wC.x},${wC.y} ${G.x},${G.y} ${F.x},${F.y}" fill="#0369a1" fill-opacity="0.3" />
+  
+  <!-- 水そう透明外枠 -->
+  <polygon points="${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y} ${D.x},${D.y}" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${B.x}" y1="${B.y}" x2="${F.x}" y2="${F.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${C.x}" y1="${C.y}" x2="${G.x}" y2="${G.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${D.x}" y1="${D.y}" x2="${H.x}" y2="${H.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${F.x}" y1="${F.y}" x2="${G.x}" y2="${G.y}" stroke="#94a3b8" stroke-width="2" />
+  <line x1="${G.x}" y1="${G.y}" x2="${H.x}" y2="${H.y}" stroke="#94a3b8" stroke-width="2" />
+  
+  <!-- 注水蛇口マーク -->
+  <line x1="${(A.x+C.x)/2}" y1="20" x2="${(A.x+C.x)/2}" y2="50" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4,2" />
+  ${labelText((A.x+C.x)/2, 16, "毎分一定量注水", "middle", "#38bdf8", 12)}
+  
+  <!-- ラベル -->
+  ${labelText(E.x - 14, (A.y+E.y)/2, `深さ ${heightH}cm`, "end", "#f8fafc", 12)}
+  ${labelText((F.x+G.x)/2, F.y + 20, `横 ${widthW}cm`, "middle", "#f8fafc", 12)}
+  ${labelText(width / 2, height - 10, `水深 = ${waterH}cm`, "middle", "#fde68a", 13)}
+  `);
+}
+
+// 29. 最短経路・道順格子図 (Grid for Combinatorics)
+export function createGridPath({ cols = 4, rows = 3, blocked = null }) {
+  const width = 300, height = 220;
+  const x0 = 50, y0 = 40;
+  const dx = 200 / cols;
+  const dy = 140 / rows;
+  
+  let lines = '';
+  // 横線
+  for (let r = 0; r <= rows; r++) {
+    lines += `<line x1="${x0}" y1="${y0 + r * dy}" x2="${x0 + cols * dx}" y2="${y0 + r * dy}" stroke="#94a3b8" stroke-width="2" />\n`;
+  }
+  // 縦線
+  for (let c = 0; c <= cols; c++) {
+    lines += `<line x1="${x0 + c * dx}" y1="${y0}" x2="${x0 + c * dx}" y2="${y0 + rows * dy}" stroke="#94a3b8" stroke-width="2" />\n`;
+  }
+  
+  const startX = x0, startY = y0 + rows * dy;
+  const goalX = x0 + cols * dx, goalY = y0;
+  
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  ${lines}
+  <!-- スタートA, ゴールB -->
+  <circle cx="${startX}" cy="${startY}" r="5" fill="#10b981" />
+  <circle cx="${goalX}" cy="${goalY}" r="5" fill="#f43f5e" />
+  ${labelText(startX - 18, startY + 5, "A (発)", "end", "#10b981", 13)}
+  ${labelText(goalX + 18, goalY + 5, "B (着)", "start", "#f43f5e", 13)}
+  ${labelText(width / 2, height - 12, "AからBへの最短経路は何通り？", "middle", "#fde68a", 12)}
+  `);
+}
+
+// 30. 色の塗り分け図 (Map Coloring)
+export function createColoringMap({ regions = 4 }) {
+  const width = 260, height = 220;
+  return wrapSvg(`0 0 ${width} ${height}`, `
+  <rect x="40" y="30" width="180" height="150" fill="#1e293b" stroke="#94a3b8" stroke-width="2" />
+  <line x1="40" y1="105" x2="220" y2="105" stroke="#94a3b8" stroke-width="2" />
+  <line x1="130" y1="30" x2="130" y2="105" stroke="#94a3b8" stroke-width="2" />
+  <line x1="130" y1="105" x2="130" y2="180" stroke="#94a3b8" stroke-width="2" />
+  ${labelText(85, 72, "A", "middle", "#f8fafc", 16)}
+  ${labelText(175, 72, "B", "middle", "#f8fafc", 16)}
+  ${labelText(85, 147, "C", "middle", "#f8fafc", 16)}
+  ${labelText(175, 147, "D", "middle", "#f8fafc", 16)}
+  ${labelText(width / 2, 205, "隣り合う地域を異なる色で塗り分ける", "middle", "#fde68a", 12)}
+  `);
+}
