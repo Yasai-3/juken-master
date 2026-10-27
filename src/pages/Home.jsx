@@ -54,6 +54,7 @@ const Home = () => {
 
     const wrongAnswers = getWrongAnswers();
     setWrongAnswersCounts({
+      math: wrongAnswers.filter((q) => q.subject === '算数').length,
       science: wrongAnswers.filter((q) => q.subject === '理科').length,
       social: wrongAnswers.filter((q) => q.subject === '社会').length,
       japanese: wrongAnswers.filter((q) => q.subject === '国語').length,
@@ -100,8 +101,8 @@ const Home = () => {
       })),
     }));
 
-    // 国語・理科・社会の順に表示
-    const subjectOrder = { 国語: 1, 理科: 2, 社会: 3 };
+    // 算数・国語・理科・社会の順に表示
+    const subjectOrder = { 算数: 1, 国語: 2, 理科: 3, 社会: 4 };
     formattedMenu.sort(
       (a, b) => (subjectOrder[a.subject] || 99) - (subjectOrder[b.subject] || 99)
     );
@@ -276,24 +277,30 @@ const Home = () => {
       {renderFilterBar()}
 
       {/* Subject Cards */}
-      <div className={`grid grid-cols-1 ${menuData.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-6`}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {menuData.map((data) => (
           <button
             key={data.subject}
             type="button"
             onClick={() => handleSubjectClick(data)}
-            className="p-7 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl hover:border-indigo-400 border-2 border-transparent transition-all text-center group relative overflow-hidden"
+            className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl hover:border-indigo-400 border-2 border-transparent transition-all text-center group relative overflow-hidden"
           >
-            <div className="text-6xl mb-3 group-hover:scale-105 transition-transform">
-              {data.subject === '理科' ? '🔬' : data.subject === '国語' ? '📖' : '🌏'}
+            <div className="text-5xl mb-2.5 group-hover:scale-105 transition-transform">
+              {data.subject === '算数'
+                ? '📐'
+                : data.subject === '理科'
+                  ? '🔬'
+                  : data.subject === '国語'
+                    ? '📖'
+                    : '🌏'}
             </div>
-            <h2 className="text-3xl font-extrabold text-gray-800 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
+            <h2 className="text-2xl font-extrabold text-gray-800 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
               {data.subject}
             </h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5 truncate">
               {data.categories.map((c) => c.name).join('・')}
             </p>
-            <span className="inline-block mt-3 text-xs font-bold bg-indigo-50 dark:bg-gray-700 text-indigo-600 dark:text-indigo-300 px-3 py-1 rounded-full">
+            <span className="inline-block mt-2.5 text-xs font-bold bg-indigo-50 dark:bg-gray-700 text-indigo-600 dark:text-indigo-300 px-3 py-0.5 rounded-full">
               収録: {data.count}問
             </span>
           </button>
@@ -331,41 +338,49 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <button
+            type="button"
+            onClick={() => startQuiz('combined', { subject: '算数', limit: comprehensiveLimit })}
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-violet-700 dark:text-violet-300 border-l-4 border-violet-500 text-left flex justify-between items-center"
+          >
+            <span>📐 算数 総合テスト</span>
+            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
+          </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '国語', limit: comprehensiveLimit })}
-            className="p-4 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center"
           >
-            <span>📖 国語 総合テスト ({comprehensiveLimit}問)</span>
-            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2.5 py-1 rounded-lg">開始 →</span>
+            <span>📖 国語 総合テスト</span>
+            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
           </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '理科', limit: comprehensiveLimit })}
-            className="p-4 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center"
           >
-            <span>🧪 理科 総合テスト ({comprehensiveLimit}問)</span>
-            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2.5 py-1 rounded-lg">開始 →</span>
+            <span>🧪 理科 総合テスト</span>
+            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
           </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '社会', limit: comprehensiveLimit })}
-            className="p-4 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-purple-700 dark:text-purple-300 border-l-4 border-purple-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-amber-700 dark:text-amber-300 border-l-4 border-amber-500 text-left flex justify-between items-center"
           >
-            <span>🏯 社会 総合テスト ({comprehensiveLimit}問)</span>
-            <span className="text-xs bg-purple-50 dark:bg-gray-600 px-2.5 py-1 rounded-lg">開始 →</span>
+            <span>🏯 社会 総合テスト</span>
+            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
           </button>
         </div>
       </div>
 
       {/* Review & Main Action Buttons */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* NEW: 志望校別 到達度 ＆ 合格ナビ */}
         <button
           type="button"
           onClick={() => navigate('/target-schools')}
-          className="md:col-span-3 p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl shadow-lg hover:opacity-95 transition-all font-black text-lg md:text-xl flex items-center justify-between px-6 border border-amber-300"
+          className="col-span-full p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl shadow-lg hover:opacity-95 transition-all font-black text-lg md:text-xl flex items-center justify-between px-6 border border-amber-300"
         >
           <div className="flex items-center gap-3 text-left">
             <span className="text-3xl bg-white/20 p-2 rounded-xl">🎯</span>
@@ -386,13 +401,32 @@ const Home = () => {
           onClick={() =>
             startQuiz('review', {
               limit: 50,
+              subject: '算数',
+              difficulty: 'all',
+              questionType: 'all',
+            })
+          }
+          disabled={!wrongAnswersCounts.math}
+          className={`p-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-base flex items-center justify-center space-x-2 ${
+            !wrongAnswersCounts.math ? 'opacity-45 cursor-not-allowed' : ''
+          }`}
+        >
+          <span>📐</span>
+          <span>算数 弱点復習（{wrongAnswersCounts.math || 0}問）</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() =>
+            startQuiz('review', {
+              limit: 50,
               subject: '国語',
               difficulty: 'all',
               questionType: 'all',
             })
           }
           disabled={wrongAnswersCounts.japanese === 0}
-          className={`p-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-lg flex items-center justify-center space-x-2 ${
+          className={`p-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-base flex items-center justify-center space-x-2 ${
             wrongAnswersCounts.japanese === 0 ? 'opacity-45 cursor-not-allowed' : ''
           }`}
         >
@@ -411,7 +445,7 @@ const Home = () => {
             })
           }
           disabled={wrongAnswersCounts.science === 0}
-          className={`p-5 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-lg flex items-center justify-center space-x-2 ${
+          className={`p-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-base flex items-center justify-center space-x-2 ${
             wrongAnswersCounts.science === 0 ? 'opacity-45 cursor-not-allowed' : ''
           }`}
         >
@@ -430,7 +464,7 @@ const Home = () => {
             })
           }
           disabled={wrongAnswersCounts.social === 0}
-          className={`p-5 bg-gradient-to-r from-orange-500 to-rose-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-lg flex items-center justify-center space-x-2 ${
+          className={`p-4 bg-gradient-to-r from-orange-500 to-rose-500 text-white rounded-2xl shadow-md hover:opacity-95 transition-all font-bold text-base flex items-center justify-center space-x-2 ${
             wrongAnswersCounts.social === 0 ? 'opacity-45 cursor-not-allowed' : ''
           }`}
         >

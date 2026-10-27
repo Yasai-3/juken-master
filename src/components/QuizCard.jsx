@@ -24,38 +24,47 @@ const QuizCard = ({ questionData, onAnswer }) => {
     questionType = 'choice',
     knowledgeTag,
     keywords = [],
+    figureSvg,
   } = questionData;
 
   const [textAnswer, setTextAnswer] = useState('');
 
   const displaySubject =
     subject ||
-    (['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(category)
-      ? '国語'
-      : ['歴史', '地理', '公民'].includes(category)
-        ? '社会'
-        : '理科');
+    (['速さ', '数の性質', '平面図形の比', '平面図形の面積', '平面図形', '立体図形', '割合と比', '規則性', '場合の数'].includes(category)
+      ? '算数'
+      : ['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(category)
+        ? '国語'
+        : ['歴史', '地理', '公民'].includes(category)
+          ? '社会'
+          : '理科');
 
   const subjectLabel =
-    displaySubject === '国語'
-      ? '📖 国語'
-      : displaySubject === '理科'
-        ? '🔬 理科'
-        : '🌏 社会';
+    displaySubject === '算数'
+      ? '📐 算数'
+      : displaySubject === '国語'
+        ? '📖 国語'
+        : displaySubject === '理科'
+          ? '🔬 理科'
+          : '🌏 社会';
 
   const headerGradient =
-    displaySubject === '国語'
-      ? 'from-emerald-600 to-teal-700'
-      : displaySubject === '理科'
-        ? 'from-blue-600 to-indigo-700'
-        : 'from-amber-600 to-orange-700';
+    displaySubject === '算数'
+      ? 'from-purple-600 via-indigo-600 to-violet-700'
+      : displaySubject === '国語'
+        ? 'from-emerald-600 to-teal-700'
+        : displaySubject === '理科'
+          ? 'from-blue-600 to-indigo-700'
+          : 'from-amber-600 to-orange-700';
 
   const subbarColor =
-    displaySubject === '国語'
-      ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border-emerald-100 dark:border-emerald-900/60'
-      : displaySubject === '理科'
-        ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border-blue-100 dark:border-blue-900/60'
-        : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-100 dark:border-amber-900/60';
+    displaySubject === '算数'
+      ? 'bg-purple-50 dark:bg-purple-950/40 text-purple-800 dark:text-purple-300 border-purple-100 dark:border-purple-900/60'
+      : displaySubject === '国語'
+        ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 border-emerald-100 dark:border-emerald-900/60'
+        : displaySubject === '理科'
+          ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border-blue-100 dark:border-blue-900/60'
+          : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-100 dark:border-amber-900/60';
 
   useEffect(() => {
     setTextAnswer('');
@@ -115,6 +124,16 @@ const QuizCard = ({ questionData, onAnswer }) => {
         <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 leading-relaxed whitespace-pre-wrap">
           {question}
         </h2>
+
+        {/* 図形SVGのインライン表示（算数の図形・理科の実験図など） */}
+        {figureSvg && (
+          <div className="mb-6 flex justify-center bg-slate-50 dark:bg-gray-900/60 p-4 rounded-2xl border border-gray-200/80 dark:border-gray-700 shadow-inner">
+            <div
+              className="max-w-sm w-full flex items-center justify-center [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-60"
+              dangerouslySetInnerHTML={{ __html: figureSvg }}
+            />
+          </div>
+        )}
 
         {/* 1. 4択選択問題 */}
         {questionType === 'choice' && (

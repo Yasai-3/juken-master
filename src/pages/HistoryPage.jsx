@@ -146,11 +146,13 @@ const HistoryPage = () => {
           if (!subMap[subKey]) {
             const detectedSubj =
               r.subject ||
-              (['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(cat)
-                ? '国語'
-                : ['歴史', '地理', '公民'].includes(cat)
-                  ? '社会'
-                  : '理科');
+              (['速さ', '数の性質', '平面図形の比', '平面図形の面積', '平面図形', '立体図形', '割合と比', '規則性', '場合の数'].includes(cat)
+                ? '算数'
+                : ['ことわざ', '慣用句', '故事成語', '四字熟語', '和語', '季語・外来語', '助数詞・類義語・対義語'].includes(cat)
+                  ? '国語'
+                  : ['歴史', '地理', '公民'].includes(cat)
+                    ? '社会'
+                    : '理科');
             subMap[subKey] = {
               name: sub,
               subject: detectedSubj,
@@ -561,7 +563,7 @@ const HistoryPage = () => {
 
         {/* Top Summary KPI Cards */}
         {analysis && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
             {/* 累計解答数 */}
             <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
               <div>
@@ -572,6 +574,7 @@ const HistoryPage = () => {
                 </div>
               </div>
               <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60 flex flex-wrap gap-x-2 gap-y-0.5">
+                <span className="text-violet-600 dark:text-violet-400">算: {analysis.bySubject?.['算数']?.total || 0}</span>
                 <span className="text-blue-600 dark:text-blue-400">理: {analysis.bySubject?.['理科']?.total || 0}</span>
                 <span className="text-amber-600 dark:text-amber-400">社: {analysis.bySubject?.['社会']?.total || 0}</span>
                 <span className="text-emerald-600 dark:text-emerald-400">国: {analysis.bySubject?.['国語']?.total || 0}</span>
@@ -589,6 +592,30 @@ const HistoryPage = () => {
               </div>
               <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
                 正解: {analysis.totalCorrect} / {analysis.totalAnswered}問
+              </div>
+            </div>
+
+            {/* 算数の正答率 */}
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-bold text-gray-400 flex items-center justify-between">
+                  <span>算数の正答率</span>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-violet-100 text-violet-700 dark:bg-violet-900/60 dark:text-violet-200">算数</span>
+                </div>
+                <div className="text-2xl md:text-3xl font-extrabold text-violet-600 dark:text-violet-400 mt-1">
+                  {analysis.bySubject?.['算数']?.total > 0
+                    ? Math.round(
+                        (analysis.bySubject['算数'].correct /
+                          analysis.bySubject['算数'].total) *
+                          100
+                      )
+                    : '--'}
+                  <span className="text-xs md:text-sm font-normal text-gray-500 ml-1">%</span>
+                </div>
+              </div>
+              <div className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-2 pt-2 border-t border-gray-100 dark:border-gray-700/60">
+                解答: {analysis.bySubject?.['算数']?.total || 0}問
+                {analysis.bySubject?.['算数']?.total > 0 && ` (${analysis.bySubject['算数'].correct}問正解)`}
               </div>
             </div>
 
@@ -1071,9 +1098,10 @@ const HistoryPage = () => {
           <div className="flex flex-wrap items-center gap-1.5 self-start md:self-auto bg-slate-100 dark:bg-gray-700/60 p-1 rounded-xl">
             {[
               { key: 'all', label: 'すべて' },
+              { key: '算数', label: '算数' },
+              { key: '国語', label: '国語' },
               { key: '理科', label: '理科' },
               { key: '社会', label: '社会' },
-              { key: '国語', label: '国語' },
             ].map((f) => (
               <button
                 key={f.key}
@@ -1255,9 +1283,10 @@ const HistoryPage = () => {
             <div className="flex items-center gap-1 bg-slate-100 dark:bg-gray-700/60 p-1 rounded-xl">
               {[
                 { key: 'all', label: 'すべて' },
+                { key: '算数', label: '算数' },
+                { key: '国語', label: '国語' },
                 { key: '理科', label: '理科' },
                 { key: '社会', label: '社会' },
-                { key: '国語', label: '国語' },
               ].map((f) => {
                 const count =
                   f.key === 'all'
@@ -1370,11 +1399,13 @@ const HistoryPage = () => {
                       <div className="flex flex-wrap items-center gap-2">
                         <span
                           className={`px-2 py-0.5 text-xs font-extrabold rounded ${
-                            q.subject === '国語'
-                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200'
-                              : q.subject === '社会'
-                                ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200'
-                                : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200'
+                            q.subject === '算数'
+                              ? 'bg-violet-100 text-violet-800 dark:bg-violet-900/60 dark:text-violet-200'
+                              : q.subject === '国語'
+                                ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200'
+                                : q.subject === '社会'
+                                  ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200'
+                                  : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200'
                           }`}
                         >
                           {q.subject}
@@ -1414,6 +1445,15 @@ const HistoryPage = () => {
                     <p className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base leading-relaxed pl-0.5">
                       Q. {q.question}
                     </p>
+
+                    {q.figureSvg && (
+                      <div className="my-2 flex justify-center bg-slate-50 dark:bg-gray-900/60 p-2.5 rounded-xl border border-gray-200/80 dark:border-gray-700">
+                        <div
+                          className="max-w-xs w-full flex items-center justify-center [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-48"
+                          dangerouslySetInnerHTML={{ __html: q.figureSvg }}
+                        />
+                      </div>
+                    )}
 
                     <div className="pt-0.5">
                       <button

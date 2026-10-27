@@ -105,6 +105,16 @@ const ResultCard = ({
             </div>
           )}
 
+        {/* Figure SVG if available */}
+        {questionData?.figureSvg && (
+          <div className="mb-5 flex justify-center bg-slate-50 dark:bg-gray-900/60 p-3 rounded-xl border border-gray-200/80 dark:border-gray-700">
+            <div
+              className="max-w-xs w-full flex items-center justify-center [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-52"
+              dangerouslySetInnerHTML={{ __html: questionData.figureSvg }}
+            />
+          </div>
+        )}
+
         {/* Explanation Box */}
         <div className="bg-amber-50/60 dark:bg-gray-700/50 border border-amber-200/80 dark:border-gray-600 rounded-xl p-5 mb-6 text-left">
           <div className="flex items-center justify-between mb-2">
