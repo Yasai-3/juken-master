@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ScratchpadModal from './ScratchpadModal';
 import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine';
 
 const DIFFICULTY_STYLES = {
@@ -28,6 +29,7 @@ const QuizCard = ({ questionData, onAnswer }) => {
   } = questionData;
 
   const [textAnswer, setTextAnswer] = useState('');
+  const [isScratchpadOpen, setIsScratchpadOpen] = useState(false);
 
   const displaySubject =
     subject ||
@@ -98,6 +100,21 @@ const QuizCard = ({ questionData, onAnswer }) => {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* 計算用紙（ホワイトボード）トグルボタン */}
+          <button
+            type="button"
+            onClick={() => setIsScratchpadOpen((prev) => !prev)}
+            className={`px-3 py-1 rounded-full text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-sm ${
+              isScratchpadOpen
+                ? 'bg-amber-400 text-amber-950 ring-2 ring-white'
+                : 'bg-white/20 text-white hover:bg-white/30 border border-white/30'
+            }`}
+            title="手書きの計算用紙・メモ帳を開きます"
+          >
+            <span>📝</span>
+            <span>計算用紙</span>
+          </button>
+
           <span
             className={`text-xs font-bold px-2.5 py-1 rounded-full border ${
               DIFFICULTY_STYLES[difficulty] || DIFFICULTY_STYLES.standard
@@ -234,6 +251,29 @@ const QuizCard = ({ questionData, onAnswer }) => {
           </form>
         )}
       </div>
+
+      {/* フローティング計算用紙ボタン（画面右下に常駐） */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <button
+          type="button"
+          onClick={() => setIsScratchpadOpen((prev) => !prev)}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-full font-extrabold shadow-2xl transition-all border-2 ${
+            isScratchpadOpen
+              ? 'bg-amber-400 text-amber-950 border-amber-300 ring-4 ring-amber-400/30'
+              : 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white border-white/40 hover:scale-105 active:scale-95'
+          }`}
+          title="手書き計算用紙（ホワイトボード）を開く"
+        >
+          <span className="text-lg">📝</span>
+          <span className="text-xs sm:text-sm font-bold">計算用紙</span>
+        </button>
+      </div>
+
+      {/* 手書き計算用紙（ホワイトボード・ポップアップ） */}
+      <ScratchpadModal
+        isOpen={isScratchpadOpen}
+        onClose={() => setIsScratchpadOpen(false)}
+      />
     </div>
   );
 };
