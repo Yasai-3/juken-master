@@ -23,8 +23,14 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
   const [tool, setTool] = useState('pen'); // 'pen' | 'eraser'
   const [color, setColor] = useState('#f8fafc');
   const [lineWidth, setLineWidth] = useState(3);
-  const [opacity, setOpacity] = useState(0.92); // 半透明度
+  const [opacity, setOpacity] = useState(0.95); // 半透明度
   const [showGrid, setShowGrid] = useState(true); // 方眼ガイド
+  const isTranslucent = opacity < 0.9;
+
+  // 透かしモードのワンタップトグル (55% ↔ 100%)
+  const toggleTranslucent = () => {
+    setOpacity((prev) => (prev < 0.85 ? 1.0 : 0.55));
+  };
 
   // ウィンドウの位置・サイズ（ピクセル管理）
   const [position, setPosition] = useState({ x: 40, y: 80 });
@@ -422,7 +428,7 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
           </span>
         </div>
 
-        {/* 右側: プリセット切替 ＆ 透かし ＆ ウィンドウ操作 */}
+        {/* 右側: プリセット切替 ＆ 方眼 ＆ ウィンドウ操作 */}
         <div className="flex items-center gap-1.5 sm:gap-2">
           {/* サイズプリセットボタン */}
           <div className="flex items-center bg-slate-800/90 rounded-lg p-0.5 border border-slate-700 text-[11px] font-bold">
@@ -456,28 +462,13 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
             </button>
           </div>
 
-          {/* 半透明度スライダー */}
-          <div className="hidden sm:flex items-center gap-1 text-[11px] text-slate-300 bg-slate-800/80 px-2 py-0.5 rounded-lg border border-slate-700">
-            <span>透かし:</span>
-            <input
-              type="range"
-              min="0.35"
-              max="1.0"
-              step="0.05"
-              value={opacity}
-              onChange={(e) => setOpacity(parseFloat(e.target.value))}
-              className="w-14 h-1.5 accent-indigo-400 cursor-pointer"
-              title="問題文や図形が透けて見えるよう透明度を調整できます"
-            />
-          </div>
-
           {/* 方眼グリッドトグル */}
           <button
             type="button"
             onClick={() => setShowGrid((prev) => !prev)}
-            className={`p-1 rounded text-xs transition border ${
+            className={`px-2 py-0.5 rounded text-[11px] font-bold transition border ${
               showGrid
-                ? 'bg-indigo-900/60 border-indigo-500 text-indigo-300'
+                ? 'bg-indigo-900/80 border-indigo-500 text-indigo-300'
                 : 'bg-slate-800 border-slate-700 text-slate-400 hover:text-white'
             }`}
             title="方眼ガイドの表示/非表示を切り替え"
@@ -512,75 +503,111 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
       </div>
 
       {/* ========================================================= */}
-      {/* 2. ツールバー (ペン・消しゴム・色・太さ・Undo・Clear)     */}
+      {/* 2. ツールバー (ペン・消しゴム・色・太さ・透かし・Undo・Clear) */}
       {/* ========================================================= */}
-      <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-1.5 bg-slate-800/80 border-b border-slate-700/80 text-xs">
-        {/* ペン / 消しゴム */}
-        <div className="flex items-center gap-1 bg-slate-900/90 p-0.5 rounded-lg border border-slate-700">
-          <button
-            type="button"
-            onClick={() => setTool('pen')}
-            className={`px-2 py-1 rounded font-bold flex items-center gap-1 transition ${
-              tool === 'pen'
-                ? 'bg-indigo-600 text-white shadow'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <span>✏️</span> ペン
-          </button>
-          <button
-            type="button"
-            onClick={() => setTool('eraser')}
-            className={`px-2 py-1 rounded font-bold flex items-center gap-1 transition ${
-              tool === 'eraser'
-                ? 'bg-rose-600 text-white shadow'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <span>🧹</span> 消しゴム
-          </button>
-        </div>
-
-        {/* カラーパレット */}
-        {tool === 'pen' && (
-          <div className="flex items-center gap-1.5">
-            {COLOR_PALETTE.map((c) => (
-              <button
-                key={c.value}
-                type="button"
-                onClick={() => setColor(c.value)}
-                style={{ backgroundColor: c.value }}
-                className={`w-5 h-5 rounded-full transition-transform ${
-                  color === c.value
-                    ? 'scale-125 ring-2 ring-indigo-400 ring-offset-2 ring-offset-slate-900'
-                    : 'opacity-70 hover:opacity-100'
-                }`}
-                title={c.name}
-              />
-            ))}
-          </div>
-        )}
-
-        {/* 線の太さ */}
-        <div className="flex items-center gap-0.5 bg-slate-900/90 p-0.5 rounded-lg border border-slate-700">
-          {LINE_WIDTHS.map((w) => (
+      <div className="flex flex-wrap items-center justify-between gap-1.5 px-3 py-1.5 bg-slate-800/80 border-b border-slate-700/80 text-xs select-none">
+        {/* 左グループ: ペン/消しゴム + カラー + 太さ */}
+        <div className="flex flex-wrap items-center gap-1.5">
+          {/* ペン / 消しゴム */}
+          <div className="flex items-center gap-0.5 bg-slate-900/90 p-0.5 rounded-lg border border-slate-700">
             <button
-              key={w.value}
               type="button"
-              onClick={() => setLineWidth(w.value)}
-              className={`px-2 py-0.5 rounded text-[11px] font-bold ${
-                lineWidth === w.value
-                  ? 'bg-slate-700 text-indigo-300'
+              onClick={() => setTool('pen')}
+              className={`px-2 py-1 rounded font-bold flex items-center gap-1 transition ${
+                tool === 'pen'
+                  ? 'bg-indigo-600 text-white shadow'
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              {w.label}
+              <span>✏️</span> ペン
             </button>
-          ))}
+            <button
+              type="button"
+              onClick={() => setTool('eraser')}
+              className={`px-2 py-1 rounded font-bold flex items-center gap-1 transition ${
+                tool === 'eraser'
+                  ? 'bg-rose-600 text-white shadow'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <span>🧹</span> 消しゴム
+            </button>
+          </div>
+
+          {/* カラーパレット */}
+          {tool === 'pen' && (
+            <div className="flex items-center gap-1">
+              {COLOR_PALETTE.map((c) => (
+                <button
+                  key={c.value}
+                  type="button"
+                  onClick={() => setColor(c.value)}
+                  style={{ backgroundColor: c.value }}
+                  className={`w-4 h-4 rounded-full transition-transform ${
+                    color === c.value
+                      ? 'scale-125 ring-2 ring-indigo-400 ring-offset-1 ring-offset-slate-900'
+                      : 'opacity-70 hover:opacity-100'
+                  }`}
+                  title={c.name}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* 線の太さ */}
+          <div className="flex items-center gap-0.5 bg-slate-900/90 p-0.5 rounded-lg border border-slate-700">
+            {LINE_WIDTHS.map((w) => (
+              <button
+                key={w.value}
+                type="button"
+                onClick={() => setLineWidth(w.value)}
+                className={`px-1.5 py-0.5 rounded text-[11px] font-bold ${
+                  lineWidth === w.value
+                    ? 'bg-slate-700 text-indigo-300'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                {w.label}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* アクション (Undo, 全消去) */}
-        <div className="flex items-center gap-1 ml-auto">
+        {/* 右グループ: 透かしトグル＆スライダー + Undo + Clear */}
+        <div className="flex items-center gap-1.5 ml-auto">
+          {/* ★ 透かしトグルボタン (ワンタップで半透明 / 不透明を切り替え) */}
+          <button
+            type="button"
+            onClick={toggleTranslucent}
+            className={`px-2.5 py-1 rounded-lg text-xs font-black flex items-center gap-1.5 transition-all shadow-sm border ${
+              isTranslucent
+                ? 'bg-amber-400 text-amber-950 border-amber-300 ring-2 ring-amber-400/50 scale-105 animate-pulse'
+                : 'bg-slate-700/80 hover:bg-slate-700 text-slate-200 border-slate-600'
+            }`}
+            title="ワンタップで背景を半透明にし、問題文や図形を透かして見ながら手書きできます"
+          >
+            <span>{isTranslucent ? '👁️' : '👁️‍🗨️'}</span>
+            <span>{isTranslucent ? `透かしON (${Math.round(opacity * 100)}%)` : '問題を透かす'}</span>
+          </button>
+
+          {/* 透かし度スライダー（微調整用） */}
+          <div className="flex items-center gap-1 bg-slate-900/80 px-2 py-0.5 rounded-lg border border-slate-700 text-[11px] text-slate-300">
+            <input
+              type="range"
+              min="0.30"
+              max="1.0"
+              step="0.05"
+              value={opacity}
+              onChange={(e) => setOpacity(parseFloat(e.target.value))}
+              className="w-14 sm:w-16 h-1.5 accent-amber-400 cursor-pointer"
+              title="透明度を微調整できます（30%〜100%）"
+            />
+            <span className="font-mono text-[10px] w-7 text-right text-amber-300 font-bold">
+              {Math.round(opacity * 100)}%
+            </span>
+          </div>
+
+          {/* 戻す (Undo) */}
           <button
             type="button"
             onClick={handleUndo}
@@ -591,6 +618,8 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
             <span>↩️</span>
             <span className="hidden sm:inline">戻す</span>
           </button>
+
+          {/* 全消去 (Clear) */}
           <button
             type="button"
             onClick={handleClear}
@@ -604,11 +633,13 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
       </div>
 
       {/* ========================================================= */}
-      {/* 3. キャンバス描画領域 (方眼付き)                          */}
+      {/* 3. キャンバス描画領域 (方眼付き＆透かし背景最適化)         */}
       {/* ========================================================= */}
       <div
         ref={canvasContainerRef}
-        className="relative flex-1 w-full bg-slate-950 overflow-hidden cursor-crosshair touch-none"
+        className={`relative flex-1 w-full overflow-hidden cursor-crosshair touch-none transition-colors ${
+          isTranslucent ? 'bg-slate-950/75' : 'bg-slate-950'
+        }`}
         style={
           showGrid
             ? {
@@ -619,6 +650,14 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
             : undefined
         }
       >
+        {/* 透かしモード中ガイド案内 */}
+        {isTranslucent && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-amber-400 text-amber-950 font-black text-[11px] rounded-full shadow-lg border border-amber-300 pointer-events-none select-none flex items-center gap-1.5 z-10">
+            <span>👁️</span>
+            <span>下の問題が透けて見えています（このまま手書き・補助線が引けます）</span>
+          </div>
+        )}
+
         <canvas
           ref={canvasRef}
           onPointerDown={handleCanvasPointerDown}

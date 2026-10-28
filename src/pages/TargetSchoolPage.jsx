@@ -205,7 +205,7 @@ const TargetSchoolPage = () => {
                 </div>
                 <div className="flex justify-between text-[10px] text-indigo-200">
                   <span>分野網羅: {report.qualifiedCatCount}/{report.totalCatCount}分野 判定基準クリア</span>
-                  <span>各分野{report.categoryMinCount}問以上</span>
+                  <span>各分野{report.categoryMinCount}問（算数{report.mathCategoryMinCount}問）以上</span>
                 </div>
               </div>
 
@@ -216,7 +216,7 @@ const TargetSchoolPage = () => {
 
               {report.totalAnswered < report.requiredCount && (
                 <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
-                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上</strong>（全体目標<strong>{report.requiredCount}問</strong>）の実戦演習が必要です（全体あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
+                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上（※解答に時間がかかる算数は半分の{report.mathCategoryMinCount}問以上）</strong>（全体目標<strong>{report.requiredCount}問</strong>）の実戦演習が必要です（全体あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
                 </div>
               )}
 
@@ -239,7 +239,7 @@ const TargetSchoolPage = () => {
               {report.isNada && (
                 <div className="px-3.5 py-2 rounded-xl bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold flex items-center gap-2">
                   <span>💡</span>
-                  <span>灘校は国・算・理の3教科入試のため、社会の出題はなく理科と国語の重要分野で判定します。</span>
+                  <span>灘校は国・算・理の3教科入試のため、社会の出題はなく算数・理科・国語の重要分野で判定します。</span>
                 </div>
               )}
 
@@ -307,7 +307,7 @@ const TargetSchoolPage = () => {
                 <span>{school.name} 頻出分野別の到達度バランス</span>
               </h2>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                ★マークは合否を分ける最重要分野。各分野最低<strong>{report.categoryMinCount}問</strong>の演習を達成すると到達度判定が満額評価されます。
+                ★マークは合否を分ける最重要分野。各分野最低<strong>{report.categoryMinCount}問（算数は{report.mathCategoryMinCount}問）</strong>の演習を達成すると到達度判定が満額評価されます。
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -334,11 +334,13 @@ const TargetSchoolPage = () => {
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span
                       className={`text-[10px] font-black px-1.5 py-0.5 rounded ${
-                        c.subject === '国語'
-                          ? 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200'
-                          : c.subject === '理科'
-                            ? 'bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200'
-                            : 'bg-purple-100 dark:bg-purple-900/60 text-purple-800 dark:text-purple-200'
+                        c.subject === '算数'
+                          ? 'bg-rose-100 dark:bg-rose-900/60 text-rose-800 dark:text-rose-200'
+                          : c.subject === '国語'
+                            ? 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200'
+                            : c.subject === '理科'
+                              ? 'bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200'
+                              : 'bg-purple-100 dark:bg-purple-900/60 text-purple-800 dark:text-purple-200'
                       }`}
                     >
                       {c.subject}
