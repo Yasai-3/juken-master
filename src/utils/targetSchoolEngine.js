@@ -810,9 +810,16 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   // 総合到達度：
   // 1. 各分野の実効到達度（演習不足ペナルティ込み）70%
   // 2. 全問加重正答率 30%
-  // 3. 全体演習数による経験値補正（全体目標 requiredCount に対する充足率）
+  // 3. バランス有効演習数による経験値補正（全体目標 requiredCount に対する充足率）
+  // ※特定分野の偏り（例: 社会の1分野だけ大量に解く）による水増しを防ぐため、
+  //   各分野から全体進捗に算入できる演習数に上限キャップ（必要基準数の1.5倍まで）を設ける
+  const balancedAnswered = categoryStatus.reduce((sum, c) => {
+    const cap = Math.round(c.minRequired * 1.5);
+    return sum + Math.min(c.total, cap);
+  }, 0);
+
   const requiredCount = school.requiredCount || 50;
-  const experienceFactor = Math.min(1.0, schoolEligibleAnswered / requiredCount);
+  const experienceFactor = Math.min(1.0, balancedAnswered / requiredCount);
 
   const baseProgress = Math.round(weightedCategoryScore * 0.7 + weightedAccuracy * 0.3);
   const progressScore = Math.min(100, Math.round(baseProgress * (0.4 + 0.6 * experienceFactor)));
@@ -928,10 +935,10 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   };
 
   const radarData = [
-    { subject: '知識網羅性', user: userRadar.knowledge, target: targetRadar.knowledge },
-    { subject: '応用考察力', user: userRadar.thinking, target: targetRadar.thinking },
-    { subject: '記述表現力', user: userRadar.expression, target: targetRadar.expression },
-    { subject: '正確・安定度', user: userRadar.stability, target: targetRadar.stability },
+    { subject: '知識網羅性', user: userRadar.knowledge, current: userRadar.knowledge, target: targetRadar.knowledge },
+    { subject: '応用考察力', user: userRadar.thinking, current: userRadar.thinking, target: targetRadar.thinking },
+    { subject: '記述表現力', user: userRadar.expression, current: userRadar.expression, target: targetRadar.expression },
+    { subject: '正確・安定度', user: userRadar.stability, current: userRadar.stability, target: targetRadar.stability },
   ];
 
   // ==========================================
@@ -1083,6 +1090,7 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     severeWarning,
     diffToTarget,
     totalAnswered: schoolEligibleAnswered,
+    balancedAnswered,
     requiredCount,
     categoryMinCount: baseCategoryMinCount,
     mathCategoryMinCount,

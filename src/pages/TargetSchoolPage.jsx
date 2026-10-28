@@ -183,29 +183,32 @@ const TargetSchoolPage = () => {
               {/* 演習問題数の充足度ゲージ */}
               <div className="w-full max-w-xs mt-3 px-3 py-2 rounded-xl bg-white/10 border border-white/15 text-left space-y-1.5">
                 <div className="flex justify-between items-center text-xs">
-                  <span className="text-indigo-200 font-bold">演習量進捗</span>
+                  <span className="text-indigo-200 font-bold flex items-center gap-1">
+                    <span>バランス演習進捗</span>
+                    <span className="text-[10px] text-indigo-300 font-normal">（偏り防止キャップ適用）</span>
+                  </span>
                   <span className="font-extrabold text-white">
-                    {report.totalAnswered} / {report.requiredCount}問
+                    {report.balancedAnswered} / {report.requiredCount}問
                     <span className="text-[11px] text-amber-300 ml-1">
-                      ({Math.min(100, Math.round((report.totalAnswered / report.requiredCount) * 100))}%)
+                      ({Math.min(100, Math.round((report.balancedAnswered / report.requiredCount) * 100))}%)
                     </span>
                   </span>
                 </div>
                 <div className="w-full bg-white/20 h-2 rounded-full overflow-hidden">
                   <div
                     className={`h-2 rounded-full transition-all duration-700 ${
-                      report.totalAnswered >= report.requiredCount
+                      report.balancedAnswered >= report.requiredCount
                         ? 'bg-emerald-400'
                         : 'bg-gradient-to-r from-amber-400 to-indigo-300'
                     }`}
                     style={{
-                      width: `${Math.min(100, (report.totalAnswered / report.requiredCount) * 100)}%`,
+                      width: `${Math.min(100, (report.balancedAnswered / report.requiredCount) * 100)}%`,
                     }}
                   />
                 </div>
                 <div className="flex justify-between text-[10px] text-indigo-200">
                   <span>分野網羅: {report.qualifiedCatCount}/{report.totalCatCount}分野 判定基準クリア</span>
-                  <span>各分野{report.categoryMinCount}問（算数{report.mathCategoryMinCount}問）以上</span>
+                  <span>全解答累計: {report.totalAnswered}問</span>
                 </div>
               </div>
 
@@ -214,9 +217,9 @@ const TargetSchoolPage = () => {
                 <span>{report.rankLabel}</span>
               </div>
 
-              {report.totalAnswered < report.requiredCount && (
+              {report.balancedAnswered < report.requiredCount && (
                 <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
-                  ⚡ <strong>やる気持続システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上（※解答に時間がかかる算数は半分の{report.mathCategoryMinCount}問以上）</strong>（全体目標<strong>{report.requiredCount}問</strong>）の実戦演習が必要です（全体あと<strong>{report.requiredCount - report.totalAnswered}問</strong>）。各分野で問題をたくさん解くほど実質到達度が高まります！
+                  ⚡ <strong>やる気持続・偏り防止システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上（※算数は時間負荷を考慮し半分の{report.mathCategoryMinCount}問以上）</strong>の実戦演習が必要です。特定の一分野だけを過剰に解いても満たせず、全教科をバランスよく解くことで到達度が高まります！（全体目標まであと<strong>{Math.max(0, report.requiredCount - report.balancedAnswered)}問</strong>）
                 </div>
               )}
 

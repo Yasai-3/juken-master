@@ -668,7 +668,7 @@ const HistoryPage = () => {
             </div>
 
             {/* 国語の正答率 */}
-            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between col-span-2 sm:col-span-1">
+            <div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-bold text-gray-400 flex items-center justify-between">
                   <span>国語の正答率</span>
