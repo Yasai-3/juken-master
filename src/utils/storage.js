@@ -194,8 +194,17 @@ export const saveWrongAnswer = (question, userAnswer = '') => {
   const normalized = normalizeQuestion(question);
   const existingIndex = wrongAnswers.findIndex((q) => q.id === normalized.id);
 
+  // マスター問題に存在するか確認（存在する場合は巨大なSVGや解説を削ぎ落として容量節約）
+  const isCustom = Boolean(normalized.isCustom);
+  const baseData = isCustom
+    ? normalized
+    : {
+        id: normalized.id,
+        isCustom: false,
+      };
+
   const entry = {
-    ...normalized,
+    ...baseData,
     lastWrongAt: new Date().toISOString(),
     lastUserAnswer: userAnswer,
     wrongCount: existingIndex !== -1 ? (wrongAnswers[existingIndex].wrongCount || 1) + 1 : 1,
@@ -655,10 +664,22 @@ export const syncWithCloud = async () => {
     .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')))
     .slice(0, 20);
 
-  // 3. ローカルに保存
+  // 3. ローカルに保存（マスター問題の巨大なSVGや解説を削ぎ落としてLocalStorage容量を節約）
+  const compactWrongForLocal = mergedWrong.map((w) =>
+    w.isCustom
+      ? w
+      : {
+          id: w.id,
+          isCustom: false,
+          lastWrongAt: w.lastWrongAt || null,
+          lastUserAnswer: w.lastUserAnswer || '',
+          wrongCount: w.wrongCount || 1,
+        }
+  );
+
   saveCustomQuestions(mergedQuestions);
   localStorage.setItem(HISTORY_KEY, JSON.stringify(mergedHistory));
-  localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(mergedWrong));
+  localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(compactWrongForLocal));
   localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(mergedSnapshots));
 
   // 4. クラウドにマージ後データを保存
