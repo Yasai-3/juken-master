@@ -20,9 +20,27 @@ export const normalizeQuestion = (q, index = 0) => {
     ? q.difficulty
     : 'standard';
 
+  // 教科の推論（未指定時のフォールバック）
+  let inferredSubject = q.subject;
+  if (!inferredSubject) {
+    const cat = q.category || '';
+    const id = q.id || '';
+    if (cat.includes('算数') || id.startsWith('m_') || cat.includes('計算') || cat.includes('平面図形') || cat.includes('立体図形') || cat.includes('文章題') || cat.includes('特殊算') || cat.includes('速さ') || cat.includes('数の性質') || cat.includes('場合の数')) {
+      inferredSubject = '算数';
+    } else if (cat.includes('国語') || id.startsWith('k_') || cat.includes('漢字') || cat.includes('語句') || cat.includes('文法') || cat.includes('読解') || cat.includes('ことわざ') || cat.includes('慣用句')) {
+      inferredSubject = '国語';
+    } else if (cat.includes('社会') || id.startsWith('s_') || cat.includes('歴史') || cat.includes('地理') || cat.includes('公民')) {
+      inferredSubject = '社会';
+    } else if (cat.includes('理科') || id.startsWith('r_') || cat.includes('物理') || cat.includes('化学') || cat.includes('生物') || cat.includes('地学')) {
+      inferredSubject = '理科';
+    } else {
+      inferredSubject = '理科';
+    }
+  }
+
   return {
     id: q.id || `q_${Date.now()}_${index}_${Math.random().toString(36).slice(2, 7)}`,
-    subject: q.subject || '理科',
+    subject: inferredSubject,
     category: q.category || '一般',
     subCategory: q.subCategory || '基本',
     difficulty,
@@ -293,8 +311,14 @@ export const getWrongAnswers = () => {
     const master = allMap.get(q.id) || {};
     const norm = normalizeQuestion(
       {
+        ...master,
         ...q,
-        // 最新マスターデータで問題文・選択肢・解説を必ず最新化
+        // 最新マスターデータで問題文・選択肢・解説等を必ず最新化
+        subject: master.subject || q.subject,
+        category: master.category || q.category,
+        subCategory: master.subCategory || q.subCategory,
+        difficulty: master.difficulty || q.difficulty,
+        questionType: master.questionType || q.questionType,
         question: master.question || q.question || '',
         options: master.options || q.options,
         answer: master.answer || q.answer,

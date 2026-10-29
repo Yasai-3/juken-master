@@ -70,25 +70,33 @@ AP = 8 - 6.25 = 1.75cm（7/4 cm）となります。`
     subCategory: '線分比と面積比',
     difficulty: 'advanced',
     questionType: 'input',
-    question: '【図形問題】三角形ABCにおいて、辺AB上に点D、辺AC上に点Eがあり、AD : DB = 2 : 3、AE : EC = 3 : 4 です。\n図のように、線分BEと線分CDの交点をPとするとき、三角形PBCの面積と三角形ABC全体の面積の比を最も簡単な整数の比で答えなさい。（例：1:2 のように答えなさい）',
+    question: '【図形問題】三角形ABCにおいて、辺AB上に点D、辺AC上に点Eがあり、AD : DB = 3 : 4、AE : EC = 3 : 4 です。\n図のように、線分BEと線分CDの交点をPとするとき、三角形PBCの面積と三角形ABC全体の面積の比を最も簡単な整数の比で答えなさい。（例：1:2 のように答えなさい）',
     options: [],
     answer: '2:5',
     acceptableAnswers: ['2:5', '2：5', '2対5', '２：５'],
     keywords: ['2:5', 'メネラウス', 'チェバ', 'ベンツの定理'],
     knowledgeTag: '三角形の内部の交点・面積比の連比',
-    figureSvg: Geo.createTriangleInternalRatio({ rAD: 2, rDB: 3, rAE: 3, rEC: 4 }),
+    figureSvg: Geo.createTriangleInternalRatio({ rAD: 3, rDB: 4, rAE: 3, rEC: 4 }),
     explanation: `【解法】
-直線BEについて、(△PAB) : (△PBC) = AE : EC = 3 : 4
-直線CDについて、(△PCA) : (△PBC) = AD : DB = 2 : 3
-共通する△PBCを [12] とおくと、
-△PAB = [9]、△PCA = [8]
-△ABC全体 = [12] + [9] + [8] = [29] … おや？
-あ、△ABC全体に対する比：
-△PBC = 12, △ABC全体 = 12 + 9 + 8 = 29、比は 12:29 …
-あ、問題文は「△PBCの面積と△ABC全体の面積の比」で、前の解説では 2:5 となっていましたが、厳密には [12] : [30] = 2:5 になる設定（AE:EC = 3:4 だと 12/(12+9+8) = 12/29）。
-2:5 になる比率は AE:EC = 1:2, AD:DB = 1:2 のときです。
-ここでは解答 2:5 に合わせて、比率を AD:DB = 1:2, AE:EC = 1:2 にした場合は 4:9。
-前問の回答 2:5 を維持するため、連比の数値を厳密に整合させます。`
+三角形の内部の点Pによって分けられる3つの小三角形（△PBC, △PAB, △PCA）の面積比に着目します（ベンツの定理）。
+
+線分BEに着目すると、頂点AとCから線分BEへ下ろした垂線の長さの比は AE : EC = 3 : 4 に等しいので、底辺BPを共有する2つの三角形の面積比は、
+△PAB : △PBC = AE : EC = 3 : 4
+
+同様に、線分CDに着目すると、
+△PCA : △PBC = AD : DB = 3 : 4
+
+共通する △PBC の面積を [4] とおくと、
+・△PAB = [3]
+・△PCA = [3]
+・△PBC = [4]
+
+したがって、三角形ABC全体の面積は、
+△ABC = △PBC + △PAB + △PCA = [4] + [3] + [3] = [10]
+
+よって、三角形PBCの面積と三角形ABC全体の面積の比は、
+△PBC : △ABC = 4 : 10 = 2 : 5
+となります。`
   },
   {
     id: 'm_geom_ratio_004',
