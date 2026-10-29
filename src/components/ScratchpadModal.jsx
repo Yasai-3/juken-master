@@ -23,13 +23,13 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
   const [tool, setTool] = useState('pen'); // 'pen' | 'eraser'
   const [color, setColor] = useState('#f8fafc');
   const [lineWidth, setLineWidth] = useState(3);
-  const [opacity, setOpacity] = useState(0.95); // 半透明度
+  const [opacity, setOpacity] = useState(0.65); // 半透明度 (デフォルト65%透かし)
   const [showGrid, setShowGrid] = useState(true); // 方眼ガイド
   const isTranslucent = opacity < 0.9;
 
-  // 透かしモードのワンタップトグル (55% ↔ 100%)
+  // 透かしモードのワンタップトグル (65% ↔ 100%)
   const toggleTranslucent = () => {
-    setOpacity((prev) => (prev < 0.85 ? 1.0 : 0.55));
+    setOpacity((prev) => (prev < 0.85 ? 1.0 : 0.65));
   };
 
   // ウィンドウの位置・サイズ（ピクセル管理）
@@ -74,6 +74,7 @@ const ScratchpadModal = ({ isOpen, onClose }) => {
       setSize({ width: initW, height: initH });
       setIsFullscreen(false);
       setIsMinimized(false);
+      setOpacity(0.65); // 開いたときのデフォルト透かしを65%に設定
     }
   }, [isOpen]);
 
