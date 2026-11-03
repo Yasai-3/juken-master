@@ -8,9 +8,11 @@ import {
   syncWithCloud,
   getLastSyncInfo,
   getSettings,
+  getAchievementTestStatus,
 } from '../utils/storage';
 import { analyzeLearningProgress } from '../utils/advisorEngine';
 import { useAppLock } from '../components/AppLock';
+import { ACHIEVEMENT_CONFIG } from '../utils/achievementEngine';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -19,6 +21,14 @@ const Home = () => {
   const [menuData, setMenuData] = useState([]);
   const [totalQuestionsCount, setTotalQuestionsCount] = useState(0);
   const [topAdvice, setTopAdvice] = useState(null);
+
+  // 定期 学習到達度テストの状態
+  const [achievementStatuses, setAchievementStatuses] = useState({
+    '算数': getAchievementTestStatus('算数'),
+    '国語': getAchievementTestStatus('国語'),
+    '理科': getAchievementTestStatus('理科'),
+    '社会': getAchievementTestStatus('社会'),
+  });
 
   // Selection State
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -109,11 +119,39 @@ const Home = () => {
       (a, b) => (subjectOrder[a.subject] || 99) - (subjectOrder[b.subject] || 99)
     );
     setMenuData(formattedMenu);
+
+    // 到達度テスト状態の更新
+    setAchievementStatuses({
+      '算数': getAchievementTestStatus('算数'),
+      '国語': getAchievementTestStatus('国語'),
+      '理科': getAchievementTestStatus('理科'),
+      '社会': getAchievementTestStatus('社会'),
+    });
   }, []);
 
   useEffect(() => {
     loadDashboardData();
   }, [loadDashboardData]);
+
+  const handleStartAchievementTest = (subject) => {
+    const status = getAchievementTestStatus(subject);
+    if (!status.canTake) {
+      const nextDateStr = status.nextAvailableDate
+        ? `${status.nextAvailableDate.getMonth() + 1}月${status.nextAvailableDate.getDate()}日`
+        : '2週間後';
+      const confirmed = window.confirm(
+        `【${subject}】定期到達度判定テストはクールダウン期間中です。\n` +
+        `次回受験可能日: ${nextDateStr}（あと ${status.daysRemaining} 日後）\n\n` +
+        `※日々の分野別演習や弱点復習を進めることをおすすめします。\n` +
+        `（テスト確認用として、今すぐ練習受験しますか？）`
+      );
+      if (!confirmed) return;
+    }
+
+    startQuiz('achievement', {
+      subject,
+    });
+  };
 
   const handleLockApp = () => {
     if (window.confirm('アプリをロックしますか？\n次回開いた際にパスワードの入力が必要になります。')) {
@@ -313,6 +351,104 @@ const Home = () => {
             </span>
           </button>
         ))}
+      </div>
+
+      {/* 🏆 定期 学習到達度テスト（実力判定・2週間に1回） */}
+      <div className="bg-gradient-to-r from-amber-500/15 via-indigo-500/10 to-purple-500/15 dark:from-gray-800 dark:to-gray-800 rounded-3xl p-6 shadow-md border-2 border-amber-400/50 dark:border-amber-500/30">
+        <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center justify-between mb-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">🏆</span>
+              <h3 className="text-xl font-black text-gray-800 dark:text-gray-100">
+                定期 学習到達度テスト（実力判定）
+              </h3>
+              <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 text-amber-950 font-black text-[11px] shadow-sm">
+                2週間に1回
+              </span>
+            </div>
+            <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">
+              全分野から満遍なく厳選出題（標準・応用中心）し、現在の学習到達度レベル（S〜Dランク）を判定します
+            </p>
+          </div>
+
+          <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-3 py-1 rounded-xl border border-amber-200 dark:border-amber-800">
+            <span>S: 90%~</span>
+            <span>/</span>
+            <span>A: 75%~</span>
+            <span>/</span>
+            <span>B: 60%~</span>
+            <span>/</span>
+            <span>C: 45%~</span>
+            <span>/</span>
+            <span>D: &lt;45%</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          {['算数', '国語', '理科', '社会'].map((subj) => {
+            const status = achievementStatuses[subj] || { canTake: true };
+            const config = ACHIEVEMENT_CONFIG[subj] || { totalCount: 30 };
+            const last = status.lastResult;
+            const nextDateStr = status.nextAvailableDate
+              ? `${status.nextAvailableDate.getMonth() + 1}/${status.nextAvailableDate.getDate()}`
+              : '';
+
+            return (
+              <button
+                key={subj}
+                type="button"
+                onClick={() => handleStartAchievementTest(subj)}
+                className={`p-4 rounded-2xl transition-all text-left flex flex-col justify-between border-2 shadow-sm ${
+                  status.canTake
+                    ? 'bg-white dark:bg-gray-700/90 border-amber-400/80 hover:border-amber-500 hover:shadow-md hover:scale-[1.02] cursor-pointer'
+                    : 'bg-slate-50/80 dark:bg-gray-800/80 border-slate-200 dark:border-gray-700 hover:bg-slate-100 dark:hover:bg-gray-700 cursor-pointer'
+                }`}
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-base font-black text-gray-800 dark:text-gray-100 flex items-center gap-1.5">
+                      <span>{config.icon}</span>
+                      <span>{subj}</span>
+                    </span>
+                    <span className="text-xs font-black px-2.5 py-0.5 rounded-lg bg-indigo-50 dark:bg-gray-600 text-indigo-700 dark:text-indigo-200 border border-indigo-100 dark:border-gray-500">
+                      {config.totalCount}問
+                    </span>
+                  </div>
+
+                  <div className="text-[11px] text-gray-500 dark:text-gray-400 mb-2">
+                    {config.durationHint} ・ 標準〜応用中心
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-gray-100 dark:border-gray-600/60">
+                  {status.canTake ? (
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-black text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                        <span className="animate-pulse">✨</span>
+                        <span>今すぐ受験可能</span>
+                      </span>
+                      <span className="text-xs font-black text-amber-600 dark:text-amber-400">
+                        判定開始 →
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-between text-[11px]">
+                      <span className="text-slate-500 dark:text-gray-400 font-bold flex items-center gap-1">
+                        <span>🔒</span>
+                        <span>次回: {nextDateStr} (あと{status.daysRemaining}日)</span>
+                      </span>
+                      {last && last.level && (
+                        <span className="font-black text-indigo-600 dark:text-indigo-300">
+                          {last.level.badge} {last.level.rank} ({last.rate}%)
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Comprehensive Test Section */}

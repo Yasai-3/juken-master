@@ -9,9 +9,16 @@ import {
   getWrongAnswers,
   getAllQuestions,
   getSettings,
+  saveAchievementTestRecord,
 } from '../utils/storage';
 import { gradeAnswer } from '../utils/gradingEngine';
 import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine';
+import {
+  generateAchievementTestQuestions,
+  calculateAchievementLevel,
+  analyzeAchievementResults,
+  ACHIEVEMENT_CONFIG,
+} from '../utils/achievementEngine';
 
 const QuizPage = () => {
   const location = useLocation();
@@ -26,10 +33,30 @@ const QuizPage = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [quizResults, setQuizResults] = useState([]);
+  const [achievementReport, setAchievementReport] = useState(null);
 
   useEffect(() => {
     const settings = getSettings();
     const allQuestions = getAllQuestions();
+
+    // ★ 定期 学習到達度テストモード（分野均等・標準〜応用中心・教科別問題数）
+    if (mode === 'achievement') {
+      const achievementQuestions = generateAchievementTestQuestions(
+        allQuestions,
+        filters.subject,
+        settings
+      );
+      setQuestions(achievementQuestions);
+      setCurrentIndex(0);
+      setScore(0);
+      setQuizResults([]);
+      setAchievementReport(null);
+      setShowResult(false);
+      setFinished(false);
+      setLoading(false);
+      return;
+    }
+
     let pool = [];
 
     if (mode === 'review') {
@@ -174,12 +201,32 @@ const QuizPage = () => {
 
   const finishQuiz = () => {
     const totalQuestions = questions.length;
+    let achievementData = null;
+
+    if (mode === 'achievement' && filters.subject) {
+      const levelInfo = calculateAchievementLevel(score, totalQuestions);
+      const analysis = analyzeAchievementResults(questions, quizResults);
+      achievementData = {
+        subject: filters.subject,
+        score,
+        total: totalQuestions,
+        rate: levelInfo.rate,
+        level: levelInfo,
+        categoryBreakdown: analysis.categoryBreakdown,
+        strongestCategory: analysis.strongestCategory,
+        weakestCategory: analysis.weakestCategory,
+      };
+      setAchievementReport(achievementData);
+      saveAchievementTestRecord(filters.subject, achievementData);
+    }
+
     saveHistory({
       mode,
       filters,
       score,
       total: totalQuestions,
       results: quizResults,
+      achievementData,
       timestamp: new Date().toISOString(),
     });
     setFinished(true);
@@ -244,14 +291,91 @@ const QuizPage = () => {
   if (finished) {
     const percentage = Math.round((score / questions.length) * 100);
     const wrongInSessionCount = quizResults.filter((r) => !r.isCorrect).length;
+    const isAchievementMode = mode === 'achievement' && achievementReport;
+    const levelInfo = isAchievementMode ? achievementReport.level : null;
 
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-100 dark:bg-gray-900 p-4 animate-fade-in">
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 max-w-3xl w-full">
-          <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white text-center mb-6">
-            テスト結果発表
-          </h2>
+          {/* 到達度テスト専用 豪華ヘッダー */}
+          {isAchievementMode ? (
+            <div className="mb-6 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-indigo-500/20 to-purple-500/20 border border-amber-400/50 text-amber-700 dark:text-amber-300 font-black text-xs uppercase tracking-wider mb-2">
+                <span>🏆</span>
+                <span>定期 学習到達度判定テスト結果</span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-black text-gray-800 dark:text-white">
+                【{filters.subject}】学習到達度 レポート
+              </h2>
+            </div>
+          ) : (
+            <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white text-center mb-6">
+              テスト結果発表
+            </h2>
+          )}
 
+          {/* 到達度テスト用 レベル判定カード */}
+          {isAchievementMode && levelInfo && (
+            <div className="mb-8 p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white shadow-xl border-2 border-indigo-400/40 relative overflow-hidden text-center">
+              <div className="text-5xl mb-2">{levelInfo.badge}</div>
+              <div className="inline-block px-4 py-1 rounded-full text-xs font-black bg-white/20 text-white mb-2">
+                到達度判定
+              </div>
+              <h3 className="text-3xl md:text-4xl font-black tracking-tight mb-1 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
+                {levelInfo.title}
+              </h3>
+              <p className="text-sm font-extrabold text-indigo-200 mb-4">
+                〜 {levelInfo.subtitle} 〜
+              </p>
+
+              <div className="max-w-lg mx-auto p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm leading-relaxed text-indigo-100 mb-4">
+                {levelInfo.description}
+              </div>
+
+              {/* 分野別実力ブレイクダウン */}
+              {achievementReport.categoryBreakdown && achievementReport.categoryBreakdown.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-white/15 text-left">
+                  <h4 className="text-xs font-black text-indigo-200 mb-3 flex items-center gap-1.5">
+                    <span>📊</span>
+                    <span>分野別 得点率（得意・弱点分析）:</span>
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {achievementReport.categoryBreakdown.map((catItem) => (
+                      <div
+                        key={catItem.category}
+                        className="p-2.5 rounded-xl bg-white/10 border border-white/10 flex flex-col justify-between"
+                      >
+                        <div className="flex justify-between items-center text-xs font-bold mb-1.5">
+                          <span className="text-white truncate max-w-[140px]">{catItem.category}</span>
+                          <span className="font-mono text-amber-300 font-extrabold">
+                            {catItem.correct}/{catItem.total}問 ({catItem.rate}%)
+                          </span>
+                        </div>
+                        <div className="w-full bg-white/20 rounded-full h-2 overflow-hidden">
+                          <div
+                            className={`h-2 rounded-full transition-all duration-500 ${
+                              catItem.rate >= 80
+                                ? 'bg-emerald-400'
+                                : catItem.rate >= 60
+                                ? 'bg-amber-400'
+                                : 'bg-rose-400'
+                            }`}
+                            style={{ width: `${catItem.rate}%` }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="mt-4 pt-3 text-[11px] text-indigo-300/80">
+                🔒 次回の到達度テストは <strong>2週間後</strong> に受験可能です（定期的な実力測定に活用してください）。
+              </div>
+            </div>
+          )}
+
+          {/* 通常サークルスコア表示 */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
             <div className="relative w-40 h-40 flex-shrink-0">
               <div className="absolute inset-0 flex items-center justify-center flex-col">
@@ -292,7 +416,7 @@ const QuizPage = () => {
                 {percentage === 100
                   ? '🏆 パーフェクト達成！完璧に理解できています！'
                   : percentage >= 80
-                    ? '🌟 素晴らしい成績です！次はさらに上の難易度や記述にも挑戦しましょう！'
+                    ? '🌟 素晴らしい成績です！この調子で上位校合格を目指しましょう！'
                     : '💪 ナイスファイト！間違えた問題を今すぐ確認すると記憶に定着します！'}
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -389,6 +513,19 @@ const QuizPage = () => {
 
   return (
     <div className="min-h-screen bg-slate-100 dark:bg-gray-900 flex flex-col items-center justify-center p-4">
+      {/* 到達度テスト受験中バナー */}
+      {mode === 'achievement' && (
+        <div className="w-full max-w-2xl mb-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-amber-500/20 via-indigo-500/20 to-purple-500/20 border border-amber-400/40 text-center flex items-center justify-between text-xs font-black shadow-sm">
+          <span className="flex items-center gap-1.5 text-amber-800 dark:text-amber-200">
+            <span>🏆</span>
+            <span>【{filters.subject}】定期 学習到達度テスト（実力判定）</span>
+          </span>
+          <span className="px-2.5 py-0.5 rounded-full bg-amber-400/30 text-amber-950 dark:text-amber-200 text-[11px] font-extrabold">
+            全分野から厳選（標準・応用中心）
+          </span>
+        </div>
+      )}
+
       <div className="w-full max-w-2xl mb-4 flex justify-between items-center text-gray-600 dark:text-gray-300 font-bold">
         <button
           type="button"

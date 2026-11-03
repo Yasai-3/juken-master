@@ -12,6 +12,7 @@ import {
   importData,
   getSettings,
   saveSettings,
+  resetAchievementTestCooldown,
 } from '../utils/storage';
 import {
   fileToGenerativePart,
@@ -150,6 +151,13 @@ const AdminPage = () => {
     if (window.confirm('パスワードを初期パスワードにリセットしますか？\n（リセット後、アプリはロック状態に戻り、初期パスワードでログインし直すことができます）')) {
       resetToDefaultPassword();
       navigate('/');
+    }
+  };
+
+  const handleResetAchievementCooldown = () => {
+    if (window.confirm('学習到達度テストの2週間クールダウンを全教科リセットしますか？\n（リセット後、全教科が今すぐ受験可能になります）')) {
+      resetAchievementTestCooldown();
+      alert('全教科の学習到達度テストを今すぐ受験可能な状態にリセットしました！');
     }
   };
 
@@ -1349,7 +1357,16 @@ const AdminPage = () => {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleResetAchievementCooldown}
+                      className="px-3 py-2 bg-amber-100 hover:bg-amber-200 dark:bg-amber-950/40 dark:hover:bg-amber-900/50 text-amber-900 dark:text-amber-200 text-xs font-black rounded-xl transition flex items-center gap-1.5 cursor-pointer border border-amber-300 dark:border-amber-700"
+                      title="学習到達度テストの2週間制限をリセットして即座に再受験可能にします"
+                    >
+                      <span>🏆</span>
+                      <span>到達度テスト制限リセット</span>
+                    </button>
                     <button
                       type="button"
                       onClick={handleResetPassword}

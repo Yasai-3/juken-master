@@ -796,3 +796,80 @@ export const syncWithLocalServer = async (customServerUrl = '') => {
 
   return syncInfo;
 };
+
+// --- 定期 学習到達度テスト（2週間に1回）管理 ---
+const ACHIEVEMENT_TEST_KEY = 'quiz_app_achievement_test_v1';
+const ACHIEVEMENT_COOLDOWN_MS = 14 * 24 * 60 * 60 * 1000; // 14日間 (2週間)
+
+export const getAchievementTestRecords = () => {
+  try {
+    return JSON.parse(localStorage.getItem(ACHIEVEMENT_TEST_KEY) || '{}');
+  } catch {
+    return {};
+  }
+};
+
+export const getAchievementTestStatus = (subject) => {
+  const records = getAchievementTestRecords();
+  const record = records[subject];
+
+  if (!record || !record.lastTakenAt) {
+    return {
+      canTake: true,
+      daysRemaining: 0,
+      nextAvailableDate: null,
+      lastResult: null,
+    };
+  }
+
+  const lastTakenTime = new Date(record.lastTakenAt).getTime();
+  const now = Date.now();
+  const elapsed = now - lastTakenTime;
+
+  if (elapsed >= ACHIEVEMENT_COOLDOWN_MS) {
+    return {
+      canTake: true,
+      daysRemaining: 0,
+      nextAvailableDate: null,
+      lastResult: record,
+    };
+  }
+
+  const remainingMs = ACHIEVEMENT_COOLDOWN_MS - elapsed;
+  const daysRemaining = Math.ceil(remainingMs / (24 * 60 * 60 * 1000));
+  const nextAvailableDate = new Date(lastTakenTime + ACHIEVEMENT_COOLDOWN_MS);
+
+  return {
+    canTake: false,
+    daysRemaining,
+    nextAvailableDate,
+    lastResult: record,
+  };
+};
+
+export const saveAchievementTestRecord = (subject, resultData) => {
+  const records = getAchievementTestRecords();
+  const entry = {
+    subject,
+    lastTakenAt: new Date().toISOString(),
+    score: resultData.score,
+    total: resultData.total,
+    rate: resultData.rate,
+    level: resultData.level, // { rank, title, subtitle, badge }
+    categoryBreakdown: resultData.categoryBreakdown || [],
+  };
+  records[subject] = entry;
+  localStorage.setItem(ACHIEVEMENT_TEST_KEY, JSON.stringify(records));
+  return entry;
+};
+
+export const resetAchievementTestCooldown = (subject = null) => {
+  if (subject) {
+    const records = getAchievementTestRecords();
+    delete records[subject];
+    localStorage.setItem(ACHIEVEMENT_TEST_KEY, JSON.stringify(records));
+  } else {
+    localStorage.removeItem(ACHIEVEMENT_TEST_KEY);
+  }
+};
+
