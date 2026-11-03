@@ -5,13 +5,32 @@ import QuizPage from "./pages/QuizPage";
 import HistoryPage from "./pages/HistoryPage";
 import AdminPage from "./pages/AdminPage";
 import TargetSchoolPage from "./pages/TargetSchoolPage";
-import { useAppLock, AppLockScreen } from "./components/AppLock";
+import {
+  useAppLock,
+  AppLockScreen,
+  InitialPasswordSetupScreen,
+} from "./components/AppLock";
 
 function App() {
-  const { isUnlocked, unlock } = useAppLock();
+  const {
+    isUnlocked,
+    requiresPasswordChange,
+    unlock,
+    setInitialPassword,
+    resetToDefaultPassword,
+  } = useAppLock();
 
   if (!isUnlocked) {
-    return <AppLockScreen onUnlock={unlock} />;
+    return (
+      <AppLockScreen
+        onUnlock={unlock}
+        onReset={resetToDefaultPassword}
+      />
+    );
+  }
+
+  if (requiresPasswordChange) {
+    return <InitialPasswordSetupScreen onSubmit={setInitialPassword} />;
   }
 
   return (

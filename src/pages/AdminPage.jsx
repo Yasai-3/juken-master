@@ -26,7 +26,7 @@ import { useAppLock } from '../components/AppLock';
 
 const AdminPage = () => {
   const navigate = useNavigate();
-  const { lock, changePassword } = useAppLock();
+  const { lock, changePassword, resetToDefaultPassword } = useAppLock();
   const [customQuestions, setCustomQuestions] = useState([]);
   const [activeTab, setActiveTab] = useState('ai_studio');
   const [studioMode, setStudioMode] = useState('chat_prompt'); // 'chat_prompt' (API枠消費ゼロ) | 'direct_api'
@@ -108,7 +108,7 @@ const AdminPage = () => {
     setPasswordChangeError('');
 
     if (!oldPasswordInput.trim()) {
-      setPasswordChangeError('現在のパスワードを入力してください（初期値: master2026）');
+      setPasswordChangeError('現在のパスワードを入力してください');
       return;
     }
     if (!newPasswordInput.trim() || newPasswordInput.trim().length < 4) {
@@ -142,6 +142,13 @@ const AdminPage = () => {
   const handleLockApp = () => {
     if (window.confirm('アプリをロックしますか？\n次回開く際にパスワードの入力が必要になります。')) {
       lock();
+      navigate('/');
+    }
+  };
+
+  const handleResetPassword = () => {
+    if (window.confirm('パスワードを初期パスワードにリセットしますか？\n（リセット後、アプリはロック状態に戻り、初期パスワードでログインし直すことができます）')) {
+      resetToDefaultPassword();
       navigate('/');
     }
   };
@@ -1342,15 +1349,26 @@ const AdminPage = () => {
                     </p>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={handleLockApp}
-                    className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-black rounded-xl shadow transition flex items-center gap-1.5 cursor-pointer"
-                    title="今すぐアプリをロック画面に戻します"
-                  >
-                    <span>🔒</span>
-                    <span>今すぐアプリをロック（ログアウト）</span>
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleResetPassword}
+                      className="px-3 py-2 bg-slate-200 hover:bg-slate-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-slate-700 dark:text-gray-200 text-xs font-bold rounded-xl transition flex items-center gap-1.5 cursor-pointer"
+                      title="パスワードを初期パスワードにリセットします"
+                    >
+                      <span>🔄</span>
+                      <span>初期パスワードにリセット</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleLockApp}
+                      className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-black rounded-xl shadow transition flex items-center gap-1.5 cursor-pointer"
+                      title="今すぐアプリをロック画面に戻します"
+                    >
+                      <span>🔒</span>
+                      <span>今すぐアプリをロック（ログアウト）</span>
+                    </button>
+                  </div>
                 </div>
 
                 <form onSubmit={handlePasswordChange} className="space-y-3 max-w-xl text-left">
@@ -1363,7 +1381,7 @@ const AdminPage = () => {
                         type="password"
                         value={oldPasswordInput}
                         onChange={(e) => setOldPasswordInput(e.target.value)}
-                        placeholder="初期値: master2026"
+                        placeholder="現在のパスワード"
                         className="w-full p-2.5 text-xs font-mono border rounded-xl bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-indigo-500"
                       />
                     </div>
