@@ -5,8 +5,15 @@ import QuizPage from "./pages/QuizPage";
 import HistoryPage from "./pages/HistoryPage";
 import AdminPage from "./pages/AdminPage";
 import TargetSchoolPage from "./pages/TargetSchoolPage";
+import { useAppLock, AppLockScreen } from "./components/AppLock";
 
 function App() {
+  const { isUnlocked, unlock } = useAppLock();
+
+  if (!isUnlocked) {
+    return <AppLockScreen onUnlock={unlock} />;
+  }
+
   return (
     <Router>
       <Routes>

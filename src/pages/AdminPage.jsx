@@ -22,9 +22,11 @@ import {
   parseAiResponseToQuestions,
 } from '../utils/geminiGenerator';
 import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine';
+import { useAppLock } from '../components/AppLock';
 
 const AdminPage = () => {
   const navigate = useNavigate();
+  const { lock, changePassword } = useAppLock();
   const [customQuestions, setCustomQuestions] = useState([]);
   const [activeTab, setActiveTab] = useState('ai_studio');
   const [studioMode, setStudioMode] = useState('chat_prompt'); // 'chat_prompt' (API枠消費ゼロ) | 'direct_api'
@@ -34,6 +36,14 @@ const AdminPage = () => {
   const [settingsSavedMsg, setSettingsSavedMsg] = useState('');
   const [availableModels, setAvailableModels] = useState([]);
   const [testingApi, setTestingApi] = useState(false);
+
+  // Security & Password State
+  const [oldPasswordInput, setOldPasswordInput] = useState('');
+  const [newPasswordInput, setNewPasswordInput] = useState('');
+  const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
+  const [passwordChangeMsg, setPasswordChangeMsg] = useState('');
+  const [passwordChangeError, setPasswordChangeError] = useState('');
+  const [isChangingPass, setIsChangingPass] = useState(false);
 
   // AI Studio State
   const [uploadedMedia, setUploadedMedia] = useState([]);
@@ -90,6 +100,50 @@ const AdminPage = () => {
     setSettings(updated);
     setSettingsSavedMsg('設定を保存しました');
     setTimeout(() => setSettingsSavedMsg(''), 2500);
+  };
+
+  const handlePasswordChange = async (e) => {
+    e.preventDefault();
+    setPasswordChangeMsg('');
+    setPasswordChangeError('');
+
+    if (!oldPasswordInput.trim()) {
+      setPasswordChangeError('現在のパスワードを入力してください（初期値: master2026）');
+      return;
+    }
+    if (!newPasswordInput.trim() || newPasswordInput.trim().length < 4) {
+      setPasswordChangeError('新しいパスワードは4文字以上で入力してください');
+      return;
+    }
+    if (newPasswordInput.trim() !== confirmPasswordInput.trim()) {
+      setPasswordChangeError('新しいパスワード（確認用）が一致しません');
+      return;
+    }
+
+    setIsChangingPass(true);
+    try {
+      const res = await changePassword(oldPasswordInput.trim(), newPasswordInput.trim());
+      if (res.success) {
+        setPasswordChangeMsg('パスワードを正常に変更しました！次回以降は新しいパスワードで解除してください。');
+        setOldPasswordInput('');
+        setNewPasswordInput('');
+        setConfirmPasswordInput('');
+        setTimeout(() => setPasswordChangeMsg(''), 5000);
+      } else {
+        setPasswordChangeError(res.error || 'パスワード変更に失敗しました');
+      }
+    } catch (err) {
+      setPasswordChangeError('エラーが発生しました');
+    } finally {
+      setIsChangingPass(false);
+    }
+  };
+
+  const handleLockApp = () => {
+    if (window.confirm('アプリをロックしますか？\n次回開く際にパスワードの入力が必要になります。')) {
+      lock();
+      navigate('/');
+    }
   };
 
   const handleTestApiConnection = async () => {
@@ -1275,6 +1329,100 @@ const AdminPage = () => {
           {/* TAB 4: BACKUP / TABLET SYNC / SETTINGS */}
           {activeTab === 'backup' && (
             <div className="space-y-8">
+              {/* Security & Access Password Management */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-indigo-50/70 via-white to-purple-50/60 dark:from-gray-800 dark:via-gray-800 dark:to-indigo-950/30 border-2 border-indigo-200 dark:border-indigo-900/60 shadow-sm space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-indigo-100 dark:border-gray-700 pb-3">
+                  <div>
+                    <h2 className="text-lg font-black text-indigo-950 dark:text-indigo-200 flex items-center gap-2">
+                      <span>🔐</span>
+                      <span>アプリ閲覧パスワード設定・セキュリティ</span>
+                    </h2>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                      URLを知られても第三者が勝手に問題や学習履歴を閲覧・操作できないよう保護します。
+                    </p>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleLockApp}
+                    className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-black rounded-xl shadow transition flex items-center gap-1.5 cursor-pointer"
+                    title="今すぐアプリをロック画面に戻します"
+                  >
+                    <span>🔒</span>
+                    <span>今すぐアプリをロック（ログアウト）</span>
+                  </button>
+                </div>
+
+                <form onSubmit={handlePasswordChange} className="space-y-3 max-w-xl text-left">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div>
+                      <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">
+                        現在のパスワード:
+                      </label>
+                      <input
+                        type="password"
+                        value={oldPasswordInput}
+                        onChange={(e) => setOldPasswordInput(e.target.value)}
+                        placeholder="初期値: master2026"
+                        className="w-full p-2.5 text-xs font-mono border rounded-xl bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-indigo-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">
+                        新しいパスワード:
+                      </label>
+                      <input
+                        type="password"
+                        value={newPasswordInput}
+                        onChange={(e) => setNewPasswordInput(e.target.value)}
+                        placeholder="4文字以上"
+                        className="w-full p-2.5 text-xs font-mono border rounded-xl bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-indigo-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">
+                        新しいパスワード（確認）:
+                      </label>
+                      <input
+                        type="password"
+                        value={confirmPasswordInput}
+                        onChange={(e) => setConfirmPasswordInput(e.target.value)}
+                        placeholder="再入力"
+                        className="w-full p-2.5 text-xs font-mono border rounded-xl bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-indigo-500"
+                      />
+                    </div>
+                  </div>
+
+                  {passwordChangeMsg && (
+                    <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-700 text-xs text-emerald-800 dark:text-emerald-200 font-bold flex items-center gap-1.5">
+                      <span>✓</span>
+                      <span>{passwordChangeMsg}</span>
+                    </div>
+                  )}
+
+                  {passwordChangeError && (
+                    <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-300 dark:border-rose-700 text-xs text-rose-800 dark:text-rose-200 font-bold flex items-center gap-1.5">
+                      <span>⚠️</span>
+                      <span>{passwordChangeError}</span>
+                    </div>
+                  )}
+
+                  <div className="pt-1 flex items-center justify-between">
+                    <button
+                      type="submit"
+                      disabled={isChangingPass}
+                      className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-extrabold rounded-xl shadow transition disabled:opacity-50 flex items-center gap-1.5"
+                    >
+                      <span>💾</span>
+                      <span>{isChangingPass ? '更新中...' : '新しいパスワードを保存する'}</span>
+                    </button>
+                    <span className="text-[11px] text-gray-500 dark:text-gray-400">
+                      ※忘れないようメモ等に記録してください。
+                    </span>
+                  </div>
+                </form>
+              </div>
+
               {/* App Preferences */}
               <div>
                 <h2 className="text-lg font-extrabold mb-3 text-gray-800 dark:text-white border-b pb-2">

@@ -10,9 +10,11 @@ import {
   getSettings,
 } from '../utils/storage';
 import { analyzeLearningProgress } from '../utils/advisorEngine';
+import { useAppLock } from '../components/AppLock';
 
 const Home = () => {
   const navigate = useNavigate();
+  const { lock } = useAppLock();
   const [wrongAnswersCounts, setWrongAnswersCounts] = useState({ science: 0, social: 0, japanese: 0 });
   const [menuData, setMenuData] = useState([]);
   const [totalQuestionsCount, setTotalQuestionsCount] = useState(0);
@@ -112,6 +114,12 @@ const Home = () => {
   useEffect(() => {
     loadDashboardData();
   }, [loadDashboardData]);
+
+  const handleLockApp = () => {
+    if (window.confirm('アプリをロックしますか？\n次回開いた際にパスワードの入力が必要になります。')) {
+      lock();
+    }
+  };
 
   const handleCloudSync = async () => {
     setIsSyncing(true);
@@ -640,6 +648,16 @@ const Home = () => {
               title="Wi-Fi同期サーバー設定・接続ガイド"
             >
               <span>📡 タブレット接続案内</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleLockApp}
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-100 hover:bg-rose-50 dark:bg-gray-800 dark:hover:bg-rose-950/40 border border-slate-200 hover:border-rose-300 dark:border-gray-700 dark:hover:border-rose-800 text-slate-600 hover:text-rose-600 dark:text-gray-300 dark:hover:text-rose-300 text-xs font-bold transition cursor-pointer"
+              title="今すぐアプリをロックしてパスワード入力画面に戻します"
+            >
+              <span>🔒</span>
+              <span>ロック</span>
             </button>
           </div>
 
