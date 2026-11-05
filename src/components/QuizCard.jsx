@@ -68,6 +68,29 @@ const QuizCard = ({ questionData, onAnswer }) => {
           ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-800 dark:text-blue-300 border-blue-100 dark:border-blue-900/60'
           : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 border-amber-100 dark:border-amber-900/60';
 
+  // 出題中のネタバレ防止：解答や正解文言が含まれる場合に自動マスク・サニタイズ
+  const safeKnowledgeTag = React.useMemo(() => {
+    if (!knowledgeTag) return '';
+    const ans = String(answer || '').trim().replace(/[（\(].*?[）\)]/g, '');
+    const acceptable = Array.isArray(questionData?.acceptableAnswers)
+      ? questionData.acceptableAnswers.map((a) => String(a).trim().replace(/[（\(].*?[）\)]/g, ''))
+      : [];
+    const checkAnswers = [ans, ...acceptable].filter((a) => a && a.length >= 1);
+
+    // 正解の文字列がタグに含まれているかチェック
+    for (const a of checkAnswers) {
+      if (knowledgeTag.includes(a)) {
+        const parts = knowledgeTag.split('・');
+        const safeParts = parts.filter((p) => !p.includes(a));
+        if (safeParts.length > 0) {
+          return safeParts.join('・');
+        }
+        return category ? `${category}の学習テーマ` : '学習テーマ';
+      }
+    }
+    return knowledgeTag;
+  }, [knowledgeTag, answer, questionData?.acceptableAnswers, category]);
+
   useEffect(() => {
     setTextAnswer('');
   }, [questionData?.id]);
@@ -129,10 +152,10 @@ const QuizCard = ({ questionData, onAnswer }) => {
       </div>
 
       {/* Knowledge Tag Subbar */}
-      {knowledgeTag && (
+      {safeKnowledgeTag && (
         <div className={`${subbarColor} px-6 py-2 text-xs font-medium border-b flex items-center gap-1.5`}>
           <span>🏷️ テーマ:</span>
-          <span className="font-bold">{knowledgeTag}</span>
+          <span className="font-bold">{safeKnowledgeTag}</span>
         </div>
       )}
 
