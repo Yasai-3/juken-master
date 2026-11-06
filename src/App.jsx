@@ -5,6 +5,7 @@ import QuizPage from "./pages/QuizPage";
 import HistoryPage from "./pages/HistoryPage";
 import AdminPage from "./pages/AdminPage";
 import TargetSchoolPage from "./pages/TargetSchoolPage";
+import ErrorBoundary from "./components/ErrorBoundary";
 import {
   useAppLock,
   AppLockScreen,
@@ -34,15 +35,17 @@ function App() {
   }
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quiz" element={<QuizPage />} />
-        <Route path="/history" element={<HistoryPage />} />
-        <Route path="/admin" element={<AdminPage />} />
-        <Route path="/target-schools" element={<TargetSchoolPage />} />
-      </Routes>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/admin" element={<AdminPage />} />
+          <Route path="/target-schools" element={<TargetSchoolPage />} />
+        </Routes>
+      </Router>
+    </ErrorBoundary>
   );
 }
 

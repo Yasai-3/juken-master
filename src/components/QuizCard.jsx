@@ -15,9 +15,12 @@ const DIFFICULTY_STARS = {
 };
 
 const QuizCard = ({ questionData, onAnswer }) => {
+  if (!questionData) return null;
+
   const {
     question,
     options = [],
+    answer = '',
     subject,
     category,
     subCategory,
@@ -70,26 +73,31 @@ const QuizCard = ({ questionData, onAnswer }) => {
 
   // 出題中のネタバレ防止：解答や正解文言が含まれる場合に自動マスク・サニタイズ
   const safeKnowledgeTag = React.useMemo(() => {
-    if (!knowledgeTag) return '';
-    const ans = String(answer || '').trim().replace(/[（\(].*?[）\)]/g, '');
-    const acceptable = Array.isArray(questionData?.acceptableAnswers)
-      ? questionData.acceptableAnswers.map((a) => String(a).trim().replace(/[（\(].*?[）\)]/g, ''))
-      : [];
-    const checkAnswers = [ans, ...acceptable].filter((a) => a && a.length >= 1);
+    try {
+      if (!knowledgeTag) return '';
+      const rawAns = answer || questionData?.answer || '';
+      const ans = String(rawAns).trim().replace(/[（\(].*?[）\)]/g, '');
+      const acceptable = Array.isArray(questionData?.acceptableAnswers)
+        ? questionData.acceptableAnswers.map((a) => String(a || '').trim().replace(/[（\(].*?[）\)]/g, ''))
+        : [];
+      const checkAnswers = [ans, ...acceptable].filter((a) => a && a.length >= 1);
 
-    // 正解の文字列がタグに含まれているかチェック
-    for (const a of checkAnswers) {
-      if (knowledgeTag.includes(a)) {
-        const parts = knowledgeTag.split('・');
-        const safeParts = parts.filter((p) => !p.includes(a));
-        if (safeParts.length > 0) {
-          return safeParts.join('・');
+      // 正解の文字列がタグに含まれているかチェック
+      for (const a of checkAnswers) {
+        if (knowledgeTag.includes(a)) {
+          const parts = knowledgeTag.split('・');
+          const safeParts = parts.filter((p) => !p.includes(a));
+          if (safeParts.length > 0) {
+            return safeParts.join('・');
+          }
+          return category ? `${category}の学習テーマ` : '学習テーマ';
         }
-        return category ? `${category}の学習テーマ` : '学習テーマ';
       }
+      return knowledgeTag;
+    } catch {
+      return knowledgeTag || '';
     }
-    return knowledgeTag;
-  }, [knowledgeTag, answer, questionData?.acceptableAnswers, category]);
+  }, [knowledgeTag, answer, questionData?.acceptableAnswers, questionData?.answer, category]);
 
   useEffect(() => {
     setTextAnswer('');
