@@ -182,8 +182,49 @@ export const gradeAnswer = (questionData, userAnswer, options = { strictKanji: f
     }
   });
 
+  // 1. 問題文中に提示されている指定語句（ヒント語句）の抽出
+  const promptKeywords = [];
+  const promptMatches = questionData.question.match(/[「『]([^」』]+)[」』](?:という|の)?(?:言葉|語句)/g) || [];
+  promptMatches.forEach((m) => {
+    const word = m.replace(/^[「『]|[」』].*$/g, '').trim();
+    if (word) promptKeywords.push(word);
+  });
+  const checkPromptWords = promptKeywords.length > 0 ? promptKeywords : keywords;
+
+  // 2. ユーザー入力から指定語句を取り除いた「実質的な記述量（文章部分）」を判定
+  let textWithoutPromptWords = normUser;
+  checkPromptWords.forEach((pw) => {
+    const normPw = katakanaToHiragana(normalizeText(pw));
+    if (normPw) {
+      textWithoutPromptWords = textWithoutPromptWords.split(normPw).join('');
+    }
+  });
+
+  const normCorrectAns = normalizeText(correctAns);
+  const minRequiredLen = Math.max(8, Math.floor(normCorrectAns.length * 0.3));
+  const substantiveLen = textWithoutPromptWords.length;
+
+  // 問題文の指定単語だけを並べたオウム返し入力の検出
+  const isKeywordOnlyInput = substantiveLen < 6 || normUser.length < minRequiredLen;
+
+  if (isKeywordOnlyInput) {
+    return {
+      isCorrect: false,
+      isAlmostCorrect: false,
+      scoreRatio: 0,
+      statusLabel: '単語のみの入力です',
+      feedbackMessage:
+        '問題文に指定された言葉をそのまま入力するだけでなく、理由や意味をきちんとした文章で説明しましょう。模範解答を確認してみましょう！',
+      matchedKeywords,
+      missingKeywords,
+      userAnswer: rawUser,
+      correctAns,
+      canSelfOverride: true,
+    };
+  }
+
   const ratio = keywords.length > 0 ? matchedKeywords.length / keywords.length : 0;
-  const isCorrect = ratio >= 0.75 || (keywords.length === 1 && ratio === 1);
+  const isCorrect = ratio >= 0.75 && normUser.length >= minRequiredLen;
   const isPartial = !isCorrect && ratio >= 0.4;
 
   let statusLabel = 'もう一歩（記述確認）';
@@ -191,7 +232,7 @@ export const gradeAnswer = (questionData, userAnswer, options = { strictKanji: f
 
   if (isCorrect) {
     statusLabel = '記述クリア！（正解）';
-    feedbackMessage = '必要な重要キーワードをすべて含めて説明できています！模範解答の表現も確認してみましょう。';
+    feedbackMessage = '必要な重要キーワードをすべて含めて文章で説明できています！模範解答の表現も確認してみましょう。';
   } else if (isPartial) {
     statusLabel = '部分点（おしい！）';
     feedbackMessage = `「${matchedKeywords.join('・')}」は書けています！さらに「${missingKeywords.join('・')}」の要素が入ると満点解答になります。`;
