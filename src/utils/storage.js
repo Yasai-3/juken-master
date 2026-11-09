@@ -856,6 +856,9 @@ export const saveAchievementTestRecord = (subject, resultData) => {
     total: resultData.total,
     rate: resultData.rate,
     level: resultData.level, // { rank, title, subtitle, badge }
+    timeLevel: resultData.timeLevel || null, // { rank, title, badge, timeFormatted }
+    dualAxis: resultData.dualAxis || null, // { title, badge, tagline, advice }
+    elapsedSeconds: resultData.elapsedSeconds || 0,
     categoryBreakdown: resultData.categoryBreakdown || [],
   };
   records[subject] = entry;

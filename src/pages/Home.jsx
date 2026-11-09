@@ -371,16 +371,29 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-3 py-1 rounded-xl border border-amber-200 dark:border-amber-800">
-            <span>S: 90%~</span>
-            <span>/</span>
-            <span>A: 75%~</span>
-            <span>/</span>
-            <span>B: 60%~</span>
-            <span>/</span>
-            <span>C: 45%~</span>
-            <span>/</span>
-            <span>D: &lt;45%</span>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+            <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 px-3 py-1 rounded-xl border border-amber-200 dark:border-amber-800">
+              <span className="font-black">🎯 正答率:</span>
+              <span>S: 90%~</span>
+              <span>/</span>
+              <span>A: 75%~</span>
+              <span>/</span>
+              <span>B: 60%~</span>
+              <span>/</span>
+              <span>C: 45%~</span>
+              <span>/</span>
+              <span>D: &lt;45%</span>
+            </div>
+            <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-indigo-800 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 px-3 py-1 rounded-xl border border-indigo-200 dark:border-indigo-800">
+              <span className="font-black">⏱️ スピード:</span>
+              <span>S: ≤10分</span>
+              <span>/</span>
+              <span>A: ≤15分</span>
+              <span>/</span>
+              <span>B: ≤20分</span>
+              <span>/</span>
+              <span>C: ≤25分</span>
+            </div>
           </div>
         </div>
 
@@ -438,8 +451,14 @@ const Home = () => {
                         <span>次回: {nextDateStr} (あと{status.daysRemaining}日)</span>
                       </span>
                       {last && last.level && (
-                        <span className="font-black text-indigo-600 dark:text-indigo-300">
-                          {last.level.badge} {last.level.rank} ({last.rate}%)
+                        <span className="font-black text-indigo-600 dark:text-indigo-300 flex items-center gap-1">
+                          <span>{last.level.badge}{last.level.rank}</span>
+                          {last.timeLevel && (
+                            <span className="text-amber-600 dark:text-amber-300 font-extrabold text-[10px]">
+                              {last.timeLevel.badge}{last.timeLevel.rank}
+                            </span>
+                          )}
+                          <span>({last.rate}%)</span>
                         </span>
                       )}
                     </div>
@@ -455,11 +474,16 @@ const Home = () => {
       <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-6 shadow-md border border-indigo-100 dark:border-gray-700">
         <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between mb-4">
           <div>
-            <h3 className="text-xl font-extrabold text-gray-800 dark:text-gray-100 flex items-center">
-              <span className="text-2xl mr-2">🌟</span> 総合実力テスト
-            </h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-extrabold text-gray-800 dark:text-gray-100 flex items-center">
+                <span className="text-2xl mr-2">🌟</span> 総合実力テスト
+              </h3>
+              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-300 border border-rose-300/40">
+                ⏱️ タイムクロック（制限時間あり）
+              </span>
+            </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-              上で選んだ難易度・出題形式の条件でランダムに出題します
+              規定時間を超えると自動終了（タイムオーバー）。入試本番の実戦ペースを鍛えます！
             </p>
           </div>
 
@@ -482,38 +506,66 @@ const Home = () => {
           </div>
         </div>
 
+        {/* 制限時間ルールの明示バナー */}
+        <div className="mb-3 px-3 py-2 rounded-xl bg-white/70 dark:bg-gray-750/70 border border-indigo-100 dark:border-gray-600 flex flex-wrap items-center justify-between text-xs text-gray-600 dark:text-gray-300 font-bold">
+          <span className="flex items-center gap-1.5 text-indigo-700 dark:text-indigo-300 font-extrabold">
+            <span>⏱️ 選択中（{comprehensiveLimit}問）の制限時間:</span>
+          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-violet-700 dark:text-violet-300">
+              📐 算数: <strong className="font-mono text-sm">{comprehensiveLimit === 5 ? '10' : comprehensiveLimit === 10 ? '20' : '35'}分</strong>
+            </span>
+            <span className="text-gray-300 dark:text-gray-600">|</span>
+            <span className="text-emerald-700 dark:text-emerald-300">
+              📖🧪🏯 国・理・社: <strong className="font-mono text-sm">{comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</strong>
+            </span>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '算数', limit: comprehensiveLimit })}
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-violet-700 dark:text-violet-300 border-l-4 border-violet-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-violet-700 dark:text-violet-300 border-l-4 border-violet-500 text-left flex justify-between items-center group"
           >
-            <span>📐 算数 総合テスト</span>
-            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
+            <div>
+              <div className="text-sm">📐 算数 総合テスト</div>
+              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '10' : comprehensiveLimit === 10 ? '20' : '35'}分</div>
+            </div>
+            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-violet-100 transition">開始 →</span>
           </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '国語', limit: comprehensiveLimit })}
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center group"
           >
-            <span>📖 国語 総合テスト</span>
-            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
+            <div>
+              <div className="text-sm">📖 国語 総合テスト</div>
+              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+            </div>
+            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-emerald-100 transition">開始 →</span>
           </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '理科', limit: comprehensiveLimit })}
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center group"
           >
-            <span>🧪 理科 総合テスト</span>
-            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
+            <div>
+              <div className="text-sm">🧪 理科 総合テスト</div>
+              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+            </div>
+            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-indigo-100 transition">開始 →</span>
           </button>
           <button
             type="button"
             onClick={() => startQuiz('combined', { subject: '社会', limit: comprehensiveLimit })}
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-amber-700 dark:text-amber-300 border-l-4 border-amber-500 text-left flex justify-between items-center"
+            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-amber-700 dark:text-amber-300 border-l-4 border-amber-500 text-left flex justify-between items-center group"
           >
-            <span>🏯 社会 総合テスト</span>
-            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg">開始 →</span>
+            <div>
+              <div className="text-sm">🏯 社会 総合テスト</div>
+              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+            </div>
+            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-amber-100 transition">開始 →</span>
           </button>
         </div>
       </div>

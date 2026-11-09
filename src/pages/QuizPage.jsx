@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import QuizCard from '../components/QuizCard';
 import ResultCard from '../components/ResultCard';
@@ -16,9 +16,19 @@ import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine'
 import {
   generateAchievementTestQuestions,
   calculateAchievementLevel,
+  calculateTimeLevel,
+  calculateDualAxisEvaluation,
+  getComprehensiveTimeLimit,
   analyzeAchievementResults,
   ACHIEVEMENT_CONFIG,
 } from '../utils/achievementEngine';
+
+const formatSeconds = (sec) => {
+  const s = Math.max(0, Math.floor(sec || 0));
+  const m = Math.floor(s / 60);
+  const rem = s % 60;
+  return `${m < 10 ? '0' : ''}${m}:${rem < 10 ? '0' : ''}${rem}`;
+};
 
 const QuizPage = () => {
   const location = useLocation();
@@ -34,6 +44,33 @@ const QuizPage = () => {
   const [finished, setFinished] = useState(false);
   const [quizResults, setQuizResults] = useState([]);
   const [achievementReport, setAchievementReport] = useState(null);
+
+  // ★ タイムクロック & タイムオーバー管理用ステート
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [remainingSeconds, setRemainingSeconds] = useState(0);
+  const [timeLimitSeconds, setTimeLimitSeconds] = useState(0);
+  const [isTimeOver, setIsTimeOver] = useState(false);
+
+  // タイマーのクロージャ問題を防ぐ最新状態保持用Ref
+  const stateRef = useRef({
+    questions: [],
+    currentIndex: 0,
+    score: 0,
+    quizResults: [],
+    elapsedSeconds: 0,
+    timeLimitSeconds: 0,
+  });
+
+  useEffect(() => {
+    stateRef.current = {
+      questions,
+      currentIndex,
+      score,
+      quizResults,
+      elapsedSeconds,
+      timeLimitSeconds,
+    };
+  }, [questions, currentIndex, score, quizResults, elapsedSeconds, timeLimitSeconds]);
 
   useEffect(() => {
     const settings = getSettings();
@@ -53,6 +90,10 @@ const QuizPage = () => {
       setAchievementReport(null);
       setShowResult(false);
       setFinished(false);
+      setElapsedSeconds(0);
+      setRemainingSeconds(0);
+      setTimeLimitSeconds(0);
+      setIsTimeOver(false);
       setLoading(false);
       return;
     }
@@ -75,12 +116,12 @@ const QuizPage = () => {
         .replace(/^\s*\d+\s*[.．、]\s*/, '')
         .trim();
 
-    // ① 教科フィルター (理科 / 社会)
+    // ① 教科フィルター (理科 / 社会 / 算数 / 国語)
     if (filters.subject && filters.subject !== 'all') {
       filtered = filtered.filter((q) => q.subject === filters.subject);
     }
 
-    // ② 分野・カテゴリフィルター (物理 / 化学 / 生物 / 地学 / 歴史 / 地理)
+    // ② 分野・カテゴリフィルター
     if (filters.category && filters.category !== 'all') {
       filtered = filtered.filter((q) => q.category === filters.category);
     }
@@ -103,7 +144,6 @@ const QuizPage = () => {
           ? filtered.filter((q) => q.questionType !== 'choice')
           : filtered.filter((q) => q.questionType === filters.questionType);
     }
-    // ※条件に合う問題が0問の場合は、別教科・別分野の問題を混ぜず「条件に合う問題がありません」を表示する
 
     const limit = filters.limit || 10;
     const shuffled = [...filtered]
@@ -125,8 +165,99 @@ const QuizPage = () => {
     setQuizResults([]);
     setShowResult(false);
     setFinished(false);
+    setElapsedSeconds(0);
+    setIsTimeOver(false);
+
+    // ★ 総合実力テストモードの場合は制限時間を計算・セット
+    if (mode === 'combined') {
+      const limitSec = getComprehensiveTimeLimit(filters.subject || '理科', limit);
+      setTimeLimitSeconds(limitSec);
+      setRemainingSeconds(limitSec);
+    } else {
+      setTimeLimitSeconds(0);
+      setRemainingSeconds(0);
+    }
+
     setLoading(false);
   }, [mode, JSON.stringify(filters)]);
+
+  // タイムオーバー発生時の強制終了処理
+  const handleTimeOver = () => {
+    setIsTimeOver(true);
+    const {
+      questions: curQuestions,
+      currentIndex: curIdx,
+      score: curScore,
+      quizResults: curResults,
+      timeLimitSeconds: tLimit,
+    } = stateRef.current;
+
+    // 残りの未回答問題を不正解として記録
+    const answeredIds = new Set(curResults.map((r) => r.questionId));
+    const unansweredEntries = [];
+
+    for (let i = curIdx; i < curQuestions.length; i++) {
+      const q = curQuestions[i];
+      if (!answeredIds.has(q.id)) {
+        unansweredEntries.push({
+          questionId: q.id,
+          question: q.question,
+          subject: q.subject,
+          category: q.category,
+          subCategory: q.subCategory,
+          difficulty: q.difficulty || 'standard',
+          questionType: q.questionType || 'choice',
+          knowledgeTag: q.knowledgeTag || '',
+          userAnswer: '（時間切れ・未回答）',
+          correctAns: q.answer,
+          isCorrect: false,
+          scoreRatio: 0,
+        });
+        saveWrongAnswer(q, '（時間切れ・未回答）');
+      }
+    }
+
+    const finalResults = [...curResults, ...unansweredEntries];
+    setQuizResults(finalResults);
+
+    saveHistory({
+      mode: 'combined',
+      filters,
+      score: curScore,
+      total: curQuestions.length,
+      results: finalResults,
+      elapsedSeconds: tLimit,
+      timeLimitSeconds: tLimit,
+      isTimeOver: true,
+      timestamp: new Date().toISOString(),
+    });
+
+    setFinished(true);
+  };
+
+  // ⏱️ タイムクロック（ストップウォッチ & カウントダウン）インターバル制御
+  useEffect(() => {
+    if (loading || finished || isTimeOver || showResult) {
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setElapsedSeconds((prev) => prev + 1);
+
+      if (mode === 'combined') {
+        setRemainingSeconds((prev) => {
+          if (prev <= 1) {
+            clearInterval(timer);
+            handleTimeOver();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [loading, finished, isTimeOver, showResult, mode]);
 
   const handleAnswer = (userResponse) => {
     const settings = getSettings();
@@ -199,19 +330,25 @@ const QuizPage = () => {
     }
   };
 
-  const finishQuiz = () => {
+  const finishQuiz = (forcedTimeOver = false) => {
     const totalQuestions = questions.length;
     let achievementData = null;
 
     if (mode === 'achievement' && filters.subject) {
       const levelInfo = calculateAchievementLevel(score, totalQuestions);
+      const timeInfo = calculateTimeLevel(elapsedSeconds);
+      const dualAxisInfo = calculateDualAxisEvaluation(levelInfo.rank, timeInfo.rank);
       const analysis = analyzeAchievementResults(questions, quizResults);
+
       achievementData = {
         subject: filters.subject,
         score,
         total: totalQuestions,
         rate: levelInfo.rate,
         level: levelInfo,
+        timeLevel: timeInfo,
+        dualAxis: dualAxisInfo,
+        elapsedSeconds,
         categoryBreakdown: analysis.categoryBreakdown,
         strongestCategory: analysis.strongestCategory,
         weakestCategory: analysis.weakestCategory,
@@ -226,6 +363,9 @@ const QuizPage = () => {
       score,
       total: totalQuestions,
       results: quizResults,
+      elapsedSeconds,
+      timeLimitSeconds,
+      isTimeOver: forcedTimeOver,
       achievementData,
       timestamp: new Date().toISOString(),
     });
@@ -293,16 +433,49 @@ const QuizPage = () => {
     const wrongInSessionCount = quizResults.filter((r) => !r.isCorrect).length;
     const isAchievementMode = mode === 'achievement' && achievementReport;
     const levelInfo = isAchievementMode ? achievementReport.level : null;
+    const timeInfo = isAchievementMode ? achievementReport.timeLevel : null;
+    const dualAxis = isAchievementMode ? achievementReport.dualAxis : null;
+    const isCombinedMode = mode === 'combined';
 
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-100 dark:bg-gray-900 p-4 animate-fade-in">
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-8 max-w-3xl w-full">
+          {/* 総合実力テスト タイムオーバー警告バナー */}
+          {isCombinedMode && isTimeOver && (
+            <div className="mb-6 p-4 rounded-2xl bg-rose-500/15 border-2 border-rose-500/50 text-rose-800 dark:text-rose-200 flex items-center gap-3">
+              <span className="text-3xl animate-bounce">⏰</span>
+              <div>
+                <h3 className="text-base md:text-lg font-black text-rose-600 dark:text-rose-400">
+                  制限時間オーバー（時間切れ）！
+                </h3>
+                <p className="text-xs md:text-sm font-bold opacity-90">
+                  規定の制限時間（{Math.floor(timeLimitSeconds / 60)}分）を経過したためテスト終了となりました。未回答の問題は不正解として復習リストに記録されています。
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* 総合実力テスト 時間内完答バナー */}
+          {isCombinedMode && !isTimeOver && (
+            <div className="mb-6 p-3.5 rounded-2xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-800 dark:text-emerald-200 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">⏱️</span>
+                <span className="text-xs md:text-sm font-black">
+                  所要時間: <span className="font-mono text-base">{formatSeconds(elapsedSeconds)}</span>（制限時間 {Math.floor(timeLimitSeconds / 60)}分以内）
+                </span>
+              </div>
+              <span className="text-xs px-2.5 py-1 rounded-full bg-emerald-600 text-white font-extrabold shadow-sm">
+                🎉 時間内に完答達成！
+              </span>
+            </div>
+          )}
+
           {/* 到達度テスト専用 豪華ヘッダー */}
           {isAchievementMode ? (
             <div className="mb-6 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-indigo-500/20 to-purple-500/20 border border-amber-400/50 text-amber-700 dark:text-amber-300 font-black text-xs uppercase tracking-wider mb-2">
                 <span>🏆</span>
-                <span>定期 学習到達度判定テスト結果</span>
+                <span>定期 学習到達度判定テスト結果（正答率 × 時間 両軸判定）</span>
               </div>
               <h2 className="text-2xl md:text-3xl font-black text-gray-800 dark:text-white">
                 【{filters.subject}】学習到達度 レポート
@@ -314,22 +487,70 @@ const QuizPage = () => {
             </h2>
           )}
 
-          {/* 到達度テスト用 レベル判定カード */}
-          {isAchievementMode && levelInfo && (
-            <div className="mb-8 p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white shadow-xl border-2 border-indigo-400/40 relative overflow-hidden text-center">
-              <div className="text-5xl mb-2">{levelInfo.badge}</div>
+          {/* 到達度テスト用 「正答率 × スピード」両軸判定総合カード */}
+          {isAchievementMode && levelInfo && timeInfo && dualAxis && (
+            <div className="mb-8 p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white shadow-2xl border-2 border-indigo-400/50 relative overflow-hidden text-center">
+              {/* 装飾のバックライト */}
+              <div className="absolute -top-12 -left-12 w-48 h-48 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+              <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+              {/* 総合評価の称号 */}
+              <div className="text-5xl mb-2">{dualAxis.badge}</div>
               <div className="inline-block px-4 py-1 rounded-full text-xs font-black bg-white/20 text-white mb-2">
-                到達度判定
+                正答率 × スピード 総合称号
               </div>
-              <h3 className="text-3xl md:text-4xl font-black tracking-tight mb-1 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
-                {levelInfo.title}
+              <h3 className="text-2xl md:text-4xl font-black tracking-tight mb-1 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
+                {dualAxis.title}
               </h3>
-              <p className="text-sm font-extrabold text-indigo-200 mb-4">
-                〜 {levelInfo.subtitle} 〜
+              <p className="text-xs md:text-sm font-extrabold text-indigo-200 mb-4">
+                〜 {dualAxis.tagline} 〜
               </p>
 
-              <div className="max-w-lg mx-auto p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm leading-relaxed text-indigo-100 mb-4">
-                {levelInfo.description}
+              {/* 両軸の2カラムカード */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 text-left">
+                {/* 軸1: 正答率 */}
+                <div className="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col justify-between">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-xs font-black text-amber-300 flex items-center gap-1">
+                      <span>🎯</span>
+                      <span>正答率 判定</span>
+                    </span>
+                    <span className="text-xs px-2 py-0.5 rounded-full font-black bg-amber-400/20 text-amber-300 border border-amber-300/40">
+                      {levelInfo.badge} {levelInfo.title}
+                    </span>
+                  </div>
+                  <div className="text-2xl font-black text-white mb-1">
+                    {levelInfo.rate}% <span className="text-xs font-normal text-indigo-200">({score}/{questions.length}問正解)</span>
+                  </div>
+                  <div className="text-[11px] text-indigo-100 leading-tight">
+                    {levelInfo.subtitle}
+                  </div>
+                </div>
+
+                {/* 軸2: スピード（時間） */}
+                <div className="p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col justify-between">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-xs font-black text-cyan-300 flex items-center gap-1">
+                      <span>⏱️</span>
+                      <span>解答スピード 判定</span>
+                    </span>
+                    <span className="text-xs px-2 py-0.5 rounded-full font-black bg-cyan-400/20 text-cyan-300 border border-cyan-300/40">
+                      {timeInfo.badge} {timeInfo.title}
+                    </span>
+                  </div>
+                  <div className="text-2xl font-black text-white mb-1 font-mono">
+                    {timeInfo.timeFormatted} <span className="text-xs font-normal text-indigo-200">({timeInfo.subtitle})</span>
+                  </div>
+                  <div className="text-[11px] text-indigo-100 leading-tight">
+                    {timeInfo.description}
+                  </div>
+                </div>
+              </div>
+
+              {/* 総合アドバイス文章 */}
+              <div className="max-w-xl mx-auto p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm leading-relaxed text-indigo-100 mb-4">
+                <span className="font-bold text-amber-200">💡 総合アドバイス: </span>
+                {dualAxis.advice}
               </div>
 
               {/* 分野別実力ブレイクダウン */}
@@ -369,7 +590,21 @@ const QuizPage = () => {
                 </div>
               )}
 
-              <div className="mt-4 pt-3 text-[11px] text-indigo-300/80">
+              {/* 時間評価基準のガイド注釈 */}
+              <div className="mt-4 pt-3 border-t border-white/10 flex flex-wrap items-center justify-center gap-2 text-[10px] text-indigo-200/90 font-medium">
+                <span className="font-bold text-amber-300">⏱️ 時間評価基準:</span>
+                <span>⚡ S: 10分以内</span>
+                <span>/</span>
+                <span>🚀 A: 15分以内</span>
+                <span>/</span>
+                <span>⏱️ B: 20分以内</span>
+                <span>/</span>
+                <span>🐢 C: 25分以内</span>
+                <span>/</span>
+                <span>⏳ D: 25分以上</span>
+              </div>
+
+              <div className="mt-2 text-[11px] text-indigo-300/80">
                 🔒 次回の到達度テストは <strong>2週間後</strong> に受験可能です（定期的な実力測定に活用してください）。
               </div>
             </div>
@@ -515,28 +750,93 @@ const QuizPage = () => {
     <div className="min-h-screen bg-slate-100 dark:bg-gray-900 flex flex-col items-center justify-center p-4">
       {/* 到達度テスト受験中バナー */}
       {mode === 'achievement' && (
-        <div className="w-full max-w-2xl mb-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-amber-500/20 via-indigo-500/20 to-purple-500/20 border border-amber-400/40 text-center flex items-center justify-between text-xs font-black shadow-sm">
+        <div className="w-full max-w-2xl mb-3 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500/20 via-indigo-500/20 to-purple-500/20 border border-amber-400/40 flex items-center justify-between text-xs font-black shadow-sm">
           <span className="flex items-center gap-1.5 text-amber-800 dark:text-amber-200">
             <span>🏆</span>
-            <span>【{filters.subject}】定期 学習到達度テスト（実力判定）</span>
+            <span>【{filters.subject}】定期 到達度テスト（正答率×時間 両軸判定）</span>
           </span>
           <span className="px-2.5 py-0.5 rounded-full bg-amber-400/30 text-amber-950 dark:text-amber-200 text-[11px] font-extrabold">
-            全分野から厳選（標準・応用中心）
+            目標: 10〜20分以内
           </span>
         </div>
       )}
 
-      <div className="w-full max-w-2xl mb-4 flex justify-between items-center text-gray-600 dark:text-gray-300 font-bold">
+      {/* 総合実力テスト受験中バナー */}
+      {mode === 'combined' && (
+        <div className="w-full max-w-2xl mb-3 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-pink-500/20 border border-indigo-400/40 flex items-center justify-between text-xs font-black shadow-sm">
+          <span className="flex items-center gap-1.5 text-indigo-900 dark:text-indigo-200">
+            <span>🌟</span>
+            <span>【{filters.subject}】総合実力テスト（制限時間: {Math.floor(timeLimitSeconds / 60)}分）</span>
+          </span>
+          <span className="px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-700 dark:text-rose-300 text-[11px] font-extrabold">
+            ⏰ 00:00でタイムオーバー
+          </span>
+        </div>
+      )}
+
+      {/* タイムクロック（タイマー）＆ 進行状況バー */}
+      <div className="w-full max-w-2xl mb-3 flex flex-wrap items-center justify-between gap-2 text-gray-700 dark:text-gray-200 font-bold">
         <button
           type="button"
           onClick={handleQuit}
-          className="text-xs md:text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-3.5 py-1.5 hover:bg-gray-100 transition shadow-sm"
+          className="text-xs md:text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-3.5 py-1.5 hover:bg-gray-100 dark:hover:bg-gray-700 transition shadow-sm"
         >
-          ← 中断して戻る
+          ← 中断
         </button>
-        <div className="flex items-center gap-3">
+
+        {/* タイムクロック表示部 */}
+        {mode === 'combined' && (
+          <div
+            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl border font-black text-sm transition-all shadow-sm ${
+              remainingSeconds <= 60
+                ? 'bg-rose-500 text-white border-rose-600 animate-pulse'
+                : remainingSeconds <= 180
+                ? 'bg-amber-100 border-amber-400 text-amber-900 dark:bg-amber-900/40 dark:text-amber-200'
+                : 'bg-white dark:bg-gray-800 border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300'
+            }`}
+          >
+            <span>⏱️</span>
+            <span>残り時間:</span>
+            <span className="font-mono text-base tracking-wider font-extrabold">
+              {formatSeconds(remainingSeconds)}
+            </span>
+            {showResult && (
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/20 text-white font-bold">
+                解説中(停止)
+              </span>
+            )}
+          </div>
+        )}
+
+        {mode === 'achievement' && (
+          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white dark:bg-gray-800 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-300 font-black text-sm shadow-sm">
+            <span>⏱️</span>
+            <span>経過:</span>
+            <span className="font-mono text-base tracking-wider">
+              {formatSeconds(elapsedSeconds)}
+            </span>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-200 font-extrabold">
+              {elapsedSeconds <= 600
+                ? '⚡ 10分以内 (S)'
+                : elapsedSeconds <= 900
+                ? '🚀 15分以内 (A)'
+                : elapsedSeconds <= 1200
+                ? '⏱️ 20分以内 (B)'
+                : elapsedSeconds <= 1500
+                ? '🐢 25分以内 (C)'
+                : '⏳ 25分超過 (D)'}
+            </span>
+            {showResult && (
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-bold">
+                解説中(停止)
+              </span>
+            )}
+          </div>
+        )}
+
+        <div className="flex items-center gap-2.5">
           <span className="text-xs bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full font-extrabold">
-            現在スコア: {score}点
+            スコア: {score}点
           </span>
           <span className="text-sm font-extrabold">
             第 {currentIndex + 1} / {questions.length} 問
