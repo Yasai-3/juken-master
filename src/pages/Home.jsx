@@ -13,6 +13,7 @@ import {
 import { analyzeLearningProgress } from '../utils/advisorEngine';
 import { useAppLock } from '../components/AppLock';
 import { ACHIEVEMENT_CONFIG } from '../utils/achievementEngine';
+import { CPU_LEVELS, isCpuBattleEligible } from '../utils/cpuBattleEngine';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -29,6 +30,10 @@ const Home = () => {
     '理科': getAchievementTestStatus('理科'),
     '社会': getAchievementTestStatus('社会'),
   });
+
+  // 総合実力テスト CPU対戦ステート
+  const [isBattleMode, setIsBattleMode] = useState(false);
+  const [selectedCpuLevel, setSelectedCpuLevel] = useState('oni'); // デフォルトは最強の「鬼」
 
   // Selection State
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -522,91 +527,165 @@ const Home = () => {
           </div>
         </div>
 
+        {/* ⚔️ CPU対戦モード セレクター */}
+        <div className="mb-4 p-3.5 rounded-2xl bg-gradient-to-r from-purple-900/10 via-indigo-900/10 to-rose-900/10 border-2 border-indigo-300 dark:border-indigo-700">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <span className="text-2xl animate-bounce">⚔️</span>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-sm font-black text-gray-800 dark:text-white">
+                    ライバルCPU対戦モード
+                  </h4>
+                  {(comprehensiveLimit === 20 || comprehensiveLimit === 10) ? (
+                    <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-400/40">
+                      解放中 ✨
+                    </span>
+                  ) : (
+                    <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-slate-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                      20問（算数は10・20問）で解放
+                    </span>
+                  )}
+                </div>
+                <p className="text-[11px] text-gray-500 dark:text-gray-400">
+                  各問題ごとにCPUの解答結果と勝敗をリアルタイム表示！ライバルを打ち破ろう！
+                </p>
+              </div>
+            </div>
+
+            {/* 対戦トグル */}
+            {(comprehensiveLimit === 20 || comprehensiveLimit === 10) ? (
+              <button
+                type="button"
+                onClick={() => setIsBattleMode(!isBattleMode)}
+                className={`px-4 py-2 rounded-xl text-xs font-black transition-all shadow-sm flex items-center gap-2 ${
+                  isBattleMode
+                    ? 'bg-gradient-to-r from-rose-600 to-indigo-600 text-white shadow-md scale-105 ring-2 ring-rose-400'
+                    : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-100 border'
+                }`}
+              >
+                <span>{isBattleMode ? '🔥 対戦モード ON' : '⚔️ 対戦モード OFF'}</span>
+              </button>
+            ) : (
+              <span className="text-[11px] font-bold text-gray-400">
+                出題数を10問または20問に変更すると対戦できます
+              </span>
+            )}
+          </div>
+
+          {/* 対戦モードON時のCPUレベル選択パネル */}
+          {isBattleMode && (comprehensiveLimit === 20 || comprehensiveLimit === 10) && (
+            <div className="mt-3 pt-3 border-t border-indigo-200 dark:border-gray-700 animate-fade-in">
+              <div className="text-xs font-black text-indigo-900 dark:text-indigo-200 mb-2 flex items-center justify-between">
+                <span>対戦相手（CPUレベル）を選択:</span>
+                <span className="text-[11px] font-bold text-gray-500">
+                  選択中: {CPU_LEVELS[selectedCpuLevel]?.name}
+                </span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                {Object.values(CPU_LEVELS).map((cpu) => {
+                  const isSelected = selectedCpuLevel === cpu.id;
+                  return (
+                    <button
+                      key={cpu.id}
+                      type="button"
+                      onClick={() => setSelectedCpuLevel(cpu.id)}
+                      className={`p-2.5 rounded-xl border-2 transition-all text-left flex flex-col justify-between ${
+                        isSelected
+                          ? 'bg-white dark:bg-gray-800 border-indigo-600 dark:border-indigo-400 shadow-md scale-102 ring-2 ring-indigo-300 dark:ring-indigo-600'
+                          : 'bg-white/60 dark:bg-gray-800/60 border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      <div>
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-lg">{cpu.badge}</span>
+                          <span className={`text-[10px] font-black px-1.5 py-0.2 rounded ${
+                            cpu.id === 'oni'
+                              ? 'bg-red-500/20 text-red-700 dark:text-red-300'
+                              : cpu.id === 'master'
+                              ? 'bg-blue-500/20 text-blue-700 dark:text-blue-300'
+                              : cpu.id === 'rival'
+                              ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300'
+                              : 'bg-amber-500/20 text-amber-700 dark:text-amber-300'
+                          }`}>
+                            {cpu.id === 'oni' ? '最難関 灘開成' : cpu.id === 'master' ? '難関合格' : cpu.id === 'rival' ? '標準実戦' : '基礎'}
+                          </span>
+                        </div>
+                        <div className="text-xs font-black text-gray-800 dark:text-white truncate">
+                          {cpu.shortName}
+                        </div>
+                      </div>
+                      <div className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">
+                        正答率 {cpu.accuracy.standard * 100}%
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <button
-            type="button"
-            onClick={() =>
-              startQuiz('comprehensive', {
-                subject: '算数',
-                limit: comprehensiveLimit,
-                isTimed: true,
-              })
-            }
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-violet-700 dark:text-violet-300 border-l-4 border-violet-500 text-left flex justify-between items-center group"
-          >
-            <div>
-              <div className="text-sm">📐 算数 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">
-                制限: {comprehensiveLimit === 5 ? '10' : comprehensiveLimit === 10 ? '20' : '35'}分
-              </div>
-            </div>
-            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-violet-100 transition">
-              開始 →
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              startQuiz('comprehensive', {
-                subject: '国語',
-                limit: comprehensiveLimit,
-                isTimed: true,
-              })
-            }
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center group"
-          >
-            <div>
-              <div className="text-sm">📖 国語 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">
-                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
-              </div>
-            </div>
-            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-emerald-100 transition">
-              開始 →
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              startQuiz('comprehensive', {
-                subject: '理科',
-                limit: comprehensiveLimit,
-                isTimed: true,
-              })
-            }
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center group"
-          >
-            <div>
-              <div className="text-sm">🧪 理科 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">
-                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
-              </div>
-            </div>
-            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-indigo-100 transition">
-              開始 →
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              startQuiz('comprehensive', {
-                subject: '社会',
-                limit: comprehensiveLimit,
-                isTimed: true,
-              })
-            }
-            className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-amber-700 dark:text-amber-300 border-l-4 border-amber-500 text-left flex justify-between items-center group"
-          >
-            <div>
-              <div className="text-sm">🏯 社会 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">
-                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
-              </div>
-            </div>
-            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-amber-100 transition">
-              開始 →
-            </span>
-          </button>
+          {['算数', '国語', '理科', '社会'].map((subj) => {
+            const isEligible = isCpuBattleEligible(subj, comprehensiveLimit);
+            const battleActive = isBattleMode && isEligible;
+            const cpu = CPU_LEVELS[selectedCpuLevel];
+
+            const themeClasses = {
+              '算数': 'text-violet-700 dark:text-violet-300 border-violet-500',
+              '国語': 'text-emerald-700 dark:text-emerald-300 border-emerald-500',
+              '理科': 'text-indigo-700 dark:text-indigo-300 border-indigo-500',
+              '社会': 'text-amber-700 dark:text-amber-300 border-amber-500',
+            }[subj];
+
+            const icon = { 算数: '📐', 国語: '📖', 理科: '🧪', 社会: '🏯' }[subj];
+            const timeLimitMin =
+              subj === '算数'
+                ? comprehensiveLimit === 5 ? 10 : comprehensiveLimit === 10 ? 20 : 35
+                : comprehensiveLimit === 5 ? 7 : comprehensiveLimit === 10 ? 15 : 25;
+
+            return (
+              <button
+                key={subj}
+                type="button"
+                onClick={() =>
+                  startQuiz('comprehensive', {
+                    subject: subj,
+                    limit: comprehensiveLimit,
+                    isTimed: true,
+                    isBattle: battleActive,
+                    cpuLevel: battleActive ? selectedCpuLevel : null,
+                  })
+                }
+                className={`p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold border-l-4 text-left flex justify-between items-center group relative overflow-hidden ${themeClasses} ${
+                  battleActive ? 'ring-2 ring-rose-400/80' : ''
+                }`}
+              >
+                <div>
+                  <div className="text-sm flex items-center gap-1.5">
+                    <span>{icon} {subj} 総合テスト</span>
+                  </div>
+                  <div className="text-[10px] text-gray-400 font-medium flex items-center gap-1 mt-0.5">
+                    <span>制限: {timeLimitMin}分</span>
+                    {battleActive && (
+                      <span className="text-rose-600 dark:text-rose-400 font-black flex items-center gap-0.5">
+                        <span>・⚔️ VS</span>
+                        <span>{cpu?.badge}{cpu?.shortName}</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <span className={`text-xs px-2 py-0.5 rounded-lg transition ${
+                  battleActive
+                    ? 'bg-gradient-to-r from-rose-600 to-indigo-600 text-white font-black shadow-sm'
+                    : 'bg-gray-100 dark:bg-gray-600 group-hover:bg-gray-200'
+                }`}>
+                  {battleActive ? '対戦開始 ⚔️' : '開始 →'}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
 

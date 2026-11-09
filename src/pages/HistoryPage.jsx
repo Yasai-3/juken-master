@@ -12,6 +12,8 @@ import {
   saveHistorySnapshot,
   restoreHistorySnapshot,
   deleteHistorySnapshot,
+  getBattleHistory,
+  getBattleStats,
 } from '../utils/storage';
 import {
   analyzeLearningProgress,
@@ -53,6 +55,11 @@ const HistoryPage = () => {
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState('');
 
+  // ⚔️ CPU対戦履歴 state
+  const [battleHistory, setBattleHistory] = useState([]);
+  const [battleStats, setBattleStats] = useState(null);
+  const [expandedBattleId, setExpandedBattleId] = useState(null);
+
   // Safe Snapshots & Clear Confirmation Modal state
   const [snapshots, setSnapshots] = useState([]);
   const [showSnapshotPanel, setShowSnapshotPanel] = useState(false);
@@ -85,6 +92,8 @@ const HistoryPage = () => {
     setAnalysis(analyzeLearningProgress(hist, wrong, allQuestions));
     setAiReport(getCachedAiAdvice());
     setSnapshots(getHistorySnapshots());
+    setBattleHistory(getBattleHistory() || []);
+    setBattleStats(getBattleStats());
   };
 
   const processCharts = (hist) => {
@@ -742,6 +751,29 @@ const HistoryPage = () => {
               >
                 {wrongAnswers.length}
               </span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('battle')}
+              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+                activeTab === 'battle'
+                  ? 'bg-gradient-to-r from-rose-600 to-indigo-600 text-white shadow-md'
+                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
+              }`}
+            >
+              <span className="text-base sm:text-lg">⚔️</span>
+              <span className="truncate">CPU対戦</span>
+              {battleHistory.length > 0 && (
+                <span
+                  className={`ml-0.5 px-2 py-0.5 rounded-full text-[11px] font-black ${
+                    activeTab === 'battle'
+                      ? 'bg-white text-rose-700'
+                      : 'bg-rose-500/20 text-rose-700 dark:text-rose-300'
+                  }`}
+                >
+                  {battleHistory.length}
+                </span>
+              )}
             </button>
           </div>
         </div>
@@ -1495,6 +1527,232 @@ const HistoryPage = () => {
             </div>
           );
         })()}
+      </div>
+    )}
+
+    {/* ===================== TAB 4: ⚔️ CPU対戦レコード ===================== */}
+    {activeTab === 'battle' && (
+      <div className="bg-white dark:bg-gray-800 p-5 md:p-6 rounded-2xl shadow-md space-y-6 animate-fade-in">
+        {/* ヘッダー & 通算サマリー */}
+        <div className="border-b border-gray-100 dark:border-gray-700 pb-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+            <div>
+              <h2 className="text-xl md:text-2xl font-black text-gray-800 dark:text-gray-100 flex items-center gap-2">
+                <span>⚔️</span>
+                <span>ライバルCPU対戦レコード</span>
+              </h2>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                総合実力テストで挑んだ歴代ライバルたちとの熱戦の全記録です！
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => navigate('/')}
+              className="px-4 py-2 bg-gradient-to-r from-rose-600 to-indigo-600 text-white rounded-xl text-xs font-black shadow hover:opacity-95 transition"
+            >
+              ⚔️ 新しい対戦を始める
+            </button>
+          </div>
+
+          {/* 通算戦績 サマリーバナー */}
+          {battleStats && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-gray-700/60 border border-slate-200 dark:border-gray-600 text-center">
+                <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 block mb-1">
+                  通算対戦数
+                </span>
+                <span className="text-2xl font-black text-gray-800 dark:text-white font-mono">
+                  {battleStats.total} <span className="text-xs font-normal">戦</span>
+                </span>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-center">
+                <span className="text-[11px] font-bold text-amber-700 dark:text-amber-300 block mb-1">
+                  通算勝利数 / 勝率
+                </span>
+                <div className="text-2xl font-black text-amber-600 dark:text-amber-400 font-mono leading-none">
+                  {battleStats.wins} <span className="text-xs font-normal">勝</span>
+                  <span className="text-xs text-amber-700 dark:text-amber-300 ml-1.5 font-bold">
+                    ({battleStats.winRate}%)
+                  </span>
+                </div>
+                <span className="text-[10px] text-gray-400 mt-0.5 block">
+                  {battleStats.losses}敗 {battleStats.draws}分
+                </span>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-center">
+                <span className="text-[11px] font-bold text-rose-700 dark:text-rose-300 block mb-1">
+                  👹 鬼（最難関）撃破数
+                </span>
+                <span className="text-2xl font-black text-rose-600 dark:text-rose-400 font-mono">
+                  {battleStats.oniDefeats} <span className="text-xs font-normal">体 討伐</span>
+                </span>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 text-center flex flex-col justify-center">
+                <span className="text-[10px] font-bold text-indigo-700 dark:text-indigo-300 block mb-1">
+                  討伐称号
+                </span>
+                <span className="text-xs font-black text-indigo-800 dark:text-indigo-200">
+                  {battleStats.oniDefeats >= 5
+                    ? '👑 鬼殺しの伝説'
+                    : battleStats.oniDefeats >= 1
+                    ? '⚔️ 鬼神ハンター'
+                    : battleStats.wins >= 5
+                    ? '🦁 難関校ハンター'
+                    : '🌱 挑戦のチャレンジャー'}
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 過去の対戦履歴リスト */}
+        {battleHistory.length === 0 ? (
+          <div className="text-center py-12 px-4">
+            <span className="text-5xl mb-3 block">⚔️</span>
+            <h3 className="text-lg font-black text-gray-800 dark:text-gray-100 mb-2">
+              まだCPU対戦の記録がありません
+            </h3>
+            <p className="text-xs text-gray-500 dark:text-gray-400 max-w-md mx-auto mb-6 leading-relaxed">
+              ホーム画面の「総合実力テスト」で出題数を20問（算数は10問・20問）に設定すると、
+              【⚔️ CPU対戦モード】が解放されます！ライバルを選んで力試しをしてみましょう！
+            </p>
+            <button
+              type="button"
+              onClick={() => navigate('/')}
+              className="px-6 py-3 bg-gradient-to-r from-rose-600 to-indigo-600 text-white rounded-xl text-sm font-extrabold shadow-md hover:opacity-95 transition"
+            >
+              総合実力テストに挑戦する →
+            </button>
+          </div>
+        ) : (
+          <div className="space-y-3.5">
+            <div className="flex items-center justify-between text-xs text-gray-500 font-bold px-1">
+              <span>全 {battleHistory.length} 件の対戦履歴（最新順）</span>
+              <span>※カードをクリックすると各問の勝敗詳細が開きます</span>
+            </div>
+
+            {battleHistory.map((b) => {
+              const isExpanded = expandedBattleId === b.id;
+              const dateStr = new Date(b.timestamp).toLocaleString('ja-JP', {
+                month: 'numeric',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              });
+
+              return (
+                <div
+                  key={b.id}
+                  className={`rounded-2xl border-2 transition-all overflow-hidden ${
+                    b.result === 'win'
+                      ? 'border-amber-300 dark:border-amber-700 bg-amber-50/30 dark:bg-amber-950/20'
+                      : b.result === 'lose'
+                      ? 'border-rose-200 dark:border-rose-900 bg-rose-50/30 dark:bg-rose-950/20'
+                      : 'border-slate-200 dark:border-gray-700 bg-white dark:bg-gray-800'
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setExpandedBattleId(isExpanded ? null : b.id)}
+                    className="w-full p-4 text-left flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-black/5 transition"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl flex-shrink-0">
+                        {b.result === 'win' ? '🏆' : b.result === 'lose' ? '💀' : '🤝'}
+                      </span>
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span
+                            className={`text-xs font-black px-2.5 py-0.5 rounded-full ${
+                              b.result === 'win'
+                                ? 'bg-amber-500 text-white'
+                                : b.result === 'lose'
+                                ? 'bg-rose-600 text-white'
+                                : 'bg-indigo-600 text-white'
+                            }`}
+                          >
+                            {b.result === 'win' ? 'WIN 勝利' : b.result === 'lose' ? 'LOSE 惜敗' : 'DRAW 引き分け'}
+                          </span>
+                          <span className="text-xs font-black text-gray-700 dark:text-gray-200">
+                            【{b.subject}】全{b.totalQuestions}問
+                          </span>
+                          <span className="text-[11px] text-gray-400">{dateStr}</span>
+                        </div>
+                        <div className="text-sm font-extrabold text-gray-800 dark:text-gray-100 flex items-center gap-2">
+                          <span>対戦相手:</span>
+                          <span className="text-indigo-600 dark:text-indigo-400 flex items-center gap-1">
+                            <span>{b.cpuBadge}</span>
+                            <span>{b.cpuName}</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between sm:justify-end gap-4 pl-12 sm:pl-0">
+                      <div className="text-right">
+                        <div className="text-[10px] text-gray-400 font-bold">スコア</div>
+                        <div className="text-xl font-black font-mono">
+                          <span className={b.userScore > b.cpuScore ? 'text-amber-600 dark:text-amber-400' : 'text-gray-700 dark:text-gray-200'}>
+                            {b.userScore}
+                          </span>
+                          <span className="text-gray-400 mx-1.5">-</span>
+                          <span className={b.cpuScore > b.userScore ? 'text-rose-600 dark:text-rose-400' : 'text-gray-700 dark:text-gray-200'}>
+                            {b.cpuScore}
+                          </span>
+                        </div>
+                      </div>
+
+                      <span className="text-xs text-indigo-600 dark:text-indigo-400 font-bold">
+                        {isExpanded ? '詳細を閉じる ▲' : '詳細を見る ▼'}
+                      </span>
+                    </div>
+                  </button>
+
+                  {/* アコーディオン展開: 各問題ごとの勝敗詳細 */}
+                  {isExpanded && b.details && b.details.length > 0 && (
+                    <div className="p-4 bg-white/70 dark:bg-gray-800/80 border-t border-gray-200 dark:border-gray-700 animate-fade-in space-y-2">
+                      <h4 className="text-xs font-black text-gray-600 dark:text-gray-300 flex items-center gap-1.5 mb-2">
+                        <span>📋</span>
+                        <span>問題ごとの解答対決ダイジェスト:</span>
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {b.details.map((item, idx) => (
+                          <div
+                            key={idx}
+                            className={`p-2.5 rounded-xl border text-xs flex items-center justify-between ${
+                              item.userCorrect && !item.cpuCorrect
+                                ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800'
+                                : !item.userCorrect && item.cpuCorrect
+                                ? 'bg-rose-50 dark:bg-rose-950/30 border-rose-300 dark:border-rose-800'
+                                : 'bg-gray-50 dark:bg-gray-700/40 border-gray-200 dark:border-gray-600'
+                            }`}
+                          >
+                            <span className="font-extrabold text-gray-600 dark:text-gray-300">
+                              第{idx + 1}問
+                            </span>
+                            <div className="flex items-center gap-3">
+                              <span className="font-bold">
+                                あなた: {item.userCorrect ? '⭕ 正解' : '❌ 不正解'}
+                              </span>
+                              <span className="text-gray-300">|</span>
+                              <span className="font-bold text-rose-600 dark:text-rose-400">
+                                CPU: {item.cpuCorrect ? '⭕ 正解' : '❌ 不正解'}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     )}
 

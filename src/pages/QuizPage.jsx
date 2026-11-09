@@ -10,6 +10,7 @@ import {
   getAllQuestions,
   getSettings,
   saveAchievementTestRecord,
+  saveBattleHistory,
 } from '../utils/storage';
 import { gradeAnswer } from '../utils/gradingEngine';
 import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine';
@@ -22,6 +23,11 @@ import {
   analyzeAchievementResults,
   ACHIEVEMENT_CONFIG,
 } from '../utils/achievementEngine';
+import {
+  CPU_LEVELS,
+  simulateCpuAnswer,
+  determineBattleResult,
+} from '../utils/cpuBattleEngine';
 
 const formatSeconds = (sec) => {
   const s = Math.max(0, Math.floor(sec || 0));
@@ -59,6 +65,15 @@ const QuizPage = () => {
     !filters.category &&
     !filters.subCategory;
 
+  // ★ ⚔️ CPU対戦モード用ステート
+  const isBattle = Boolean(filters.isBattle);
+  const cpuLevelId = filters.cpuLevel || 'oni';
+  const cpuInfo = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.oni;
+  const [cpuScore, setCpuScore] = useState(0);
+  const [currentCpuAnswer, setCurrentCpuAnswer] = useState(null);
+  const [battleLog, setBattleLog] = useState([]);
+  const [battleResultData, setBattleResultData] = useState(null);
+
   // タイマーのクロージャ問題を防ぐ最新状態保持用Ref
   const stateRef = useRef({
     questions: [],
@@ -68,6 +83,10 @@ const QuizPage = () => {
     elapsedSeconds: 0,
     timeLimitSeconds: 0,
     isComprehensiveTimed: false,
+    isBattle: false,
+    cpuLevelId: 'oni',
+    cpuScore: 0,
+    battleLog: [],
   });
 
   useEffect(() => {
@@ -79,8 +98,24 @@ const QuizPage = () => {
       elapsedSeconds,
       timeLimitSeconds,
       isComprehensiveTimed,
+      isBattle,
+      cpuLevelId,
+      cpuScore,
+      battleLog,
     };
-  }, [questions, currentIndex, score, quizResults, elapsedSeconds, timeLimitSeconds, isComprehensiveTimed]);
+  }, [
+    questions,
+    currentIndex,
+    score,
+    quizResults,
+    elapsedSeconds,
+    timeLimitSeconds,
+    isComprehensiveTimed,
+    isBattle,
+    cpuLevelId,
+    cpuScore,
+    battleLog,
+  ]);
 
   useEffect(() => {
     const settings = getSettings();
@@ -177,6 +212,10 @@ const QuizPage = () => {
     setFinished(false);
     setElapsedSeconds(0);
     setIsTimeOver(false);
+    setCpuScore(0);
+    setCurrentCpuAnswer(null);
+    setBattleLog([]);
+    setBattleResultData(null);
 
     // ★ 総合実力テストモード（制限時間付き）の場合のみ制限時間を計算・セット
     if (isComprehensiveTimed) {
@@ -200,11 +239,17 @@ const QuizPage = () => {
       score: curScore,
       quizResults: curResults,
       timeLimitSeconds: tLimit,
+      isBattle: curIsBattle,
+      cpuLevelId: curCpuLevelId,
+      cpuScore: curCpuScore,
+      battleLog: curBattleLog,
     } = stateRef.current;
 
     // 残りの未回答問題を不正解として記録
     const answeredIds = new Set(curResults.map((r) => r.questionId));
     const unansweredEntries = [];
+    let finalCpuScore = curCpuScore;
+    const finalBattleLog = [...curBattleLog];
 
     for (let i = curIdx; i < curQuestions.length; i++) {
       const q = curQuestions[i];
@@ -224,11 +269,50 @@ const QuizPage = () => {
           scoreRatio: 0,
         });
         saveWrongAnswer(q, '（時間切れ・未回答）');
+
+        // CPU対戦時は残りの問題もCPUが解く
+        if (curIsBattle) {
+          const sim = simulateCpuAnswer(q, curCpuLevelId);
+          if (sim.isCorrect) {
+            finalCpuScore += 1;
+          }
+          finalBattleLog.push({
+            qIndex: i,
+            questionText: q.question,
+            userCorrect: false,
+            userAnswer: '（時間切れ・未回答）',
+            cpuCorrect: sim.isCorrect,
+            cpuAnswer: sim.selectedAnswer,
+            cpuTime: sim.timeSec,
+            cpuQuote: sim.quote,
+          });
+        }
       }
     }
 
     const finalResults = [...curResults, ...unansweredEntries];
     setQuizResults(finalResults);
+
+    // CPU対戦結果の集計と保存
+    if (curIsBattle) {
+      setCpuScore(finalCpuScore);
+      setBattleLog(finalBattleLog);
+      const bRes = determineBattleResult(curScore, finalCpuScore, curCpuLevelId);
+      setBattleResultData(bRes);
+
+      saveBattleHistory({
+        subject: filters.subject,
+        totalQuestions: curQuestions.length,
+        cpuLevelId: curCpuLevelId,
+        cpuName: cpuInfo.name,
+        cpuBadge: cpuInfo.badge,
+        userScore: curScore,
+        cpuScore: finalCpuScore,
+        result: bRes.result,
+        elapsedSeconds: tLimit,
+        details: finalBattleLog,
+      });
+    }
 
     saveHistory({
       mode: 'comprehensive',
@@ -303,6 +387,28 @@ const QuizPage = () => {
       saveWrongAnswer(currentQuestion, graded.userAnswer);
     }
 
+    // ⚔️ CPU対戦モードの場合、CPUも同時に解答シミュレーション
+    if (isBattle) {
+      const cpuAns = simulateCpuAnswer(currentQuestion, cpuLevelId);
+      setCurrentCpuAnswer(cpuAns);
+      if (cpuAns.isCorrect) {
+        setCpuScore((prev) => prev + 1);
+      }
+      setBattleLog((prev) => [
+        ...prev,
+        {
+          qIndex: currentIndex,
+          questionText: currentQuestion.question,
+          userCorrect: graded.isCorrect,
+          userAnswer: graded.userAnswer,
+          cpuCorrect: cpuAns.isCorrect,
+          cpuAnswer: cpuAns.selectedAnswer,
+          cpuTime: cpuAns.timeSec,
+          cpuQuote: cpuAns.quote,
+        },
+      ]);
+    }
+
     setGradeResult(graded);
     setShowResult(true);
   };
@@ -325,6 +431,20 @@ const QuizPage = () => {
       return updated;
     });
 
+    // CPU対戦ログのユーザー正誤も更新
+    if (isBattle) {
+      setBattleLog((prev) => {
+        const updated = [...prev];
+        if (updated.length > 0) {
+          updated[updated.length - 1] = {
+            ...updated[updated.length - 1],
+            userCorrect: true,
+          };
+        }
+        return updated;
+      });
+    }
+
     setGradeResult((prev) => ({
       ...prev,
       isCorrect: true,
@@ -338,6 +458,7 @@ const QuizPage = () => {
       setCurrentIndex((prev) => prev + 1);
       setShowResult(false);
       setGradeResult(null);
+      setCurrentCpuAnswer(null);
     } else {
       finishQuiz();
     }
@@ -370,6 +491,25 @@ const QuizPage = () => {
       saveAchievementTestRecord(filters.subject, achievementData);
     }
 
+    // ⚔️ CPU対戦モードの勝敗判定と履歴保存
+    let battleResult = null;
+    if (isBattle) {
+      battleResult = determineBattleResult(score, cpuScore, cpuLevelId);
+      setBattleResultData(battleResult);
+      saveBattleHistory({
+        subject: filters.subject,
+        totalQuestions,
+        cpuLevelId,
+        cpuName: cpuInfo.name,
+        cpuBadge: cpuInfo.badge,
+        userScore: score,
+        cpuScore,
+        result: battleResult.result,
+        elapsedSeconds,
+        details: battleLog,
+      });
+    }
+
     saveHistory({
       mode,
       filters,
@@ -379,6 +519,9 @@ const QuizPage = () => {
       elapsedSeconds,
       timeLimitSeconds,
       isTimeOver: forcedTimeOver,
+      isBattle,
+      cpuScore,
+      battleResult,
       achievementData,
       timestamp: new Date().toISOString(),
     });
@@ -480,6 +623,104 @@ const QuizPage = () => {
               <span className="text-xs px-2.5 py-1 rounded-full bg-emerald-600 text-white font-extrabold shadow-sm">
                 🎉 時間内に完答達成！
               </span>
+            </div>
+          )}
+
+          {/* ⚔️ CPU対戦モード 豪華勝敗発表カード */}
+          {isBattle && battleResultData && (
+            <div className={`mb-8 p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white shadow-2xl border-4 relative overflow-hidden text-center ${
+              battleResultData.result === 'win'
+                ? 'border-amber-400 shadow-amber-500/30 ring-4 ring-amber-400/30'
+                : battleResultData.result === 'lose'
+                ? 'border-rose-500 shadow-rose-500/30'
+                : 'border-indigo-400'
+            }`}>
+              <div className="text-6xl mb-2 animate-bounce">{battleResultData.badge}</div>
+              <div className={`inline-block px-4 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-2 ${
+                battleResultData.result === 'win'
+                  ? 'bg-amber-400 text-amber-950'
+                  : battleResultData.result === 'lose'
+                  ? 'bg-rose-500 text-white'
+                  : 'bg-indigo-500 text-white'
+              }`}>
+                CPU対戦リザルト
+              </div>
+              <h3 className={`text-3xl md:text-5xl font-black tracking-tight mb-2 bg-gradient-to-r ${battleResultData.themeColor} bg-clip-text text-transparent`}>
+                {battleResultData.title}
+              </h3>
+              <p className="text-sm font-bold text-indigo-200 mb-6">
+                {battleResultData.subtitle}
+              </p>
+
+              {/* スコア直接対決カード */}
+              <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-6">
+                <div className={`p-4 rounded-2xl border-2 flex flex-col items-center justify-center ${
+                  battleResultData.result === 'win'
+                    ? 'bg-amber-500/20 border-amber-400 text-amber-200'
+                    : 'bg-white/10 border-white/20 text-white'
+                }`}>
+                  <span className="text-xs font-bold text-indigo-200 mb-1">あなた</span>
+                  <span className="text-4xl md:text-5xl font-black font-mono text-amber-300">
+                    {score} <span className="text-sm text-indigo-200 font-normal">勝</span>
+                  </span>
+                </div>
+
+                <div className={`p-4 rounded-2xl border-2 flex flex-col items-center justify-center ${
+                  battleResultData.result === 'lose'
+                    ? 'bg-rose-500/20 border-rose-400 text-rose-200'
+                    : 'bg-white/10 border-white/20 text-white'
+                }`}>
+                  <span className="text-xs font-bold text-rose-200 mb-1 flex items-center gap-1">
+                    <span>{cpuInfo.badge}</span>
+                    <span className="truncate max-w-[120px]">{cpuInfo.shortName}</span>
+                  </span>
+                  <span className="text-4xl md:text-5xl font-black font-mono text-rose-300">
+                    {cpuScore} <span className="text-sm text-indigo-200 font-normal">勝</span>
+                  </span>
+                </div>
+              </div>
+
+              {/* CPUのセリフ吹き出し */}
+              <div className="max-w-lg mx-auto p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm text-left flex items-start gap-3 mb-6">
+                <span className="text-3xl">{cpuInfo.badge}</span>
+                <div>
+                  <div className="text-[11px] font-bold text-indigo-300 mb-1">{cpuInfo.name}:</div>
+                  <div className="font-extrabold text-white leading-relaxed">
+                    「{battleResultData.quote}」
+                  </div>
+                </div>
+              </div>
+
+              {/* 問題別 星取表ダイジェスト */}
+              {battleLog.length > 0 && (
+                <div className="border-t border-white/15 pt-4 text-left">
+                  <h4 className="text-xs font-black text-indigo-200 mb-3 flex items-center gap-1.5">
+                    <span>⚔️</span>
+                    <span>問題ごとの勝敗ダイジェスト:</span>
+                  </h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2">
+                    {battleLog.map((log, idx) => (
+                      <div
+                        key={idx}
+                        className={`p-2 rounded-xl border text-center text-xs font-black flex items-center justify-between ${
+                          log.userCorrect && !log.cpuCorrect
+                            ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300'
+                            : !log.userCorrect && log.cpuCorrect
+                            ? 'bg-rose-500/20 border-rose-400 text-rose-300'
+                            : 'bg-white/10 border-white/10 text-gray-200'
+                        }`}
+                      >
+                        <span className="text-[10px] text-gray-400">第{idx + 1}問</span>
+                        <div className="flex items-center gap-1">
+                          <span>{log.userCorrect ? '⭕' : '❌'}</span>
+                          <span className="text-[10px] text-gray-400">vs</span>
+                          <span>{log.cpuCorrect ? '⭕' : '❌'}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -787,6 +1028,46 @@ const QuizPage = () => {
         </div>
       )}
 
+      {/* ⚔️ CPU対戦 リアルタイムスコアボード */}
+      {isBattle && (
+        <div className="w-full max-w-2xl mb-3 p-3.5 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border-2 border-rose-500/60 shadow-lg text-white flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <span className="text-2xl">🧑</span>
+            <div>
+              <div className="text-[10px] text-indigo-300 font-bold">あなた</div>
+              <div className="text-xl font-black text-amber-300 font-mono leading-none">
+                {score} <span className="text-xs font-normal text-indigo-200">勝</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center px-2">
+            <div className="inline-block px-3 py-0.5 rounded-full text-[11px] font-black bg-rose-500/30 text-rose-300 border border-rose-400/40">
+              ⚔️ VS 対戦中
+            </div>
+            <div className="text-[11px] font-extrabold mt-1 text-slate-200">
+              {score > cpuScore
+                ? '🔥 あなたがリード中！'
+                : score < cpuScore
+                ? '⚠️ CPUがリード！追いかけろ！'
+                : '🤝 互角の白熱戦！'}
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2.5 text-right">
+            <div>
+              <div className="text-[10px] text-rose-300 font-bold truncate max-w-[130px]">
+                {cpuInfo.shortName}
+              </div>
+              <div className="text-xl font-black text-rose-300 font-mono leading-none">
+                {cpuScore} <span className="text-xs font-normal text-indigo-200">勝</span>
+              </div>
+            </div>
+            <span className="text-2xl">{cpuInfo.badge}</span>
+          </div>
+        </div>
+      )}
+
       {/* タイムクロック（タイマー）＆ 進行状況バー */}
       <div className="w-full max-w-2xl mb-3 flex flex-wrap items-center justify-between gap-2 text-gray-700 dark:text-gray-200 font-bold">
         <button
@@ -865,12 +1146,60 @@ const QuizPage = () => {
       </div>
 
       {showResult && gradeResult ? (
-        <ResultCard
-          gradeResult={gradeResult}
-          questionData={currentQuestion}
-          onNext={handleNext}
-          onOverrideCorrect={handleOverrideCorrect}
-        />
+        <div className="w-full max-w-2xl space-y-4">
+          {/* ⚔️ 対戦相手（CPU）のリアルタイム解答結果カード */}
+          {isBattle && currentCpuAnswer && (
+            <div
+              className={`p-4 rounded-2xl border-2 shadow-lg transition-all animate-fade-in ${
+                currentCpuAnswer.isCorrect
+                  ? 'bg-gradient-to-r from-slate-900 to-indigo-950 border-rose-500/80 text-white'
+                  : 'bg-gradient-to-r from-slate-900 to-slate-800 border-gray-600 text-gray-200'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">{cpuInfo.badge}</span>
+                  <div>
+                    <span className="text-xs font-black text-rose-300">
+                      対戦相手: {cpuInfo.name}
+                    </span>
+                    <span className="text-[10px] text-gray-400 ml-2">
+                      （思考時間: {currentCpuAnswer.timeSec}秒）
+                    </span>
+                  </div>
+                </div>
+                <span
+                  className={`text-xs font-black px-3 py-1 rounded-full flex items-center gap-1 shadow-sm ${
+                    currentCpuAnswer.isCorrect
+                      ? 'bg-rose-600 text-white animate-pulse'
+                      : 'bg-gray-700 text-gray-300'
+                  }`}
+                >
+                  {currentCpuAnswer.isCorrect ? '⭕ CPU 正解！' : '❌ CPU 不正解！'}
+                </span>
+              </div>
+
+              <div className="text-xs text-indigo-100 mb-2.5">
+                CPUの選択:{' '}
+                <strong className="text-white bg-white/10 px-2 py-0.5 rounded font-mono">
+                  {currentCpuAnswer.selectedAnswer}
+                </strong>
+              </div>
+
+              <div className="p-2.5 rounded-xl bg-white/10 border border-white/10 text-xs italic text-rose-200 flex items-center gap-2">
+                <span>💬</span>
+                <span>「{currentCpuAnswer.quote}」</span>
+              </div>
+            </div>
+          )}
+
+          <ResultCard
+            gradeResult={gradeResult}
+            questionData={currentQuestion}
+            onNext={handleNext}
+            onOverrideCorrect={handleOverrideCorrect}
+          />
+        </div>
       ) : (
         <QuizCard questionData={currentQuestion} onAnswer={handleAnswer} />
       )}

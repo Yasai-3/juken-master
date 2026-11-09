@@ -876,3 +876,110 @@ export const resetAchievementTestCooldown = (subject = null) => {
   }
 };
 
+// ==========================================
+// ⚔️ 総合実力テスト CPU対戦履歴マネージャー
+// ==========================================
+const BATTLE_HISTORY_KEY = 'juken_battle_history';
+
+export const getBattleHistory = () => {
+  try {
+    const raw = localStorage.getItem(BATTLE_HISTORY_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    console.error('Failed to get battle history', e);
+    return [];
+  }
+};
+
+export const saveBattleHistory = (battleData) => {
+  try {
+    const history = getBattleHistory();
+    const entry = {
+      id: `battle_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+      timestamp: new Date().toISOString(),
+      subject: battleData.subject,
+      totalQuestions: battleData.totalQuestions,
+      cpuLevelId: battleData.cpuLevelId,
+      cpuName: battleData.cpuName,
+      cpuBadge: battleData.cpuBadge,
+      userScore: battleData.userScore,
+      cpuScore: battleData.cpuScore,
+      result: battleData.result, // 'win' | 'lose' | 'draw'
+      elapsedSeconds: battleData.elapsedSeconds || 0,
+      details: battleData.details || [], // 各問題ごとの勝敗ダイジェスト
+    };
+
+    history.unshift(entry);
+    // 最大100件まで保持
+    if (history.length > 100) {
+      history.length = 100;
+    }
+
+    localStorage.setItem(BATTLE_HISTORY_KEY, JSON.stringify(history));
+    return entry;
+  } catch (e) {
+    console.error('Failed to save battle history', e);
+    return null;
+  }
+};
+
+export const getBattleStats = () => {
+  const history = getBattleHistory();
+  const total = history.length;
+  if (total === 0) {
+    return {
+      total: 0,
+      wins: 0,
+      losses: 0,
+      draws: 0,
+      winRate: 0,
+      oniDefeats: 0,
+      levelStats: {},
+    };
+  }
+
+  let wins = 0;
+  let losses = 0;
+  let draws = 0;
+  let oniDefeats = 0;
+  const levelStats = {
+    oni: { total: 0, wins: 0 },
+    master: { total: 0, wins: 0 },
+    rival: { total: 0, wins: 0 },
+    rookie: { total: 0, wins: 0 },
+  };
+
+  history.forEach((h) => {
+    const lvl = h.cpuLevelId || 'master';
+    if (!levelStats[lvl]) {
+      levelStats[lvl] = { total: 0, wins: 0 };
+    }
+    levelStats[lvl].total += 1;
+
+    if (h.result === 'win') {
+      wins += 1;
+      levelStats[lvl].wins += 1;
+      if (lvl === 'oni') {
+        oniDefeats += 1;
+      }
+    } else if (h.result === 'lose') {
+      losses += 1;
+    } else {
+      draws += 1;
+    }
+  });
+
+  const winRate = Math.round((wins / total) * 1000) / 10;
+
+  return {
+    total,
+    wins,
+    losses,
+    draws,
+    winRate,
+    oniDefeats,
+    levelStats,
+  };
+};
+
+
