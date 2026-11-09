@@ -51,6 +51,14 @@ const QuizPage = () => {
   const [timeLimitSeconds, setTimeLimitSeconds] = useState(0);
   const [isTimeOver, setIsTimeOver] = useState(false);
 
+  // ★ 総合実力テスト（制限時間・タイムオーバー付き）の厳格な判定:
+  // ホーム画面の「🌟 総合実力テスト」から明示的に開始された場合のみ発動。
+  // 普通に教科・分野の項目から選んだ「全体から出題（総合）」や通常演習では絶対に発動させない。
+  const isComprehensiveTimed =
+    (mode === 'comprehensive' || (mode === 'combined' && filters.isTimed === true)) &&
+    !filters.category &&
+    !filters.subCategory;
+
   // タイマーのクロージャ問題を防ぐ最新状態保持用Ref
   const stateRef = useRef({
     questions: [],
@@ -59,6 +67,7 @@ const QuizPage = () => {
     quizResults: [],
     elapsedSeconds: 0,
     timeLimitSeconds: 0,
+    isComprehensiveTimed: false,
   });
 
   useEffect(() => {
@@ -69,8 +78,9 @@ const QuizPage = () => {
       quizResults,
       elapsedSeconds,
       timeLimitSeconds,
+      isComprehensiveTimed,
     };
-  }, [questions, currentIndex, score, quizResults, elapsedSeconds, timeLimitSeconds]);
+  }, [questions, currentIndex, score, quizResults, elapsedSeconds, timeLimitSeconds, isComprehensiveTimed]);
 
   useEffect(() => {
     const settings = getSettings();
@@ -168,8 +178,8 @@ const QuizPage = () => {
     setElapsedSeconds(0);
     setIsTimeOver(false);
 
-    // ★ 総合実力テストモードの場合は制限時間を計算・セット
-    if (mode === 'combined') {
+    // ★ 総合実力テストモード（制限時間付き）の場合のみ制限時間を計算・セット
+    if (isComprehensiveTimed) {
       const limitSec = getComprehensiveTimeLimit(filters.subject || '理科', limit);
       setTimeLimitSeconds(limitSec);
       setRemainingSeconds(limitSec);
@@ -179,7 +189,7 @@ const QuizPage = () => {
     }
 
     setLoading(false);
-  }, [mode, JSON.stringify(filters)]);
+  }, [mode, JSON.stringify(filters), isComprehensiveTimed]);
 
   // タイムオーバー発生時の強制終了処理
   const handleTimeOver = () => {
@@ -221,7 +231,7 @@ const QuizPage = () => {
     setQuizResults(finalResults);
 
     saveHistory({
-      mode: 'combined',
+      mode: 'comprehensive',
       filters,
       score: curScore,
       total: curQuestions.length,
@@ -237,14 +247,17 @@ const QuizPage = () => {
 
   // ⏱️ タイムクロック（ストップウォッチ & カウントダウン）インターバル制御
   useEffect(() => {
-    if (loading || finished || isTimeOver || showResult) {
+    // 総合実力テスト（制限時間あり）または到達度テストの場合のみタイマーを作動
+    // 通常の教科・分野・単元演習ではタイマーは作動させない
+    const shouldRunTimer = isComprehensiveTimed || mode === 'achievement';
+    if (!shouldRunTimer || loading || finished || isTimeOver || showResult) {
       return;
     }
 
     const timer = setInterval(() => {
       setElapsedSeconds((prev) => prev + 1);
 
-      if (mode === 'combined') {
+      if (isComprehensiveTimed) {
         setRemainingSeconds((prev) => {
           if (prev <= 1) {
             clearInterval(timer);
@@ -257,7 +270,7 @@ const QuizPage = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [loading, finished, isTimeOver, showResult, mode]);
+  }, [loading, finished, isTimeOver, showResult, mode, isComprehensiveTimed]);
 
   const handleAnswer = (userResponse) => {
     const settings = getSettings();
@@ -435,7 +448,7 @@ const QuizPage = () => {
     const levelInfo = isAchievementMode ? achievementReport.level : null;
     const timeInfo = isAchievementMode ? achievementReport.timeLevel : null;
     const dualAxis = isAchievementMode ? achievementReport.dualAxis : null;
-    const isCombinedMode = mode === 'combined';
+    const isCombinedMode = isComprehensiveTimed;
 
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-100 dark:bg-gray-900 p-4 animate-fade-in">
@@ -762,7 +775,7 @@ const QuizPage = () => {
       )}
 
       {/* 総合実力テスト受験中バナー */}
-      {mode === 'combined' && (
+      {isComprehensiveTimed && (
         <div className="w-full max-w-2xl mb-3 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-pink-500/20 border border-indigo-400/40 flex items-center justify-between text-xs font-black shadow-sm">
           <span className="flex items-center gap-1.5 text-indigo-900 dark:text-indigo-200">
             <span>🌟</span>
@@ -785,7 +798,7 @@ const QuizPage = () => {
         </button>
 
         {/* タイムクロック表示部 */}
-        {mode === 'combined' && (
+        {isComprehensiveTimed && (
           <div
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl border font-black text-sm transition-all shadow-sm ${
               remainingSeconds <= 60

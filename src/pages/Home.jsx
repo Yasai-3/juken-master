@@ -525,47 +525,87 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <button
             type="button"
-            onClick={() => startQuiz('combined', { subject: '算数', limit: comprehensiveLimit })}
+            onClick={() =>
+              startQuiz('comprehensive', {
+                subject: '算数',
+                limit: comprehensiveLimit,
+                isTimed: true,
+              })
+            }
             className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-violet-700 dark:text-violet-300 border-l-4 border-violet-500 text-left flex justify-between items-center group"
           >
             <div>
               <div className="text-sm">📐 算数 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '10' : comprehensiveLimit === 10 ? '20' : '35'}分</div>
+              <div className="text-[10px] text-gray-400 font-medium">
+                制限: {comprehensiveLimit === 5 ? '10' : comprehensiveLimit === 10 ? '20' : '35'}分
+              </div>
             </div>
-            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-violet-100 transition">開始 →</span>
+            <span className="text-xs bg-violet-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-violet-100 transition">
+              開始 →
+            </span>
           </button>
           <button
             type="button"
-            onClick={() => startQuiz('combined', { subject: '国語', limit: comprehensiveLimit })}
+            onClick={() =>
+              startQuiz('comprehensive', {
+                subject: '国語',
+                limit: comprehensiveLimit,
+                isTimed: true,
+              })
+            }
             className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-emerald-700 dark:text-emerald-300 border-l-4 border-emerald-500 text-left flex justify-between items-center group"
           >
             <div>
               <div className="text-sm">📖 国語 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+              <div className="text-[10px] text-gray-400 font-medium">
+                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
+              </div>
             </div>
-            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-emerald-100 transition">開始 →</span>
+            <span className="text-xs bg-emerald-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-emerald-100 transition">
+              開始 →
+            </span>
           </button>
           <button
             type="button"
-            onClick={() => startQuiz('combined', { subject: '理科', limit: comprehensiveLimit })}
+            onClick={() =>
+              startQuiz('comprehensive', {
+                subject: '理科',
+                limit: comprehensiveLimit,
+                isTimed: true,
+              })
+            }
             className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-indigo-700 dark:text-indigo-300 border-l-4 border-indigo-500 text-left flex justify-between items-center group"
           >
             <div>
               <div className="text-sm">🧪 理科 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+              <div className="text-[10px] text-gray-400 font-medium">
+                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
+              </div>
             </div>
-            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-indigo-100 transition">開始 →</span>
+            <span className="text-xs bg-indigo-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-indigo-100 transition">
+              開始 →
+            </span>
           </button>
           <button
             type="button"
-            onClick={() => startQuiz('combined', { subject: '社会', limit: comprehensiveLimit })}
+            onClick={() =>
+              startQuiz('comprehensive', {
+                subject: '社会',
+                limit: comprehensiveLimit,
+                isTimed: true,
+              })
+            }
             className="p-3.5 bg-white dark:bg-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all font-bold text-amber-700 dark:text-amber-300 border-l-4 border-amber-500 text-left flex justify-between items-center group"
           >
             <div>
               <div className="text-sm">🏯 社会 総合テスト</div>
-              <div className="text-[10px] text-gray-400 font-medium">制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分</div>
+              <div className="text-[10px] text-gray-400 font-medium">
+                制限: {comprehensiveLimit === 5 ? '7' : comprehensiveLimit === 10 ? '15' : '25'}分
+              </div>
             </div>
-            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-amber-100 transition">開始 →</span>
+            <span className="text-xs bg-amber-50 dark:bg-gray-600 px-2 py-0.5 rounded-lg group-hover:bg-amber-100 transition">
+              開始 →
+            </span>
           </button>
         </div>
       </div>
@@ -768,11 +808,11 @@ const Home = () => {
         {selectedCategory.name}の単元を選択
       </h2>
 
-      {/* Option to test entire category */}
+      {/* Option to test entire category (通常演習モード・タイマーなし) */}
       <button
         type="button"
         onClick={() =>
-          startQuiz('combined', {
+          startQuiz('category', {
             subject: selectedSubject.subject,
             category: selectedCategory.name,
             limit: questionLimit,
