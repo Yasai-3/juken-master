@@ -60,6 +60,7 @@ const HistoryPage = () => {
   const [battleHistory, setBattleHistory] = useState([]);
   const [battleStats, setBattleStats] = useState(null);
   const [expandedBattleId, setExpandedBattleId] = useState(null);
+  const [achievementCategoryFilter, setAchievementCategoryFilter] = useState('all');
 
   // Safe Snapshots & Clear Confirmation Modal state
   const [snapshots, setSnapshots] = useState([]);
@@ -1603,32 +1604,221 @@ const HistoryPage = () => {
                 </span>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-center">
-                <span className="text-[11px] font-bold text-rose-700 dark:text-rose-300 block mb-1">
-                  👹 鬼（最難関）撃破数
+              <div className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-center flex flex-col justify-center">
+                <span className="text-[11px] font-bold text-rose-700 dark:text-rose-300 block mb-0.5">
+                  👹 鬼神カイセキ 撃破数
                 </span>
-                <span className="text-2xl font-black text-rose-600 dark:text-rose-400 font-mono">
-                  {battleStats.oniDefeats} <span className="text-xs font-normal">体 討伐</span>
+                <div className="text-2xl font-black text-rose-600 dark:text-rose-400 font-mono leading-tight">
+                  {battleStats.recentOniDefeats ?? 0} <span className="text-xs font-normal">体 (直近30日)</span>
+                </div>
+                <span className="text-[10px] text-gray-400 block mt-0.5">
+                  通算 {battleStats.oniDefeats ?? 0}体 討伐 / 連勝: {battleStats.maxOniStreak ?? 0}
                 </span>
               </div>
 
               <div className="p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 text-center flex flex-col justify-center">
                 <span className="text-[10px] font-bold text-indigo-700 dark:text-indigo-300 block mb-1">
-                  討伐称号
+                  現在の最高位称号
                 </span>
-                <span className="text-xs font-black text-indigo-800 dark:text-indigo-200">
-                  {battleStats.oniDefeats >= 5
-                    ? '👑 鬼殺しの伝説'
-                    : battleStats.oniDefeats >= 1
-                    ? '⚔️ 鬼神ハンター'
-                    : battleStats.wins >= 5
-                    ? '🦁 難関校ハンター'
-                    : '🌱 挑戦のチャレンジャー'}
+                <div className="text-xs sm:text-sm font-black text-indigo-800 dark:text-indigo-200 flex items-center justify-center gap-1">
+                  <span>{battleStats.currentTitle?.badge || '🌱'}</span>
+                  <span className="truncate">{battleStats.currentTitle?.title || '挑戦のチャレンジャー'}</span>
+                </div>
+                <span className="text-[10px] font-bold mt-0.5 block text-gray-500 dark:text-gray-400">
+                  {battleStats.currentTitle?.isTimeLimited ? (
+                    <span className="text-amber-600 dark:text-amber-400">⏱️ 直近30日限定称号</span>
+                  ) : (
+                    <span>{battleStats.currentTitle?.conditionText || 'CPU対戦に挑戦'}</span>
+                  )}
                 </span>
               </div>
             </div>
           )}
         </div>
+
+        {/* 🏆 実績コレクション ＆ 獲得称号一覧セクション */}
+        {battleStats?.achievements && (
+          <div className="bg-slate-50 dark:bg-gray-900/60 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-gray-700 space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+              <div>
+                <h3 className="text-base sm:text-lg font-black text-gray-800 dark:text-gray-100 flex items-center gap-2">
+                  <span>🏆</span>
+                  <span>討伐称号 ＆ 実績コレクション</span>
+                  <span className="text-xs font-bold text-gray-500 dark:text-gray-400">
+                    （全 {battleStats.totalCount} 種）
+                  </span>
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                  ライバルを倒して実績を解除しよう！鬼神ハンター・鬼殺しの伝説は直近30日の撃破数で維持されます。
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-black px-2.5 py-1 rounded-full bg-indigo-600 text-white shadow-sm">
+                  解除済み: {battleStats.unlockedCount} / {battleStats.totalCount} 個
+                </span>
+              </div>
+            </div>
+
+            {/* 進捗プログレスバー */}
+            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
+              <div
+                className="bg-gradient-to-r from-amber-500 via-rose-500 to-indigo-600 h-2.5 rounded-full transition-all duration-500"
+                style={{
+                  width: `${Math.round(
+                    ((battleStats.unlockedCount || 0) / (battleStats.totalCount || 1)) * 100
+                  )}%`,
+                }}
+              />
+            </div>
+
+            {/* カテゴリフィルターボタン */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              {[
+                { id: 'all', label: 'すべて' },
+                { id: '鬼神討伐', label: '👹 鬼神討伐' },
+                { id: 'ライバル討伐', label: '⚔️ ライバル討伐' },
+                { id: '実戦の極致', label: '🎯 実戦の極致' },
+                { id: 'キャリア', label: '🌟 キャリア' },
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setAchievementCategoryFilter(tab.id)}
+                  className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                    achievementCategoryFilter === tab.id
+                      ? 'bg-indigo-600 text-white shadow-sm'
+                      : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {/* 実績カードグリッド */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {battleStats.achievements
+                .filter(
+                  (ach) =>
+                    achievementCategoryFilter === 'all' || ach.category === achievementCategoryFilter
+                )
+                .map((ach) => {
+                  const isUnlocked = ach.unlocked;
+                  const prog = ach.progress || {};
+                  const isExpired = prog.expired;
+
+                  // レアリティごとの装飾スタイル
+                  const rarityStyle = {
+                    legendary: isUnlocked
+                      ? 'border-amber-400 dark:border-amber-500 bg-gradient-to-br from-amber-50/80 via-white to-amber-100/50 dark:from-amber-950/40 dark:via-gray-800 dark:to-amber-900/30 shadow-md ring-1 ring-amber-300 dark:ring-amber-600'
+                      : 'border-amber-200/50 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 opacity-85',
+                    epic: isUnlocked
+                      ? 'border-purple-400 dark:border-purple-500 bg-gradient-to-br from-purple-50/80 via-white to-indigo-50/50 dark:from-purple-950/40 dark:via-gray-800 dark:to-indigo-900/30 shadow-sm'
+                      : 'border-purple-200/50 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 opacity-85',
+                    rare: isUnlocked
+                      ? 'border-blue-300 dark:border-blue-600 bg-gradient-to-br from-blue-50/70 via-white to-indigo-50/40 dark:from-blue-950/30 dark:via-gray-800 dark:to-gray-800 shadow-sm'
+                      : 'border-slate-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 opacity-85',
+                    common: isUnlocked
+                      ? 'border-emerald-300 dark:border-emerald-700 bg-gradient-to-br from-emerald-50/60 via-white to-slate-50 dark:from-emerald-950/30 dark:via-gray-800 dark:to-gray-800 shadow-sm'
+                      : 'border-slate-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 opacity-85',
+                  }[ach.rarity || 'common'];
+
+                  return (
+                    <div
+                      key={ach.id}
+                      className={`p-3.5 rounded-xl border-2 transition-all flex flex-col justify-between ${rarityStyle}`}
+                    >
+                      <div>
+                        {/* 上段: バッジ & タイトル & ステータス */}
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <div className="flex items-center gap-2">
+                            <span className="text-2xl flex-shrink-0">{ach.badge}</span>
+                            <div>
+                              <div className="text-xs sm:text-sm font-black text-gray-800 dark:text-gray-100 flex items-center gap-1.5">
+                                <span>{ach.title}</span>
+                              </div>
+                              <span className="text-[10px] text-gray-400 font-bold">
+                                {ach.category}
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* 達成ステータスラベル */}
+                          {isUnlocked ? (
+                            <span className="inline-flex items-center gap-0.5 text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white shadow-xs">
+                              <span>✓ 解除</span>
+                            </span>
+                          ) : isExpired ? (
+                            <span className="inline-flex items-center gap-0.5 text-[10px] font-black px-2 py-0.5 rounded-full bg-rose-500 text-white shadow-xs">
+                              <span>⚠️ 期限切れ</span>
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-0.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[10px]">
+                              <span>🔒 未解除</span>
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 説明文 */}
+                        <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
+                          {ach.description}
+                        </p>
+                      </div>
+
+                      {/* 下段: 進捗バー & 条件詳細 */}
+                      <div className="pt-2 border-t border-gray-100 dark:border-gray-700/60 space-y-1.5">
+                        <div className="flex items-center justify-between text-[11px] font-bold">
+                          <span className="text-gray-500 dark:text-gray-400">
+                            {ach.isTimeLimited ? '⏱️ 直近30日進捗' : '獲得進捗'}
+                          </span>
+                          <span
+                            className={
+                              isUnlocked
+                                ? 'text-emerald-600 dark:text-emerald-400 font-black'
+                                : 'text-gray-700 dark:text-gray-300'
+                            }
+                          >
+                            {prog.current ?? 0} / {prog.target ?? 0} {prog.unit}
+                            {isUnlocked ? ' (100%)' : ` (${prog.percent ?? 0}%)`}
+                          </span>
+                        </div>
+
+                        {/* ミニ進捗バー */}
+                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                          <div
+                            className={`h-1.5 rounded-full transition-all duration-300 ${
+                              isUnlocked
+                                ? 'bg-emerald-500'
+                                : isExpired
+                                ? 'bg-rose-400'
+                                : 'bg-indigo-500'
+                            }`}
+                            style={{
+                              width: `${isUnlocked ? 100 : Math.min(100, prog.percent || 0)}%`,
+                            }}
+                          />
+                        </div>
+
+                        {/* 期限切れ時の注記 */}
+                        {isExpired && (
+                          <div className="text-[10px] text-rose-600 dark:text-rose-400 font-bold bg-rose-50 dark:bg-rose-950/40 px-2 py-0.5 rounded text-center">
+                            通算{prog.totalAllTime}勝達成済ですが、直近30日の撃破数が不足しているため失効中
+                          </div>
+                        )}
+                        {ach.isTimeLimited && !isExpired && (
+                          <div className="text-[10px] text-amber-700 dark:text-amber-300 font-bold flex items-center justify-between">
+                            <span>※称号維持条件: 直近30日での討伐</span>
+                            <span>通算: {prog.totalAllTime ?? 0}体</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
+        )}
 
         {/* 過去の対戦履歴リスト */}
         {battleHistory.length === 0 ? (

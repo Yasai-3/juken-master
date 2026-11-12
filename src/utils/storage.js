@@ -1,4 +1,5 @@
 import sampleQuestions from '../data/sampleQuiz.json';
+import { calculateBattleAchievements } from './cpuBattleEngine';
 
 const HISTORY_KEY = 'quiz_app_history';
 const WRONG_ANSWERS_KEY = 'quiz_app_wrong_answers';
@@ -992,60 +993,16 @@ export const saveBattleHistory = (battleData) => {
 
 export const getBattleStats = () => {
   const history = getBattleHistory();
-  const total = history.length;
-  if (total === 0) {
-    return {
-      total: 0,
-      wins: 0,
-      losses: 0,
-      draws: 0,
-      winRate: 0,
-      oniDefeats: 0,
-      levelStats: {},
-    };
-  }
-
-  let wins = 0;
-  let losses = 0;
-  let draws = 0;
-  let oniDefeats = 0;
-  const levelStats = {
-    oni: { total: 0, wins: 0 },
-    master: { total: 0, wins: 0 },
-    rival: { total: 0, wins: 0 },
-    rookie: { total: 0, wins: 0 },
-  };
-
-  history.forEach((h) => {
-    const lvl = h.cpuLevelId || 'master';
-    if (!levelStats[lvl]) {
-      levelStats[lvl] = { total: 0, wins: 0 };
-    }
-    levelStats[lvl].total += 1;
-
-    if (h.result === 'win') {
-      wins += 1;
-      levelStats[lvl].wins += 1;
-      if (lvl === 'oni') {
-        oniDefeats += 1;
-      }
-    } else if (h.result === 'lose') {
-      losses += 1;
-    } else {
-      draws += 1;
-    }
-  });
-
-  const winRate = Math.round((wins / total) * 1000) / 10;
-
+  const data = calculateBattleAchievements(history);
   return {
-    total,
-    wins,
-    losses,
-    draws,
-    winRate,
-    oniDefeats,
-    levelStats,
+    ...data.stats,
+    achievements: data.achievements,
+    currentTitle: data.currentTitle,
+    unlockedCount: data.unlockedCount,
+    totalCount: data.totalCount,
+    recentDays: data.recentDays,
+    oniDefeats: data.stats.totalOniDefeats, // 通算鬼神撃破数
+    recentOniDefeats: data.stats.recentOniDefeats, // 直近1ヶ月（30日）鬼神撃破数
   };
 };
 
