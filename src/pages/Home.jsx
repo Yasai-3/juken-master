@@ -136,6 +136,18 @@ const Home = () => {
 
   useEffect(() => {
     loadDashboardData();
+
+    // オンライン時は起動時にバックグラウンドでクラウド最新データを自動同期
+    if (typeof navigator !== 'undefined' && navigator.onLine) {
+      syncWithCloud()
+        .then((info) => {
+          setLastSyncInfo(info);
+          loadDashboardData();
+        })
+        .catch((e) => {
+          console.debug('Background initial sync skipped:', e.message);
+        });
+    }
   }, [loadDashboardData]);
 
   const handleStartAchievementTest = (subject) => {
@@ -172,8 +184,9 @@ const Home = () => {
       const info = await syncWithCloud();
       setLastSyncInfo(info);
       loadDashboardData();
+      const battleText = info.battleCount !== undefined ? ` / CPU対戦: ${info.battleCount}戦` : '';
       setSyncMessage(
-        `☁️ クラウド同期完了！（履歴: ${info.historyCount}件 / 弱点: ${info.wrongCount}問 / 全端末共通最新化）`
+        `☁️ クラウド同期完了！（履歴: ${info.historyCount}件 / 弱点: ${info.wrongCount}問${battleText} / 全端末共通最新化）`
       );
       setTimeout(() => setSyncMessage(''), 5000);
     } catch (err) {
@@ -192,8 +205,9 @@ const Home = () => {
       setLastSyncInfo(info);
       setSyncServerUrlInput(info.serverUrl);
       loadDashboardData();
+      const battleText = info.battleCount !== undefined ? ` / CPU対戦: ${info.battleCount}戦` : '';
       setSyncMessage(
-        `✅ 同期完了！（履歴: ${info.historyCount}件 / 弱点: ${info.wrongCount}問 / 追加問題: ${info.customQuestionsCount}問）`
+        `✅ 同期完了！（履歴: ${info.historyCount}件 / 弱点: ${info.wrongCount}問 / 追加問題: ${info.customQuestionsCount}問${battleText}）`
       );
       setTimeout(() => setSyncMessage(''), 5000);
     } catch (err) {

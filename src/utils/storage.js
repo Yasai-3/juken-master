@@ -8,6 +8,8 @@ const AI_ADVICE_CACHE_KEY = 'quiz_app_ai_advice_cache';
 const LAST_SYNC_KEY = 'quiz_app_last_wifi_sync';
 const SNAPSHOTS_KEY = 'quiz_app_history_snapshots_v1';
 const RESOLVED_WRONG_KEY = 'quiz_app_resolved_wrong_v1';
+const ACHIEVEMENT_TEST_KEY = 'quiz_app_achievement_test_v1';
+const BATTLE_HISTORY_KEY = 'juken_battle_history';
 
 /**
  * 既存（作問アプリ１）の問題データやインポートデータを新フォーマットに正規化する
@@ -454,8 +456,10 @@ export const exportAllData = () => {
     customQuestions: getCustomQuestions(),
     history: getHistory(),
     wrongAnswers: getWrongAnswers(),
+    battleHistory: getBattleHistory(),
+    achievementRecords: getAchievementTestRecords(),
     timestamp: new Date().toISOString(),
-    version: '2.0',
+    version: '2.1',
   };
   return JSON.stringify(data, null, 2);
 };
@@ -536,6 +540,25 @@ export const importData = (jsonData) => {
       localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(combinedWrong));
     }
 
+    if (Array.isArray(parsed.battleHistory)) {
+      const currentBattle = getBattleHistory();
+      const battleMap = new Map();
+      const makeBattleKey = (b) =>
+        b.id || `${b.timestamp || ''}_${b.subject || ''}_${b.cpuLevelId || ''}_${b.userScore ?? ''}_${b.cpuScore ?? ''}`;
+      currentBattle.forEach((b) => battleMap.set(makeBattleKey(b), b));
+      parsed.battleHistory.forEach((b) => battleMap.set(makeBattleKey(b), b));
+      const mergedBattle = Array.from(battleMap.values())
+        .sort((a, b) => String(b.timestamp || '').localeCompare(String(a.timestamp || '')))
+        .slice(0, 100);
+      localStorage.setItem(BATTLE_HISTORY_KEY, JSON.stringify(mergedBattle));
+    }
+
+    if (parsed.achievementRecords && typeof parsed.achievementRecords === 'object') {
+      const currentAch = getAchievementTestRecords();
+      const mergedAch = { ...currentAch, ...parsed.achievementRecords };
+      localStorage.setItem(ACHIEVEMENT_TEST_KEY, JSON.stringify(mergedAch));
+    }
+
     return { success: true, count: addedCount, type: 'backup' };
   } catch (e) {
     console.error('Import failed', e);
@@ -551,6 +574,8 @@ export const syncWithCloud = async () => {
   const localHistory = getHistory();
   const localWrong = getWrongAnswers();
   const localSnapshots = getHistorySnapshots();
+  const localBattle = getBattleHistory();
+  const localAchievement = getAchievementTestRecords();
 
   // 1. クラウドから最新データを取得
   let cloudData = null;
@@ -688,6 +713,37 @@ export const syncWithCloud = async () => {
     .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')))
     .slice(0, 20);
 
+  // CPU対戦履歴マージ（IDまたは各問キーで重複排除、最新順に最大100件）
+  const battleMap = new Map();
+  const makeBattleKey = (b) =>
+    b.id ||
+    `${b.timestamp || ''}_${b.subject || ''}_${b.cpuLevelId || ''}_${b.userScore ?? ''}_${b.cpuScore ?? ''}`;
+  (cloudData?.battleHistory || []).forEach((b) => {
+    if (b) battleMap.set(makeBattleKey(b), b);
+  });
+  localBattle.forEach((b) => {
+    if (b) battleMap.set(makeBattleKey(b), b);
+  });
+  const mergedBattle = Array.from(battleMap.values())
+    .sort((a, b) => String(b.timestamp || '').localeCompare(String(a.timestamp || '')))
+    .slice(0, 100);
+
+  // 到達度判定テスト記録マージ（新しい受験日時の記録を優先）
+  const mergedAchievement = { ...(cloudData?.achievementRecords || {}) };
+  Object.entries(localAchievement).forEach(([subj, rec]) => {
+    if (!mergedAchievement[subj]) {
+      mergedAchievement[subj] = rec;
+    } else {
+      const cloudTime = mergedAchievement[subj].lastTakenAt
+        ? new Date(mergedAchievement[subj].lastTakenAt).getTime()
+        : 0;
+      const localTime = rec.lastTakenAt ? new Date(rec.lastTakenAt).getTime() : 0;
+      if (localTime >= cloudTime) {
+        mergedAchievement[subj] = rec;
+      }
+    }
+  });
+
   // 3. ローカルに保存（マスター問題の巨大なSVGや解説を削ぎ落としてLocalStorage容量を節約）
   const compactWrongForLocal = mergedWrong.map((w) =>
     w.isCustom
@@ -705,6 +761,8 @@ export const syncWithCloud = async () => {
   localStorage.setItem(HISTORY_KEY, JSON.stringify(mergedHistory));
   localStorage.setItem(WRONG_ANSWERS_KEY, JSON.stringify(compactWrongForLocal));
   localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(mergedSnapshots));
+  localStorage.setItem(BATTLE_HISTORY_KEY, JSON.stringify(mergedBattle));
+  localStorage.setItem(ACHIEVEMENT_TEST_KEY, JSON.stringify(mergedAchievement));
 
   // 4. クラウドにマージ後データを保存
   const cloudPayload = {
@@ -713,6 +771,8 @@ export const syncWithCloud = async () => {
     wrongAnswers: mergedWrong,
     resolvedWrongIds: mergedResolved,
     snapshots: mergedSnapshots,
+    battleHistory: mergedBattle,
+    achievementRecords: mergedAchievement,
     updatedAt: new Date().toISOString(),
   };
 
@@ -724,6 +784,7 @@ export const syncWithCloud = async () => {
     historyCount: mergedHistory.length,
     wrongCount: mergedWrong.length,
     customQuestionsCount: mergedQuestions.length,
+    battleCount: mergedBattle.length,
   };
   localStorage.setItem(LAST_SYNC_KEY, JSON.stringify(syncInfo));
   return syncInfo;
@@ -751,6 +812,8 @@ export const syncWithLocalServer = async (customServerUrl = '') => {
     history: getHistory(),
     wrongAnswers: getWrongAnswers(),
     snapshots: getHistorySnapshots(),
+    battleHistory: getBattleHistory(),
+    achievementRecords: getAchievementTestRecords(),
     deviceInfo: typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown',
     timestamp: new Date().toISOString(),
   };
@@ -779,6 +842,12 @@ export const syncWithLocalServer = async (customServerUrl = '') => {
   if (Array.isArray(mergedServerData.snapshots)) {
     localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(mergedServerData.snapshots));
   }
+  if (Array.isArray(mergedServerData.battleHistory)) {
+    localStorage.setItem(BATTLE_HISTORY_KEY, JSON.stringify(mergedServerData.battleHistory));
+  }
+  if (mergedServerData.achievementRecords && typeof mergedServerData.achievementRecords === 'object') {
+    localStorage.setItem(ACHIEVEMENT_TEST_KEY, JSON.stringify(mergedServerData.achievementRecords));
+  }
 
   const syncInfo = {
     syncedAt: new Date().toISOString(),
@@ -786,6 +855,7 @@ export const syncWithLocalServer = async (customServerUrl = '') => {
     historyCount: (mergedServerData.history || []).length,
     wrongCount: (mergedServerData.wrongAnswers || []).length,
     customQuestionsCount: (mergedServerData.customQuestions || []).length,
+    battleCount: (mergedServerData.battleHistory || []).length,
     lanUrls: mergedServerData.lanUrls || [],
   };
   localStorage.setItem(LAST_SYNC_KEY, JSON.stringify(syncInfo));
@@ -798,16 +868,15 @@ export const syncWithLocalServer = async (customServerUrl = '') => {
 };
 
 // --- 定期 学習到達度テスト（2週間に1回）管理 ---
-const ACHIEVEMENT_TEST_KEY = 'quiz_app_achievement_test_v1';
 const ACHIEVEMENT_COOLDOWN_MS = 14 * 24 * 60 * 60 * 1000; // 14日間 (2週間)
 
-export const getAchievementTestRecords = () => {
+export function getAchievementTestRecords() {
   try {
     return JSON.parse(localStorage.getItem(ACHIEVEMENT_TEST_KEY) || '{}');
   } catch {
     return {};
   }
-};
+}
 
 export const getAchievementTestStatus = (subject) => {
   const records = getAchievementTestRecords();
@@ -879,9 +948,7 @@ export const resetAchievementTestCooldown = (subject = null) => {
 // ==========================================
 // ⚔️ 総合実力テスト CPU対戦履歴マネージャー
 // ==========================================
-const BATTLE_HISTORY_KEY = 'juken_battle_history';
-
-export const getBattleHistory = () => {
+export function getBattleHistory() {
   try {
     const raw = localStorage.getItem(BATTLE_HISTORY_KEY);
     return raw ? JSON.parse(raw) : [];
@@ -889,7 +956,7 @@ export const getBattleHistory = () => {
     console.error('Failed to get battle history', e);
     return [];
   }
-};
+}
 
 export const saveBattleHistory = (battleData) => {
   try {

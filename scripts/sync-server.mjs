@@ -28,6 +28,8 @@ function loadSyncData() {
       customQuestions: [],
       history: [],
       wrongAnswers: [],
+      battleHistory: [],
+      achievementRecords: {},
       updatedAt: new Date().toISOString(),
     };
     fs.writeFileSync(syncDataPath, JSON.stringify(initial, null, 2), 'utf8');
@@ -40,6 +42,8 @@ function loadSyncData() {
       customQuestions: [],
       history: [],
       wrongAnswers: [],
+      battleHistory: [],
+      achievementRecords: {},
       updatedAt: new Date().toISOString(),
     };
   }
@@ -105,11 +109,44 @@ function mergeSyncData(serverData, clientData) {
     .sort((a, b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')))
     .slice(0, 20);
 
+  // 5. CPU対戦履歴（battleHistory）の統合
+  const battleMap = new Map();
+  const makeBattleKey = (b) =>
+    b.id ||
+    `${b.timestamp || ''}_${b.subject || ''}_${b.cpuLevelId || ''}_${b.userScore ?? ''}_${b.cpuScore ?? ''}`;
+  for (const b of serverData.battleHistory || []) {
+    if (b) battleMap.set(makeBattleKey(b), b);
+  }
+  for (const b of clientData.battleHistory || []) {
+    if (b) battleMap.set(makeBattleKey(b), b);
+  }
+  const mergedBattleHistory = Array.from(battleMap.values())
+    .sort((a, b) => String(b.timestamp || '').localeCompare(String(a.timestamp || '')))
+    .slice(0, 100);
+
+  // 6. 到達度判定テスト記録（achievementRecords）の統合
+  const mergedAchievementRecords = { ...(serverData.achievementRecords || {}) };
+  for (const [subj, rec] of Object.entries(clientData.achievementRecords || {})) {
+    if (!mergedAchievementRecords[subj]) {
+      mergedAchievementRecords[subj] = rec;
+    } else {
+      const serverTime = mergedAchievementRecords[subj].lastTakenAt
+        ? new Date(mergedAchievementRecords[subj].lastTakenAt).getTime()
+        : 0;
+      const clientTime = rec.lastTakenAt ? new Date(rec.lastTakenAt).getTime() : 0;
+      if (clientTime >= serverTime) {
+        mergedAchievementRecords[subj] = rec;
+      }
+    }
+  }
+
   return {
     customQuestions: mergedCustomQuestions,
     history: mergedHistory,
     wrongAnswers: mergedWrongAnswers,
     snapshots: mergedSnapshots,
+    battleHistory: mergedBattleHistory,
+    achievementRecords: mergedAchievementRecords,
     updatedAt: new Date().toISOString(),
   };
 }

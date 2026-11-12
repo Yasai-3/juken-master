@@ -157,6 +157,22 @@ export async function fetchCloudData() {
       data.resolvedWrongIds = {};
     }
   }
+  if (rawFields.battleHistoryChunk?.stringValue) {
+    try {
+      data.battleHistory = JSON.parse(rawFields.battleHistoryChunk.stringValue);
+    } catch (e) {
+      console.warn('battleHistoryChunk parse failed:', e);
+      data.battleHistory = [];
+    }
+  }
+  if (rawFields.achievementRecordsChunk?.stringValue) {
+    try {
+      data.achievementRecords = JSON.parse(rawFields.achievementRecordsChunk.stringValue);
+    } catch (e) {
+      console.warn('achievementRecordsChunk parse failed:', e);
+      data.achievementRecords = {};
+    }
+  }
   if (rawFields.updatedAt?.stringValue) {
     data.updatedAt = rawFields.updatedAt.stringValue;
   }
@@ -164,7 +180,15 @@ export async function fetchCloudData() {
   // ② 旧形式（mapValue / arrayValue）のフォールバック復元
   for (const [k, v] of Object.entries(rawFields)) {
     if (
-      !['historyChunk', 'wrongChunk', 'customQuestionsChunk', 'resolvedWrongIdsChunk', 'formatVersion'].includes(k)
+      ![
+        'historyChunk',
+        'wrongChunk',
+        'customQuestionsChunk',
+        'resolvedWrongIdsChunk',
+        'battleHistoryChunk',
+        'achievementRecordsChunk',
+        'formatVersion',
+      ].includes(k)
     ) {
       if (data[k] === undefined) {
         data[k] = fromFirestoreValue(v);
@@ -187,6 +211,10 @@ export async function saveCloudData(payload) {
   const cleanWrongs = sanitizeWrongAnswersForCloud(payload.wrongAnswers || []);
   const cleanCustom = payload.customQuestions || [];
   const cleanResolved = payload.resolvedWrongIds || {};
+  const cleanBattle = Array.isArray(payload.battleHistory)
+    ? payload.battleHistory.slice(0, 100)
+    : [];
+  const cleanAchievement = payload.achievementRecords || {};
   const updatedAt = payload.updatedAt || new Date().toISOString();
 
   // 2. Firestore REST APIのオーバーヘッド（2.5〜3.5倍膨張）をゼロにするため、
@@ -198,6 +226,8 @@ export async function saveCloudData(payload) {
     wrongChunk: { stringValue: JSON.stringify(cleanWrongs) },
     customQuestionsChunk: { stringValue: JSON.stringify(cleanCustom) },
     resolvedWrongIdsChunk: { stringValue: JSON.stringify(cleanResolved) },
+    battleHistoryChunk: { stringValue: JSON.stringify(cleanBattle) },
+    achievementRecordsChunk: { stringValue: JSON.stringify(cleanAchievement) },
     // 旧フィールドの残骸を空にして消去（容量解放）
     history: { arrayValue: { values: [] } },
     wrongAnswers: { arrayValue: { values: [] } },

@@ -11,6 +11,7 @@ import {
   getSettings,
   saveAchievementTestRecord,
   saveBattleHistory,
+  syncWithCloud,
 } from '../utils/storage';
 import { gradeAnswer } from '../utils/gradingEngine';
 import { DIFFICULTY_LABELS, QUESTION_TYPE_LABELS } from '../utils/advisorEngine';
@@ -327,6 +328,11 @@ const QuizPage = () => {
     });
 
     setFinished(true);
+
+    // クラウド自動同期（他端末でも即座に結果を反映）
+    if (typeof navigator !== 'undefined' && navigator.onLine) {
+      syncWithCloud().catch((e) => console.debug('Quiz finish cloud sync skipped:', e.message));
+    }
   };
 
   // ⏱️ タイムクロック（ストップウォッチ & カウントダウン）インターバル制御
@@ -526,6 +532,11 @@ const QuizPage = () => {
       timestamp: new Date().toISOString(),
     });
     setFinished(true);
+
+    // クラウド自動同期（他端末でも即座に結果を反映）
+    if (typeof navigator !== 'undefined' && navigator.onLine) {
+      syncWithCloud().catch((e) => console.debug('Quiz finish cloud sync skipped:', e.message));
+    }
   };
 
   const retryWrongInSession = () => {

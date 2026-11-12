@@ -14,6 +14,7 @@ import {
   deleteHistorySnapshot,
   getBattleHistory,
   getBattleStats,
+  syncWithCloud,
 } from '../utils/storage';
 import {
   analyzeLearningProgress,
@@ -70,6 +71,17 @@ const HistoryPage = () => {
 
   useEffect(() => {
     loadData();
+
+    // 他端末での最新対戦・学習レコードをバックグラウンド自動同期
+    if (typeof navigator !== 'undefined' && navigator.onLine) {
+      syncWithCloud()
+        .then(() => {
+          loadData();
+        })
+        .catch((e) => {
+          console.debug('History auto-sync skipped:', e.message);
+        });
+    }
 
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 250);
@@ -704,44 +716,53 @@ const HistoryPage = () => {
 
         {/* Tab Navigation */}
         <div className="sticky top-2 z-30 bg-slate-100/95 dark:bg-gray-900/95 backdrop-blur-md pt-1 pb-1">
-          <div className="flex border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-2xl p-1.5 shadow-sm">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-1.5 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-2xl p-1.5 shadow-sm max-w-full">
             <button
               type="button"
               onClick={() => setActiveTab('overview')}
-              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+              className={`min-w-0 py-2.5 sm:py-3 px-2 sm:px-3 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
                 activeTab === 'overview'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
               }`}
             >
-              <span className="text-base sm:text-lg">📊</span>
-              <span className="truncate">総合分析・アドバイス</span>
+              <span className="text-base sm:text-lg flex-shrink-0">📊</span>
+              <span className="truncate">
+                <span className="lg:hidden">総合分析</span>
+                <span className="hidden lg:inline">総合分析・アドバイス</span>
+              </span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('units')}
-              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+              className={`min-w-0 py-2.5 sm:py-3 px-2 sm:px-3 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
                 activeTab === 'units'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
               }`}
             >
-              <span className="text-base sm:text-lg">📋</span>
-              <span className="truncate">単元別 詳細分析</span>
+              <span className="text-base sm:text-lg flex-shrink-0">📋</span>
+              <span className="truncate">
+                <span className="lg:hidden">単元別分析</span>
+                <span className="hidden lg:inline">単元別 詳細分析</span>
+              </span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('wrongs')}
-              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+              className={`min-w-0 py-2.5 sm:py-3 px-2 sm:px-3 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
                 activeTab === 'wrongs'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
               }`}
             >
-              <span className="text-base sm:text-lg">📝</span>
-              <span className="truncate">弱点復習ノート</span>
+              <span className="text-base sm:text-lg flex-shrink-0">📝</span>
+              <span className="truncate">
+                <span className="lg:hidden">弱点復習</span>
+                <span className="hidden lg:inline">弱点復習ノート</span>
+              </span>
               <span
-                className={`ml-0.5 px-2 py-0.5 rounded-full text-[11px] font-black ${
+                className={`flex-shrink-0 ml-0.5 px-1.5 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-black ${
                   activeTab === 'wrongs'
                     ? 'bg-white text-indigo-700'
                     : wrongAnswers.length > 0
@@ -755,17 +776,17 @@ const HistoryPage = () => {
             <button
               type="button"
               onClick={() => setActiveTab('battle')}
-              className={`flex-1 py-3 px-2 sm:px-4 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
+              className={`min-w-0 py-2.5 sm:py-3 px-2 sm:px-3 rounded-xl font-extrabold text-xs sm:text-sm md:text-base transition-all flex items-center justify-center gap-1.5 ${
                 activeTab === 'battle'
                   ? 'bg-gradient-to-r from-rose-600 to-indigo-600 text-white shadow-md'
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/60'
               }`}
             >
-              <span className="text-base sm:text-lg">⚔️</span>
+              <span className="text-base sm:text-lg flex-shrink-0">⚔️</span>
               <span className="truncate">CPU対戦</span>
               {battleHistory.length > 0 && (
                 <span
-                  className={`ml-0.5 px-2 py-0.5 rounded-full text-[11px] font-black ${
+                  className={`flex-shrink-0 ml-0.5 px-1.5 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-black ${
                     activeTab === 'battle'
                       ? 'bg-white text-rose-700'
                       : 'bg-rose-500/20 text-rose-700 dark:text-rose-300'
