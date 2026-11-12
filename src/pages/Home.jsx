@@ -33,7 +33,7 @@ const Home = () => {
 
   // 総合実力テスト CPU対戦ステート
   const [isBattleMode, setIsBattleMode] = useState(false);
-  const [selectedCpuLevel, setSelectedCpuLevel] = useState('oni'); // デフォルトは最強の「鬼」
+  const [selectedCpuLevel, setSelectedCpuLevel] = useState('rookie'); // デフォルトは見習い「ピヨ太」
 
   // Selection State
   const [selectedSubject, setSelectedSubject] = useState(null);

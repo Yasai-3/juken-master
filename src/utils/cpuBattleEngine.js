@@ -4,69 +4,36 @@
  */
 
 export const CPU_LEVELS = {
-  oni: {
-    id: 'oni',
-    name: '鬼神ロボ「カイセキ」',
-    shortName: '鬼神',
-    badge: '👹',
-    title: '最難関・灘開成突破レベル',
-    description: 'ほぼミスをしない究極の計算力と知識を持つ絶対王者。正答率約95%！',
+  rookie: {
+    id: 'rookie',
+    name: '見習いヒヨコ「ピヨ太」',
+    shortName: '見習い',
+    badge: '🐱',
+    title: '基礎トレーニングレベル',
+    description: '一生懸命頑張る勉強中の仲間。勝利の味を掴むのに最適。正答率約45%！',
     accuracy: {
-      basic: 0.99,
-      standard: 0.96,
-      advanced: 0.90,
+      basic: 0.65,
+      standard: 0.45,
+      advanced: 0.25,
     },
-    avgSpeedSec: 8,
-    themeColor: 'from-purple-900 via-rose-950 to-red-900 border-red-500 text-rose-300',
+    avgSpeedSec: 20,
+    themeColor: 'from-amber-900 via-orange-950 to-slate-900 border-amber-500 text-amber-300',
     quotes: {
-      intro: 'フッ、我が知識の領域に踏み込むか。容赦はせんぞ。',
+      intro: 'ぼくも一生懸命がんばるピヨ！よろしくお願いします！',
       correct: [
-        'この程度、まばたきする間に解ける。',
-        '想定通りの平易な問題だな。',
-        '計算誤差ゼロ。当然の結果だ。',
-        '君の解答ペース、少々遅いのではないか？'
+        'やったピヨ！基本を思い出したピヨ！',
+        '正解できたピヨ！うれしいピヨ〜！',
+        '先生に教えてもらった通りに解けたピヨ！',
       ],
       wrong: [
-        'な、なに…！？この我が計算ミスを…！？',
-        'ぐぬぬ…痛恨のケアレスミス…！',
-        'フン、少々油断したようだな…次は外さん！'
+        'ピヨ〜！難しくて間違えちゃったピヨ…',
+        'うぅ…解説をしっかり読んで復習するピヨ…',
+        '次は当ててみせるピヨ！',
       ],
-      win: 'フハハ！我が計算領域を超えるには、まだ100年早い！',
-      lose: 'バ、バカな…この我が敗北するとは…！君の実力、本物だな。',
-      draw: '引き分けだと…！？我が計算に並び立つ者がいようとは…！'
-    }
-  },
-  master: {
-    id: 'master',
-    name: '秀才ライバル「タクミ」',
-    shortName: '秀才',
-    badge: '🦁',
-    title: '難関校合格安定レベル',
-    description: '幅広い分野を完璧に網羅する名門進学塾のトップ生。正答率約80%！',
-    accuracy: {
-      basic: 0.95,
-      standard: 0.85,
-      advanced: 0.70,
+      win: 'えっ！？ぼくが勝っちゃったピヨ！？夢みたいピヨ〜！',
+      lose: 'やっぱり君は強いピヨ…！ぼくももっと勉強するピヨ！',
+      draw: '引き分けピヨ！一緒に頑張れて楽しかったピヨ！',
     },
-    avgSpeedSec: 12,
-    themeColor: 'from-blue-900 via-indigo-950 to-slate-900 border-blue-500 text-blue-300',
-    quotes: {
-      intro: '今日は僕が勝つよ！全力をぶつけ合おう！',
-      correct: [
-        'よし、しっかり解法が見えた！',
-        '過去問で何度も復習したパターンだね。',
-        'テンポよく正解！このペースを維持するよ。',
-        '君もなかなかやるね！負けられないな。'
-      ],
-      wrong: [
-        'あちゃ〜！問題文の聞き方を読み違えた…！',
-        'うわ、悔しい！ここで落とすとは…！',
-        'くそっ、まだ君にリードを許すわけには…！'
-      ],
-      win: 'やったー！僕の勝ちだね！次も良い勝負をしよう！',
-      lose: '完敗だ…！君の集中力と正確さ、本当にすごいよ。',
-      draw: '同点か！まさに互角の戦いだったね。再戦しよう！'
-    }
   },
   rival: {
     id: 'rival',
@@ -88,49 +55,82 @@ export const CPU_LEVELS = {
         'よっしゃ正解！手応えバッチリだぜ！',
         'オレの直感と特訓の成果がピタリと当たった！',
         'この問題はオレの得意分野だ！',
-        'どんどんいくぜ！ついてこれるか！？'
+        'どんどんいくぜ！ついてこれるか！？',
       ],
       wrong: [
         'うわぁ〜！選択肢で迷って外した〜！',
         'くっそー！最後の計算が合わなかったぜ！',
-        'うそだろ！？次は絶対に正解してやる！'
+        'うそだろ！？次は絶対に正解してやる！',
       ],
       win: '勝ったぜー！努力は裏切らないって証明できたな！',
       lose: 'くやしい〜！でもめちゃくちゃ楽しかったぜ！次は勝つ！',
-      draw: 'ドローか！お互い一歩も引かなかったな！ナイスファイト！'
-    }
-  },
-  rookie: {
-    id: 'rookie',
-    name: '見習いヒヨコ「ピヨ太」',
-    shortName: '見習い',
-    badge: '🐱',
-    title: '基礎トレーニングレベル',
-    description: '一生懸命頑張る勉強中の仲間。勝利の味を掴むのに最適。正答率約45%！',
-    accuracy: {
-      basic: 0.65,
-      standard: 0.45,
-      advanced: 0.25,
+      draw: 'ドローか！お互い一歩も引かなかったな！ナイスファイト！',
     },
-    avgSpeedSec: 20,
-    themeColor: 'from-amber-900 via-orange-950 to-slate-900 border-amber-500 text-amber-300',
+  },
+  master: {
+    id: 'master',
+    name: '秀才ライバル「タクミ」',
+    shortName: '秀才',
+    badge: '🦁',
+    title: '難関校合格安定レベル',
+    description: '幅広い分野を完璧に網羅する名門進学塾のトップ生。正答率約80%！',
+    accuracy: {
+      basic: 0.95,
+      standard: 0.85,
+      advanced: 0.70,
+    },
+    avgSpeedSec: 12,
+    themeColor: 'from-blue-900 via-indigo-950 to-slate-900 border-blue-500 text-blue-300',
     quotes: {
-      intro: 'ぼくも一生懸命がんばるピヨ！よろしくお願いします！',
+      intro: '今日は僕が勝つよ！全力をぶつけ合おう！',
       correct: [
-        'やったピヨ！基本を思い出したピヨ！',
-        '正解できたピヨ！うれしいピヨ〜！',
-        '先生に教えてもらった通りに解けたピヨ！'
+        'よし、しっかり解法が見えた！',
+        '過去問で何度も復習したパターンだね。',
+        'テンポよく正解！このペースを維持するよ。',
+        '君もなかなかやるね！負けられないな。',
       ],
       wrong: [
-        'ピヨ〜！難しくて間違えちゃったピヨ…',
-        'うぅ…解説をしっかり読んで復習するピヨ…',
-        '次は当ててみせるピヨ！'
+        'あちゃ〜！問題文の聞き方を読み違えた…！',
+        'うわ、悔しい！ここで落とすとは…！',
+        'くそっ、まだ君にリードを許すわけには…！',
       ],
-      win: 'えっ！？ぼくが勝っちゃったピヨ！？夢みたいピヨ〜！',
-      lose: 'やっぱり君は強いピヨ…！ぼくももっと勉強するピヨ！',
-      draw: '引き分けピヨ！一緒に頑張れて楽しかったピヨ！'
-    }
-  }
+      win: 'やったー！僕の勝ちだね！次も良い勝負をしよう！',
+      lose: '完敗だ…！君の集中力と正確さ、本当にすごいよ。',
+      draw: '同点か！まさに互角の戦いだったね。再戦しよう！',
+    },
+  },
+  oni: {
+    id: 'oni',
+    name: '鬼神ロボ「カイセキ」',
+    shortName: '鬼神',
+    badge: '👹',
+    title: '最難関・灘開成突破レベル',
+    description: 'ほぼミスをしない究極の計算力と知識を持つ絶対王者。正答率約95%！',
+    accuracy: {
+      basic: 0.99,
+      standard: 0.96,
+      advanced: 0.90,
+    },
+    avgSpeedSec: 8,
+    themeColor: 'from-purple-900 via-rose-950 to-red-900 border-red-500 text-rose-300',
+    quotes: {
+      intro: 'フッ、我が知識の領域に踏み込むか。容赦はせんぞ。',
+      correct: [
+        'この程度、まばたきする間に解ける。',
+        '想定通りの平易な問題だな。',
+        '計算誤差ゼロ。当然の結果だ。',
+        '君の解答ペース、少々遅いのではないか？',
+      ],
+      wrong: [
+        'な、なに…！？この我が計算ミスを…！？',
+        'ぐぬぬ…痛恨のケアレスミス…！',
+        'フン、少々油断したようだな…次は外さん！',
+      ],
+      win: 'フハハ！我が計算領域を超えるには、まだ100年早い！',
+      lose: 'バ、バカな…この我が敗北するとは…！君の実力、本物だな。',
+      draw: '引き分けだと…！？我が計算に並び立つ者がいようとは…！',
+    },
+  },
 };
 
 /**
@@ -139,8 +139,8 @@ export const CPU_LEVELS = {
  * @param {string} cpuLevelId 'oni' | 'master' | 'rival' | 'rookie'
  * @returns {Object} { isCorrect, selectedAnswer, timeSec, quote }
  */
-export const simulateCpuAnswer = (question, cpuLevelId = 'master') => {
-  const cpu = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.master;
+export const simulateCpuAnswer = (question, cpuLevelId = 'rookie') => {
+  const cpu = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.rookie;
   const diff = question.difficulty || 'standard';
   const prob = cpu.accuracy[diff] ?? 0.70;
 
@@ -187,8 +187,8 @@ export const simulateCpuAnswer = (question, cpuLevelId = 'master') => {
 /**
  * 勝敗判定
  */
-export const determineBattleResult = (userScore, cpuScore, cpuLevelId = 'master') => {
-  const cpu = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.master;
+export const determineBattleResult = (userScore, cpuScore, cpuLevelId = 'rookie') => {
+  const cpu = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.rookie;
   if (userScore > cpuScore) {
     return {
       result: 'win',

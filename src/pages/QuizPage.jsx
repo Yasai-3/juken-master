@@ -68,8 +68,8 @@ const QuizPage = () => {
 
   // ★ ⚔️ CPU対戦モード用ステート
   const isBattle = Boolean(filters.isBattle);
-  const cpuLevelId = filters.cpuLevel || 'oni';
-  const cpuInfo = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.oni;
+  const cpuLevelId = filters.cpuLevel || 'rookie';
+  const cpuInfo = CPU_LEVELS[cpuLevelId] || CPU_LEVELS.rookie;
   const [cpuScore, setCpuScore] = useState(0);
   const [currentCpuAnswer, setCurrentCpuAnswer] = useState(null);
   const [battleLog, setBattleLog] = useState([]);
