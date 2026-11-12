@@ -623,19 +623,30 @@ export const NORMALIZE_CATEGORY_NAME = (cat) => {
 };
 
 /**
+ * 志望校別到達度判定の対象期間（学習継続・習慣化のため直近60日間の演習データを採用）
+ */
+export const TARGET_SCHOOL_EVALUATION_DAYS = 60;
+
+/**
  * 志望校に対する学習者の到達度・判定・ToDoを計算するエンジン
+ * ※ 学習を継続させるため、判定に使用する学習履歴は直近60日間のものに限定して算出
  */
 export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, allQuestions) {
   const school = TARGET_SCHOOLS.find((s) => s.id === schoolId) || TARGET_SCHOOLS[0];
   const isNada = school.id === 'nada';
   const isTsukukoma = school.id === 'tsukukoma';
 
+  // 直近60日間のカットオフ基準日時
+  const now = Date.now();
+  const cutoffTime = now - TARGET_SCHOOL_EVALUATION_DAYS * 24 * 60 * 60 * 1000;
+
   const questionMap = new Map();
   allQuestions.forEach((q) => questionMap.set(q.id, q));
 
   let totalWeightedScore = 0;
   let totalWeightedMax = 0;
-  let schoolEligibleAnswered = 0;
+  let schoolEligibleAnswered = 0; // 直近60日間の志望校対象演習数
+  let allTimeEligibleAnswered = 0; // 通算（全期間）の志望校対象演習数
 
   // 4軸レーダー用の統計
   let basicStandardTotal = 0;
@@ -686,6 +697,9 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
   const tagStats = {};
 
   (history || []).forEach((entry) => {
+    const entryTime = new Date(entry.timestamp || entry.date || 0).getTime();
+    const isRecent = !entryTime || entryTime >= cutoffTime;
+
     (entry.results || []).forEach((r) => {
       const q = questionMap.get(r.id) || r;
       const rawCat = q.category || 'その他';
@@ -696,6 +710,13 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
 
       // 灘の場合は社会の解答データのみ除外（算数・国語・理科は集計）
       if (isNada && subj === '社会') {
+        return;
+      }
+
+      allTimeEligibleAnswered++;
+
+      // 直近60日間より古いセッションは到達度判定から除外（学習継続促進）
+      if (!isRecent) {
         return;
       }
 
@@ -850,9 +871,12 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
 
   if (schoolEligibleAnswered === 0) {
     rank = '-';
-    rankLabel = '未判定（演習データなし）';
+    rankLabel = allTimeEligibleAnswered > 0 ? '直近60日の演習なし' : '未判定（演習データなし）';
     rankColor = 'text-gray-400 bg-gray-50 border-gray-200';
-    advice = `まずは${school.name}の頻出分野を中心に問題を解いてみましょう。`;
+    advice =
+      allTimeEligibleAnswered > 0
+        ? `直近60日間の学習データがありません。日々の学習を継続させるため、最新60日間の実績から合格到達度を判定します。今日の問題を解いて判定を更新しましょう！`
+        : `まずは${school.name}の頻出分野を中心に問題を解いてみましょう。`;
   } else if (!satisfiesAdvanced && (isNada || isTsukukoma) && progressScore >= 70) {
     // 難問正解が足りない場合はB判定以上に上がらない
     rank = 'C';
@@ -1089,7 +1113,10 @@ export function calculateTargetSchoolProgress(schoolId, history, wrongAnswers, a
     advice,
     severeWarning,
     diffToTarget,
-    totalAnswered: schoolEligibleAnswered,
+    totalAnswered: schoolEligibleAnswered, // 直近60日間の演習問題数
+    allTimeTotalAnswered: allTimeEligibleAnswered, // 通算（全期間）演習問題数
+    evaluationDays: TARGET_SCHOOL_EVALUATION_DAYS, // 60
+    isNoRecentData: allTimeEligibleAnswered > 0 && schoolEligibleAnswered === 0,
     balancedAnswered,
     requiredCount,
     categoryMinCount: baseCategoryMinCount,

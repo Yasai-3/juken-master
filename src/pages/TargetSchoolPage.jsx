@@ -77,9 +77,14 @@ const TargetSchoolPage = () => {
             ← ホームに戻る
           </button>
           <div className="text-center md:text-left">
-            <span className="inline-block px-3 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold mb-1">
-              🎯 志望校突破ナビゲーション
-            </span>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-1">
+              <span className="inline-block px-3 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-extrabold">
+                🎯 志望校突破ナビゲーション
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-200 text-xs font-black shadow-xs">
+                <span>⏱️ 直近{report.evaluationDays || 60}日間の演習実績で判定</span>
+              </span>
+            </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-gray-800 dark:text-gray-100">
               志望校別 到達度 ＆ 合格ToDo
             </h1>
@@ -208,7 +213,7 @@ const TargetSchoolPage = () => {
                 </div>
                 <div className="flex justify-between text-[10px] text-indigo-200">
                   <span>分野網羅: {report.qualifiedCatCount}/{report.totalCatCount}分野 判定基準クリア</span>
-                  <span>全解答累計: {report.totalAnswered}問</span>
+                  <span>直近演習: {report.totalAnswered}問（通算: {report.allTimeTotalAnswered || report.totalAnswered}問）</span>
                 </div>
               </div>
 
@@ -217,11 +222,15 @@ const TargetSchoolPage = () => {
                 <span>{report.rankLabel}</span>
               </div>
 
-              {report.balancedAnswered < report.requiredCount && (
-                <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
-                  ⚡ <strong>やる気持続・偏り防止システム</strong>：{school.name}は難関校のため、確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上（※算数は時間負荷を考慮し半分の{report.mathCategoryMinCount}問以上）</strong>の実戦演習が必要です。特定の一分野だけを過剰に解いても満たせず、全教科をバランスよく解くことで到達度が高まります！（全体目標まであと<strong>{Math.max(0, report.requiredCount - report.balancedAnswered)}問</strong>）
+              {report.isNoRecentData ? (
+                <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/25 border border-amber-300/40 text-amber-100 text-xs font-medium leading-relaxed text-left">
+                  ⏱️ <strong>学習継続システム（直近60日ルール）</strong>：通算で{report.allTimeTotalAnswered}問の演習記録がありますが、直近60日間の学習データがありません。合格力を維持・向上させるため、今日の演習を開始して最新の到達度を判定しましょう！
                 </div>
-              )}
+              ) : report.balancedAnswered < report.requiredCount ? (
+                <div className="mt-2.5 p-2.5 rounded-xl bg-amber-500/20 border border-amber-300/30 text-amber-100 text-xs font-medium leading-relaxed text-left">
+                  ⚡ <strong>学習継続＆バランス演習システム</strong>：日々の学習習慣を定着させるため、到達度判定には<strong>直近60日間の演習データ</strong>を採用しています。確かな実力判定には各分野で最低<strong>{report.categoryMinCount}問以上（※算数は時間負荷を考慮し半分の{report.mathCategoryMinCount}問以上）</strong>の実戦演習が必要です。全教科をバランスよく継続して解くことで到達度が高まります！（全体目標まであと<strong>{Math.max(0, report.requiredCount - report.balancedAnswered)}問</strong>）
+                </div>
+              ) : null}
 
               {report.severeWarning && (
                 <div className="mt-2.5 p-2.5 rounded-xl bg-rose-500/30 border border-rose-300/40 text-rose-100 text-xs font-semibold leading-relaxed">
@@ -318,7 +327,7 @@ const TargetSchoolPage = () => {
                 網羅度: {report.qualifiedCatCount}/{report.totalCatCount}分野
               </span>
               <span className="text-xs font-bold px-3 py-1 bg-slate-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full">
-                全解答数: {report.totalAnswered}問
+                直近演習: {report.totalAnswered}問（通算: {report.allTimeTotalAnswered || report.totalAnswered}問）
               </span>
             </div>
           </div>
