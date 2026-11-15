@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 
-function createChoice(id, subcategory, difficulty, question, answer, wrongChoices, explanation) {
+function createChoice(id, category, subCategory, difficulty, question, answer, wrongChoices, explanation) {
   // シャッフルまたは決定論的並び替え
   const allChoices = [answer, ...wrongChoices.slice(0, 3)];
   // 決定論的ソート（数値なら昇順、文字列ならロケール順）
@@ -17,8 +17,8 @@ function createChoice(id, subcategory, difficulty, question, answer, wrongChoice
   return {
     id,
     subject: "算数",
-    category: "算数",
-    subcategory,
+    category,
+    subCategory,
     difficulty,
     questionType: "choice",
     question,
@@ -687,7 +687,7 @@ numberTheoryData.forEach((item, index) => {
   const id = `m_adv2_${String(currentId++).padStart(3, '0')}`;
   const ans = item.fixA || item.a;
   const wrg = item.fixW || item.w;
-  questions.push(createChoice(id, "数の性質", item.diff || "standard", item.q, ans, wrg, item.exp));
+  questions.push(createChoice(id, "数の性質・規則性", "倍数と約数", item.diff || "standard", item.q, ans, wrg, item.exp));
 });
 
 // 2. 規則性
@@ -695,7 +695,7 @@ sequencesData.forEach((item, index) => {
   const id = `m_adv2_${String(currentId++).padStart(3, '0')}`;
   const ans = item.fixA || item.a;
   const wrg = item.fixW || item.w;
-  questions.push(createChoice(id, "規則性", item.diff || "standard", item.q, ans, wrg, item.exp));
+  questions.push(createChoice(id, "数の性質・規則性", "規則性と周期", item.diff || "standard", item.q, ans, wrg, item.exp));
 });
 
 // 3. 場合の数
@@ -703,7 +703,7 @@ combinatoricsData.forEach((item, index) => {
   const id = `m_adv2_${String(currentId++).padStart(3, '0')}`;
   const ans = item.fixA || item.a;
   const wrg = item.fixW || item.w;
-  questions.push(createChoice(id, "場合の数", item.diff || "standard", item.q, ans, wrg, item.exp));
+  questions.push(createChoice(id, "場合の数・論理", "順列・並べ方", item.diff || "standard", item.q, ans, wrg, item.exp));
 });
 
 console.log(`Generated ${questions.length} questions for Math Pack 3 (m_adv2_201 〜 m_adv2_${currentId - 1})`);

@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 
-function createChoice(id, subcategory, difficulty, question, answer, wrongChoices, explanation) {
+function createChoice(id, category, subCategory, difficulty, question, answer, wrongChoices, explanation) {
   const options = [answer, ...wrongChoices.slice(0, 3)];
   // 決定論的ソート（選択肢順の固定）
   options.sort((a, b) => a.localeCompare(b, 'ja'));
@@ -11,8 +11,8 @@ function createChoice(id, subcategory, difficulty, question, answer, wrongChoice
   return {
     id,
     subject: "国語",
-    category: "国語",
-    subcategory,
+    category,
+    subCategory,
     difficulty,
     questionType: "choice",
     question,
@@ -1568,20 +1568,48 @@ console.log(`Loaded ${rawIdiomData.length} idiom/proverb questions and ${rawGram
 const allQuestions = [];
 let kId = 1;
 
-function addItems(list, subcategory) {
-  for (const item of list) {
+function addItems(list, getCategoryAndSub) {
+  for (let idx = 0; idx < list.length; idx++) {
+    const item = list[idx];
     const id = `k_adv2_${String(kId++).padStart(3, '0')}`;
     const ans = item.a_real || item.a;
     const wrg = item.w_real || item.w;
-    allQuestions.push(createChoice(id, subcategory, "standard", item.q, ans, wrg, item.exp));
+    const { category, subCategory } = getCategoryAndSub(idx, item);
+    allQuestions.push(createChoice(id, category, subCategory, "standard", item.q, ans, wrg, item.exp));
   }
 }
 
-addItems(rawKanjiData, "漢字・語句");
-addItems(rawYojiData, "四字熟語・故事");
-addItems(rawIdiomData, "慣用句・ことわざ");
-addItems(rawWagoData, "語彙・心情表現");
-addItems(rawGrammarData, "文法・敬語・修辞");
+// 1. 漢字・同音異義語・対義語 (60問) -> 助数詞・類義語・対義語
+addItems(rawKanjiData, (idx) => {
+  if (idx < 26) return { category: "助数詞・類義語・対義語", subCategory: "02. 類義語（意味の似た言葉）" };
+  if (idx < 30) return { category: "助数詞・類義語・対義語", subCategory: "02. 類義語（意味の似た言葉）" };
+  return { category: "助数詞・類義語・対義語", subCategory: "03. 対義語（反対の意味の言葉）" };
+});
+
+// 2. 四字熟語・故事成語・対義語・類義語 (60問)
+addItems(rawYojiData, (idx) => {
+  if (idx < 28) return { category: "四字熟語", subCategory: "01. 人物の性格・態度・行動を表す四字熟語" };
+  if (idx < 39) return { category: "助数詞・類義語・対義語", subCategory: "03. 対義語（反対の意味の言葉）" };
+  if (idx < 49) return { category: "助数詞・類義語・対義語", subCategory: "02. 類義語（意味の似た言葉）" };
+  return { category: "故事成語", subCategory: "01. 中国の古典・歴史に由来する故事成語①（思想・処世）" };
+});
+
+// 3. 慣用句・ことわざ (60問)
+addItems(rawIdiomData, (idx) => {
+  if (idx < 22) return { category: "慣用句", subCategory: "01. からだ（頭・顔・目・耳・鼻・口・舌）の慣用句" };
+  return { category: "ことわざ", subCategory: "01. 人間・生き方・教訓のことわざ" };
+});
+
+// 4. 和語・心情表現 (60問)
+addItems(rawWagoData, (idx) => {
+  if (idx < 30) return { category: "和語", subCategory: "02. 心情・感情を表す和語" };
+  return { category: "和語", subCategory: "01. 様子・状態を表す和語" };
+});
+
+// 5. 文法・敬語・修辞 (60問)
+addItems(rawGrammarData, () => {
+  return { category: "助数詞・類義語・対義語", subCategory: "04. 敬語・文法・言葉のきまり" };
+});
 
 console.log(`Total Japanese questions generated: ${allQuestions.length} (k_adv2_001 〜 k_adv2_${kId - 1})`);
 

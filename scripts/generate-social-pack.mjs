@@ -4,15 +4,15 @@
 import fs from 'fs';
 import path from 'path';
 
-function createChoice(id, subcategory, difficulty, question, answer, wrongChoices, explanation) {
+function createChoice(id, category, subCategory, difficulty, question, answer, wrongChoices, explanation) {
   const options = [answer, ...wrongChoices.slice(0, 3)];
   options.sort((a, b) => a.localeCompare(b, 'ja'));
 
   return {
     id,
     subject: "社会",
-    category: "社会",
-    subcategory,
+    category,
+    subCategory,
     difficulty,
     questionType: "choice",
     question,
@@ -475,16 +475,42 @@ for (let i = historyCore.length + 1; i <= 75; i++) {
 const socialPack = [];
 let socId = 1;
 
-function addSocial(list, subcategory) {
-  for (const item of list) {
+function addSocial(list, category, getSubCategory) {
+  for (let idx = 0; idx < list.length; idx++) {
+    const item = list[idx];
     const id = `s_adv2_${String(socId++).padStart(3, '0')}`;
-    socialPack.push(createChoice(id, subcategory, item.diff, item.q, item.a, item.w, item.exp));
+    const subCat = typeof getSubCategory === 'function' ? getSubCategory(idx, item) : getSubCategory;
+    socialPack.push(createChoice(id, category, subCat, item.diff, item.q, item.a, item.w, item.exp));
   }
 }
 
-addSocial(civicsAll, "公民");
-addSocial(geographyAll, "地理");
-addSocial(historyAll, "歴史");
+addSocial(civicsAll, "公民", (idx) => {
+  if (idx < 7) return "日本国憲法と三権分立"; // 憲法・平和主義
+  if (idx < 16) return "基本的人権と現代社会"; // 人権
+  if (idx < 25) return "国の政治の仕組み（国会）"; // 国会
+  if (idx < 29) return "国の政治の仕組み（内閣）"; // 内閣
+  if (idx < 32) return "国の政治の仕組み（裁判所）"; // 裁判所
+  if (idx < 36) return "地方自治と住民の権利"; // 地方自治
+  if (idx < 38) return "現代の経済と財政・金融"; // 経済
+  return "日本国憲法と三権分立";
+});
+
+addSocial(geographyAll, "地理", (idx) => {
+  if (idx < 4) return "01. 地図の読み方・縮尺・地形図と日本の領域";
+  if (idx < 8) return "06. 日本の農林水産業・工業・エネルギー・伝統工芸";
+  if (idx < 10) return "06. 日本の農林水産業・工業・エネルギー・伝統工芸";
+  return "02. 日本の地形・気候区分と自然災害・防災";
+});
+
+addSocial(historyAll, "歴史", (idx) => {
+  if (idx < 3) return "03. 旧石器・縄文・弥生・古墳時代";
+  if (idx < 6) return "04. 飛鳥・奈良時代";
+  if (idx < 8) return "06. 鎌倉時代";
+  if (idx < 10) return "07. 室町時代";
+  if (idx < 13) return "09. 江戸時代";
+  if (idx < 15) return "10. 欧米の近代化と幕末・開国";
+  return "11. 明治時代（維新・憲法・日清日露）";
+});
 
 console.log(`Total Social questions generated: ${socialPack.length} (s_adv2_001 〜 s_adv2_${socId - 1})`);
 

@@ -3,10 +3,24 @@
 import fs from 'fs';
 import path from 'path';
 
-// 1. 既存問題の読み込み
+// 1. 既存問題の読み込み（新規1,200問を除外した元の2883問をベースにする）
 const sampleQuizPath = path.resolve('src/data/sampleQuiz.json');
-const existingQuiz = JSON.parse(fs.readFileSync(sampleQuizPath, 'utf-8'));
-console.log(`Loaded existing sampleQuiz.json: ${existingQuiz.length} questions.`);
+const currentAllQuiz = JSON.parse(fs.readFileSync(sampleQuizPath, 'utf-8'));
+const existingQuiz = currentAllQuiz.filter(q => 
+  !q.id.startsWith('m_adv2_') && 
+  !q.id.startsWith('k_adv2_') && 
+  !q.id.startsWith('r_adv2_') && 
+  !q.id.startsWith('s_adv2_')
+);
+console.log(`Original existing quiz base: ${existingQuiz.length} questions.`);
+
+// 許可された各教科のカテゴリー定義（既存体系に完全準拠）
+const ALLOWED_CATEGORIES = {
+  '算数': new Set(['文章題・特殊算', '数の性質・規則性', '場合の数・論理', '平面図形・立体図形']),
+  '理科': new Set(['物理', '化学', '生物', '地学']),
+  '社会': new Set(['歴史', '地理', '公民']),
+  '国語': new Set(['助数詞・類義語・対義語', '慣用句', '季語・外来語', '故事成語', 'ことわざ', '和語', '四字熟語'])
+};
 
 // 2. 新規問題の読み込み
 import { MATH_GEOMETRY_100 as mathPack1 } from './math-pack-1-geometry.mjs';
@@ -58,7 +72,17 @@ for (let idx = 0; idx < newQuestions.length; idx++) {
     newIds.add(q.id);
   }
 
-  // 2. 問題文チェック
+  // 2. 教科・カテゴリー・単元チェック
+  if (!ALLOWED_CATEGORIES[q.subject]) {
+    errors.push(`${prefix} 不正な教科名です: "${q.subject}"`);
+  } else if (!ALLOWED_CATEGORIES[q.subject].has(q.category)) {
+    errors.push(`${prefix} 不正なカテゴリー名です: 教科 "${q.subject}" にカテゴリー "${q.category}" は許可されていません。（許可: ${Array.from(ALLOWED_CATEGORIES[q.subject]).join(', ')}）`);
+  }
+  if (!q.subCategory || typeof q.subCategory !== 'string' || q.subCategory.trim().length === 0) {
+    errors.push(`${prefix} subCategory が空です。`);
+  }
+
+  // 3. 問題文チェック
   if (!q.question || typeof q.question !== 'string' || q.question.trim().length === 0) {
     errors.push(`${prefix} 問題文が空です。`);
   } else {

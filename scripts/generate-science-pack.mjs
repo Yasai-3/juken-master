@@ -4,15 +4,15 @@
 import fs from 'fs';
 import path from 'path';
 
-function createChoice(id, subcategory, difficulty, question, answer, wrongChoices, explanation) {
+function createChoice(id, category, subCategory, difficulty, question, answer, wrongChoices, explanation) {
   const options = [answer, ...wrongChoices.slice(0, 3)];
   options.sort((a, b) => a.localeCompare(b, 'ja'));
 
   return {
     id,
     subject: "理科",
-    category: "理科",
-    subcategory,
+    category,
+    subCategory,
     difficulty,
     questionType: "choice",
     question,
@@ -873,17 +873,48 @@ for (let i = earthData.length + 1; i <= 75; i++) {
 const sciencePack = [];
 let sId = 1;
 
-function addScience(list, subcategory) {
-  for (const item of list) {
+function addScience(list, category, getSubCategory) {
+  for (let idx = 0; idx < list.length; idx++) {
+    const item = list[idx];
     const id = `r_adv2_${String(sId++).padStart(3, '0')}`;
-    sciencePack.push(createChoice(id, subcategory, item.diff, item.q, item.a, item.w, item.exp));
+    const subCat = typeof getSubCategory === 'function' ? getSubCategory(idx, item) : getSubCategory;
+    sciencePack.push(createChoice(id, category, subCat, item.diff, item.q, item.a, item.w, item.exp));
   }
 }
 
-addScience(physicsData, "物理");
-addScience(chemistryData, "化学");
-addScience(biologyData, "生物");
-addScience(earthData, "地学");
+addScience(physicsData, "物理", (idx) => {
+  if (idx < 13) return "04. 力のつり合い・水圧と浮力・力の合成と分解";
+  if (idx < 20) return "02. 電流と回路・オームの法則・電力と熱量";
+  if (idx < 28) return "01. 光と音の性質（屈折・凸レンズ・音の伝わり方）";
+  if (idx < 40) return "05. 運動と力・仕事と力学的エネルギー・熱の伝わり方";
+  return "04. 力のつり合い・水圧と浮力・力の合成と分解";
+});
+
+addScience(chemistryData, "化学", (idx) => {
+  if (idx < 8) return "07. 水溶液とイオン・電池・酸とアルカリ・中和と塩";
+  if (idx < 13) return "02. 気体の発生と性質・熱膨張と比熱";
+  if (idx < 19) return "03. 水溶液の性質・溶解度と再結晶・濃度計算";
+  if (idx < 24) return "06. 酸化と還元・発熱と吸熱・質量保存と定比例の法則";
+  if (idx < 30) return "04. 物質の状態変化・融点と沸点・蒸留";
+  return "03. 水溶液の性質・溶解度と再結晶・濃度計算";
+});
+
+addScience(biologyData, "生物", (idx) => {
+  if (idx < 9) return "05. 植物のつくりとはたらき（光合成・呼吸・蒸散）";
+  if (idx < 14) return "03. 動物の分類と生活・からだのつくり";
+  if (idx < 23) return "06. 人体①（消化・吸収・呼吸・排出・血液循環）";
+  if (idx < 30) return "01. 身近な自然の観察・被子植物";
+  return "05. 植物のつくりとはたらき（光合成・呼吸・蒸散）";
+});
+
+addScience(earthData, "地学", (idx) => {
+  if (idx < 5) return "06. 太陽と星の日周運動・年周運動・四季の星座";
+  if (idx < 13) return "07. 太陽と月（満ち欠け・日食と月食）・太陽系の惑星";
+  if (idx < 19) return "03. 地層のでき方・堆積岩と化石・断層としゅう曲";
+  if (idx < 25) return "05. 前線と天気の変化・日本の四季と気団・台風と防災";
+  if (idx < 30) return "02. 地震のゆれと発生・プレートの動き";
+  return "06. 太陽と星の日周運動・年周運動・四季の星座";
+});
 
 console.log(`Total Science questions generated: ${sciencePack.length} (r_adv2_001 〜 r_adv2_${sId - 1})`);
 
